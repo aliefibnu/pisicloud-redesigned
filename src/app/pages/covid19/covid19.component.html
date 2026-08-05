@@ -1,0 +1,55 @@
+<div appScrollspy [spiedTags]="['SECTION']">
+  <!-- Hero Start -->
+  <section class="hero-1-bg" style="background-image: url(assets/images/bg/6.3.png)" id="home">
+    <div class="container">
+      <h1 class="text-dark font-weight-bold mb-4">{{'covid19.title1' | translate}}<br>
+        <span class="text-primary">{{'covid19.title2' | translate}}</span>
+      </h1>
+      <p class="font-size-15 mb-4">{{'covid19.p1' | translate}}</p>
+      <p class="font-size-15 mb-4">{{'covid19.p2' | translate}}</p>
+      <p class="font-size-15 mb-4">{{'covid19.p3' | translate}}</p>
+      <ul class="font-size-15 mb-4">
+        <li>{{'covid19.l1' | translate}}</li>
+        <li>{{'covid19.l2' | translate}}</li>
+        <li>
+          <div innerHTML="{{'covid19.l3' | translate}}"></div>
+        </li>
+        <li>
+          <div innerHTML="{{'covid19.l4' | translate}}"></div>
+        </li>
+        <li>{{'covid19.l5' | translate}}</li>
+        <li>{{'covid19.l6' | translate}}</li>
+        <li>{{'covid19.l7' | translate}}</li>
+        <li>{{'covid19.l8' | translate}}</li>
+      </ul>
+      <p class="font-size-15 mb-4">{{'covid19.p4' | translate}}</p>
+      <p class="font-size-15 mb-4">{{'covid19.p5' | translate}}</p>
+      <p class="font-size-16 mb-4"><b>{{'covid19.p6' | translate}}</b></p>
+      <p class="font-size-15 mb-4">
+        Orchard Walk Blok C#18<br>
+        Jl. Orchard Boulevard<br>
+        Orchad Park Batam<br>
+        Batam City, Riau Islands 29464<br>
+        Indonesia<br>
+        Phone : +62 778 416 0250<br>
+        Mobile: +62 811 777 4744<br>
+        Email : {{emailContact}}<br>
+        Website : infosys.co.id<br>
+      </p>
+    </div>",
+
+  </section>
+  <ng-template #videocontent let-modal class="video-modal">
+    <div class="modal-header">
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body p-0">
+      <!-- <youtube-player [videoId]="'99BMvyKjZqo'" height="450" width="780">
+      </youtube-player> -->
+    </div>
+  </ng-template>
+  <!-- Hero End -->
+
+</div>

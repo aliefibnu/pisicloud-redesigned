@@ -1,0 +1,31 @@
+.mobile {
+    display: none;
+
+    img {
+        width: 25%;
+    }
+}
+
+.card {
+    height: 100%;
+}
+
+.col-md-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+    }
+}
+
+@media (max-width:991px) {
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+}

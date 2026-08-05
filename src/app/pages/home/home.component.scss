@@ -1,0 +1,223 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+
+    .slider {
+        animation: slidein 30s linear infinite;
+        white-space: nowrap;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+
+        .logos {
+            width: 100%;
+            display: inline-block;
+            margin: 0px 0;
+
+            .fab {
+                margin-right: 5em;
+                width: 5.5em;
+                animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+            }
+        }
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 500px) {
+    #button {
+        margin: 30px;
+    }
+}
+
+.carousel-active {
+    background: #1c735a !important;
+    -webkit-box-shadow: 0 5px 18px rgba(90, 79, 220, 0.4);
+    box-shadow: 0 5px 18px rgba(90, 79, 220, 0.4);
+    color: #fff !important;
+
+    .wc-box-icon {
+        color: #fff !important;
+        background: rgba(255, 255, 255, 0.12) !important;
+        -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.04);
+        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.04);
+    }
+
+    .wc-subtitle {
+        color: white !important;
+    }
+}
+
+.carousel-active:hover {
+    background: #3e87db !important;
+    -webkit-box-shadow: 0 5px 18px rgba(90, 79, 220, 0.4);
+    box-shadow: 0 5px 18px rgba(90, 79, 220, 0.4);
+    color: #fff !important;
+
+    .wc-box-icon {
+        color: #fff !important;
+        background: rgba(255, 255, 255, 0.12) !important;
+        -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.04);
+        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.04);
+    }
+
+    .wc-subtitle {
+        color: white !important;
+    }
+}
+
+.carousel-card {
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(155, 235, 255, 0.2), 0 6px 20px 0 rgba(0, 195, 255, 0.19);
+
+    @media (min-width:1024px) {
+        height: 30em;
+    }
+}
+
+.img-home {
+    img {
+        height: 27em;
+        display: block;
+        margin: 0 auto;
+
+        @media (max-width:991px) {
+            height: 10em;
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 1em;
+    padding-left: 0;
+}
+
+ul>li {
+    position: relative;
+}
+
+.icon-xs {
+    left: -3em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+
+/* NOT RELEVANT TO THE FUNCTION */
+ul {
+    max-width: 500px;
+    margin: 25px auto 0 auto;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-left: 2.5em;
+}
+
+.img-feature {
+    img {
+        height: 35em;
+        display: block;
+        margin: 0 auto;
+
+        @media (max-width:991px) {
+            height: 100%;
+        }
+    }
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
+}
+
+
+.font-mobile {
+    font-size: 50px;
+
+    @media(max-width:768px) {
+        font-size: 30px;
+    }
+}

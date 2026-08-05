@@ -1,0 +1,29 @@
+.six {
+    .mobile {
+        display: none;
+    }
+
+    background-image: -webkit-linear-gradient(0deg, #1c735a 45%, #fbfafd 45%);
+    min-height: 400px;
+
+    img {
+        width: 80%;
+    }
+
+    @media (max-width:991px) {
+        background-image: -webkit-linear-gradient(0deg, #fbfafd 93%, #1c735a 7%);
+        min-height: 400px;
+
+        .pc {
+            display: none;
+        }
+
+        .mobile {
+            display: initial;
+        }
+
+        img {
+            margin-bottom: -1.5em;
+        }
+    }
+}

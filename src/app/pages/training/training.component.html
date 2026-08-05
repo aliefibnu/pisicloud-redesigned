@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div appScrollspy [spiedTags]="['SECTION']">
+  <!-- Hero Start -->
+  <section class="hero-1-bg" style="background-image: url(assets/images/bg/8.png)" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+
+          <h1 class="mb-3"><b><span class="text-primary">{{'training.title1' | translate}}</span>{{'training.title2' |
+              translate}}<span class="text-primary">{{'training.title3' | translate}}</span></b></h1>
+
+
+          <div innerHTML="{{'training.titleSub' | translate}}"></div>
+
+          <hr style="border: 2px solid #1c735a; width: 20em;">
+
+          <img src="assets/images/training.jpg" class="img-fluid d-block mx-auto mt-4" width="80%">
+        </div>
+        <div class="mt-5">
+          <h3>{{'training.h1' | translate}}</h3>
+          <p>{{'training.p1' | translate}}</p>
+
+          <h3>{{'training.h2' | translate}}</h3>
+          <p>{{'training.p2' | translate}}</p>
+
+          <h3>{{'training.h3' | translate}}</h3>
+          <p>{{'training.p3' | translate}}</p>
+
+          <h3>{{'training.h4' | translate}}</h3>
+          <p>{{'training.p4' | translate}}</p>
+
+          <p>{{'training.h5' | translate}}</p>
+          <ol>
+            <li>{{'training.h5l1' | translate}}</li>
+            <li>{{'training.h5l2' | translate}}</li>
+            <li>{{'training.h5l3' | translate}}</li>
+            <li>{{'training.h5l4' | translate}}</li>
+            <li>{{'training.h5l5' | translate}}</li>
+          </ol>
+          <p>{{'training.p5' | translate}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero End -->
+
+</div>

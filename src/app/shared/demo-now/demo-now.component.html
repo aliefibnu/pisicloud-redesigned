@@ -1,0 +1,58 @@
+<section class="six">
+  <div class="container">
+    <div class="row pc">
+      <div class="col-xl-6 mt-5">
+        <img src="assets/images/models.png" style="margin-left: 5em;">
+      </div>
+      <div class="col-xl-5 mt-5">
+        <div innerHTML="{{'demoNow.title' | translate}}"></div>
+        <p class="mb-4">
+          {{'demoNow.subTitle' | translate}}
+        </p>
+        <p>
+          <i-feather class="icon-xs icon mr-2 text-primary" name="phone-call"></i-feather> <span>+62 778 416
+            0250</span>
+        </p>
+        <p>
+          <i-feather class="icon-xs icon mr-2 text-primary" name="message-circle"></i-feather> <span>+62 811 7774
+            744</span>
+        </p>
+        <p>
+          <i-feather class="icon-xs icon mr-2 text-primary" name="mail"></i-feather>
+          <span>{{emailContact}}</span>
+        </p>
+        <button class="btn btn-primary btn-sm mt-4 mb-3" (click)="goToDemo()">
+          {{'header.demo' | translate}}
+        </button>
+      </div>
+    </div>
+
+
+    <div class="row mobile">
+      <div class="col-xl-6 mt-5">
+        <div innerHTML="{{'demoNow.title' | translate}}"></div>
+        <p class="mb-4">
+          {{'demoNow.subTitle' | translate}}
+        </p>
+        <p>
+          <i-feather class="icon-xs icon mr-2 text-primary" name="phone-call"></i-feather> <span>+62 778 416
+            0250</span>
+        </p>
+        <p>
+          <i-feather class="icon-xs icon mr-2 text-primary" name="message-circle"></i-feather> <span>+62 811 7774
+            744</span>
+        </p>
+        <p>
+          <i-feather class="icon-xs icon mr-2 text-primary" name="mail"></i-feather>
+          <span>{{emailContact}}</span>
+        </p>
+        <button class="btn btn-primary btn-sm mt-4 mb-3" (click)="goToDemo()">
+          {{'header.demo' | translate}}
+        </button>
+      </div>
+      <div class="col-xl-6 mt-5">
+        <img src="assets/images/models.png">
+      </div>
+    </div>
+  </div>
+</section>

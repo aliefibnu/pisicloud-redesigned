@@ -1,0 +1,324 @@
+<div class="hero-1-bg" style="background-image: url('assets/images/bg/3.png');">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h1 class="text-dark font-weight-bold mb-5 font-mobile">
+          <div innerHTML="{{'home.start' | translate}}"></div>
+        </h1>
+        <button type="button" class="btn btn-primary btn-sm mr-2" (click)="goToWA()">
+          <i-feather class="icon-size-15 ml-1 icon" name="phone-call"></i-feather> {{'header.contact' | translate}}
+        </button>
+        <!-- <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#myModal">
+          <i-feather class="icon-size-15 ml-1 icon" name="play"></i-feather> {{'home.video' | translate}}
+        </button> -->
+      </div>
+    </div>
+
+    <div class="img-home mt-5">
+      <ngb-carousel #carouselStart [showNavigationArrows]="false" [showNavigationIndicators]="false"
+        (slide)="getIndexCarousel($event)">
+        <ng-template ngbSlide>
+          <img src="assets/images/ss-app/home.png" class="d-block img-fluid" alt="slide 1">
+        </ng-template>
+        <!-- <ng-template ngbSlide>
+          <img src="assets/images/ss-app/home-1.png" class="d-block img-fluid" alt="slide 2">
+        </ng-template> -->
+        <ng-template ngbSlide>
+          <img src="assets/images/ss-app/home-2.png" class="d-block img-fluid" alt="slide 3">
+        </ng-template>
+        <ng-template ngbSlide>
+          <img src="assets/images/ss-app/home-3.png" class="d-block img-fluid" alt="slide 4">
+        </ng-template>
+      </ngb-carousel>
+    </div>
+
+
+  </div>
+
+  <section class="section feather-bg-img">
+    <div class="container">
+      <div class="mt-5">
+        <div class="font-size-16 mb-4" style="text-align: center;">
+          <p class="font-size-16">
+            {{'home.p1' | translate}}
+          </p>
+          <p class="font-size-16">
+            {{'home.p2' | translate}}
+          </p>
+          <p class="font-size-16">
+            {{'home.p3' | translate}}
+          </p>
+          <p class="font-size-16">
+            {{'home.p4' | translate}}
+          </p>
+          <p class="font-size-16">
+            {{'home.p5' | translate}}
+          </p>
+          <p class="font-size-16">
+            {{'home.p6' | translate}}
+          </p>
+          <p class="font-size-16">
+            {{'home.p7' | translate}}
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Features Summary -->
+<section class="section feather-bg-img">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-5">
+          <div innerHTML="{{'home.featureHeader' | translate}}"></div>
+          <hr style="width: 20%; border: 2px solid #1c735a">
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-account-edit icon-feautre-1"></i>
+        <h6>{{'header.recruitment' | translate}}</h6>
+        <p>{{'recruitment.title' | translate}}</p>
+        <a href="/recruitment" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-calendar icon-feautre-5"></i>
+        <h6>{{'header.leavePersonal' | translate}}</h6>
+        <p>{{'leavePersonal.title' | translate}}</p>
+        <a href="/leave-personal" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-calendar-multiple icon-feautre-9"></i>
+        <h6>{{'header.leaveSubmission' | translate}}</h6>
+        <p>{{'leaveSubmission.title' | translate}}</p>
+        <a href="/leave-submission" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-alarm icon-feautre-2"></i>
+        <h6>{{'header.attendanceSoftware' | translate}}</h6>
+        <p>{{'attendanceSoftware.title' | translate}}</p>
+        <a href="/attendance-software" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-calendar-check icon-feautre-6"></i>
+        <h6>{{'header.otPersonal' | translate}}</h6>
+        <p>{{'otPersonal.title' | translate}}</p>
+        <a href="/ot-personal" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-calendar-multiple-check icon-feautre-10"></i>
+        <h6>{{'header.otSubmission' | translate}}</h6>
+        <p>{{'otSubmission.title' | translate}}</p>
+        <a href="/ot-submission" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-bank icon-feautre-3"></i>
+        <h6>{{'header.payrollSoftware' | translate}}</h6>
+        <p>{{'payrollSoftware.title' | translate}}</p>
+        <a href="/ot-submission" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-account-convert icon-feautre-7"></i>
+        <h6>{{'header.employeeUpdate' | translate}}</h6>
+        <p>{{'employeeUpdate.title' | translate}}</p>
+        <a href="/employee-update" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-lan-connect icon-feautre-11"></i>
+        <h6>{{'header.attendanceMachine' | translate}}</h6>
+        <p>{{'attendanceMachine.title' | translate}}</p>
+        <a href="/attendance-machine" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-database icon-feautre-4"></i>
+        <h6>{{'header.databaseManagement' | translate}}</h6>
+        <p>{{'databaseManagement.title' | translate}}</p>
+        <a href="/database-management" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-cellphone icon-feautre-8"></i>
+        <h6>{{'header.attendancePersonal' | translate}}</h6>
+        <p>{{'attendancePersonal.title' | translate}}</p>
+        <a href="/attendance-personal" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+
+      <div class="col-xl-4 mt-5" data-aos="zoom-in-up" data-aos-duration="1500">
+        <i class="mdi mdi-notebook icon-feautre-12"></i>
+        <h6>{{'header.yearlyTax' | translate}}</h6>
+        <p>{{'yearlyTax.title' | translate}}</p>
+        <a href="/yearly-tax" class="text-primary font-weight-semibold">{{'home.more-detail' | translate}}<span
+            class="ml-2 right-icon\">&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Features End -->
+
+
+<!-- Keunggulan Start -->
+<section class="section" style="background-image: url(assets/images/bg/bg-keunggulan.png)">
+  <div class="container mt-5 feather-bg-img">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="mt-5 mb-5">
+          <img src="assets/images/ss-app/keunggulan2.gif" alt="" class="img-fluid d-block border-dark">
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1">
+        <div innerHTML="{{'home.superior' | translate}}"></div>
+        <ul>
+          <li>
+            <p>
+              <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+              {{'home.superior1' | translate}}
+            </p>
+          </li>
+          <li>
+            <p>
+              <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+              {{'home.superior2' | translate}}
+            </p>
+          </li>
+          <li>
+            <p>
+              <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+              {{'home.superior3' | translate}}
+            </p>
+          </li>
+          <li>
+            <p>
+              <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+              {{'home.superior4' | translate}}
+            </p>
+          </li>
+          <li>
+            <p>
+              <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+              {{'home.superior5' | translate}}
+            </p>
+          </li>
+          <li>
+            <p>
+              <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+              {{'home.superior6' | translate}}
+            </p>
+          </li>
+          <li>
+            <p>
+              <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+              {{'home.superior7' | translate}}
+            </p>
+          </li>
+        </ul>
+        <div class="mt-5">
+          <button (click)="goToWA()" class="btn btn-primary mr-3 btn-sm" style="box-shadow: none;">
+            {{'header.contact' | translate}}
+          </button>
+          <a routerLink="/features" class="text-primary font-weight-semibold">{{'home.read' | translate}}<span
+              class="ml-2 right-icon">&#8594;</span></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Keunggulan End -->
+
+<br><br><br><br>
+
+
+<!-- <app-testimonial></app-testimonial> -->
+
+<br><br><br><br>
+
+<!-- Solusi Start -->
+<section class="section feather-bg-img">
+  <div class="container" style="margin-top: -6em; margin-bottom: -6em;">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class=" mt-5 mt-lg-0 mb-5">
+          <img src="assets/images/ss-app/solutions.gif" class="img-fluid d-block mx-auto border-dark">
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1">
+        <div innerHTML="{{'home.solution' | translate}}"></div>
+        <div class="row">
+          <div class="col-xl-12">
+            <ul>
+              <li>
+                <p>
+                  <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+                  {{'header.manufactureCompany' | translate}}
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+                  {{'header.constructionCompany' | translate}}
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+                  {{'header.distributorCompany' | translate}}
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i-feather class="icon-xs mr-1 text-primary" name="check-circle"></i-feather>
+                  {{'header.serviceCompany' | translate}}
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4">
+          <a (click)="goToWA()" class="btn btn-primary mr-3 btn-sm text-white" style="box-shadow: none;">
+            {{'header.contact' | translate}}
+          </a>
+          <a routerLink="/about" class="text-primary font-weight-semibold">{{'home.read' | translate}} <span
+              class="ml-2 right-icon">&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Solusi End -->
+
+<br><br><br><br>

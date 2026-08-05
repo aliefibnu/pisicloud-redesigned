@@ -1,0 +1,83 @@
+.carousel-active {
+    background: #3e87db;
+    -webkit-box-shadow: 0 5px 18px rgba(90, 79, 220, 0.4);
+    box-shadow: 0 5px 18px rgba(90, 79, 220, 0.4);
+    color: #fff !important;
+
+    .wc-box-icon {
+        color: #fff !important;
+        background: rgba(255, 255, 255, 0.12) !important;
+        -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.04);
+        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.04);
+    }
+
+    .wc-subtitle {
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+.carousel-card {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(155, 235, 255, 0.2), 0 6px 20px 0 rgba(0, 195, 255, 0.19);
+}
+
+.img-home {
+    img {
+        height: 35em;
+        display: block;
+        margin: 0 auto;
+
+        @media (max-width:991px) {
+            height: 10em;
+        }
+    }
+}
+
+.img-feature {
+    img {
+        height: 35em;
+        display: block;
+        margin: 0 auto;
+
+        @media (max-width:991px) {
+            height: 100%;
+        }
+    }
+}
+
+.img-content {
+    height: 35em;
+
+    @media (max-width:991px) {
+        height: 20em;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 2.5em;
+    padding-left: 0;
+}
+
+ul>li {
+    position: relative;
+}
+
+.icon-xs {
+    left: -3em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+
+/* NOT RELEVANT TO THE FUNCTION */
+ul {
+    max-width: 500px;
+    margin: 25px auto 0 auto;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-left: 2.5em;
+}

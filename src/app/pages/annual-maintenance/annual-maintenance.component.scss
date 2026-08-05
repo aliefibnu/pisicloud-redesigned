@@ -1,0 +1,36 @@
+.img-menu {
+    img {
+        height: 27em;
+        display: block;
+        margin: 0 auto;
+
+        @media (max-width:991px) {
+            height: 10em;
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul>li {
+    position: relative;
+}
+
+.icon-xs {
+    left: -3em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+
+/* NOT RELEVANT TO THE FUNCTION */
+
+
+li {
+    margin-bottom: 10px;
+    margin-left: 2.5em;
+}

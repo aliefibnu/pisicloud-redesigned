@@ -1,0 +1,40 @@
+/* 
+// 11. Footer
+*/
+
+.footer {
+    background: #1a1a2a;
+    padding: 40px 0 10px;
+
+    .footer-social-icon-content {
+        .footer-social-icon {
+            color: rgba($white, 0.5);
+            transition: all 0.5s;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .footer-sub-menu {
+        li {
+            padding: 6px 0;
+
+            .footer-link {
+                color: white;
+                font-size: 14px;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $white;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.footer-alt {
+    background: darken($dark, 11%);
+}

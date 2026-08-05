@@ -1,0 +1,74 @@
+<section class="section bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4">
+        <div class="mb-4 mb-lg-0">
+          <div class="p-2 bg-soft-primary d-inline-block rounded mb-4">
+            <div class="icon-xxl uim-icon-primary"><span class="uim-svg"><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" width="1em">
+                  <polygon class="uim-primary" points="12 12.3 3.5 7.05 12 1.8 20.5 7.05 12 12.3"></polygon>
+                  <polygon class="uim-quaternary" points="12 22.2 12 12.3 20.5 7.05 20.5 16.95 12 22.2"></polygon>
+                  <polygon class="uim-tertiary" points="12 22.2 3.5 16.95 3.5 7.05 12 12.3 12 22.2"></polygon>
+                </svg></span>
+            </div>
+          </div>
+          <div innerHTML="{{'collapse.fa' | translate}}"></div>
+          <p class="mb-4">
+            {{'collapse.faSub' | translate}}
+          </p>
+          <a (click)="goToWA()" class="btn btn-primary btn-sm text-white">{{'header.contact' | translate}}</a>
+        </div>
+      </div>
+      <div class="col-lg-7 offset-lg-1">
+        <div class="mb-5 mt-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="accordion">
+                <div class="card mb-3">
+                  <div class="card-header" id="heading-1">
+                    <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true"
+                      aria-controls="collapse-1">
+                      <i class="mdi mdi-chart-donut-variant"></i> {{'collapse.faQues1' | translate}}
+                    </a>
+                  </div>
+                  <div id="collapse-1" class="collapse show" data-parent="#accordion" aria-labelledby="heading-1">
+                    <div class="card-body">
+                      <div innerHTML="{{'collapse.faAns1' | translate}}"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="card-header" id="heading-2">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false"
+                      aria-controls="collapse-2">
+                      <i class="mdi mdi-chart-donut-variant"></i> {{'collapse.faQues2' | translate}}
+                    </a>
+                  </div>
+                  <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+                    <div class="card-body">
+                      <div innerHTML="{{'collapse.faAns2' | translate}}"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="card-header" id="heading-3">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false"
+                      aria-controls="collapse-3">
+                      <i class="mdi mdi-chart-donut-variant"></i> {{'collapse.faQues3' | translate}}
+                    </a>
+                  </div>
+                  <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-3">
+                    <div class="card-body">
+                      <div innerHTML="{{'collapse.faAns3' | translate}}"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
