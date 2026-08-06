@@ -1,13 +1,245 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>PisicloudComV3</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PISICloud Header</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              tertiary: '#464e64',
+              'inverse-on-surface': '#eff1f3',
+              'on-tertiary-fixed': '#131b2e',
+              'surface-container-low': '#f2f4f6',
+              'on-error-container': '#93000a',
+              'on-primary': '#ffffff',
+              'tertiary-fixed': '#dae2fd',
+              'on-primary-fixed-variant': '#00513d',
+              'on-background': '#191c1e',
+              'inverse-surface': '#2d3133',
+              'primary-fixed-dim': '#86d6b8',
+              'on-tertiary-container': '#dde4ff',
+              'tertiary-fixed-dim': '#bec6e0',
+              'on-surface-variant': '#3f4944',
+              'secondary-fixed': '#d3e4fe',
+              'on-tertiary': '#ffffff',
+              'on-primary-fixed': '#002117',
+              'on-error': '#ffffff',
+              'on-secondary-container': '#54647a',
+              'error-container': '#ffdad6',
+              'surface-dim': '#d8dadc',
+              'surface-container': '#eceef0',
+              'on-secondary': '#ffffff',
+              primary: '#005944',
+              'on-primary-container': '#a4f5d6',
+              'surface-variant': '#e0e3e5',
+              background: '#f7f9fb',
+              error: '#ba1a1a',
+              'surface-tint': '#0e6b53',
+              'on-tertiary-fixed-variant': '#3f465c',
+              'tertiary-container': '#5e667d',
+              'primary-fixed': '#a1f3d3',
+              outline: '#6f7a74',
+              'on-secondary-fixed': '#0b1c30',
+              'secondary-fixed-dim': '#b7c8e1',
+              'surface-container-high': '#e6e8ea',
+              'on-secondary-fixed-variant': '#38485d',
+              'inverse-primary': '#86d6b8',
+              'surface-container-highest': '#e0e3e5',
+              'outline-variant': '#bec9c2',
+              'on-surface': '#191c1e',
+              'primary-container': '#1c735a',
+              secondary: '#505f76',
+              surface: '#f7f9fb',
+              'surface-container-lowest': '#ffffff',
+              'surface-bright': '#f7f9fb',
+              'secondary-container': '#d0e1fb',
+            },
+            borderRadius: {
+              DEFAULT: '0.25rem',
+              lg: '0.5rem',
+              xl: '0.75rem',
+              full: '9999px',
+            },
+            spacing: {
+              '2xl': '48px',
+              base: '4px',
+              '3xl': '64px',
+              lg: '24px',
+              sm: '12px',
+              gutter: '24px',
+              xl: '32px',
+              'container-margin': '32px',
+              md: '16px',
+              xs: '8px',
+            },
+            fontFamily: {
+              'headline-md': ['Plus Jakarta Sans'],
+              'headline-lg-mobile': ['Plus Jakarta Sans'],
+              'label-md': ['Plus Jakarta Sans'],
+              'label-sm': ['Plus Jakarta Sans'],
+              'headline-sm': ['Plus Jakarta Sans'],
+              'body-sm': ['Plus Jakarta Sans'],
+              'headline-lg': ['Plus Jakarta Sans'],
+              'display-lg': ['Plus Jakarta Sans'],
+              'body-md': ['Plus Jakarta Sans'],
+              'body-lg': ['Plus Jakarta Sans'],
+            },
+            fontSize: {
+              'headline-md': [
+                '24px',
+                {
+                  lineHeight: '32px',
+                  fontWeight: '600',
+                },
+              ],
+              'headline-lg-mobile': [
+                '28px',
+                {
+                  lineHeight: '36px',
+                  fontWeight: '700',
+                },
+              ],
+              'label-md': [
+                '14px',
+                {
+                  lineHeight: '20px',
+                  letterSpacing: '0.05em',
+                  fontWeight: '600',
+                },
+              ],
+              'label-sm': [
+                '12px',
+                {
+                  lineHeight: '16px',
+                  fontWeight: '500',
+                },
+              ],
+              'headline-sm': [
+                '20px',
+                {
+                  lineHeight: '28px',
+                  fontWeight: '600',
+                },
+              ],
+              'body-sm': [
+                '14px',
+                {
+                  lineHeight: '20px',
+                  fontWeight: '400',
+                },
+              ],
+              'headline-lg': [
+                '32px',
+                {
+                  lineHeight: '40px',
+                  letterSpacing: '-0.01em',
+                  fontWeight: '700',
+                },
+              ],
+              'display-lg': [
+                '48px',
+                {
+                  lineHeight: '60px',
+                  letterSpacing: '-0.02em',
+                  fontWeight: '700',
+                },
+              ],
+              'body-md': [
+                '16px',
+                {
+                  lineHeight: '24px',
+                  fontWeight: '400',
+                },
+              ],
+              'body-lg': [
+                '18px',
+                {
+                  lineHeight: '28px',
+                  fontWeight: '400',
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(190, 201, 194, 0.3);
+        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          border-color 0.2s ease;
+      }
+      .glass-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px -4px rgba(0, 89, 68, 0.08);
+        border-color: rgba(0, 89, 68, 0.2);
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+      }
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+      }
+
+      .marquee-content {
+        display: inline-flex;
+        animation: marquee 30s linear infinite;
+      }
+
+      .marquee-content:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        } /* Assuming content is duplicated for smooth loop */
+      }
+
+      /* Ambient subtle shadow for cards */
+      .ambient-shadow {
+        box-shadow:
+          0 10px 30px -5px rgba(0, 89, 68, 0.05),
+          0 5px 15px -10px rgba(0, 89, 68, 0.03);
+      }
+    </style>
+  </head>
+  <body class="bg-background min-h-screen font-body-md text-on-background">
+    <app-root></app-root>
+  </body>
 </html>
