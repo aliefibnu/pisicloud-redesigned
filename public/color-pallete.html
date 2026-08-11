@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Green Shades</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background: #f7f7f7;
+      color: #111;
+    }
+
+    .container {
+      width: min(1200px, 100%);
+      margin: auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .description {
+      margin: 0 0 35px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    .section-title {
+      margin-bottom: 12px;
+
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .colors {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(170px, 1fr)
+      );
+
+      gap: 10px;
+    }
+
+    .color {
+      overflow: hidden;
+
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+    }
+
+    .preview {
+      height: 100px;
+      background: var(--color);
+    }
+
+    .info {
+      padding: 10px 12px;
+    }
+
+    .name {
+      margin-bottom: 3px;
+
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .hex {
+      color: #777;
+
+      font-family:
+        monospace;
+
+      font-size: 12px;
+    }
+
+    .color {
+      cursor: pointer;
+
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+    }
+
+    .color:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 25px 12px;
+      }
+
+      .colors {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .preview {
+        height: 80px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Green Shades</h1>
+
+  <p class="description">
+    Complete green color palette — dark to light.
+  </p>
+
+
+  <!-- DARK -->
+  <section class="section">
+
+    <div class="section-title">
+      Dark Green
+    </div>
+
+    <div class="colors">
+
+      <div class="color" style="--color:#02140A">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Obsidian Green</div>
+          <div class="hex">#02140A</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#031B0F">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Black Green</div>
+          <div class="hex">#031B0F</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#052E16">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Deep Forest</div>
+          <div class="hex">#052E16</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#064E3B">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Dark Forest</div>
+          <div class="hex">#064E3B</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#083C2C">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Pine Green</div>
+          <div class="hex">#083C2C</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#0B3D20">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Hunter Green</div>
+          <div class="hex">#0B3D20</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#0B4D2C">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Evergreen</div>
+          <div class="hex">#0B4D2C</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#14532D">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Forest Green</div>
+          <div class="hex">#14532D</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EMERALD -->
+  <section class="section">
+
+    <div class="section-title">
+      Emerald
+    </div>
+
+    <div class="colors">
+
+      <div class="color" style="--color:#022C22">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 950</div>
+          <div class="hex">#022C22</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#064E3B">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 900</div>
+          <div class="hex">#064E3B</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#065F46">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 800</div>
+          <div class="hex">#065F46</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#047857">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 700</div>
+          <div class="hex">#047857</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#059669">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 600</div>
+          <div class="hex">#059669</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#10B981">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 500</div>
+          <div class="hex">#10B981</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#34D399">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 400</div>
+          <div class="hex">#34D399</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#6EE7B7">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 300</div>
+          <div class="hex">#6EE7B7</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#A7F3D0">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 200</div>
+          <div class="hex">#A7F3D0</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#D1FAE5">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 100</div>
+          <div class="hex">#D1FAE5</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#ECFDF5">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Emerald 50</div>
+          <div class="hex">#ECFDF5</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- GREEN -->
+  <section class="section">
+
+    <div class="section-title">
+      Green
+    </div>
+
+    <div class="colors">
+
+      <div class="color" style="--color:#052E16">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 950</div>
+          <div class="hex">#052E16</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#14532D">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 900</div>
+          <div class="hex">#14532D</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#166534">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 800</div>
+          <div class="hex">#166534</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#15803D">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 700</div>
+          <div class="hex">#15803D</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#16A34A">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 600</div>
+          <div class="hex">#16A34A</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#22C55E">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 500</div>
+          <div class="hex">#22C55E</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#4ADE80">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 400</div>
+          <div class="hex">#4ADE80</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#86EFAC">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 300</div>
+          <div class="hex">#86EFAC</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#BBF7D0">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 200</div>
+          <div class="hex">#BBF7D0</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#DCFCE7">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 100</div>
+          <div class="hex">#DCFCE7</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#F0FDF4">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Green 50</div>
+          <div class="hex">#F0FDF4</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- JADE -->
+  <section class="section">
+
+    <div class="section-title">
+      Jade & Teal
+    </div>
+
+    <div class="colors">
+
+      <div class="color" style="--color:#006B54">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Dark Jade</div>
+          <div class="hex">#006B54</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#00A86B">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Jade</div>
+          <div class="hex">#00A86B</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#00A878">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Jade Green</div>
+          <div class="hex">#00A878</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#2E8B70">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Medium Jade</div>
+          <div class="hex">#2E8B70</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#00897B">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Teal Green</div>
+          <div class="hex">#00897B</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#00695C">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Deep Teal</div>
+          <div class="hex">#00695C</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#00A884">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Ocean Green</div>
+          <div class="hex">#00A884</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#00BFA5">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Turquoise Green</div>
+          <div class="hex">#00BFA5</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LIME -->
+  <section class="section">
+
+    <div class="section-title">
+      Lime & Bright
+    </div>
+
+    <div class="colors">
+
+      <div class="color" style="--color:#365314">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Dark Lime</div>
+          <div class="hex">#365314</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#4D7C0F">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Olive Green</div>
+          <div class="hex">#4D7C0F</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#65A30D">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Lime Green</div>
+          <div class="hex">#65A30D</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#84CC16">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Lime</div>
+          <div class="hex">#84CC16</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#A3E635">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Bright Lime</div>
+          <div class="hex">#A3E635</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#39FF14">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Neon Green</div>
+          <div class="hex">#39FF14</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#7FFF00">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Chartreuse</div>
+          <div class="hex">#7FFF00</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#00FF7F">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Spring Green</div>
+          <div class="hex">#00FF7F</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MINT -->
+  <section class="section">
+
+    <div class="section-title">
+      Mint & Light
+    </div>
+
+    <div class="colors">
+
+      <div class="color" style="--color:#10B981">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Mint 700</div>
+          <div class="hex">#10B981</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#34D399">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Mint 600</div>
+          <div class="hex">#34D399</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#6EE7B7">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Mint 500</div>
+          <div class="hex">#6EE7B7</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#A7F3D0">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Mint 400</div>
+          <div class="hex">#A7F3D0</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#BBF7D0">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Mint 300</div>
+          <div class="hex">#BBF7D0</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#DCFCE7">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Mint 200</div>
+          <div class="hex">#DCFCE7</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#ECFDF5">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Mint 100</div>
+          <div class="hex">#ECFDF5</div>
+        </div>
+      </div>
+
+      <div class="color" style="--color:#F5FFFA">
+        <div class="preview"></div>
+        <div class="info">
+          <div class="name">Soft Mint</div>
+          <div class="hex">#F5FFFA</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+</body>
+</html>
