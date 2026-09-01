@@ -52,8 +52,8 @@
         }
       }
 
-      <!-- Language Selector (Material 3 Menu) -->
-      <div class="relative">
+      <!-- Language Selector (Matching Reference Card) -->
+      <div class="relative" data-language-dropdown>
         <button
           type="button"
           (click)="toggleLanguageMenu()"
@@ -69,40 +69,40 @@
           >
             <polygon points="0,0 6,4 0,8" />
           </svg>
-          <span class="tracking-wide">{{ currentLanguage() }}</span>
-          <span class="text-base leading-none" aria-hidden="true">
-            @if (currentLanguage() === 'English') {
-              🇬🇧
-            } @else {
-              🇮🇩
-            }
-          </span>
+          <span class="tracking-wide">{{ selectedLanguage().name }}</span>
+          <span class="text-base leading-none" aria-hidden="true">{{ selectedLanguage().flag }}</span>
         </button>
 
         @if (isLanguageMenuOpen()) {
           <div
-            class="absolute right-0 mt-2 w-52 rounded-2xl bg-white shadow-lg ring-1 ring-black/5 p-1.5 z-50 text-sm focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+            class="absolute right-0 mt-2 w-64 rounded-2xl bg-[#f2f8fc] border border-slate-200/90 shadow-xl py-4 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
             role="menu"
             aria-orientation="vertical"
           >
-            <button
-              type="button"
-              (click)="setLanguage('English')"
-              class="w-full text-left px-3.5 py-2.5 rounded-xl hover:bg-slate-100/80 active:bg-slate-200/80 flex items-center justify-between text-slate-700 font-medium cursor-pointer transition-colors"
-              role="menuitem"
-            >
-              <span>English</span>
-              <span>🇬🇧</span>
-            </button>
-            <button
-              type="button"
-              (click)="setLanguage('Bahasa Indonesia')"
-              class="w-full text-left px-3.5 py-2.5 rounded-xl hover:bg-slate-100/80 active:bg-slate-200/80 flex items-center justify-between text-slate-700 font-medium cursor-pointer transition-colors"
-              role="menuitem"
-            >
-              <span>Bahasa Indonesia</span>
-              <span>🇮🇩</span>
-            </button>
+            <!-- Header Title matching reference -->
+            <div class="px-5 pb-3">
+              <h3 class="text-base font-semibold text-slate-800 tracking-tight">Languages</h3>
+            </div>
+
+            <!-- Divider Line -->
+            <div class="border-b border-slate-200/90 mb-2"></div>
+
+            <!-- Language List matching reference -->
+            <div class="px-2 space-y-0.5" role="none">
+              @for (lang of languages; track lang.code) {
+                <button
+                  type="button"
+                  (click)="setLanguage(lang)"
+                  [class.bg-slate-200/60]="selectedLanguage().code === lang.code"
+                  [class.font-semibold]="selectedLanguage().code === lang.code"
+                  class="w-full text-left px-4 py-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-300/50 flex items-center gap-2.5 text-slate-800 text-sm cursor-pointer transition-colors"
+                  role="menuitem"
+                >
+                  <span>{{ lang.name }}</span>
+                  <span class="text-base leading-none" aria-hidden="true">{{ lang.flag }}</span>
+                </button>
+              }
+            </div>
           </div>
         }
       </div>
@@ -226,29 +226,23 @@
     <!-- Bottom: Language Selector & CTA Button -->
     <div class="pt-6 border-t border-slate-200/70 space-y-5">
       <!-- Language Selector -->
-      <div class="flex items-center justify-between px-1">
-        <span class="text-sm font-medium text-slate-600">Language:</span>
-        <div class="flex items-center gap-1 bg-slate-200/60 p-1 rounded-full">
-          <button
-            type="button"
-            (click)="setLanguage('English')"
-            [class.bg-white]="currentLanguage() === 'English'"
-            [class.shadow-xs]="currentLanguage() === 'English'"
-            [class.font-bold]="currentLanguage() === 'English'"
-            class="text-xs text-slate-700 px-3 py-1.5 rounded-full cursor-pointer transition-all"
-          >
-            EN 🇬🇧
-          </button>
-          <button
-            type="button"
-            (click)="setLanguage('Bahasa Indonesia')"
-            [class.bg-white]="currentLanguage() === 'Bahasa Indonesia'"
-            [class.shadow-xs]="currentLanguage() === 'Bahasa Indonesia'"
-            [class.font-bold]="currentLanguage() === 'Bahasa Indonesia'"
-            class="text-xs text-slate-700 px-3 py-1.5 rounded-full cursor-pointer transition-all"
-          >
-            ID 🇮🇩
-          </button>
+      <div class="space-y-2 px-1">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Languages</span>
+        <div class="flex flex-wrap gap-1.5">
+          @for (lang of languages; track lang.code) {
+            <button
+              type="button"
+              (click)="setLanguage(lang)"
+              [class.bg-[#066b60]]="selectedLanguage().code === lang.code"
+              [class.text-white]="selectedLanguage().code === lang.code"
+              [class.bg-slate-200/70]="selectedLanguage().code !== lang.code"
+              [class.text-slate-800]="selectedLanguage().code !== lang.code"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium cursor-pointer transition-all active:scale-[0.98]"
+            >
+              <span>{{ lang.name }}</span>
+              <span class="text-sm leading-none" aria-hidden="true">{{ lang.flag }}</span>
+            </button>
+          }
         </div>
       </div>
 
