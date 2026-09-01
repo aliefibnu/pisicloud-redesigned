@@ -15,6 +15,7 @@ export interface NavItem {
   styles: ``,
   host: {
     class: 'block w-full sticky top-0 z-50',
+    '(keydown.escape)': 'closeMobileMenu()',
   },
 })
 export class Navbar {

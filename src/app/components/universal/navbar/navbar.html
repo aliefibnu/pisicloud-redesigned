@@ -148,18 +148,61 @@
     </div>
   </div>
 
-  <!-- Mobile Drawer Menu (Material 3 Modal / Drawer surface) -->
-  @if (isMobileMenuOpen()) {
-    <div id="mobile-menu" class="md:hidden border-t border-slate-200/70 bg-[#eef4f8] px-4 pt-3 pb-6 space-y-4">
-      <div class="space-y-1">
+  <!-- Mobile Backdrop Overlay (Scrim) -->
+  <div
+    class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-40 transition-opacity duration-300 md:hidden"
+    [class.opacity-100]="isMobileMenuOpen()"
+    [class.pointer-events-auto]="isMobileMenuOpen()"
+    [class.opacity-0]="!isMobileMenuOpen()"
+    [class.pointer-events-none]="!isMobileMenuOpen()"
+    (click)="closeMobileMenu()"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Slide-in Navigation Drawer (Sidebar) -->
+  <aside
+    id="mobile-sidebar"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Mobile Navigation Menu"
+    class="fixed top-0 right-0 z-50 h-full w-72 sm:w-80 max-w-[85vw] bg-[#eef4f8] shadow-2xl border-l border-slate-200/70 transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 md:hidden"
+    [class.translate-x-0]="isMobileMenuOpen()"
+    [class.translate-x-full]="!isMobileMenuOpen()"
+  >
+    <!-- Top: Drawer Header with Logo & Close Button -->
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-200/70">
+        <a routerLink="/" (click)="closeMobileMenu()" aria-label="PisiCloud Home">
+          <img
+            ngSrc="/images/PISICloud Logo.svg"
+            alt="PisiCloud Logo"
+            width="140"
+            height="28"
+            class="h-7 w-auto object-contain"
+          />
+        </a>
+        <button
+          type="button"
+          (click)="closeMobileMenu()"
+          class="p-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors cursor-pointer"
+          aria-label="Close navigation menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Middle: Vertical Navigation List -->
+      <nav class="mt-6 space-y-1" aria-label="Mobile main navigation">
         @for (item of navItems; track item.label) {
           @if (item.route) {
             <a
               [routerLink]="item.route"
               (click)="closeMobileMenu()"
-              class="flex items-center gap-3 px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
+              class="flex items-center gap-3 px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#066b60] hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
             >
-              <svg class="w-2 h-2 fill-slate-700" viewBox="0 0 6 8" aria-hidden="true">
+              <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
                 <polygon points="0,0 6,4 0,8" />
               </svg>
               <span>{{ item.label }}</span>
@@ -168,56 +211,60 @@
             <a
               [href]="item.href"
               (click)="closeMobileMenu()"
-              class="flex items-center gap-3 px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
+              class="flex items-center gap-3 px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#066b60] hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
             >
-              <svg class="w-2 h-2 fill-slate-700" viewBox="0 0 6 8" aria-hidden="true">
+              <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
                 <polygon points="0,0 6,4 0,8" />
               </svg>
               <span>{{ item.label }}</span>
             </a>
           }
         }
-      </div>
+      </nav>
+    </div>
 
-      <div class="pt-3 border-t border-slate-200/70 flex items-center justify-between px-3">
+    <!-- Bottom: Language Selector & CTA Button -->
+    <div class="pt-6 border-t border-slate-200/70 space-y-5">
+      <!-- Language Selector -->
+      <div class="flex items-center justify-between px-1">
         <span class="text-sm font-medium text-slate-600">Language:</span>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1 bg-slate-200/60 p-1 rounded-full">
           <button
             type="button"
             (click)="setLanguage('English')"
-            [class.bg-slate-200]="currentLanguage() === 'English'"
+            [class.bg-white]="currentLanguage() === 'English'"
+            [class.shadow-xs]="currentLanguage() === 'English'"
             [class.font-bold]="currentLanguage() === 'English'"
-            class="text-sm text-slate-700 hover:text-[#066b60] px-3 py-1.5 rounded-full cursor-pointer transition-colors"
+            class="text-xs text-slate-700 px-3 py-1.5 rounded-full cursor-pointer transition-all"
           >
-            English 🇬🇧
+            EN 🇬🇧
           </button>
-          <span class="text-slate-300">|</span>
           <button
             type="button"
             (click)="setLanguage('Bahasa Indonesia')"
-            [class.bg-slate-200]="currentLanguage() === 'Bahasa Indonesia'"
+            [class.bg-white]="currentLanguage() === 'Bahasa Indonesia'"
+            [class.shadow-xs]="currentLanguage() === 'Bahasa Indonesia'"
             [class.font-bold]="currentLanguage() === 'Bahasa Indonesia'"
-            class="text-sm text-slate-700 hover:text-[#066b60] px-3 py-1.5 rounded-full cursor-pointer transition-colors"
+            class="text-xs text-slate-700 px-3 py-1.5 rounded-full cursor-pointer transition-all"
           >
             ID 🇮🇩
           </button>
         </div>
       </div>
 
-      <div class="pt-2">
-        <a
-          href="#contact"
-          (click)="closeMobileMenu()"
-          class="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#066b60] text-white text-sm font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#05574e] transition-all active:scale-[0.98]"
-        >
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-            />
-          </svg>
-          <span>Contact Us</span>
-        </a>
-      </div>
+      <!-- Contact Us Pill CTA -->
+      <a
+        href="#contact"
+        (click)="closeMobileMenu()"
+        class="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#066b60] text-white text-sm font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#05574e] transition-all active:scale-[0.98]"
+      >
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+          />
+        </svg>
+        <span>Contact Us</span>
+      </a>
     </div>
-  }
+  </aside>
 </header>
