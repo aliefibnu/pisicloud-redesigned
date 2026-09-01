@@ -29,7 +29,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": []
+              "allowedHosts": ["nonconsistorial-verlene-subdorsally.ngrok-free.dev"]
             },
             "ssr": {
               "entry": "src/server.ts"
@@ -61,6 +61,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": ["nonconsistorial-verlene-subdorsally.ngrok-free.dev"]
+          },
           "configurations": {
             "production": {
               "buildTarget": "pisicloud.com-v3:build:production"
