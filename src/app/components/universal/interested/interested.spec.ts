@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { provideImageKitLoader } from '@angular/common';
 import { Interested } from './interested';
 
 describe('Interested', () => {
@@ -18,5 +18,21 @@ describe('Interested', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render the main headline', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const headline = compiled.querySelector('h2');
+    expect(headline?.textContent).toContain('Interested in PISICloud?');
+  });
+
+  it('should render contact links for whatsapp, phone, and email', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const links = compiled.querySelectorAll('a');
+    const hrefs = Array.from(links).map((l) => l.getAttribute('href'));
+
+    expect(hrefs.some((href) => href?.includes('wa.me/627784160250'))).toBe(true);
+    expect(hrefs.some((href) => href?.includes('tel:+628117774744'))).toBe(true);
+    expect(hrefs.some((href) => href?.includes('mailto:hello@inforsys.co.id'))).toBe(true);
   });
 });
