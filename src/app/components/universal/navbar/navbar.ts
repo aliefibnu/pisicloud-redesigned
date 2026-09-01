@@ -1,6 +1,15 @@
-import { Component, computed, signal } from '@angular/core';
+import {
+  Component,
+  computed,
+  DestroyRef,
+  DOCUMENT,
+  effect,
+  inject,
+  PLATFORM_ID,
+  signal,
+} from '@angular/core';
+import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common';
 
 export interface NavItem {
   readonly label: string;
@@ -34,6 +43,10 @@ export const SUPPORTED_LANGUAGES: readonly LanguageOption[] = [
   },
 })
 export class Navbar {
+  private readonly document = inject(DOCUMENT);
+  private readonly platformId = inject(PLATFORM_ID);
+  private readonly destroyRef = inject(DestroyRef);
+
   readonly isMobileMenuOpen = signal(false);
   readonly isLanguageMenuOpen = signal(false);
 
@@ -50,6 +63,28 @@ export class Navbar {
     { label: 'Features', route: '/feature' },
     { label: 'Resources', href: '#resources' },
   ];
+
+  constructor() {
+    effect(() => {
+      const isOpen = this.isMobileMenuOpen();
+      if (isPlatformBrowser(this.platformId)) {
+        if (isOpen) {
+          this.document.body.style.overflow = 'hidden';
+          this.document.documentElement.style.overflow = 'hidden';
+        } else {
+          this.document.body.style.overflow = '';
+          this.document.documentElement.style.overflow = '';
+        }
+      }
+    });
+
+    this.destroyRef.onDestroy(() => {
+      if (isPlatformBrowser(this.platformId)) {
+        this.document.body.style.overflow = '';
+        this.document.documentElement.style.overflow = '';
+      }
+    });
+  }
 
   toggleMobileMenu(): void {
     this.isMobileMenuOpen.update((open) => !open);
