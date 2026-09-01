@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
 
@@ -40,6 +40,10 @@ export class Navbar {
   readonly languages = SUPPORTED_LANGUAGES;
   readonly selectedLanguage = signal<LanguageOption>(
     SUPPORTED_LANGUAGES.find((l) => l.code === 'en') ?? SUPPORTED_LANGUAGES[0],
+  );
+
+  readonly otherLanguages = computed(() =>
+    this.languages.filter((lang) => lang.code !== this.selectedLanguage().code),
   );
 
   readonly navItems: readonly NavItem[] = [
