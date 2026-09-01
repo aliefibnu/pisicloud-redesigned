@@ -16,10 +16,10 @@ export interface LanguageOption {
 
 export const SUPPORTED_LANGUAGES: readonly LanguageOption[] = [
   { code: 'id', name: 'Indonesia', flag: '🇮🇩' },
+  { code: 'en', name: 'English', flag: '🇬🇧' },
   { code: 'zh', name: '中国', flag: '🇨🇳' },
   { code: 'ja', name: '日本', flag: '🇯🇵' },
   { code: 'ko', name: '한국', flag: '🇰🇷' },
-  { code: 'en', name: 'English', flag: '🇬🇧' },
 ];
 
 @Component({
