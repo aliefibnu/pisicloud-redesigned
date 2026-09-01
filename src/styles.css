@@ -1,3 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+:root {
+  /* Color Styles */
+
+  /* Text Styles */
+  --font-family-material-theme-display-large: 'Roboto';
+  --font-size-material-theme-display-large: 57pxpx;
+  --font-weight-material-theme-display-large: 600;
+  --font-family-material-theme-display-medium: 'Roboto';
+  --font-size-material-theme-display-medium: 45pxpx;
+  --font-weight-material-theme-display-medium: 600;
+  --font-family-material-theme-display-small: 'Roboto';
+  --font-size-material-theme-display-small: 36pxpx;
+  --font-weight-material-theme-display-small: 400;
+  --font-family-material-theme-headline-large: 'Roboto';
+  --font-size-material-theme-headline-large: 32pxpx;
+  --font-weight-material-theme-headline-large: 500;
+  --font-family-material-theme-headline-medium: 'Roboto';
+  --font-size-material-theme-headline-medium: 28pxpx;
+  --font-weight-material-theme-headline-medium: 500;
+  --font-family-material-theme-headline-small: 'Roboto Flex';
+  --font-size-material-theme-headline-small: 24pxpx;
+  --font-weight-material-theme-headline-small: 300;
+  --font-family-material-theme-body-large: 'Roboto';
+  --font-size-material-theme-body-large: 16pxpx;
+  --font-weight-material-theme-body-large: 400;
+  --font-family-material-theme-body-medium: 'Roboto';
+  --font-size-material-theme-body-medium: 14pxpx;
+  --font-weight-material-theme-body-medium: 400;
+  --font-family-material-theme-body-small: 'Roboto';
+  --font-size-material-theme-body-small: 12pxpx;
+  --font-weight-material-theme-body-small: 400;
+  --font-family-material-theme-label-large: 'Roboto';
+  --font-size-material-theme-label-large: 14pxpx;
+  --font-weight-material-theme-label-large: 500;
+  --font-family-material-theme-label-medium: 'Roboto';
+  --font-size-material-theme-label-medium: 12pxpx;
+  --font-weight-material-theme-label-medium: 500;
+  --font-family-material-theme-label-small: 'Roboto';
+  --font-size-material-theme-label-small: 11pxpx;
+  --font-weight-material-theme-label-small: 500;
+  --font-family-material-theme-title-large: 'Roboto';
+  --font-size-material-theme-title-large: 22pxpx;
+  --font-weight-material-theme-title-large: 400;
+  --font-family-material-theme-title-medium: 'Roboto';
+  --font-size-material-theme-title-medium: 16pxpx;
+  --font-weight-material-theme-title-medium: 500;
+  --font-family-material-theme-title-small: 'Roboto';
+  --font-size-material-theme-title-small: 14pxpx;
+  --font-weight-material-theme-title-small: 300;
+
+  --md-sys-color-primary: rgb(6 107 91);
+  --md-sys-color-surface-tint: rgb(6 107 91);
+  --md-sys-color-on-primary: rgb(255 255 255);
+  --md-sys-color-primary-container: rgb(160 242 222);
+  --md-sys-color-on-primary-container: rgb(0 81 68);
+  --md-sys-color-secondary: rgb(74 99 93);
+  --md-sys-color-on-secondary: rgb(255 255 255);
+  --md-sys-color-secondary-container: rgb(205 232 224);
+  --md-sys-color-on-secondary-container: rgb(51 75 69);
+  --md-sys-color-tertiary: rgb(67 98 120);
+  --md-sys-color-on-tertiary: rgb(255 255 255);
+  --md-sys-color-tertiary-container: rgb(200 230 255);
+  --md-sys-color-on-tertiary-container: rgb(42 74 95);
+  --md-sys-color-error: rgb(186 26 26);
+  --md-sys-color-on-error: rgb(255 255 255);
+  --md-sys-color-error-container: rgb(255 218 214);
+  --md-sys-color-on-error-container: rgb(147 0 10);
+  --md-sys-color-background: rgb(245 251 247);
+  --md-sys-color-on-background: rgb(23 29 27);
+  --md-sys-color-surface: rgb(245 251 247);
+  --md-sys-color-on-surface: rgb(23 29 27);
+  --md-sys-color-surface-variant: rgb(219 229 224);
+  --md-sys-color-on-surface-variant: rgb(63 73 70);
+  --md-sys-color-outline: rgb(111 121 118);
+  --md-sys-color-outline-variant: rgb(191 201 196);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(43 50 48);
+  --md-sys-color-inverse-on-surface: rgb(236 242 239);
+  --md-sys-color-inverse-primary: rgb(132 214 194);
+  --md-sys-color-primary-fixed: rgb(160 242 222);
+  --md-sys-color-on-primary-fixed: rgb(0 32 26);
+  --md-sys-color-primary-fixed-dim: rgb(132 214 194);
+  --md-sys-color-on-primary-fixed-variant: rgb(0 81 68);
+  --md-sys-color-secondary-fixed: rgb(205 232 224);
+  --md-sys-color-on-secondary-fixed: rgb(6 32 26);
+  --md-sys-color-secondary-fixed-dim: rgb(177 204 196);
+  --md-sys-color-on-secondary-fixed-variant: rgb(51 75 69);
+  --md-sys-color-tertiary-fixed: rgb(200 230 255);
+  --md-sys-color-on-tertiary-fixed: rgb(0 30 46);
+  --md-sys-color-tertiary-fixed-dim: rgb(170 203 228);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(42 74 95);
+  --md-sys-color-surface-dim: rgb(213 219 216);
+  --md-sys-color-surface-bright: rgb(245 251 247);
+  --md-sys-color-surface-container-lowest: rgb(255 255 255);
+  --md-sys-color-surface-container-low: rgb(239 245 241);
+  --md-sys-color-surface-container: rgb(233 239 236);
+  --md-sys-color-surface-container-high: rgb(227 234 230);
+  --md-sys-color-surface-container-highest: rgb(222 228 224);
+}

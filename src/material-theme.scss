@@ -1,0 +1,170 @@
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+// Custom Material 3 palettes matching the theme tokens in styles.css
+$primary-palette: (
+  0: #000000,
+  10: #00201a,
+  20: #00382f,
+  25: #004439,
+  30: #005144,
+  35: #005e4f,
+  40: #066b5b,
+  50: #288573,
+  60: #46a08c,
+  70: #64bba7,
+  80: #84d6c2,
+  90: #a0f2de,
+  95: #bdfdec,
+  98: #e6fff7,
+  99: #f4fffb,
+  100: #ffffff,
+  secondary: (
+    0: #000000,
+    10: #06201a,
+    20: #1d352f,
+    25: #28403a,
+    30: #334b45,
+    35: #3f5750,
+    40: #4a635d,
+    50: #627c75,
+    60: #7c968f,
+    70: #96b1a9,
+    80: #b1ccc4,
+    90: #cde8e0,
+    95: #dcf7ee,
+    98: #edfff7,
+    99: #f6fffa,
+    100: #ffffff,
+  ),
+  neutral: (
+    0: #000000,
+    10: #171d1b,
+    20: #2b3230,
+    25: #363d3b,
+    30: #424946,
+    35: #4d5452,
+    40: #59605d,
+    50: #727976,
+    60: #8c938f,
+    70: #a6ada9,
+    80: #c2c9c5,
+    90: #dee4e0,
+    95: #ecf2ef,
+    98: #f5fbf7,
+    99: #f8fefb,
+    100: #ffffff,
+    4: #090f0d,
+    6: #0e1513,
+    12: #1b211f,
+    17: #252b29,
+    22: #303634,
+    24: #343b38,
+    87: #d5dbd8,
+    92: #e3eae6,
+    94: #e9efec,
+    96: #eff5f1,
+  ),
+  neutral-variant: (
+    0: #000000,
+    10: #131e1b,
+    20: #27332f,
+    25: #323e3a,
+    30: #3f4946,
+    35: #4a5551,
+    40: #56615d,
+    50: #6f7976,
+    60: #89938f,
+    70: #a3ada9,
+    80: #bfc9c4,
+    90: #dbe5e0,
+    95: #e9f4ee,
+    98: #f5fbf7,
+    99: #f8fefb,
+    100: #ffffff,
+  ),
+  error: (
+    0: #000000,
+    10: #410002,
+    20: #690005,
+    25: #7e0007,
+    30: #93000a,
+    35: #a80710,
+    40: #ba1a1a,
+    50: #de3730,
+    60: #ff5449,
+    70: #ff897d,
+    80: #ffb4ab,
+    90: #ffdad6,
+    95: #ffedea,
+    98: #fff8f7,
+    99: #fffbff,
+    100: #ffffff,
+  ),
+);
+
+$tertiary-palette: (
+  0: #000000,
+  10: #001e2e,
+  20: #103347,
+  25: #1c3f53,
+  30: #2a4a5f,
+  35: #37566b,
+  40: #436278,
+  50: #5b7b92,
+  60: #7595ac,
+  70: #8fb0c7,
+  80: #aacbe4,
+  90: #c8e6ff,
+  95: #e1f2ff,
+  98: #f5f9ff,
+  99: #fcfcff,
+  100: #ffffff,
+  secondary: map.get($primary-palette, secondary),
+  neutral: map.get($primary-palette, neutral),
+  neutral-variant: map.get($primary-palette, neutral-variant),
+  error: map.get($primary-palette, error),
+);
+
+html {
+  height: 100%;
+  @include mat.theme(
+    (
+      color: (
+        primary: $primary-palette,
+        tertiary: $tertiary-palette,
+      ),
+      typography: (
+        plain-family: Roboto,
+        brand-family: Roboto,
+        bold-weight: 600,
+        medium-weight: 500,
+        regular-weight: 400,
+      ),
+      density: 0,
+    )
+  );
+}
+
+body {
+  // Default the application to a light color theme. This can be changed to
+  // `dark` to enable the dark color theme, or to `light dark` to defer to the
+  // user's system settings.
+  color-scheme: light;
+
+  // Set a default background, font and text colors for the application using
+  // Angular Material's system-level CSS variables. Learn more about these
+  // variables at https://material.angular.dev/guide/system-variables
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+  height: 100%;
+}
