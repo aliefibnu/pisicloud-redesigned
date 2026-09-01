@@ -7,6 +7,7 @@ import {
   bootstrapTelephone,
   bootstrapTelephoneFill,
   bootstrapEnvelope,
+  bootstrapPlayCircleFill,
 } from '@ng-icons/bootstrap-icons';
 
 @Component({
@@ -18,6 +19,7 @@ import {
       bootstrapTelephone,
       bootstrapTelephoneFill,
       bootstrapEnvelope,
+      bootstrapPlayCircleFill,
     }),
   ],
   templateUrl: './interested.html',

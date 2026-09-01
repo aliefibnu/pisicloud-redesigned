@@ -35,4 +35,14 @@ describe('Interested', () => {
     expect(hrefs.some((href) => href?.includes('tel:+628117774744'))).toBe(true);
     expect(hrefs.some((href) => href?.includes('mailto:hello@inforsys.co.id'))).toBe(true);
   });
+
+  it('should render both Contact Us and View Demo Video CTA buttons', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const buttons = compiled.querySelectorAll('a[mat-flat-button]');
+    expect(buttons.length).toBe(2);
+
+    const buttonTexts = Array.from(buttons).map((b) => b.textContent?.trim());
+    expect(buttonTexts.some((t) => t?.includes('Contact Us'))).toBe(true);
+    expect(buttonTexts.some((t) => t?.includes('View Demo Video'))).toBe(true);
+  });
 });
