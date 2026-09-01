@@ -37,6 +37,22 @@
           }
         }
       }
+    },
+    {
+      "label": "Peringatan Git Pull",
+      "type": "shell",
+      "command": "echo '=========================================' && echo '🚨 PERINGATAN: PASTIKAN SUDAH PULL REBASE SEBELUM CODING! 🚨' && echo '========================================='",
+      "windows": {
+        "command": "echo ========================================= && echo 🚨 PERINGATAN: PASTIKAN SUDAH PULL REBASE SEBELUM CODING! 🚨 && echo ========================================="
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
     }
   ]
 }
