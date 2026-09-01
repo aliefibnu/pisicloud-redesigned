@@ -1,0 +1,271 @@
+<header class="w-full bg-[#eef4f8] border-b border-slate-200/60 transition-colors">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-18 flex items-center justify-between">
+    <!-- Brand Logo -->
+    <a
+      routerLink="/"
+      (click)="closeMobileMenu()"
+      class="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] focus-visible:ring-offset-2 rounded-lg p-1 transition-transform active:scale-[0.98]"
+      aria-label="PisiCloud Home"
+    >
+      <img
+        ngSrc="/images/PISICloud Logo.svg"
+        alt="PisiCloud Logo"
+        width="173"
+        height="35"
+        priority
+        class="h-8 w-auto object-contain"
+      />
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-2 lg:gap-4" aria-label="Main navigation">
+      @for (item of navItems; track item.label) {
+        @if (item.route) {
+          <a
+            [routerLink]="item.route"
+            class="group inline-flex items-center gap-2 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60]"
+          >
+            <!-- Right-pointing triangle indicator -->
+            <svg
+              class="w-2.5 h-2.5 fill-[#3c4b4c] group-hover:fill-[#00382f] transition-colors shrink-0"
+              viewBox="0 0 6 8"
+              aria-hidden="true"
+            >
+              <polygon points="0,0 6,4 0,8" />
+            </svg>
+            <span class="tracking-wide">{{ item.label }}</span>
+          </a>
+        } @else {
+          <a
+            [href]="item.href"
+            class="group inline-flex items-center gap-2 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60]"
+          >
+            <svg
+              class="w-2.5 h-2.5 fill-[#3c4b4c] group-hover:fill-[#00382f] transition-colors shrink-0"
+              viewBox="0 0 6 8"
+              aria-hidden="true"
+            >
+              <polygon points="0,0 6,4 0,8" />
+            </svg>
+            <span class="tracking-wide">{{ item.label }}</span>
+          </a>
+        }
+      }
+
+      <!-- Language Selector (Hover pill state + active open state) -->
+      <div class="relative" data-language-dropdown>
+        <button
+          type="button"
+          (click)="toggleLanguageMenu()"
+          class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
+          [class.bg-[#cde8e0]]="isLanguageMenuOpen()"
+          [class.text-[#00382f]]="isLanguageMenuOpen()"
+          [attr.aria-expanded]="isLanguageMenuOpen()"
+          aria-haspopup="true"
+          aria-label="Select Language"
+        >
+          <!-- Downward Chevron on Left -->
+          <svg
+            class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
+            [class.rotate-180]="isLanguageMenuOpen()"
+            [class.text-[#00382f]]="isLanguageMenuOpen()"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+          <span class="tracking-wide">{{ selectedLanguage().name }}</span>
+          <span class="text-base leading-none" aria-hidden="true">{{ selectedLanguage().flag }}</span>
+        </button>
+
+        <!-- Figma Dropdown Card: Centered Horizontally (left-1/2 -translate-x-1/2) -->
+        @if (isLanguageMenuOpen()) {
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-76.25 rounded-2xl bg-[#F2F8FC] border border-slate-200/90 shadow-xl shadow-slate-900/10 px-6 pt-5 pb-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+            role="menu"
+            aria-orientation="vertical"
+          >
+            <!-- Header Title -->
+            <h3 class="text-base font-bold text-slate-800 tracking-tight">Languages</h3>
+
+            <!-- Divider Line -->
+            <div class="border-b border-slate-200/80 my-3"></div>
+
+            <!-- Other Languages List (Text Left, Flag Right) -->
+            <div class="space-y-1" role="none">
+              @for (lang of otherLanguages(); track lang.code) {
+                <button
+                  type="button"
+                  (click)="setLanguage(lang)"
+                  class="w-full text-left py-2 px-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-200/80 flex items-center gap-2.5 text-slate-700 text-sm font-medium cursor-pointer transition-colors"
+                  role="menuitem"
+                >
+                  <span>{{ lang.name }}</span>
+                  <span class="text-base leading-none" aria-hidden="true">{{ lang.flag }}</span>
+                </button>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </nav>
+
+    <!-- Right Side CTA Button (Material 3 Filled / Extended FAB Button) -->
+    <div class="hidden md:flex items-center">
+      <a
+        href="#contact"
+        class="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-[#066b60] text-white text-sm font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#05574e] active:shadow-none active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] focus-visible:ring-offset-2"
+      >
+        <svg
+          class="w-4 h-4 fill-current shrink-0"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+          />
+        </svg>
+        <span>Contact Us</span>
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle (Material 3 Icon Button) -->
+    <div class="flex md:hidden">
+      <button
+        type="button"
+        (click)="toggleMobileMenu()"
+        class="p-2.5 rounded-full text-slate-700 hover:bg-slate-200/60 active:bg-slate-300/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] transition-colors cursor-pointer"
+        [attr.aria-expanded]="isMobileMenuOpen()"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          @if (!isMobileMenuOpen()) {
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          } @else {
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          }
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Backdrop Overlay (Scrim) -->
+  <div
+    class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-40 transition-opacity duration-300 md:hidden"
+    [class.opacity-100]="isMobileMenuOpen()"
+    [class.pointer-events-auto]="isMobileMenuOpen()"
+    [class.opacity-0]="!isMobileMenuOpen()"
+    [class.pointer-events-none]="!isMobileMenuOpen()"
+    (click)="closeMobileMenu()"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Slide-in Navigation Drawer (Sidebar) -->
+  <aside
+    id="mobile-sidebar"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Mobile Navigation Menu"
+    class="fixed top-0 right-0 z-50 h-full w-72 sm:w-80 max-w-[85vw] bg-[#eef4f8] shadow-2xl border-l border-slate-200/70 transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 md:hidden"
+    [class.translate-x-0]="isMobileMenuOpen()"
+    [class.translate-x-full]="!isMobileMenuOpen()"
+  >
+    <!-- Top: Drawer Header with Logo & Close Button -->
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-200/70">
+        <a routerLink="/" (click)="closeMobileMenu()" aria-label="PisiCloud Home">
+          <img
+            ngSrc="/images/PISICloud Logo.svg"
+            alt="PisiCloud Logo"
+            width="140"
+            height="28"
+            class="h-7 w-auto object-contain"
+          />
+        </a>
+        <button
+          type="button"
+          (click)="closeMobileMenu()"
+          class="p-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors cursor-pointer"
+          aria-label="Close navigation menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Middle: Vertical Navigation List -->
+      <nav class="mt-6 space-y-1" aria-label="Mobile main navigation">
+        @for (item of navItems; track item.label) {
+          @if (item.route) {
+            <a
+              [routerLink]="item.route"
+              (click)="closeMobileMenu()"
+              class="flex items-center gap-3 px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#066b60] hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
+            >
+              <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
+                <polygon points="0,0 6,4 0,8" />
+              </svg>
+              <span>{{ item.label }}</span>
+            </a>
+          } @else {
+            <a
+              [href]="item.href"
+              (click)="closeMobileMenu()"
+              class="flex items-center gap-3 px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#066b60] hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
+            >
+              <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
+                <polygon points="0,0 6,4 0,8" />
+              </svg>
+              <span>{{ item.label }}</span>
+            </a>
+          }
+        }
+      </nav>
+    </div>
+
+    <!-- Bottom: Language Selector & CTA Button -->
+    <div class="pt-6 border-t border-slate-200/70 space-y-5">
+      <!-- Language Selector -->
+      <div class="space-y-2 px-1">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Languages</span>
+        <div class="flex flex-wrap gap-1.5">
+          @for (lang of languages; track lang.code) {
+            <button
+              type="button"
+              (click)="setLanguage(lang)"
+              [class.bg-[#066b60]]="selectedLanguage().code === lang.code"
+              [class.text-white]="selectedLanguage().code === lang.code"
+              [class.bg-slate-200/70]="selectedLanguage().code !== lang.code"
+              [class.text-slate-800]="selectedLanguage().code !== lang.code"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium cursor-pointer transition-all active:scale-[0.98]"
+            >
+              <span>{{ lang.name }}</span>
+              <span class="text-sm leading-none" aria-hidden="true">{{ lang.flag }}</span>
+            </button>
+          }
+        </div>
+      </div>
+
+      <!-- Contact Us Pill CTA -->
+      <a
+        href="#contact"
+        (click)="closeMobileMenu()"
+        class="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#066b60] text-white text-sm font-medium tracking-wide shadow-sm hover:shadow-md hover:bg-[#05574e] transition-all active:scale-[0.98]"
+      >
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+          />
+        </svg>
+        <span>Contact Us</span>
+      </a>
+    </div>
+  </aside>
+</header>
