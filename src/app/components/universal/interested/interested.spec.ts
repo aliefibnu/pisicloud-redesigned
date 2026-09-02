@@ -38,7 +38,7 @@ describe('Interested', () => {
 
   it('should render both Contact Us and View Demo Video CTA buttons', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const buttons = compiled.querySelectorAll('a[mat-flat-button]');
+    const buttons = compiled.querySelectorAll('[mat-flat-button]');
     expect(buttons.length).toBe(2);
 
     const buttonTexts = Array.from(buttons).map((b) => b.textContent?.trim());
