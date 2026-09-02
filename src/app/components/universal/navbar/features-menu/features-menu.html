@@ -3,15 +3,17 @@
     <button
       type="button"
       (click)="toggleMenu()"
-      class="group inline-flex items-center gap-2 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-800 bg-[#ede7f6] hover:bg-[#e2d8f0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
-      [class.bg-[#e2d8f0]]="isOpen()"
+      class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
+      [class.bg-[#cde8e0]]="isOpen()"
+      [class.text-[#00382f]]="isOpen()"
       [attr.aria-expanded]="isOpen()"
       aria-haspopup="true"
       aria-label="Features navigation menu"
     >
       <svg
-        class="w-3.5 h-3.5 text-slate-700 transition-transform duration-200 shrink-0"
+        class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
         [class.rotate-180]="isOpen()"
+        [class.text-[#00382f]]="isOpen()"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -160,7 +162,7 @@
     <button
       type="button"
       (click)="toggleMobileAccordion()"
-      class="flex items-center justify-between w-full px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#066b60] hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
+      class="flex items-center justify-between w-full px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:bg-[#b1ccc4] transition-colors"
       [attr.aria-expanded]="isMobileExpanded()"
     >
       <div class="flex items-center gap-3">
