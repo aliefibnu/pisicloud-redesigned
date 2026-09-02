@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WhyChoseUs } from './why-chose-us';
 
 describe('WhyChoseUs', () => {
@@ -13,10 +12,17 @@ describe('WhyChoseUs', () => {
 
     fixture = TestBed.createComponent(WhyChoseUs);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the why-choose-us component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should display the main section header', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const header = compiled.querySelector('h2');
+    expect(header?.textContent).toContain('Why Choose');
+    expect(header?.textContent).toContain('PISICloud');
   });
 });

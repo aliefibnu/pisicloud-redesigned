@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './why-chose-us.html',
   styles: ``,
 })
-export class WhyChoseUs {}
+export class WhyChoseUs {
+  // Komponen ini bertindak sebagai presenter statis untuk struktur Bento Grid
+}
+
+export { WhyChoseUs as WhyChooseUsComponent };
