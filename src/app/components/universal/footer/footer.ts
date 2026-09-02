@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'universal-footer, app-footer',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './footer.html',
 })
@@ -16,4 +17,4 @@ export class Footer {
   }
 }
 
-export { Footer as FooterComponent };
+export { Footer as FooterComponent };

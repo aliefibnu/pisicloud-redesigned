@@ -4,9 +4,9 @@
     <!-- Left Column: Logo & Address/Contact (Spans 5 cols) -->
     <div class="md:col-span-5 flex flex-col gap-6">
       <!-- Logo -->
-      <div class="flex items-center gap-2 text-3xl font-extrabold tracking-tight">
-        <span class="text-red-600 font-bold">infor</span><span class="text-gray-900">sys</span>
-      </div>
+    <div class="flex items-center">
+    <img src="/images/footer/inforsys.png" alt="Inforsys" class="h-8 w-auto" />
+    </div>
 
       <!-- Contact Info -->
       <ul class="space-y-4 text-sm md:text-base text-gray-700 p-0 m-0 list-none">
@@ -31,8 +31,9 @@
         </li>
 
         <li class="flex items-center gap-3">
-          <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+          <!-- WhatsApp Icon -->
+          <svg class="w-5 h-5 text-gray-500 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.85 9.85 0 004.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.11.11-1.79-.11-.41-.13-.94-.31-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08.99-2.37.26-.28.57-.35.76-.35h.55c.18 0 .42-.07.65.5.24.58.82 2.01.89 2.16.07.15.11.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.13-.28.28-.12.55.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.6-.14.24.09 1.53.72 1.79.85.26.14.44.2.5.31.06.14.06.72-.18 1.4z"/>
           </svg>
           <span class="text-gray-700 font-medium">(+62) 811 7774 744</span>
         </li>
@@ -73,13 +74,32 @@
       <!-- Social Media Badges -->
       <div class="flex items-center gap-3 mt-10">
         <!-- LinkedIn -->
-        <a href="#" class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center font-bold text-sm hover:opacity-90 transition-opacity">in</a>
-        <!-- Komdigi Icon -->
-        <a href="#" class="h-10 px-3 rounded-lg border border-gray-200 bg-white flex items-center justify-center text-teal-600 font-bold text-xs uppercase hover:bg-gray-50 transition-colors">KOMDIGI</a>
+        <a href="#" class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center hover:opacity-90 transition-opacity" aria-label="LinkedIn">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+          </svg>
+        </a>
+
+        <!-- Komdigi -->
+        <a href="#" class="h-10 w-10 rounded-lg border border-gray-200 bg-white flex items-center justify-center gap-1.5 hover:bg-gray-50 transition-colors" aria-label="Komdigi">
+          <img src="/images/footer/komdigi.png" alt="Komdigi" class="h-[70%] w-auto" />
+        </a>
+
         <!-- Instagram -->
-        <a href="#" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white flex items-center justify-center font-bold text-sm hover:opacity-90 transition-opacity">📷</a>
+        <a href="#" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white flex items-center justify-center hover:opacity-90 transition-opacity" aria-label="Instagram">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+
         <!-- Facebook -->
-        <a href="#" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-base hover:opacity-90 transition-opacity">f</a>
+        <a href="#" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:opacity-90 transition-opacity" aria-label="Facebook">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>
       </div>
     </div>
 
@@ -87,7 +107,7 @@
 
   <!-- Bottom Dark Green Bar / Copyright -->
   <div class="bg-[#0b6953] text-white text-center py-4 text-sm font-medium">
-    <p class="m-0">2026 © PT Inforsys Indonesia</p>
+    <p class="m-0">{{ currentYear }} © PT Inforsys Indonesia</p>
   </div>
 
   <!-- Back to top button -->
