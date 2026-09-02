@@ -1,1 +1,162 @@
-<p>solution works!</p>
+<section
+  id="solution"
+  class="w-full bg-[#f8faf8] py-16 sm:py-20 lg:py-24 overflow-hidden select-none"
+  aria-labelledby="solution-heading"
+>
+  <div class="w-full">
+    <!-- HEADING: 2 lines, centered, PISICloud teal #0F7A6B, rest #333333 -->
+    <div class="text-center max-w-4xl mx-auto mb-10 sm:mb-14 px-4">
+      <h2
+        id="solution-heading"
+        class="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#333333] tracking-tight leading-tight"
+      >
+        <span class="text-[#0F7A6B]">PISICloud</span> Can be a solution for<br class="hidden sm:inline" />
+        various business sectors among them
+      </h2>
+    </div>
+
+    <!-- CAROUSEL VIEWPORT CONTAINER WITH LEFT & RIGHT ARROWS -->
+    <div class="relative w-full overflow-hidden py-2">
+      <!-- Left Navigation Arrow Button -->
+      <button
+        type="button"
+        (click)="prev(); pauseAutoScroll(); resumeAutoScroll()"
+        class="absolute left-3 sm:left-6 lg:left-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white flex items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
+        aria-label="Previous business sector"
+      >
+        <svg
+          class="w-5 h-5 sm:w-6 sm:h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M15 18l-6-6 6-6"></path>
+        </svg>
+      </button>
+
+      <!-- Right Navigation Arrow Button -->
+      <button
+        type="button"
+        (click)="next(); pauseAutoScroll(); resumeAutoScroll()"
+        class="absolute right-3 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white flex items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
+        aria-label="Next business sector"
+      >
+        <svg
+          class="w-5 h-5 sm:w-6 sm:h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M9 18l6-6-6-6"></path>
+        </svg>
+      </button>
+
+      <!-- Sliding Track -->
+      <div
+        class="flex items-center"
+        [class.transition-transform]="!disableTransition()"
+        [class.duration-600]="!disableTransition()"
+        [class.ease-[cubic-bezier(0.2,0,0,1)]]="!disableTransition()"
+        [style.transform]="trackTransform()"
+        (transitionend)="onTrackTransitionEnd($event)"
+        (mouseenter)="pauseAutoScroll()"
+        (mouseleave)="resumeAutoScroll()"
+        (touchstart)="onTouchStart($event)"
+        (touchend)="onTouchEnd($event)"
+      >
+        @for (item of virtualSlides; track item.virtualIdx) {
+          <article
+            class="shrink-0 aspect-[4/3] relative rounded-[24px] sm:rounded-[32px] overflow-hidden select-none cursor-pointer transition-all duration-600 ease-[cubic-bezier(0.2,0,0,1)]"
+            [style.width]="'var(--sol-card-w)'"
+            [style.margin]="'0 var(--sol-card-gap)'"
+            [class.scale-100]="virtualIndex() === item.virtualIdx"
+            [class.opacity-100]="virtualIndex() === item.virtualIdx"
+            [class.shadow-2xl]="virtualIndex() === item.virtualIdx"
+            [class.z-10]="virtualIndex() === item.virtualIdx"
+            [class.scale-[0.93]]="virtualIndex() !== item.virtualIdx"
+            [class.opacity-65]="virtualIndex() !== item.virtualIdx"
+            [class.hover:opacity-85]="virtualIndex() !== item.virtualIdx"
+            [class.shadow-md]="virtualIndex() !== item.virtualIdx"
+            [class.z-0]="virtualIndex() !== item.virtualIdx"
+            (click)="goToVirtual(item.virtualIdx)"
+            role="group"
+            [attr.aria-roledescription]="'slide'"
+            [attr.aria-label]="(item.slideIndex + 1) + ' of ' + baseSlides.length + ': ' + item.slide.label"
+          >
+            <!-- Card Image -->
+            <img
+              [ngSrc]="item.slide.image"
+              [alt]="item.slide.alt"
+              width="637"
+              height="480"
+              class="w-full h-full object-cover select-none pointer-events-none"
+            />
+
+            <!-- Dark Bottom Gradient for High Contrast Text Legibility -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent pointer-events-none"
+            ></div>
+
+            <!-- Overlay Text at Bottom-Left -->
+            <div
+              class="absolute bottom-6 sm:bottom-8 lg:bottom-10 left-6 sm:left-8 lg:left-10 right-6 sm:right-10 text-white z-10 pointer-events-none"
+            >
+              <!-- Label / Sector Title: Bold, White, ~28px -->
+              <h3
+                class="text-2xl sm:text-[28px] font-bold text-white tracking-tight leading-tight drop-shadow-md"
+              >
+                {{ item.slide.label }}
+              </h3>
+
+              <!-- Supporting Text Description: Shown clearly on center active card -->
+              <p
+                class="text-xs sm:text-sm text-white/90 font-normal mt-1 sm:mt-1.5 leading-relaxed drop-shadow-sm transition-opacity duration-300 max-w-lg"
+                [class.opacity-100]="virtualIndex() === item.virtualIdx"
+                [class.opacity-0]="virtualIndex() !== item.virtualIdx"
+              >
+                {{ item.slide.supportingText }}
+              </p>
+            </div>
+          </article>
+        }
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW: Centered 4 Dots -->
+    <div
+      class="mt-8 sm:mt-10 flex items-center justify-center"
+      role="tablist"
+      aria-label="Sector slides pagination"
+    >
+      <div class="flex items-center justify-center gap-2">
+        @for (slide of baseSlides; track slide.id; let idx = $index) {
+          <button
+            type="button"
+            (click)="goToSlideIndex(idx); pauseAutoScroll(); resumeAutoScroll()"
+            class="h-2 rounded-full transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2"
+            [class.w-7]="activeSlideIndex() === idx"
+            [class.bg-[#1b2220]]="activeSlideIndex() === idx"
+            [class.w-2]="activeSlideIndex() !== idx"
+            [class.bg-slate-300]="activeSlideIndex() !== idx"
+            [class.hover:bg-slate-400]="activeSlideIndex() !== idx"
+            [attr.aria-label]="'Go to slide ' + (idx + 1) + ': ' + slide.label"
+            [attr.aria-selected]="activeSlideIndex() === idx"
+            role="tab"
+          ></button>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
