@@ -1,0 +1,156 @@
+@if (variant() === 'desktop') {
+  <div class="relative" data-nav-dropdown>
+    <button
+      type="button"
+      (click)="toggleMenu()"
+      class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
+      [class.bg-[#cde8e0]]="isOpen()"
+      [class.text-[#00382f]]="isOpen()"
+      [attr.aria-expanded]="isOpen()"
+      aria-haspopup="true"
+      aria-label="Resources navigation menu"
+    >
+      <svg
+        class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
+        [class.rotate-180]="isOpen()"
+        [class.text-[#00382f]]="isOpen()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+      <span class="tracking-wide">Resources</span>
+    </button>
+
+    @if (isOpen()) {
+      <div
+        class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-84 sm:w-92 rounded-2xl bg-white border border-slate-200/90 shadow-xl shadow-slate-900/10 px-6 pt-5 pb-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+        role="menu"
+        aria-orientation="vertical"
+      >
+        <h3 class="text-base font-bold text-slate-800 tracking-tight">Resources</h3>
+        <div class="border-b border-slate-200/80 my-3"></div>
+
+        <div class="space-y-1.5" role="none">
+          @for (resource of resources; track resource.title) {
+            <a
+              [routerLink]="resource.route"
+              [fragment]="resource.fragment"
+              (click)="onItemClick()"
+              class="group w-full text-left py-2.5 px-3 rounded-xl hover:bg-[#cde8e0] active:bg-[#b1ccc4] flex items-start gap-3 text-slate-700 hover:text-[#00382f] cursor-pointer transition-colors"
+              role="menuitem"
+            >
+              <div class="mt-0.5 text-slate-700 group-hover:text-[#00382f] transition-colors shrink-0">
+                @switch (resource.iconType) {
+                  @case ('about') {
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                    </svg>
+                  }
+                  @case ('strategy') {
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                      <line x1="9" y1="3" x2="9" y2="18" />
+                      <line x1="15" y1="6" x2="15" y2="21" />
+                    </svg>
+                  }
+                  @case ('customers') {
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                  }
+                }
+              </div>
+
+              <div class="flex flex-col">
+                <span class="text-sm font-medium text-slate-700 group-hover:text-[#00382f] transition-colors">
+                  {{ resource.title }}
+                </span>
+                @if (resource.description) {
+                  <p class="text-xs text-slate-500 leading-snug group-hover:text-slate-600 transition-colors mt-0.5">
+                    {{ resource.description }}
+                  </p>
+                }
+              </div>
+            </a>
+          }
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <div class="w-full">
+    <button
+      type="button"
+      (click)="toggleMobileAccordion()"
+      class="flex items-center justify-between w-full px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:bg-[#b1ccc4] transition-colors"
+      [attr.aria-expanded]="isMobileExpanded()"
+    >
+      <div class="flex items-center gap-3">
+        <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
+          <polygon points="0,0 6,4 0,8" />
+        </svg>
+        <span>Resources</span>
+      </div>
+      <svg
+        class="w-4 h-4 text-slate-600 transition-transform duration-200"
+        [class.rotate-180]="isMobileExpanded()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+
+    @if (isMobileExpanded()) {
+      <div class="pl-4 pr-2 py-1 space-y-1 mt-1 animate-in fade-in duration-150">
+        @for (resource of resources; track resource.title) {
+          <a
+            [routerLink]="resource.route"
+            [fragment]="resource.fragment"
+            (click)="onItemClick()"
+            class="flex items-start gap-2.5 px-3 py-2 rounded-lg text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] transition-colors"
+          >
+            <div class="mt-0.5 text-slate-600 shrink-0">
+              @switch (resource.iconType) {
+                @case ('about') {
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                  </svg>
+                }
+                @case ('strategy') {
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                    <line x1="9" y1="3" x2="9" y2="18" />
+                    <line x1="15" y1="6" x2="15" y2="21" />
+                  </svg>
+                }
+                @case ('customers') {
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                }
+              }
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="text-sm font-medium truncate">{{ resource.title }}</span>
+              @if (resource.description) {
+                <span class="text-xs text-slate-500 line-clamp-1">{{ resource.description }}</span>
+              }
+            </div>
+          </a>
+        }
+      </div>
+    }
+  </div>
+}

@@ -1,6 +1,5 @@
 import {
   Component,
-  computed,
   DestroyRef,
   DOCUMENT,
   effect,
@@ -10,30 +9,21 @@ import {
 } from '@angular/core';
 import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { FeaturesMenu } from './features-menu/features-menu';
+import { ResourcesMenu } from './resources-menu/resources-menu';
+import {
+  LanguageMenu,
+  type LanguageOption,
+  SUPPORTED_LANGUAGES,
+} from './language-menu/language-menu';
 
-export interface NavItem {
-  readonly label: string;
-  readonly route?: string;
-  readonly href?: string;
-}
+export { type LanguageOption, SUPPORTED_LANGUAGES };
 
-export interface LanguageOption {
-  readonly code: string;
-  readonly name: string;
-  readonly flag: string;
-}
-
-export const SUPPORTED_LANGUAGES: readonly LanguageOption[] = [
-  { code: 'id', name: 'Indonesia', flag: '🇮🇩' },
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'zh', name: '中国', flag: '🇨🇳' },
-  { code: 'ja', name: '日本', flag: '🇯🇵' },
-  { code: 'ko', name: '한국', flag: '🇰🇷' },
-];
+export type ActiveNavMenu = 'features' | 'resources' | 'language' | null;
 
 @Component({
   selector: 'universal-navbar',
-  imports: [RouterLink, NgOptimizedImage],
+  imports: [RouterLink, NgOptimizedImage, FeaturesMenu, ResourcesMenu, LanguageMenu],
   templateUrl: './navbar.html',
   styles: ``,
   host: {
@@ -48,21 +38,11 @@ export class Navbar {
   private readonly destroyRef = inject(DestroyRef);
 
   readonly isMobileMenuOpen = signal(false);
-  readonly isLanguageMenuOpen = signal(false);
+  readonly activeMenu = signal<ActiveNavMenu>(null);
 
-  readonly languages = SUPPORTED_LANGUAGES;
   readonly selectedLanguage = signal<LanguageOption>(
     SUPPORTED_LANGUAGES.find((l) => l.code === 'en') ?? SUPPORTED_LANGUAGES[0],
   );
-
-  readonly otherLanguages = computed(() =>
-    this.languages.filter((lang) => lang.code !== this.selectedLanguage().code),
-  );
-
-  readonly navItems: readonly NavItem[] = [
-    { label: 'Features', route: '/feature' },
-    { label: 'Resources', href: '#resources' },
-  ];
 
   constructor() {
     effect(() => {
@@ -94,24 +74,28 @@ export class Navbar {
     this.isMobileMenuOpen.set(false);
   }
 
-  toggleLanguageMenu(): void {
-    this.isLanguageMenuOpen.update((open) => !open);
+  toggleMenu(menu: 'features' | 'resources' | 'language'): void {
+    this.activeMenu.update((curr) => (curr === menu ? null : menu));
   }
 
-  setLanguage(lang: LanguageOption): void {
+  closeMenus(): void {
+    this.activeMenu.set(null);
+  }
+
+  onLanguageSelected(lang: LanguageOption): void {
     this.selectedLanguage.set(lang);
-    this.isLanguageMenuOpen.set(false);
+    this.closeMenus();
   }
 
   onEscape(): void {
     this.closeMobileMenu();
-    this.isLanguageMenuOpen.set(false);
+    this.closeMenus();
   }
 
   onDocumentClick(event: MouseEvent): void {
     const target = event.target as HTMLElement | null;
-    if (!target?.closest('[data-language-dropdown]')) {
-      this.isLanguageMenuOpen.set(false);
+    if (!target?.closest('[data-nav-dropdown]')) {
+      this.closeMenus();
     }
   }
 }
