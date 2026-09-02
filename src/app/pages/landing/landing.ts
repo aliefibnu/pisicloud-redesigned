@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Navbar } from '../../components/universal/navbar/navbar';
 import { Hero } from '../../components/landing/hero/hero';
-import { AboutUs } from '../../components/landing/about-us/about-us';
 import { Features } from '../../components/landing/features/features';
 import { Solution } from '../../components/landing/solution/solution';
 import { WhyChoseUs } from '../../components/landing/why-chose-us/why-chose-us';
@@ -11,7 +10,7 @@ import { Footer } from '../../components/universal/footer/footer';
 
 @Component({
   selector: 'app-landing',
-  imports: [Hero, AboutUs, Features, Solution, WhyChoseUs, Faq],
+  imports: [Hero, Features, Solution, WhyChoseUs, Faq],
   templateUrl: './landing.html',
   styles: ``,
 })

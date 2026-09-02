@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { WhyChooseUsComponent } from './why-chose-us';
+import { WhyChoseUs } from './why-chose-us';
 
-describe('WhyChooseUsComponent', () => {
-  let component: WhyChooseUsComponent;
-  let fixture: ComponentFixture<WhyChooseUsComponent>;
+describe('WhyChoseUs', () => {
+  let component: WhyChoseUs;
+  let fixture: ComponentFixture<WhyChoseUs>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhyChooseUsComponent ]
-    })
-    .compileComponents();
+      imports: [WhyChoseUs],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(WhyChooseUsComponent);
+    fixture = TestBed.createComponent(WhyChoseUs);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
