@@ -98,11 +98,11 @@
             </span>
           </a>
 
-          <a
+          <button
             mat-flat-button
-            href="#demo-video"
             aria-label="View Demo Video"
             class="w-auto bg-[#1c433a]! text-white! hover:bg-[#173a32]! active:bg-[#12312a]! border! border-[#3d6e62]! hover:border-emerald-300/60! rounded-full! px-6 py-3! h-auto! font-semibold! text-sm sm:text-base! shadow-md! transition-all duration-200 hover:shadow-lg! inline-flex items-center justify-center gap-2.5"
+            (click)="modalService.showModal()"
           >
             <span class="flex items-center gap-2.5 justify-center">
               <ng-icon
@@ -112,7 +112,7 @@
               />
               <span>View Demo Video</span>
             </span>
-          </a>
+          </button>
         </div>
       </div>
 

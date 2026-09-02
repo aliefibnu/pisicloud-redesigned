@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { NgIcon, provideIcons } from '@ng-icons/core';
@@ -9,6 +9,7 @@ import {
   bootstrapEnvelope,
   bootstrapPlayCircleFill,
 } from '@ng-icons/bootstrap-icons';
+import { DemoVideoModalService } from '../demo-video-modal/demo-video-modal.service';
 
 @Component({
   selector: 'universal-interested',
@@ -30,4 +31,6 @@ import {
     }
   `,
 })
-export class Interested {}
+export class Interested {
+  modalService = inject(DemoVideoModalService);
+}
