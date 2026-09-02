@@ -1,0 +1,163 @@
+@if (variant() === 'desktop') {
+  <div class="relative" data-nav-dropdown>
+    <!-- Trigger Button -->
+    <button
+      type="button"
+      (click)="toggleMenu()"
+      class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
+      [class.bg-[#cde8e0]]="isOpen()"
+      [class.text-[#00382f]]="isOpen()"
+      [attr.aria-expanded]="isOpen()"
+      aria-haspopup="true"
+      aria-label="Features navigation menu"
+    >
+      <!-- Downward Chevron -->
+      <svg
+        class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
+        [class.rotate-180]="isOpen()"
+        [class.text-[#00382f]]="isOpen()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+      <span class="tracking-wide">Features</span>
+    </button>
+
+    <!-- Desktop Features Popover Dropdown Card -->
+    @if (isOpen()) {
+      <div
+        class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-88 sm:w-96 rounded-2xl bg-[#F2F8FC] border border-slate-200/90 shadow-xl shadow-slate-900/10 p-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+        role="menu"
+        aria-orientation="vertical"
+      >
+        <!-- Header -->
+        <div class="flex items-center justify-between pb-3 border-b border-slate-200/80 mb-3">
+          <div>
+            <h3 class="text-base font-bold text-slate-800 tracking-tight">Platform Features</h3>
+            <p class="text-xs text-slate-500">Core cloud infrastructure & services</p>
+          </div>
+          <a
+            routerLink="/feature"
+            (click)="onItemClick()"
+            class="text-xs font-semibold text-[#066b60] hover:text-[#00382f] hover:underline flex items-center gap-1 transition-colors"
+          >
+            <span>Explore all</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Features List -->
+        <div class="space-y-1.5" role="none">
+          @for (feature of features; track feature.title) {
+            <a
+              [routerLink]="feature.route"
+              (click)="onItemClick()"
+              class="group flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-200/80 transition-all cursor-pointer"
+              role="menuitem"
+            >
+              <!-- Icon Container -->
+              <div class="p-2 rounded-lg bg-white border border-slate-200/60 shadow-xs text-[#066b60] group-hover:bg-[#cde8e0] group-hover:text-[#00382f] transition-colors shrink-0">
+                @switch (feature.iconType) {
+                  @case ('compute') {
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="20" height="8" x="2" y="2" rx="2" />
+                      <rect width="20" height="8" x="2" y="14" rx="2" />
+                      <line x1="6" x2="6.01" y1="6" y2="6" />
+                      <line x1="6" x2="6.01" y1="18" y2="18" />
+                    </svg>
+                  }
+                  @case ('storage') {
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <ellipse cx="12" cy="5" rx="9" ry="3" />
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                      <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+                    </svg>
+                  }
+                  @case ('kubernetes') {
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m7.5 4.27 9 5.15" />
+                      <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                      <path d="m3.3 7 8.7 5 8.7-5" />
+                      <path d="M12 22V12" />
+                    </svg>
+                  }
+                  @case ('security') {
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  }
+                }
+              </div>
+
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-semibold text-slate-800 group-hover:text-[#00382f] transition-colors">{{ feature.title }}</span>
+                  @if (feature.badge) {
+                    <span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-[#cde8e0] text-[#00382f]">{{ feature.badge }}</span>
+                  }
+                </div>
+                <p class="text-xs text-slate-500 leading-relaxed">{{ feature.description }}</p>
+              </div>
+            </a>
+          }
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <!-- Mobile Drawer Accordion Variant -->
+  <div class="w-full">
+    <button
+      type="button"
+      (click)="toggleMobileAccordion()"
+      class="flex items-center justify-between w-full px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#066b60] hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
+      [attr.aria-expanded]="isMobileExpanded()"
+    >
+      <div class="flex items-center gap-3">
+        <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
+          <polygon points="0,0 6,4 0,8" />
+        </svg>
+        <span>Features</span>
+      </div>
+      <svg
+        class="w-4 h-4 text-slate-600 transition-transform duration-200"
+        [class.rotate-180]="isMobileExpanded()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+
+    @if (isMobileExpanded()) {
+      <div class="pl-7 pr-2 py-1 space-y-1 mt-1 animate-in fade-in duration-150">
+        @for (feature of features; track feature.title) {
+          <a
+            [routerLink]="feature.route"
+            (click)="onItemClick()"
+            class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-[#066b60] hover:bg-slate-200/50 transition-colors"
+          >
+            {{ feature.title }}
+          </a>
+        }
+        <a
+          routerLink="/feature"
+          (click)="onItemClick()"
+          class="block px-3 py-2 rounded-lg text-xs font-semibold text-[#066b60] hover:underline"
+        >
+          View all features →
+        </a>
+      </div>
+    }
+  </div>
+}

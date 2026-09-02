@@ -1,0 +1,194 @@
+@if (variant() === 'desktop') {
+  <div class="relative" data-nav-dropdown>
+    <!-- Trigger Button -->
+    <button
+      type="button"
+      (click)="toggleMenu()"
+      class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
+      [class.bg-[#cde8e0]]="isOpen()"
+      [class.text-[#00382f]]="isOpen()"
+      [attr.aria-expanded]="isOpen()"
+      aria-haspopup="true"
+      aria-label="Resources navigation menu"
+    >
+      <!-- Downward Chevron -->
+      <svg
+        class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
+        [class.rotate-180]="isOpen()"
+        [class.text-[#00382f]]="isOpen()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+      <span class="tracking-wide">Resources</span>
+    </button>
+
+    <!-- Desktop Resources Popover Dropdown Card -->
+    @if (isOpen()) {
+      <div
+        class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-88 sm:w-96 rounded-2xl bg-[#F2F8FC] border border-slate-200/90 shadow-xl shadow-slate-900/10 p-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+        role="menu"
+        aria-orientation="vertical"
+      >
+        <!-- Header -->
+        <div class="pb-3 border-b border-slate-200/80 mb-3">
+          <h3 class="text-base font-bold text-slate-800 tracking-tight">Resources & Learning</h3>
+          <p class="text-xs text-slate-500">Guides, documentation, and developer tools</p>
+        </div>
+
+        <!-- Resources List -->
+        <div class="space-y-1.5" role="none">
+          @for (resource of resources; track resource.title) {
+            @if (resource.route) {
+              <a
+                [routerLink]="resource.route"
+                (click)="onItemClick()"
+                class="group flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-200/80 transition-all cursor-pointer"
+                role="menuitem"
+              >
+                <!-- Icon Container -->
+                <div class="p-2 rounded-lg bg-white border border-slate-200/60 shadow-xs text-[#066b60] group-hover:bg-[#cde8e0] group-hover:text-[#00382f] transition-colors shrink-0">
+                  @switch (resource.iconType) {
+                    @case ('docs') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                        <path d="M6 6h10" />
+                        <path d="M6 10h10" />
+                      </svg>
+                    }
+                    @case ('guides') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                      </svg>
+                    }
+                    @case ('cases') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                      </svg>
+                    }
+                    @case ('support') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 18.72a9 9 0 1 0-12 0" />
+                        <path d="M12 8v4" />
+                        <circle cx="12" cy="16" r="1" />
+                      </svg>
+                    }
+                  }
+                </div>
+
+                <div>
+                  <span class="text-sm font-semibold text-slate-800 group-hover:text-[#00382f] transition-colors block">{{ resource.title }}</span>
+                  <p class="text-xs text-slate-500 leading-relaxed">{{ resource.description }}</p>
+                </div>
+              </a>
+            } @else {
+              <a
+                [href]="resource.href"
+                (click)="onItemClick()"
+                class="group flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-200/80 transition-all cursor-pointer"
+                role="menuitem"
+              >
+                <!-- Icon Container -->
+                <div class="p-2 rounded-lg bg-white border border-slate-200/60 shadow-xs text-[#066b60] group-hover:bg-[#cde8e0] group-hover:text-[#00382f] transition-colors shrink-0">
+                  @switch (resource.iconType) {
+                    @case ('docs') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                        <path d="M6 6h10" />
+                        <path d="M6 10h10" />
+                      </svg>
+                    }
+                    @case ('guides') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                      </svg>
+                    }
+                    @case ('cases') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                      </svg>
+                    }
+                    @case ('support') {
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 18.72a9 9 0 1 0-12 0" />
+                        <path d="M12 8v4" />
+                        <circle cx="12" cy="16" r="1" />
+                      </svg>
+                    }
+                  }
+                </div>
+
+                <div>
+                  <span class="text-sm font-semibold text-slate-800 group-hover:text-[#00382f] transition-colors block">{{ resource.title }}</span>
+                  <p class="text-xs text-slate-500 leading-relaxed">{{ resource.description }}</p>
+                </div>
+              </a>
+            }
+          }
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <!-- Mobile Drawer Accordion Variant -->
+  <div class="w-full">
+    <button
+      type="button"
+      (click)="toggleMobileAccordion()"
+      class="flex items-center justify-between w-full px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#066b60] hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors"
+      [attr.aria-expanded]="isMobileExpanded()"
+    >
+      <div class="flex items-center gap-3">
+        <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
+          <polygon points="0,0 6,4 0,8" />
+        </svg>
+        <span>Resources</span>
+      </div>
+      <svg
+        class="w-4 h-4 text-slate-600 transition-transform duration-200"
+        [class.rotate-180]="isMobileExpanded()"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+
+    @if (isMobileExpanded()) {
+      <div class="pl-7 pr-2 py-1 space-y-1 mt-1 animate-in fade-in duration-150">
+        @for (resource of resources; track resource.title) {
+          @if (resource.route) {
+            <a
+              [routerLink]="resource.route"
+              (click)="onItemClick()"
+              class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-[#066b60] hover:bg-slate-200/50 transition-colors"
+            >
+              {{ resource.title }}
+            </a>
+          } @else {
+            <a
+              [href]="resource.href"
+              (click)="onItemClick()"
+              class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-[#066b60] hover:bg-slate-200/50 transition-colors"
+            >
+              {{ resource.title }}
+            </a>
+          }
+        }
+      </div>
+    }
+  </div>
+}
