@@ -11,17 +11,17 @@
         class="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#333333] tracking-tight leading-tight"
       >
         <span class="text-[#0F7A6B]">PISICloud</span> Can be a solution for<br class="hidden sm:inline" />
-        various business sectors among them
+        various business sectors<span class="hidden sm:inline"> among them</span>
       </h2>
     </div>
 
     <!-- CAROUSEL VIEWPORT CONTAINER WITH LEFT & RIGHT ARROWS -->
     <div class="relative w-full overflow-hidden py-2">
-      <!-- Left Navigation Arrow Button -->
+      <!-- Left Navigation Arrow Button (Desktop / Tablet) -->
       <button
         type="button"
         (click)="prev(); pauseAutoScroll(); resumeAutoScroll()"
-        class="absolute left-3 sm:left-6 lg:left-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white flex items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
+        class="hidden sm:flex absolute left-3 sm:left-6 lg:left-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
         aria-label="Previous business sector"
       >
         <svg
@@ -38,11 +38,11 @@
         </svg>
       </button>
 
-      <!-- Right Navigation Arrow Button -->
+      <!-- Right Navigation Arrow Button (Desktop / Tablet) -->
       <button
         type="button"
         (click)="next(); pauseAutoScroll(); resumeAutoScroll()"
-        class="absolute right-3 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white flex items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
+        class="hidden sm:flex absolute right-3 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
         aria-label="Next business sector"
       >
         <svg

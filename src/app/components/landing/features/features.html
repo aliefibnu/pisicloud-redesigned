@@ -15,8 +15,60 @@
       </h2>
     </div>
 
-    <!-- 12 Features Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+    <!-- MOBILE VIEW (< md): Horizontal List Cards matching Fitur.png -->
+    <div class="block md:hidden space-y-3 sm:space-y-4">
+      @for (item of features; track item.id) {
+        <article
+          class="group rounded-2xl bg-[#f7faf7] border border-[#dce6df] flex items-stretch justify-between overflow-hidden shadow-xs hover:border-[#a8dcd0] active:scale-[0.98] transition-all duration-200"
+        >
+          <!-- Left Content: Outward Arrow + Title + Short Tagline -->
+          <div class="p-3.5 sm:p-4 flex items-center gap-3 sm:gap-4 grow min-w-0">
+            <!-- Diagonal Arrow ↗ -->
+            <div class="shrink-0 text-slate-500 group-hover:text-[#066b5b] transition-colors">
+              <svg
+                class="w-5 h-5 sm:w-6 sm:h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17L17 7"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </div>
+
+            <!-- Text Details -->
+            <div class="min-w-0">
+              <h3
+                class="text-base sm:text-lg font-bold text-[#191c1b] tracking-tight truncate group-hover:text-[#066b5b] transition-colors"
+              >
+                {{ item.title }}
+              </h3>
+              <p class="text-xs sm:text-sm text-[#49504c] font-normal truncate mt-0.5">
+                {{ item.shortDescription }}
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Thumbnail Image -->
+          <div class="w-20 sm:w-24 shrink-0 relative overflow-hidden bg-slate-100">
+            <img
+              [ngSrc]="item.image"
+              [alt]="item.alt"
+              width="387"
+              height="188"
+              class="w-full h-full object-cover select-none"
+            />
+          </div>
+        </article>
+      }
+    </div>
+
+    <!-- DESKTOP VIEW (>= md): 3-Column Grid matching Features Section.png -->
+    <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
       @for (item of features; track item.id) {
         <article
           class="group relative flex flex-col rounded-3xl bg-[#f7faf7] border border-[#dbe5df]/70 overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-1.5 hover:border-[#a8dcd0] transition-all duration-300 ease-out"
