@@ -29,7 +29,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": ["nonconsistorial-verlene-subdorsally.ngrok-free.dev"]
+              "allowedHosts": ["pisicloud.com", "*.pisicloud.com"]
             },
             "ssr": {
               "entry": "src/server.ts"
@@ -62,7 +62,10 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "security": {
+                "allowedHosts": ["*"]
+              }
             }
           },
           "defaultConfiguration": "production"
@@ -70,7 +73,8 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "options": {
-            "allowedHosts": ["nonconsistorial-verlene-subdorsally.ngrok-free.dev"]
+            "host": "0.0.0.0",
+            "allowedHosts": true
           },
           "configurations": {
             "production": {
