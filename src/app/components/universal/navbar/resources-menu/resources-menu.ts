@@ -1,39 +1,34 @@
 import { Component, input, output, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
+export type ResourceIconType = 'about' | 'strategy' | 'customers';
+
 export interface ResourceMenuItem {
   readonly title: string;
-  readonly description: string;
-  readonly href?: string;
   readonly route?: string;
-  readonly isExternal?: boolean;
-  readonly iconType: 'docs' | 'guides' | 'cases' | 'support';
+  readonly fragment?: string;
+  readonly href?: string;
+  readonly iconType: ResourceIconType;
 }
 
 export const DEFAULT_RESOURCES: readonly ResourceMenuItem[] = [
   {
-    title: 'Documentation',
-    description: 'Technical specs, architectural references, and API integration guides.',
-    href: '#resources',
-    iconType: 'docs',
+    title: 'About PISICloud',
+    route: '/',
+    fragment: 'about-us',
+    iconType: 'about',
   },
   {
-    title: 'Architecture & Guides',
-    description: 'Best practices for scalable cloud deployment and disaster recovery.',
-    href: '#resources',
-    iconType: 'guides',
+    title: 'Implementation Strategy',
+    route: '/',
+    fragment: 'solution',
+    iconType: 'strategy',
   },
   {
-    title: 'Case Studies',
-    description: 'Real-world customer architectures and enterprise benchmark results.',
-    href: '#resources',
-    iconType: 'cases',
-  },
-  {
-    title: 'Community & Support',
-    description: '24/7 dedicated engineering assistance, SLAs, and developer forums.',
-    href: '#contact',
-    iconType: 'support',
+    title: 'Our Customers',
+    route: '/',
+    fragment: 'why-choose-us',
+    iconType: 'customers',
   },
 ];
 
