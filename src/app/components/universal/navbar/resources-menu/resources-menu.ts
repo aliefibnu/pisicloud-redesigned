@@ -5,6 +5,7 @@ export type ResourceIconType = 'about' | 'strategy' | 'customers';
 
 export interface ResourceMenuItem {
   readonly title: string;
+  readonly description?: string;
   readonly route?: string;
   readonly fragment?: string;
   readonly href?: string;
@@ -14,18 +15,21 @@ export interface ResourceMenuItem {
 export const DEFAULT_RESOURCES: readonly ResourceMenuItem[] = [
   {
     title: 'About PISICloud',
+    description: 'Get to know PISICloud in depth.',
     route: '/',
     fragment: 'about-us',
     iconType: 'about',
   },
   {
     title: 'Implementation Strategy',
+    description: 'Turning strategic plans into action.',
     route: '/',
     fragment: 'solution',
     iconType: 'strategy',
   },
   {
     title: 'Our Customers',
+    description: 'PISICloud has been trusted by 100+ companies.',
     route: '/',
     fragment: 'why-choose-us',
     iconType: 'customers',
