@@ -1,1 +1,13 @@
-<p>about-us works!</p>
+<section class="py-16 bg-white border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl sm:text-4xl font-bold text-[#22323D] mb-12">
+      PISICloud Has<br>
+      Been Trusted By <span class="text-[#0D7A5F]">100+ Leading Companies</span>
+    </h2>
+    
+    <!-- Logo Grid / Flex Bar -->
+    <div class="flex flex-wrap items-center justify-between gap-8 opacity-80 grayscale hover:grayscale-0 transition-all duration-300">
+      <img *ngFor="let logo of clientLogos" [src]="logo.src" [alt]="logo.alt" class="h-10 object-contain" />
+    </div>
+  </div>
+</section>
