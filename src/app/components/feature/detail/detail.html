@@ -1,1 +1,129 @@
-<p>detail works!</p>
+<section
+  class="w-full py-10 sm:py-14 md:py-18 lg:py-20 overflow-hidden"
+  aria-label="Feature Details"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
+      <div
+        class="lg:col-span-5 flex flex-col gap-3 sm:gap-3.5"
+        (mouseenter)="pauseAutoPlay()"
+        (mouseleave)="resumeAutoPlay()"
+        (focusin)="pauseAutoPlay()"
+        (focusout)="resumeAutoPlay()"
+        role="tablist"
+        aria-label="Feature Details Navigation"
+      >
+        @for (fitur of features()?.detailed; track fitur.title; let i = $index) {
+          @let isActive = activeIndex() === i;
+          <div
+            role="tab"
+            [attr.aria-selected]="isActive"
+            [attr.aria-expanded]="isActive"
+            [attr.aria-controls]="'feature-preview-' + i"
+            [id]="'feature-tab-' + i"
+            tabindex="0"
+            (click)="selectFeature(i)"
+            (keydown)="onKeyDown($event, i)"
+            class="w-full text-left rounded-lg transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] focus-visible:ring-offset-2 overflow-hidden border"
+            [class.border-[#3ba38f]]="isActive"
+            [class.bg-white]="isActive"
+            [class.shadow-sm]="isActive"
+            [class.border-slate-200/70]="!isActive"
+            [class.bg-[#fafafa]]="!isActive"
+            [class.hover:bg-[#f4f7f6]]="!isActive"
+          >
+            <div
+              class="relative w-full px-4 py-3.5 flex items-center justify-between overflow-hidden transition-colors duration-300"
+              [class.bg-[#f4fcf7]]="isActive"
+              [class.bg-transparent]="!isActive"
+            >
+              @if (isActive) {
+                <div
+                  class="absolute inset-y-0 left-0 bg-[#d5f3e5] pointer-events-none transition-[width] duration-75 ease-linear"
+                  [style.width.%]="progress()"
+                  role="progressbar"
+                  [attr.aria-valuenow]="progress()"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  [attr.aria-label]="fitur.title + ' progress'"
+                ></div>
+              }
+
+              <h3
+                class="relative z-10 text-[15px] font-semibold text-slate-800 tracking-tight select-none transition-colors duration-200"
+                [class.text-[#066b60]]="isActive"
+              >
+                {{ fitur.title }}
+              </h3>
+
+              <svg
+                class="relative z-10 w-2.5 h-2.5 text-slate-700 shrink-0 transition-transform duration-300 ease-out"
+                [class.rotate-180]="isActive"
+                [class.text-[#066b60]]="isActive"
+                viewBox="0 0 10 6"
+                aria-hidden="true"
+              >
+                <polygon points="0,0 10,0 5,6" fill="currentColor" />
+              </svg>
+            </div>
+
+            <div
+              class="accordion-grid grid"
+              [class.grid-rows-[1fr]]="isActive"
+              [class.opacity-100]="isActive"
+              [class.grid-rows-[0fr]]="!isActive"
+              [class.opacity-0]="!isActive"
+            >
+              <div class="overflow-hidden">
+                <div
+                  class="px-4 pt-2 pb-4 bg-white text-[13.5px] sm:text-[14px] text-slate-600 leading-relaxed font-normal select-none"
+                >
+                  <div class="lg:hidden w-full mb-3 mt-1 flex justify-center">
+                    <img
+                      [src]="fitur.img"
+                      [alt]="fitur.title"
+                      class="w-full h-auto max-h-72 object-contain rounded-lg border border-slate-200/80 shadow-xs bg-slate-50/50"
+                    />
+                  </div>
+
+                  <p>{{ fitur.desc }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+
+      <div
+        class="hidden lg:flex lg:col-span-7 items-center justify-center relative min-h-[380px] xl:min-h-[440px]"
+        (mouseenter)="pauseAutoPlay()"
+        (mouseleave)="resumeAutoPlay()"
+        (focusin)="pauseAutoPlay()"
+        (focusout)="resumeAutoPlay()"
+        aria-live="polite"
+      >
+        @for (fitur of features()?.detailed; track fitur.title; let i = $index) {
+          <div
+            [id]="'feature-preview-' + i"
+            class="transition-all duration-500 ease-out flex items-center justify-center w-full"
+            [class.opacity-100]="activeIndex() === i"
+            [class.scale-100]="activeIndex() === i"
+            [class.pointer-events-auto]="activeIndex() === i"
+            [class.opacity-0]="activeIndex() !== i"
+            [class.scale-[0.98]]="activeIndex() !== i"
+            [class.pointer-events-none]="activeIndex() !== i"
+            [class.absolute]="activeIndex() !== i"
+            [class.relative]="activeIndex() === i"
+            [attr.aria-hidden]="activeIndex() !== i"
+          >
+            <img
+              [src]="fitur.img"
+              [alt]="fitur.title"
+              class="w-[85%] max-w-xl h-auto max-h-130 object-contain rounded-xl border border-slate-200/80 shadow-md select-none bg-white transition-all duration-300"
+            />
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

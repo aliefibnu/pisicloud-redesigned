@@ -1,9 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import {
+  bootstrapWhatsapp,
+  bootstrapTelephone,
+  bootstrapTelephoneFill,
+  bootstrapEnvelope,
+  bootstrapPlayCircleFill,
+} from '@ng-icons/bootstrap-icons';
+import { DemoVideoModalService } from '../demo-video-modal/demo-video-modal.service';
 
 @Component({
   selector: 'universal-interested',
-  imports: [],
+  imports: [NgOptimizedImage, MatButtonModule, NgIcon],
+  viewProviders: [
+    provideIcons({
+      bootstrapWhatsapp,
+      bootstrapTelephone,
+      bootstrapTelephoneFill,
+      bootstrapEnvelope,
+      bootstrapPlayCircleFill,
+    }),
+  ],
   templateUrl: './interested.html',
-  styles: ``,
+  styles: `
+    :host {
+      display: block;
+      width: 100%;
+    }
+  `,
 })
-export class Interested {}
+export class Interested {
+  modalService = inject(DemoVideoModalService);
+}

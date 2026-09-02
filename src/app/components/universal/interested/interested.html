@@ -1,1 +1,135 @@
-<p>interested works!</p>
+<section
+  class="w-full bg-[#255247] text-white overflow-hidden relative"
+  aria-labelledby="interested-heading"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 pb-10 sm:pb-14 md:pb-0 pt-10 lg:pt-0">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6 xl:gap-8 items-end">
+      <div class="md:col-span-7 flex flex-col justify-center md:pb-16 lg:pb-20">
+        <div class="mb-5 sm:mb-6 md:mb-8">
+          <img
+            ngSrc="/sample/logo pisi interested.png"
+            width="193"
+            height="43"
+            alt="PISICloud Logo"
+            class="h-8 sm:h-9 md:h-10 w-auto object-contain select-none"
+          />
+        </div>
+
+        <h2
+          id="interested-heading"
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-3 sm:mb-4"
+        >
+          Interested in PISICloud?
+        </h2>
+
+        <div
+          class="text-emerald-50/90 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-6 sm:mb-8 space-y-1 font-normal"
+        >
+          <p>
+            Transforming Your Workplace with PISICloud's Streamlined HR Processes. Contact the
+            contact below for more info.
+          </p>
+        </div>
+
+        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-10" aria-label="Contact Channels">
+          <li>
+            <a
+              href="https://wa.me/627784160250"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-3 sm:gap-4 text-white hover:text-emerald-200 transition-colors text-sm sm:text-base lg:text-lg font-medium group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 rounded-md p-1 -m-1"
+            >
+              <ng-icon
+                name="bootstrapWhatsapp"
+                class="text-xl sm:text-2xl text-white group-hover:scale-110 transition-transform shrink-0"
+                aria-hidden="true"
+              />
+              <span>(+62) 778 416 0250</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="tel:+628117774744"
+              class="inline-flex items-center gap-3 sm:gap-4 text-white hover:text-emerald-200 transition-colors text-sm sm:text-base lg:text-lg font-medium group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 rounded-md p-1 -m-1"
+            >
+              <ng-icon
+                name="bootstrapTelephone"
+                class="text-xl sm:text-2xl text-white group-hover:scale-110 transition-transform shrink-0"
+                aria-hidden="true"
+              />
+              <span>(+62) 811 7774 744</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="mailto:hello@inforsys.co.id"
+              class="inline-flex items-center gap-3 sm:gap-4 text-white hover:text-emerald-200 transition-colors text-sm sm:text-base lg:text-lg font-medium group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 rounded-md p-1 -m-1"
+            >
+              <ng-icon
+                name="bootstrapEnvelope"
+                class="text-xl sm:text-2xl text-white group-hover:scale-110 transition-transform shrink-0"
+                aria-hidden="true"
+              />
+              <span class="break-all sm:break-normal">hello&#64;inforsys.co.id</span>
+            </a>
+          </li>
+        </ul>
+
+        <div
+          class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 lg:gap-5"
+        >
+          <a
+            mat-flat-button
+            href="https://wa.me/627784160250"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contact Us"
+            class="w-auto sm:w-auto bg-white! text-[#255247]! hover:bg-emerald-50! active:bg-emerald-100! rounded-full! px-6 sm:px-7! py-3! h-auto! font-semibold! text-sm sm:text-base! shadow-md! transition-all duration-200 hover:shadow-lg! inline-flex items-center justify-center gap-2.5"
+          >
+            <span class="flex items-center gap-2.5 justify-center">
+              <ng-icon
+                name="bootstrapTelephoneFill"
+                class="text-base sm:text-lg text-[#255247]"
+                aria-hidden="true"
+              />
+              <span>Contact Us</span>
+            </span>
+          </a>
+
+          <button
+            mat-flat-button
+            aria-label="View Demo Video"
+            class="w-auto bg-[#1c433a]! text-white! hover:bg-[#173a32]! active:bg-[#12312a]! border! border-[#3d6e62]! hover:border-emerald-300/60! rounded-full! px-6 py-3! h-auto! font-semibold! text-sm sm:text-base! shadow-md! transition-all duration-200 hover:shadow-lg! inline-flex items-center justify-center gap-2.5"
+            (click)="modalService.showModal()"
+          >
+            <span class="flex items-center gap-2.5 justify-center">
+              <ng-icon
+                name="bootstrapPlayCircleFill"
+                class="text-lg sm:text-xl text-white"
+                aria-hidden="true"
+              />
+              <span>View Demo Video</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hidden md:flex md:col-span-5 justify-center md:justify-end items-end h-full">
+        <div
+          class="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center md:justify-end items-end"
+        >
+          <img
+            ngSrc="/sample/person interested.png"
+            width="583"
+            height="789"
+            priority
+            alt="PISICloud representative presenting the HR software solution on a laptop"
+            class="w-full h-auto object-contain object-bottom select-none pointer-events-none drop-shadow-2xl"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
