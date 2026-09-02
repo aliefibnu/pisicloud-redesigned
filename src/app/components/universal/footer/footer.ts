@@ -2,15 +2,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-footer',
-  standalone: true,
+  selector: 'universal-footer, app-footer',
   imports: [CommonModule],
-  templateUrl: './footer.html'
+  templateUrl: './footer.html',
 })
-export class FooterComponent {
+export class Footer {
   currentYear: number = new Date().getFullYear();
 
   scrollToTop(): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 }
+
+export { Footer as FooterComponent };
