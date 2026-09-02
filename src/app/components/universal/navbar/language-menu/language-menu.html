@@ -10,7 +10,6 @@
       aria-haspopup="true"
       aria-label="Select Language"
     >
-      <!-- Downward Chevron on Left -->
       <svg
         class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
         [class.rotate-180]="isOpen()"
@@ -29,20 +28,16 @@
       <span class="text-base leading-none" aria-hidden="true">{{ selectedLanguage().flag }}</span>
     </button>
 
-    <!-- Figma Dropdown Card: Centered Horizontally -->
     @if (isOpen()) {
       <div
         class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-76.25 rounded-2xl bg-[#F2F8FC] border border-slate-200/90 shadow-xl shadow-slate-900/10 px-6 pt-5 pb-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
         role="menu"
         aria-orientation="vertical"
       >
-        <!-- Header Title -->
         <h3 class="text-base font-bold text-slate-800 tracking-tight">Languages</h3>
 
-        <!-- Divider Line -->
         <div class="border-b border-slate-200/80 my-3"></div>
 
-        <!-- Other Languages List (Text Left, Flag Right) -->
         <div class="space-y-1" role="none">
           @for (lang of otherLanguages(); track lang.code) {
             <button
@@ -60,7 +55,6 @@
     }
   </div>
 } @else {
-  <!-- Mobile Variant -->
   <div class="space-y-2 px-1">
     <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Languages</span>
     <div class="flex flex-wrap gap-1.5">

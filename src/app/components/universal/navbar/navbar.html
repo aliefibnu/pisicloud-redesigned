@@ -1,6 +1,5 @@
 <header class="w-full bg-[#eef4f8] border-b border-slate-200/60 transition-colors">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-18 flex items-center justify-between">
-    <!-- Brand Logo -->
     <a
       routerLink="/"
       (click)="closeMobileMenu()"
@@ -17,7 +16,6 @@
       />
     </a>
 
-    <!-- Desktop Navigation Links & Menus -->
     <nav class="hidden md:flex items-center gap-2 lg:gap-3" aria-label="Main navigation">
       <navbar-features-menu
         [isOpen]="activeMenu() === 'features'"
@@ -40,7 +38,6 @@
       />
     </nav>
 
-    <!-- Right Side CTA Button (Material 3 Filled / Extended FAB Button) -->
     <div class="hidden md:flex items-center">
       <a
         href="#contact"
@@ -59,7 +56,7 @@
       </a>
     </div>
 
-    <!-- Mobile Hamburger Toggle (Material 3 Icon Button) -->
+    <!-- toggle hamburger di mobile -->
     <div class="flex md:hidden">
       <button
         type="button"
@@ -80,7 +77,6 @@
     </div>
   </div>
 
-  <!-- Mobile Backdrop Overlay (Scrim) -->
   <div
     class="fixed inset-0 h-dvh bg-slate-900/40 backdrop-blur-xs z-40 transition-opacity duration-300 md:hidden touch-none"
     [class.opacity-100]="isMobileMenuOpen()"
@@ -91,7 +87,7 @@
     aria-hidden="true"
   ></div>
 
-  <!-- Mobile Slide-in Navigation Drawer (Sidebar) -->
+  <!-- drawer slide in nya untuk mobile -->
   <aside
     id="mobile-sidebar"
     role="dialog"
@@ -101,7 +97,6 @@
     [class.translate-x-0]="isMobileMenuOpen()"
     [class.translate-x-full]="!isMobileMenuOpen()"
   >
-    <!-- Top: Drawer Header with Logo & Close Button -->
     <div class="shrink-0">
       <div class="flex items-center justify-between pb-6 border-b border-slate-200/70">
         <a routerLink="/" (click)="closeMobileMenu()" aria-label="PisiCloud Home">
@@ -125,7 +120,6 @@
         </button>
       </div>
 
-      <!-- Middle: Modular Vertical Navigation List -->
       <nav class="mt-6 space-y-2" aria-label="Mobile main navigation">
         <navbar-features-menu
           variant="mobile"
@@ -139,16 +133,13 @@
       </nav>
     </div>
 
-    <!-- Bottom: Language Selector & CTA Button -->
     <div class="shrink-0 pt-6 border-t border-slate-200/70 space-y-5">
-      <!-- Language Selector Subcomponent -->
       <navbar-language-menu
         variant="mobile"
         [selectedLanguage]="selectedLanguage()"
         (languageChanged)="onLanguageSelected($event)"
       />
 
-      <!-- Contact Us Pill CTA -->
       <a
         href="#contact"
         (click)="closeMobileMenu()"

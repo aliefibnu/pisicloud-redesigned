@@ -1,6 +1,5 @@
 @if (variant() === 'desktop') {
   <div class="relative" data-nav-dropdown>
-    <!-- Trigger Button -->
     <button
       type="button"
       (click)="toggleMenu()"
@@ -11,7 +10,6 @@
       aria-haspopup="true"
       aria-label="Resources navigation menu"
     >
-      <!-- Downward Chevron -->
       <svg
         class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
         [class.rotate-180]="isOpen()"
@@ -29,20 +27,17 @@
       <span class="tracking-wide">Resources</span>
     </button>
 
-    <!-- Desktop Resources Popover Dropdown Card -->
     @if (isOpen()) {
       <div
         class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-88 sm:w-96 rounded-2xl bg-[#F2F8FC] border border-slate-200/90 shadow-xl shadow-slate-900/10 p-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
         role="menu"
         aria-orientation="vertical"
       >
-        <!-- Header -->
         <div class="pb-3 border-b border-slate-200/80 mb-3">
           <h3 class="text-base font-bold text-slate-800 tracking-tight">Resources & Learning</h3>
           <p class="text-xs text-slate-500">Guides, documentation, and developer tools</p>
         </div>
 
-        <!-- Resources List -->
         <div class="space-y-1.5" role="none">
           @for (resource of resources; track resource.title) {
             @if (resource.route) {
@@ -52,7 +47,6 @@
                 class="group flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-200/80 transition-all cursor-pointer"
                 role="menuitem"
               >
-                <!-- Icon Container -->
                 <div class="p-2 rounded-lg bg-white border border-slate-200/60 shadow-xs text-[#066b60] group-hover:bg-[#cde8e0] group-hover:text-[#00382f] transition-colors shrink-0">
                   @switch (resource.iconType) {
                     @case ('docs') {
@@ -96,7 +90,6 @@
                 class="group flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-200/80 transition-all cursor-pointer"
                 role="menuitem"
               >
-                <!-- Icon Container -->
                 <div class="p-2 rounded-lg bg-white border border-slate-200/60 shadow-xs text-[#066b60] group-hover:bg-[#cde8e0] group-hover:text-[#00382f] transition-colors shrink-0">
                   @switch (resource.iconType) {
                     @case ('docs') {
@@ -140,7 +133,6 @@
     }
   </div>
 } @else {
-  <!-- Mobile Drawer Accordion Variant -->
   <div class="w-full">
     <button
       type="button"
