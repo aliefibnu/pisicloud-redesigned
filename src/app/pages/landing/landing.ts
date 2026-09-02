@@ -11,7 +11,7 @@ import { Footer } from '../../components/universal/footer/footer';
 
 @Component({
   selector: 'app-landing',
-  imports: [Navbar, Hero, AboutUs, Features, Solution, WhyChoseUs, Faq, Interested, Footer],
+  imports: [Hero, AboutUs, Features, Solution, WhyChoseUs, Faq],
   templateUrl: './landing.html',
   styles: ``,
 })
