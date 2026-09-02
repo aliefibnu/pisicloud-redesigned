@@ -1,22 +1,28 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AboutUsComponent } from './about-us';
 
-import { AboutUs } from './about-us';
-
-describe('AboutUs', () => {
-  let component: AboutUs;
-  let fixture: ComponentFixture<AboutUs>;
+describe('AboutUsComponent', () => {
+  let component: AboutUsComponent;
+  let fixture: ComponentFixture<AboutUsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutUs],
-    }).compileComponents();
+      declarations: [ AboutUsComponent ]
+    })
+    .compileComponents();
 
-    fixture = TestBed.createComponent(AboutUs);
+    fixture = TestBed.createComponent(AboutUsComponent);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the about-us component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render client logos', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const images = compiled.querySelectorAll('img');
+    expect(images.length).toBe(component.clientLogos.length);
   });
 });
