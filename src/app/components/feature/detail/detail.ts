@@ -1,12 +1,4 @@
-import {
-  Component,
-  OnInit,
-  OnDestroy,
-  signal,
-  computed,
-  inject,
-  PLATFORM_ID,
-} from '@angular/core';
+import { Component, OnInit, OnDestroy, signal, computed, inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 export interface DetailedFeature {
@@ -36,8 +28,9 @@ export interface FeatureCategory {
 
     .accordion-grid {
       display: grid;
-      transition: grid-template-rows 350ms cubic-bezier(0.4, 0, 0.2, 1),
-                  opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition:
+        grid-template-rows 350ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   `,
 })
@@ -61,7 +54,7 @@ export class Detail implements OnInit, OnDestroy {
   });
 
   async ngOnInit() {
-    const data = await import('../../../data/en-us.features').then((m) => m.features);
+    const data = await import('../../../data/en-uk.features').then((m) => m.features);
     const recruitment = data.find((x) => x.name === 'Recrutment') ?? data[0];
     this.features.set(recruitment);
 
