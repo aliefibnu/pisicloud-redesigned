@@ -1,6 +1,15 @@
 {
   "LANDING": {
-    "HERO": {},
+    "HERO": {
+      "TITLE_LINE_1": "効率的な人事労務管理",
+      "TITLE_LINE_2_PREFIX": "",
+      "BRAND": "PISICloud",
+      "TITLE_LINE_2_SUFFIX": " HRM とともに",
+      "DESCRIPTION": "安全、簡単、効率的な従業員管理のためのクラウド型勤怠・給与・人事ソフトウェア。",
+      "CONTACT_US": "お問い合わせ",
+      "WATCH_PREVIEW": "プレビュー動画を見る",
+      "IMAGE_ALT": "最新タブレットに表示された PISICloud 人事管理ダッシュボードのプレビュー"
+    },
     "FEATURES": {},
     "SOLUTION": {},
     "WHY_CHOSE_US": {}
