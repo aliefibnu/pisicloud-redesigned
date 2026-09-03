@@ -93,47 +93,48 @@
     role="dialog"
     aria-modal="true"
     aria-label="Mobile Navigation Menu"
-    class="fixed inset-y-0 right-0 z-50 h-dvh max-h-dvh w-72 sm:w-80 max-w-[85vw] bg-[#eef4f8] shadow-2xl border-l border-slate-200/70 transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 overflow-y-auto overscroll-contain md:hidden"
+    class="fixed inset-y-0 right-0 z-50 h-dvh max-h-dvh w-80 sm:w-88 max-w-[88vw] bg-[#eef4f8] shadow-2xl border-l border-slate-200/70 transition-transform duration-300 ease-in-out flex flex-col p-6 overflow-hidden md:hidden"
     [class.translate-x-0]="isMobileMenuOpen()"
     [class.translate-x-full]="!isMobileMenuOpen()"
   >
-    <div class="shrink-0">
-      <div class="flex items-center justify-between pb-6 border-b border-slate-200/70">
-        <a routerLink="/" (click)="closeMobileMenu()" aria-label="PisiCloud Home">
-          <img
-            ngSrc="/images/PISICloud Logo.svg"
-            alt="PisiCloud Logo"
-            width="140"
-            height="28"
-            class="h-7 w-auto object-contain"
-          />
-        </a>
-        <button
-          type="button"
-          (click)="closeMobileMenu()"
-          class="p-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors cursor-pointer"
-          aria-label="Close navigation menu"
-        >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-
-      <nav class="mt-6 space-y-2" aria-label="Mobile main navigation">
-        <navbar-features-menu
-          variant="mobile"
-          (itemClick)="closeMobileMenu()"
+    <!-- 1. Frozen Header -->
+    <div class="shrink-0 flex items-center justify-between pb-5 border-b border-slate-200/70">
+      <a routerLink="/" (click)="closeMobileMenu()" aria-label="PisiCloud Home">
+        <img
+          ngSrc="/images/PISICloud Logo.svg"
+          alt="PisiCloud Logo"
+          width="140"
+          height="28"
+          class="h-7 w-auto object-contain"
         />
-
-        <navbar-resources-menu
-          variant="mobile"
-          (itemClick)="closeMobileMenu()"
-        />
-      </nav>
+      </a>
+      <button
+        type="button"
+        (click)="closeMobileMenu()"
+        class="p-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 active:bg-slate-300/60 transition-colors cursor-pointer"
+        aria-label="Close navigation menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
 
-    <div class="shrink-0 pt-6 border-t border-slate-200/70 space-y-5">
+    <!-- 2. Bounded Scrollable Nav -->
+    <nav class="flex-1 min-h-0 overflow-y-auto overscroll-contain py-4 pr-1 space-y-2 scrollbar-thin" aria-label="Mobile main navigation">
+      <navbar-features-menu
+        variant="mobile"
+        (itemClick)="closeMobileMenu()"
+      />
+
+      <navbar-resources-menu
+        variant="mobile"
+        (itemClick)="closeMobileMenu()"
+      />
+    </nav>
+
+    <!-- 3. Frozen Footer -->
+    <div class="shrink-0 pt-4 border-t border-slate-200/70 space-y-4">
       <navbar-language-menu
         variant="mobile"
         [selectedLanguage]="selectedLanguage()"

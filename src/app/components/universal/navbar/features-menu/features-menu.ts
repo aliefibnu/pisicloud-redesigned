@@ -40,7 +40,7 @@ export const FEATURE_CATEGORIES: readonly FeatureCategory[] = [
 export const DEFAULT_FEATURES: readonly FeatureMenuItem[] = [
   {
     title: 'Recruitment',
-    description: 'Menu description.',
+    description: 'New employee recruitment process',
     route: '/feature',
     domain: 'hr',
     icon: 'recruitment',
