@@ -185,7 +185,7 @@
     </button>
 
     @if (isMobileExpanded()) {
-      <div class="pl-3 pr-1 py-1 space-y-1 mt-1 animate-in fade-in duration-150 max-h-96 overflow-y-auto">
+      <div class="pl-3 pr-1 py-1 space-y-1 mt-1 animate-in fade-in duration-150">
         @for (feature of features; track feature.title) {
           <a
             [routerLink]="feature.route"
