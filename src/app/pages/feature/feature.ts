@@ -18,6 +18,5 @@ export class Feature {
   });
 
   readonly heroConfig = computed(() => this.currentFeature().hero);
-  readonly badgeKey = computed(() => this.currentFeature().nameKey);
   readonly detailItems = computed(() => this.currentFeature().items);
 }
