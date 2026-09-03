@@ -10,6 +10,4 @@ import { Navbar } from './components/universal/navbar/navbar';
   templateUrl: './app.html',
   imports: [RouterOutlet, DemoVideoModal, Interested, Footer, Navbar],
 })
-export class App {
-  protected readonly title = signal('pisicloud.com-v3');
-}
+export class App {}
