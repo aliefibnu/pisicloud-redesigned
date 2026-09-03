@@ -8,7 +8,7 @@
       [class.text-[#00382f]]="isOpen()"
       [attr.aria-expanded]="isOpen()"
       aria-haspopup="true"
-      aria-label="Select Language"
+      [attr.aria-label]="'UNIVERSAL.NAVBAR.ARIA.LANGUAGE_MENU' | translate"
     >
       <svg
         class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
@@ -34,7 +34,7 @@
         role="menu"
         aria-orientation="vertical"
       >
-        <h3 class="text-base font-bold text-slate-800 tracking-tight">Languages</h3>
+        <h3 class="text-base font-bold text-slate-800 tracking-tight">{{ 'UNIVERSAL.NAVBAR.LANGUAGES_LABEL' | translate }}</h3>
 
         <div class="border-b border-slate-200/80 my-3"></div>
 
@@ -56,7 +56,7 @@
   </div>
 } @else {
   <div class="space-y-2 px-1">
-    <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Languages</span>
+    <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ 'UNIVERSAL.NAVBAR.LANGUAGES_LABEL' | translate }}</span>
     <div class="flex flex-wrap gap-1.5">
       @for (lang of languages; track lang.code) {
         <button

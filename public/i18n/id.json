@@ -227,15 +227,96 @@
 
   "UNIVERSAL": {
     "NAVBAR": {
-      "FEATURES_MENU": {},
+      "FEATURES_LABEL": "Fitur",
+      "RESOURCES_LABEL": "Sumber Daya",
+      "CONTACT_US": "Hubungi Kami",
+      "LANGUAGES_LABEL": "Bahasa",
+      "ARIA": {
+        "FEATURES_MENU": "Menu navigasi fitur",
+        "RESOURCES_MENU": "Menu navigasi sumber daya",
+        "LANGUAGE_MENU": "Pilih Bahasa",
+        "MOBILE_NAV": "Menu Navigasi Mobile",
+        "TOGGLE_NAV": "Buka/tutup menu navigasi",
+        "CLOSE_NAV": "Tutup menu navigasi"
+      },
+      "FEATURES_MENU": {
+        "TITLE": "Fitur",
+        "ITEMS": {
+          "RECRUITMENT": {
+            "TITLE": "Perekrutan",
+            "DESC": "Proses perekrutan karyawan baru"
+          },
+          "ATTENDANCE": {
+            "TITLE": "Presensi",
+            "DESC": "Pencatatan kehadiran & waktu kerja harian"
+          },
+          "PAYROLL": {
+            "TITLE": "Penggajian",
+            "DESC": "Perhitungan gaji otomatis & pembayaran"
+          },
+          "DATABASE": {
+            "TITLE": "Manajemen Database",
+            "DESC": "Pusat data induk karyawan terpadu"
+          },
+          "PERSONAL_LEAVE": {
+            "TITLE": "Cuti Pribadi",
+            "DESC": "Pengajuan cuti mandiri karyawan"
+          },
+          "PERSONAL_OVERTIME": {
+            "TITLE": "Lembur Pribadi",
+            "DESC": "Pencatatan & klaim jam lembur"
+          },
+          "EMPLOYEE_UPDATE": {
+            "TITLE": "Pembaruan Data Karyawan",
+            "DESC": "Pembaruan profil mandiri karyawan"
+          },
+          "PERSONAL_ATTENDANCE": {
+            "TITLE": "Presensi Pribadi",
+            "DESC": "Riwayat & statistik kehadiran diri"
+          },
+          "COLLECTIVE_LEAVE": {
+            "TITLE": "Cuti Bersama",
+            "DESC": "Pengaturan cuti massal & libur nasional"
+          },
+          "COLLECTIVE_OVERTIME": {
+            "TITLE": "Lembur Bersama",
+            "DESC": "Rencana lembur tingkat departemen"
+          },
+          "ATTENDANCE_MACHINE": {
+            "TITLE": "Mesin Presensi",
+            "DESC": "Sinkronisasi perangkat biometrik & absensi"
+          },
+          "YEARLY_TAX": {
+            "TITLE": "Pajak Tahunan",
+            "DESC": "Perhitungan SPT Tahunan & PPh 21"
+          }
+        }
+      },
       "LANGUAGE_MENU": {
+        "LABEL": "Bahasa",
         "en": "English 🇬🇧",
         "id": "Indonesia 🇮🇩",
         "ja": "日本 🇯🇵",
         "ko": "한국 🇰🇷",
         "zh": "中国 🇨🇳"
       },
-      "RESOURCES_MENU": {}
+      "RESOURCES_MENU": {
+        "TITLE": "Sumber Daya",
+        "ITEMS": {
+          "ABOUT": {
+            "TITLE": "Tentang PISICloud",
+            "DESC": "Kenali PISICloud lebih mendalam."
+          },
+          "STRATEGY": {
+            "TITLE": "Strategi Implementasi",
+            "DESC": "Mewujudkan rencana strategis menjadi aksi nyata."
+          },
+          "CUSTOMERS": {
+            "TITLE": "Klien Kami",
+            "DESC": "PISICloud telah dipercaya oleh 100+ perusahaan."
+          }
+        }
+      }
     },
     "FAQ": {},
     "FOOTER": {},

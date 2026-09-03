@@ -23,15 +23,96 @@
 
   "UNIVERSAL": {
     "NAVBAR": {
-      "FEATURES_MENU": {},
+      "FEATURES_LABEL": "機能",
+      "RESOURCES_LABEL": "リソース",
+      "CONTACT_US": "お問い合わせ",
+      "LANGUAGES_LABEL": "言語",
+      "ARIA": {
+        "FEATURES_MENU": "機能ナビゲーションメニュー",
+        "RESOURCES_MENU": "リソースナビゲーションメニュー",
+        "LANGUAGE_MENU": "言語を選択",
+        "MOBILE_NAV": "モバイルナビゲーションメニュー",
+        "TOGGLE_NAV": "ナビゲーションメニューの切り替え",
+        "CLOSE_NAV": "ナビゲーションメニューを閉じる"
+      },
+      "FEATURES_MENU": {
+        "TITLE": "機能",
+        "ITEMS": {
+          "RECRUITMENT": {
+            "TITLE": "採用管理",
+            "DESC": "新入社員のオンライン採用・選考プロセス"
+          },
+          "ATTENDANCE": {
+            "TITLE": "勤怠管理",
+            "DESC": "日々の出退勤打刻と勤務時間の記録"
+          },
+          "PAYROLL": {
+            "TITLE": "給与計算",
+            "DESC": "給与の自動計算および支払い管理"
+          },
+          "DATABASE": {
+            "TITLE": "人事データベース",
+            "DESC": "従業員マスターデータの一元管理"
+          },
+          "PERSONAL_LEAVE": {
+            "TITLE": "個人休暇申請",
+            "DESC": "従業員による有給・各種休暇の申請"
+          },
+          "PERSONAL_OVERTIME": {
+            "TITLE": "個人残業申請",
+            "DESC": "時間外労働の記録と残業申請"
+          },
+          "EMPLOYEE_UPDATE": {
+            "TITLE": "社員情報変更",
+            "DESC": "従業員による自己プロフィールの更新"
+          },
+          "PERSONAL_ATTENDANCE": {
+            "TITLE": "個人勤怠ログ",
+            "DESC": "個人の出退勤履歴と統計サマリー"
+          },
+          "COLLECTIVE_LEAVE": {
+            "TITLE": "一斉休暇管理",
+            "DESC": "会社指定の特別休暇および公休日設定"
+          },
+          "COLLECTIVE_OVERTIME": {
+            "TITLE": "一斉残業管理",
+            "DESC": "部署単位の時間外労働プラン管理"
+          },
+          "ATTENDANCE_MACHINE": {
+            "TITLE": "タイムレコーダー連携",
+            "DESC": "生体認証ハードウェアとの自動同期"
+          },
+          "YEARLY_TAX": {
+            "TITLE": "年末調整・税金",
+            "DESC": "年間所得税および年末調整の自動計算"
+          }
+        }
+      },
       "LANGUAGE_MENU": {
+        "LABEL": "言語",
         "en": "English 🇬🇧",
         "id": "Indonesia 🇮🇩",
         "ja": "日本 🇯🇵",
         "ko": "한국 🇰🇷",
         "zh": "中国 🇨🇳"
       },
-      "RESOURCES_MENU": {}
+      "RESOURCES_MENU": {
+        "TITLE": "リソース",
+        "ITEMS": {
+          "ABOUT": {
+            "TITLE": "PISICloudについて",
+            "DESC": "PISICloudの概要とビジョンをご覧ください。"
+          },
+          "STRATEGY": {
+            "TITLE": "導入戦略",
+            "DESC": "戦略的な計画を確実なアクションに変革。"
+          },
+          "CUSTOMERS": {
+            "TITLE": "導入事例",
+            "DESC": "PISICloudは100社以上の企業に信頼されています。"
+          }
+        }
+      }
     },
     "FAQ": {},
     "FOOTER": {},
