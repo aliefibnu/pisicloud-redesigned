@@ -1,6 +1,7 @@
 import { inject, PLATFORM_ID, Service, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
 
 export type Language = 'en' | 'id' | 'zh' | 'ja' | 'ko';
 
@@ -13,7 +14,7 @@ export class LanguageService {
 
   readonly currentLanguage = signal<Language>('en');
 
-  init() {
+  init(): Observable<unknown> {
     let language = 'en';
 
     if (isPlatformBrowser(this.platformId) && typeof localStorage !== 'undefined') {
