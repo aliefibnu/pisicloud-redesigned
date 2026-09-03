@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PLATFORM_ID } from '@angular/core';
+import { provideTranslateService } from '@ngx-translate/core';
 import { vi } from 'vitest';
 import { Detail } from './detail';
 
@@ -12,12 +13,15 @@ describe('Detail', () => {
 
     await TestBed.configureTestingModule({
       imports: [Detail],
-      providers: [{ provide: PLATFORM_ID, useValue: 'browser' }],
+      providers: [
+        provideTranslateService(),
+        { provide: PLATFORM_ID, useValue: 'browser' },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Detail);
     component = fixture.componentInstance;
-    await component.ngOnInit();
+    component.ngOnInit();
     fixture.detectChanges();
   });
 
@@ -30,11 +34,11 @@ describe('Detail', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should load recruitment features on init', () => {
-    const feat = component.features();
-    expect(feat).toBeTruthy();
-    expect(feat?.name).toBe('Recrutment');
-    expect(feat?.detailed.length).toBe(5);
+  it('should load recruitment feature items on init', () => {
+    const items = component.items();
+    expect(items).toBeTruthy();
+    expect(items.length).toBe(5);
+    expect(items[0].id).toBe('application-submission');
   });
 
   it('should start with activeIndex 0 and progress 0', () => {
@@ -90,7 +94,6 @@ describe('Detail', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const activeTab = compiled.querySelector('[role="tab"][aria-selected="true"]');
     expect(activeTab).toBeTruthy();
-    expect(activeTab?.textContent).toContain('Application Submission');
 
     const progressBar = compiled.querySelector('[role="progressbar"]');
     expect(progressBar).toBeTruthy();

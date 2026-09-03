@@ -7,8 +7,76 @@
   },
 
   "FEATURE": {
-    "HERO": {},
-    "DETAIL": {}
+    "HERO": {
+      "TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah diakses di ujung jari Anda.",
+      "DESC": "Dalam proses rekrutmen online kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Pada proses ini, pelamar dapat dengan mudah mengirimkan lamaran pekerjaan melalui aplikasi dengan memindai CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi."
+    },
+    "DETAIL": {
+      "ITEMS": {
+        "APPLICATION_SUBMISSION": {
+          "TITLE": "Pengajuan Lamaran",
+          "DESC": "Untuk memulai proses rekrutmen, pelamar akan mengakses aplikasi dan memindai CV beserta dokumen pendukung lainnya. Setelah pemindaian selesai, aplikasi akan mengirimkan lamaran kerja ke sistem rekrutmen perusahaan."
+        },
+        "SELECTION_PROCESS": {
+          "TITLE": "Proses Seleksi",
+          "DESC": "Setelah lamaran diterima oleh sistem rekrutmen, pelamar akan menjalani tahapan seleksi selanjutnya seperti tes psikologi dan wawancara. Tahapan seleksi ini dapat dijadwalkan melalui aplikasi, dan pelamar akan menerima pemberitahuan melalui aplikasi untuk setiap tahapan seleksi yang harus diikuti."
+        },
+        "SELECTION_RESULT": {
+          "TITLE": "Hasil Seleksi & Onboarding",
+          "DESC": "Pelamar yang lolos tahapan seleksi akan menerima instruksi onboarding otomatis, daftar periksa dokumen, dan jadwal orientasi langsung melalui sistem."
+        },
+        "EFFICIENT_RECRUITMENT": {
+          "TITLE": "Rekrutmen yang Efisien",
+          "DESC": "Pelacakan pelamar secara real-time dan pembaruan status otomatis mempermudah penyaringan kandidat dan menyederhanakan koordinasi tim."
+        },
+        "SIMPLIFIED_PROCESS": {
+          "TITLE": "Proses Rekrutmen yang Disederhanakan",
+          "DESC": "Data rekrutmen terpusat, lamaran pekerjaan dengan kode QR, dan notifikasi otomatis meminimalkan tugas manual serta mempercepat perekrutan."
+        }
+      }
+    },
+    "CATEGORIES": {
+      "RECRUITMENT": {
+        "NAME": "Rekrutmen",
+        "NAVBAR_DESC": "Proses rekrutmen karyawan baru",
+        "HERO_TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah diakses di ujung jari Anda.",
+        "HERO_DESC": "Dalam proses rekrutmen online kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Pada proses ini, pelamar dapat dengan mudah mengirimkan lamaran pekerjaan melalui aplikasi dengan memindai CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi.",
+        "DETAILED": [
+          {
+            "TITLE": "Pengajuan Lamaran",
+            "DESC": "Untuk memulai proses rekrutmen, pelamar akan mengakses aplikasi dan memindai CV beserta dokumen pendukung lainnya. Setelah pemindaian selesai, aplikasi akan mengirimkan lamaran kerja ke sistem rekrutmen perusahaan."
+          },
+          {
+            "TITLE": "Proses Seleksi",
+            "DESC": "Setelah lamaran diterima oleh sistem rekrutmen, pelamar akan menjalani tahapan seleksi selanjutnya seperti tes psikologi dan wawancara. Tahapan seleksi ini dapat dijadwalkan melalui aplikasi, dan pelamar akan menerima pemberitahuan melalui aplikasi untuk setiap tahapan seleksi yang harus diikuti."
+          },
+          {
+            "TITLE": "Hasil Seleksi & Onboarding",
+            "DESC": "Pelamar yang lolos tahapan seleksi akan menerima instruksi onboarding otomatis, daftar periksa dokumen, dan jadwal orientasi langsung melalui sistem."
+          },
+          {
+            "TITLE": "Rekrutmen yang Efisien",
+            "DESC": "Pelacakan pelamar secara real-time dan pembaruan status otomatis mempermudah penyaringan kandidat dan menyederhanakan koordinasi tim."
+          },
+          {
+            "TITLE": "Proses Rekrutmen yang Disederhanakan",
+            "DESC": "Data rekrutmen terpusat, lamaran pekerjaan dengan kode QR, dan notifikasi otomatis meminimalkan tugas manual serta mempercepat perekrutan."
+          }
+        ]
+      },
+      "ATTENDANCE": {
+        "NAME": "Absensi",
+        "NAVBAR_DESC": "Software Absensi",
+        "HERO_TITLE": "Lacak kehadiran karyawan dengan mudah dan akurat menggunakan software kami dengan integrasi mesin atau aplikasi",
+        "HERO_DESC": "Memperkenalkan software absensi komprehensif dengan fitur luar biasa yang akan mempermudah absensi karyawan dan manajemen penggajian. Dengan pengaturan mesin slotting, badge, atau melalui Aplikasi, karyawan dapat dengan mudah dan akurat mencatat kehadiran mereka.",
+        "DETAILED": [
+          {
+            "TITLE": "Fitur rotasi shift otomatis",
+            "DESC": "Fitur rotasi shift otomatis dalam software absensi ini akan secara otomatis merotasi jadwal shift kerja karyawan. Sistem akan menentukan daftar shift kehadiran karyawan yang tidak beraturan, mempermudah pengelolaan jadwal karyawan."
+          }
+        ]
+      }
+    }
   },
 
   "UNIVERSAL": {

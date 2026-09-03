@@ -1,24 +1,58 @@
-import { Component, OnInit, OnDestroy, signal, computed, inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  signal,
+  computed,
+  inject,
+  PLATFORM_ID,
+} from '@angular/core';
+import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
-export interface DetailedFeature {
-  title: string;
-  desc: string;
-  img: string;
+export interface FeatureDetailItem {
+  readonly id: string;
+  readonly titleKey: string;
+  readonly descKey: string;
+  readonly img: string;
 }
 
-export interface FeatureCategory {
-  name: string;
-  navbar_desc: string;
-  hero_title: string;
-  hero_desc: string;
-  hero_img: string;
-  detailed: DetailedFeature[];
-}
+export const RECRUITMENT_FEATURE_ITEMS: readonly FeatureDetailItem[] = [
+  {
+    id: 'application-submission',
+    titleKey: 'FEATURE.DETAIL.ITEMS.APPLICATION_SUBMISSION.TITLE',
+    descKey: 'FEATURE.DETAIL.ITEMS.APPLICATION_SUBMISSION.DESC',
+    img: '/images/features/recruitment-preview.png',
+  },
+  {
+    id: 'selection-process',
+    titleKey: 'FEATURE.DETAIL.ITEMS.SELECTION_PROCESS.TITLE',
+    descKey: 'FEATURE.DETAIL.ITEMS.SELECTION_PROCESS.DESC',
+    img: '/images/features/recruitment-preview.png',
+  },
+  {
+    id: 'selection-result',
+    titleKey: 'FEATURE.DETAIL.ITEMS.SELECTION_RESULT.TITLE',
+    descKey: 'FEATURE.DETAIL.ITEMS.SELECTION_RESULT.DESC',
+    img: '/images/features/recruitment-preview.png',
+  },
+  {
+    id: 'efficient-recruitment',
+    titleKey: 'FEATURE.DETAIL.ITEMS.EFFICIENT_RECRUITMENT.TITLE',
+    descKey: 'FEATURE.DETAIL.ITEMS.EFFICIENT_RECRUITMENT.DESC',
+    img: '/images/features/recruitment-preview.png',
+  },
+  {
+    id: 'simplified-process',
+    titleKey: 'FEATURE.DETAIL.ITEMS.SIMPLIFIED_PROCESS.TITLE',
+    descKey: 'FEATURE.DETAIL.ITEMS.SIMPLIFIED_PROCESS.DESC',
+    img: '/images/features/recruitment-preview.png',
+  },
+];
 
 @Component({
   selector: 'feature-detail',
-  imports: [],
+  imports: [TranslatePipe, NgOptimizedImage],
   templateUrl: './detail.html',
   styles: `
     :host {
@@ -40,24 +74,20 @@ export class Detail implements OnInit, OnDestroy {
   readonly duration = 6000;
   readonly tickInterval = 50;
 
-  features = signal<FeatureCategory | null>(null);
-  activeIndex = signal<number>(0);
-  progress = signal<number>(0);
-  isPaused = signal<boolean>(false);
+  readonly items = signal<readonly FeatureDetailItem[]>(RECRUITMENT_FEATURE_ITEMS);
+  readonly activeIndex = signal<number>(0);
+  readonly progress = signal<number>(0);
+  readonly isPaused = signal<boolean>(false);
 
-  private timerId: number | null = null;
+  private timerId: ReturnType<typeof setInterval> | null = null;
 
-  activeItem = computed(() => {
-    const list = this.features()?.detailed;
+  readonly activeItem = computed(() => {
+    const list = this.items();
     if (!list || list.length === 0) return null;
     return list[this.activeIndex()] ?? list[0];
   });
 
-  async ngOnInit() {
-    const data = await import('../../../data/en-uk.features').then((m) => m.features);
-    const recruitment = data.find((x) => x.name === 'Recrutment') ?? data[0];
-    this.features.set(recruitment);
-
+  ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
       this.startTimer();
     }
@@ -69,19 +99,21 @@ export class Detail implements OnInit, OnDestroy {
 
   startTimer() {
     this.stopTimer();
-    this.timerId = window.setInterval(() => {
-      if (!this.isPaused()) {
-        const step = (this.tickInterval / this.duration) * 100;
-        this.progress.update((p) => {
-          const next = p + step;
-          if (next >= 100) {
-            this.nextFeature();
-            return 0;
-          }
-          return next;
-        });
-      }
-    }, this.tickInterval);
+    if (isPlatformBrowser(this.platformId)) {
+      this.timerId = setInterval(() => {
+        if (!this.isPaused()) {
+          const step = (this.tickInterval / this.duration) * 100;
+          this.progress.update((p) => {
+            const next = p + step;
+            if (next >= 100) {
+              this.nextFeature();
+              return 0;
+            }
+            return next;
+          });
+        }
+      }, this.tickInterval);
+    }
   }
 
   stopTimer() {
@@ -97,7 +129,7 @@ export class Detail implements OnInit, OnDestroy {
   }
 
   nextFeature() {
-    const total = this.features()?.detailed?.length || 1;
+    const total = this.items().length || 1;
     this.activeIndex.update((current) => (current + 1) % total);
     this.progress.set(0);
   }
@@ -116,11 +148,11 @@ export class Detail implements OnInit, OnDestroy {
       this.selectFeature(index);
     } else if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
       event.preventDefault();
-      const total = this.features()?.detailed?.length || 1;
+      const total = this.items().length || 1;
       this.selectFeature((index + 1) % total);
     } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
       event.preventDefault();
-      const total = this.features()?.detailed?.length || 1;
+      const total = this.items().length || 1;
       this.selectFeature((index - 1 + total) % total);
     }
   }

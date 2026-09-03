@@ -13,7 +13,7 @@
         role="tablist"
         aria-label="Feature Details Navigation"
       >
-        @for (fitur of features()?.detailed; track fitur.title; let i = $index) {
+        @for (fitur of items(); track fitur.id; let i = $index) {
           @let isActive = activeIndex() === i;
           <div
             role="tab"
@@ -45,7 +45,7 @@
                   [attr.aria-valuenow]="progress()"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  [attr.aria-label]="fitur.title + ' progress'"
+                  [attr.aria-label]="(fitur.titleKey | translate) + ' progress'"
                 ></div>
               }
 
@@ -53,7 +53,7 @@
                 class="relative z-10 text-[15px] font-semibold text-slate-800 tracking-tight select-none transition-colors duration-200"
                 [class.text-[#066b60]]="isActive"
               >
-                {{ fitur.title }}
+                {{ fitur.titleKey | translate }}
               </h3>
 
               <svg
@@ -80,13 +80,15 @@
                 >
                   <div class="lg:hidden w-full mb-3 mt-1 flex justify-center">
                     <img
-                      [src]="fitur.img"
-                      [alt]="fitur.title"
+                      [ngSrc]="fitur.img"
+                      [alt]="fitur.titleKey | translate"
+                      width="500"
+                      height="350"
                       class="w-full h-auto max-h-72 object-contain rounded-lg border border-slate-200/80 shadow-xs bg-slate-50/50"
                     />
                   </div>
 
-                  <p>{{ fitur.desc }}</p>
+                  <p>{{ fitur.descKey | translate }}</p>
                 </div>
               </div>
             </div>
@@ -102,7 +104,7 @@
         (focusout)="resumeAutoPlay()"
         aria-live="polite"
       >
-        @for (fitur of features()?.detailed; track fitur.title; let i = $index) {
+        @for (fitur of items(); track fitur.id; let i = $index) {
           <div
             [id]="'feature-preview-' + i"
             class="transition-all duration-500 ease-out flex items-center justify-center w-full"
@@ -117,8 +119,11 @@
             [attr.aria-hidden]="activeIndex() !== i"
           >
             <img
-              [src]="fitur.img"
-              [alt]="fitur.title"
+              [ngSrc]="fitur.img"
+              [alt]="fitur.titleKey | translate"
+              width="600"
+              height="450"
+              [priority]="i === 0"
               class="w-[85%] max-w-xl h-auto max-h-130 object-contain rounded-xl border border-slate-200/80 shadow-md select-none bg-white transition-all duration-300"
             />
           </div>
