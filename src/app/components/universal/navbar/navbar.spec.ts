@@ -138,4 +138,59 @@ describe('UniversalNavbar', () => {
     expect(component.isMobileMenuOpen()).toBe(false);
     expect(component.activeMenu()).toBeNull();
   });
+
+  it('should keep mobile sidebar outside of header to prevent backdrop-filter containing block trap', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const sidebarInsideHeader = compiled.querySelector('header aside#mobile-sidebar');
+    const sidebar = compiled.querySelector('aside#mobile-sidebar');
+
+    expect(sidebarInsideHeader).toBeNull();
+    expect(sidebar).toBeTruthy();
+  });
+
+  it('should toggle backdrop-blur-md and translucent background on header when scrolled past viewport', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const header = compiled.querySelector('header');
+
+    // Default: not scrolled past viewport
+    expect(header?.classList.contains('bg-[#eef4f8]')).toBe(true);
+    expect(header?.classList.contains('backdrop-blur-md')).toBe(false);
+
+    // Scrolled past viewport
+    component.isScrolledPastViewport.set(true);
+    fixture.detectChanges();
+
+    expect(header?.classList.contains('backdrop-blur-md')).toBe(true);
+    expect(header?.classList.contains('bg-[#eef4f8]/80')).toBe(true);
+
+    // Back to top
+    component.isScrolledPastViewport.set(false);
+    fixture.detectChanges();
+
+    expect(header?.classList.contains('bg-[#eef4f8]')).toBe(true);
+    expect(header?.classList.contains('backdrop-blur-md')).toBe(false);
+  });
+
+  it('should toggle inert and aria-hidden attributes on mobile sidebar based on isMobileMenuOpen', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const sidebar = compiled.querySelector('aside#mobile-sidebar');
+
+    // Closed by default
+    expect(sidebar?.hasAttribute('inert')).toBe(true);
+    expect(sidebar?.getAttribute('aria-hidden')).toBe('true');
+
+    // Open menu
+    component.toggleMobileMenu();
+    fixture.detectChanges();
+
+    expect(sidebar?.hasAttribute('inert')).toBe(false);
+    expect(sidebar?.getAttribute('aria-hidden')).toBe('false');
+
+    // Close menu
+    component.closeMobileMenu();
+    fixture.detectChanges();
+
+    expect(sidebar?.hasAttribute('inert')).toBe(true);
+    expect(sidebar?.getAttribute('aria-hidden')).toBe('true');
+  });
 });
