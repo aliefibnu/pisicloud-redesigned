@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { Hero } from '../../components/feature/hero/hero';
 import { Detail } from '../../components/feature/detail/detail';
 import { Faq } from '../../components/universal/faq/faq';
+import { getFeatureBySlug, getDefaultFeature } from '../../data/features';
 
 @Component({
   selector: 'app-feature',
@@ -9,4 +10,14 @@ import { Faq } from '../../components/universal/faq/faq';
   templateUrl: './feature.html',
   styles: ``,
 })
-export class Feature {}
+export class Feature {
+  readonly slug = input<string>('recruitment');
+
+  readonly currentFeature = computed(() => {
+    return getFeatureBySlug(this.slug()) ?? getDefaultFeature();
+  });
+
+  readonly heroConfig = computed(() => this.currentFeature().hero);
+  readonly badgeKey = computed(() => this.currentFeature().nameKey);
+  readonly detailItems = computed(() => this.currentFeature().items);
+}

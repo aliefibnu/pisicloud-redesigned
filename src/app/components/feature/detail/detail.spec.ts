@@ -3,10 +3,12 @@ import { PLATFORM_ID } from '@angular/core';
 import { provideTranslateService } from '@ngx-translate/core';
 import { vi } from 'vitest';
 import { Detail } from './detail';
+import { getDefaultFeature } from '../../../data/features';
 
 describe('Detail', () => {
   let component: Detail;
   let fixture: ComponentFixture<Detail>;
+  const mockItems = getDefaultFeature().items;
 
   beforeEach(async () => {
     vi.useFakeTimers();
@@ -21,6 +23,7 @@ describe('Detail', () => {
 
     fixture = TestBed.createComponent(Detail);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('items', mockItems);
     component.ngOnInit();
     fixture.detectChanges();
   });
@@ -34,7 +37,7 @@ describe('Detail', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should load recruitment feature items on init', () => {
+  it('should load feature items from input', () => {
     const items = component.items();
     expect(items).toBeTruthy();
     expect(items.length).toBe(5);

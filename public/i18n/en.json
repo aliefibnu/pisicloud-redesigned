@@ -7,11 +7,12 @@
   },
 
   "FEATURE": {
-    "HERO": {
-      "TITLE": "Experience the future of recruitment - efficient, convenient, and accessible at your fingertips.",
-      "DESC": "In the online recruitment process, it is now easier with the application scan feature through the application. In this process, applicants can easily send their job applications through the application by scanning their CV and other supporting documents, as well as undergo the next stages of recruitment through the application ."
-    },
-    "DETAIL": {
+    "RECRUITMENT": {
+      "NAME": "Recruitment",
+      "HERO": {
+        "TITLE": "Experience the future of recruitment - efficient, convenient, and accessible at your fingertips.",
+        "DESC": "In the online recruitment process, it is now easier with the application scan feature through the application. In this process, applicants can easily send their job applications through the application by scanning their CV and other supporting documents, as well as undergo the next stages of recruitment through the application."
+      },
       "ITEMS": {
         "APPLICATION_SUBMISSION": {
           "TITLE": "Application Submission",
@@ -35,46 +36,191 @@
         }
       }
     },
-    "CATEGORIES": {
-      "RECRUITMENT": {
-        "NAME": "Recruitment",
-        "NAVBAR_DESC": "New employee recruitment process",
-        "HERO_TITLE": "Experience the future of recruitment - efficient, convenient, and accessible at your fingertips.",
-        "HERO_DESC": "In the online recruitment process, it is now easier with the application scan feature through the application. In this process, applicants can easily send their job applications through the application by scanning their CV and other supporting documents, as well as undergo the next stages of recruitment through the application .",
-        "DETAILED": [
-          {
-            "TITLE": "Application Submission",
-            "DESC": "To start the recruitment process, applicants will access the application and scan their CV and other supporting documents. After scanning is complete, the application will send the job application to the company's recruitment system."
-          },
-          {
-            "TITLE": "Selection Process",
-            "DESC": "After the application is received by the recruitment system, applicants will undergo the next selection stages such as psychological tests and interviews. These selection stages can be scheduled via the application, and applicants will receive notifications via the application for each selection stage that must be followed."
-          },
-          {
-            "TITLE": "Selection Result & Onboarding",
-            "DESC": "Applicants who pass the selection stages will receive automated onboarding instructions, document checklists, and orientation schedules directly through the system."
-          },
-          {
-            "TITLE": "Efficient Recruitment",
-            "DESC": "Real-time applicant tracking and automated status updates streamline candidate screening and simplify team coordination."
-          },
-          {
-            "TITLE": "Simplified Recruitment Process",
-            "DESC": "Centralized recruitment data, QR code job applications, and automated notifications minimize manual tasks and speed up hiring."
-          }
-        ]
+    "ATTENDANCE": {
+      "NAME": "Attendance",
+      "HERO": {
+        "TITLE": "Track employee attendance with ease and accuracy using our software with machine or apps integration",
+        "DESC": "Introducing a comprehensive attendance software with outstanding features that will facilitate employee attendance and payroll management. With the setting of slotting machines, badges, or via Apps, employees can easily and accurately record their attendance."
       },
-      "ATTENDANCE": {
-        "NAME": "Attendance",
-        "NAVBAR_DESC": "Attendance Software",
-        "HERO_TITLE": "Track employee attendance with ease and accuracy using our software with machine or apps integration",
-        "HERO_DESC": "Introducing a comprehensive attendance software with outstanding features that will facilitate employee attendance and payroll management. With the setting of slotting machines, badges, or via Apps, employees can easily and accurately record their attendance.",
-        "DETAILED": [
-          {
-            "TITLE": "The auto-rotate shift feature",
-            "DESC": "The auto-rotate shift feature in this attendance software will automatically rotate employee work shifts. The system will determine the list of irregular employee attendance shifts, making it easier to manage employee schedules."
-          }
-        ]
+      "ITEMS": {
+        "SHIFT_ROTATION": {
+          "TITLE": "Auto-Rotate Shift Feature",
+          "DESC": "The auto-rotate shift feature in this attendance software will automatically rotate employee work shifts. The system will determine the list of irregular employee attendance shifts, making it easier to manage employee schedules."
+        },
+        "REALTIME_TRACKING": {
+          "TITLE": "Real-Time Attendance Monitoring",
+          "DESC": "Monitor attendance, punctuality, and working hours across all teams in real time on a centralized analytics dashboard."
+        }
+      }
+    },
+    "PAYROLL": {
+      "NAME": "Payroll",
+      "HERO": {
+        "TITLE": "Your Payroll, Your Rules - Ease of Payroll Processing with Customizable Formulas",
+        "DESC": "Get ease of payroll processing with the best payroll software with customizable deduction and allowance formulas."
+      },
+      "ITEMS": {
+        "CUSTOM_FORMULA": {
+          "TITLE": "Custom Salary Formulas",
+          "DESC": "Configure base salaries, allowances, overtime multipliers, and tax deductions according to your specific organizational policies."
+        },
+        "AUTO_PAYSLIP": {
+          "TITLE": "Digital Payslip Distribution",
+          "DESC": "Automatically distribute encrypted digital payslips to employee inboxes and mobile devices on every pay cycle."
+        }
+      }
+    },
+    "DATABASE": {
+      "NAME": "Database Management",
+      "HERO": {
+        "TITLE": "Streamline your HR processes and unlock your team's potential",
+        "DESC": "Centralize and manage employee profiles, employment histories, and compliance documents in a unified secure database."
+      },
+      "ITEMS": {
+        "EMPLOYEE_RECORDS": {
+          "TITLE": "Comprehensive Employee Profiles",
+          "DESC": "Store career progressions, personal details, education, certifications, and contracts in a single unified record."
+        },
+        "DOCUMENT_VAULT": {
+          "TITLE": "Digital Document Storage",
+          "DESC": "Secure digital repository for contracts, identification, tax IDs, and certificates with enterprise-grade encryption."
+        }
+      }
+    },
+    "PERSONAL_LEAVE": {
+      "NAME": "Personal Leave",
+      "HERO": {
+        "TITLE": "Take a break and come back stronger with seamless personal leave management",
+        "DESC": "Enable employees to submit annual leave, sick leave, or permissions online with instant multi-level approval workflows."
+      },
+      "ITEMS": {
+        "LEAVE_REQUEST": {
+          "TITLE": "Online Leave Requests",
+          "DESC": "Employees can check remaining leave balance in real time and submit requests in seconds right from their smartphones."
+        },
+        "MULTI_LEVEL_APPROVAL": {
+          "TITLE": "Automated Multi-Level Approval",
+          "DESC": "Streamlined approval workflows that automatically notify direct supervisors and HR for swift review and confirmation."
+        }
+      }
+    },
+    "PERSONAL_OVERTIME": {
+      "NAME": "Personal Overtime",
+      "HERO": {
+        "TITLE": "Easily and efficiently request personal overtime anytime, anywhere",
+        "DESC": "Record overtime hours with automated calculation conforming to labor regulations and direct payroll integration."
+      },
+      "ITEMS": {
+        "OVERTIME_SUBMISSION": {
+          "TITLE": "Self-Service Overtime Filing",
+          "DESC": "Submit overtime requests before or after shifts with clear justification, tasks, and planned duration."
+        },
+        "AUTO_CALCULATION": {
+          "TITLE": "Automated Overtime Rate Calculation",
+          "DESC": "Accurate overtime wage computations based on statutory labor standards directly linked to monthly payroll."
+        }
+      }
+    },
+    "EMPLOYEE_UPDATE": {
+      "NAME": "Employee Data Update",
+      "HERO": {
+        "TITLE": "Keep your HR data up-to-date effortlessly with employee self-service",
+        "DESC": "Allow employees to update their contact details, bank accounts, and family information with HR validation."
+      },
+      "ITEMS": {
+        "PROFILE_MANAGEMENT": {
+          "TITLE": "Employee Self-Service (ESS)",
+          "DESC": "Employees can update personal information and upload supporting verification documents directly anytime."
+        },
+        "VERIFICATION_WORKFLOW": {
+          "TITLE": "HR Verification & Approval",
+          "DESC": "Every profile adjustment goes through HR review to ensure accuracy and authenticity before data is updated."
+        }
+      }
+    },
+    "PERSONAL_ATTENDANCE": {
+      "NAME": "Personal Attendance",
+      "HERO": {
+        "TITLE": "Track your attendance on the go with convenient mobile check-ins",
+        "DESC": "Employees can inspect their daily check-in logs, punctuality records, and attendance history on mobile devices."
+      },
+      "ITEMS": {
+        "MOBILE_CLOCK_IN": {
+          "TITLE": "Mobile & GPS Geotagged Clock-In",
+          "DESC": "Clock in and out from mobile devices with GPS radius verification and selfie facial capture."
+        },
+        "ATTENDANCE_HISTORY": {
+          "TITLE": "Personal Work Hours Recap",
+          "DESC": "Transparent access to daily logs, punch times, and monthly accumulated working hours."
+        }
+      }
+    },
+    "COLLECTIVE_LEAVE": {
+      "NAME": "Collective Leave",
+      "HERO": {
+        "TITLE": "Seamless collective leave management and holiday scheduling",
+        "DESC": "Schedule company-wide holidays and collective leave simultaneously without manual per-employee entry."
+      },
+      "ITEMS": {
+        "HOLIDAY_CALENDAR": {
+          "TITLE": "Unified Holiday Calendar",
+          "DESC": "Synchronize public holidays and company collective breaks across all department schedules automatically."
+        },
+        "QUOTA_DEDUCTION": {
+          "TITLE": "Automatic Quota Deduction",
+          "DESC": "Automatically adjust and deduct leave balances for affected employees based on approved collective leave schedules."
+        }
+      }
+    },
+    "COLLECTIVE_OVERTIME": {
+      "NAME": "Collective Overtime",
+      "HERO": {
+        "TITLE": "Efficient collective overtime management for teams and departments",
+        "DESC": "Enable managers to issue group overtime orders for departments and shift teams effortlessly."
+      },
+      "ITEMS": {
+        "GROUP_SPL": {
+          "TITLE": "Group Overtime Orders",
+          "DESC": "Create and dispatch overtime assignments for whole project teams with a single action."
+        },
+        "BUDGET_TRACKING": {
+          "TITLE": "Overtime Budget Monitoring",
+          "DESC": "Track estimated overtime costs and team hour totals in real time before submitting for approval."
+        }
+      }
+    },
+    "ATTENDANCE_MACHINE": {
+      "NAME": "Attendance Machine",
+      "HERO": {
+        "TITLE": "Direct connectivity to biometric hardware and attendance machines",
+        "DESC": "Connect fingerprint, facial recognition, and RFID biometric machines directly to the cloud without complex middleware."
+      },
+      "ITEMS": {
+        "HARDWARE_SYNC": {
+          "TITLE": "Real-Time Hardware Sync",
+          "DESC": "Punch logs from on-premise hardware terminals across all branch offices synchronize instantly to the cloud."
+        },
+        "MULTI_DEVICE_SUPPORT": {
+          "TITLE": "Multi-Brand Device Support",
+          "DESC": "Universal compatibility with industry-standard biometric terminals and secure network communication protocols."
+        }
+      }
+    },
+    "YEARLY_TAX": {
+      "NAME": "Yearly Tax",
+      "HERO": {
+        "TITLE": "Effortlessly manage annual taxes and PPh 21 calculations",
+        "DESC": "Calculate employee tax liabilities with the latest TER tax brackets and generate 1721-A1 tax returns automatically."
+      },
+      "ITEMS": {
+        "TER_CALCULATION": {
+          "TITLE": "Effective Average Rate (TER) Calculation",
+          "DESC": "Automated monthly withholding and year-end tax adjustments conforming to current tax regulation."
+        },
+        "FORM_1721_A1": {
+          "TITLE": "Batch 1721-A1 Tax Return Generation",
+          "DESC": "Generate and distribute official 1721-A1 tax withholding forms to all employees in one click."
+        }
       }
     }
   },

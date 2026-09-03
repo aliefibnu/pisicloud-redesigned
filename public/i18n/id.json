@@ -7,11 +7,12 @@
   },
 
   "FEATURE": {
-    "HERO": {
-      "TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah diakses di ujung jari Anda.",
-      "DESC": "Dalam proses rekrutmen online kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Pada proses ini, pelamar dapat dengan mudah mengirimkan lamaran pekerjaan melalui aplikasi dengan memindai CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi."
-    },
-    "DETAIL": {
+    "RECRUITMENT": {
+      "NAME": "Perekrutan",
+      "HERO": {
+        "TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah diakses di ujung jari Anda.",
+        "DESC": "Dalam proses rekrutmen online kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Pada proses ini, pelamar dapat dengan mudah mengirimkan lamaran pekerjaan melalui aplikasi dengan memindai CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi."
+      },
       "ITEMS": {
         "APPLICATION_SUBMISSION": {
           "TITLE": "Pengajuan Lamaran",
@@ -35,46 +36,191 @@
         }
       }
     },
-    "CATEGORIES": {
-      "RECRUITMENT": {
-        "NAME": "Rekrutmen",
-        "NAVBAR_DESC": "Proses rekrutmen karyawan baru",
-        "HERO_TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah diakses di ujung jari Anda.",
-        "HERO_DESC": "Dalam proses rekrutmen online kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Pada proses ini, pelamar dapat dengan mudah mengirimkan lamaran pekerjaan melalui aplikasi dengan memindai CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi.",
-        "DETAILED": [
-          {
-            "TITLE": "Pengajuan Lamaran",
-            "DESC": "Untuk memulai proses rekrutmen, pelamar akan mengakses aplikasi dan memindai CV beserta dokumen pendukung lainnya. Setelah pemindaian selesai, aplikasi akan mengirimkan lamaran kerja ke sistem rekrutmen perusahaan."
-          },
-          {
-            "TITLE": "Proses Seleksi",
-            "DESC": "Setelah lamaran diterima oleh sistem rekrutmen, pelamar akan menjalani tahapan seleksi selanjutnya seperti tes psikologi dan wawancara. Tahapan seleksi ini dapat dijadwalkan melalui aplikasi, dan pelamar akan menerima pemberitahuan melalui aplikasi untuk setiap tahapan seleksi yang harus diikuti."
-          },
-          {
-            "TITLE": "Hasil Seleksi & Onboarding",
-            "DESC": "Pelamar yang lolos tahapan seleksi akan menerima instruksi onboarding otomatis, daftar periksa dokumen, dan jadwal orientasi langsung melalui sistem."
-          },
-          {
-            "TITLE": "Rekrutmen yang Efisien",
-            "DESC": "Pelacakan pelamar secara real-time dan pembaruan status otomatis mempermudah penyaringan kandidat dan menyederhanakan koordinasi tim."
-          },
-          {
-            "TITLE": "Proses Rekrutmen yang Disederhanakan",
-            "DESC": "Data rekrutmen terpusat, lamaran pekerjaan dengan kode QR, dan notifikasi otomatis meminimalkan tugas manual serta mempercepat perekrutan."
-          }
-        ]
+    "ATTENDANCE": {
+      "NAME": "Presensi",
+      "HERO": {
+        "TITLE": "Lacak kehadiran karyawan dengan mudah dan akurat menggunakan software kami dengan integrasi mesin atau aplikasi",
+        "DESC": "Memperkenalkan software absensi komprehensif dengan fitur luar biasa yang akan mempermudah absensi karyawan dan manajemen penggajian. Dengan pengaturan mesin slotting, badge, atau melalui Aplikasi, karyawan dapat dengan mudah dan akurat mencatat kehadiran mereka."
       },
-      "ATTENDANCE": {
-        "NAME": "Absensi",
-        "NAVBAR_DESC": "Software Absensi",
-        "HERO_TITLE": "Lacak kehadiran karyawan dengan mudah dan akurat menggunakan software kami dengan integrasi mesin atau aplikasi",
-        "HERO_DESC": "Memperkenalkan software absensi komprehensif dengan fitur luar biasa yang akan mempermudah absensi karyawan dan manajemen penggajian. Dengan pengaturan mesin slotting, badge, atau melalui Aplikasi, karyawan dapat dengan mudah dan akurat mencatat kehadiran mereka.",
-        "DETAILED": [
-          {
-            "TITLE": "Fitur rotasi shift otomatis",
-            "DESC": "Fitur rotasi shift otomatis dalam software absensi ini akan secara otomatis merotasi jadwal shift kerja karyawan. Sistem akan menentukan daftar shift kehadiran karyawan yang tidak beraturan, mempermudah pengelolaan jadwal karyawan."
-          }
-        ]
+      "ITEMS": {
+        "SHIFT_ROTATION": {
+          "TITLE": "Fitur Rotasi Shift Otomatis",
+          "DESC": "Fitur rotasi shift otomatis dalam software absensi ini akan secara otomatis merotasi jadwal shift kerja karyawan. Sistem akan menentukan daftar shift kehadiran karyawan yang tidak beraturan, mempermudah pengelolaan jadwal karyawan."
+        },
+        "REALTIME_TRACKING": {
+          "TITLE": "Pemantauan Kehadiran Real-Time",
+          "DESC": "Pantau kehadiran, keterlambatan, dan jam kerja seluruh karyawan secara langsung dalam satu dasbor analitik terpusat."
+        }
+      }
+    },
+    "PAYROLL": {
+      "NAME": "Penggajian",
+      "HERO": {
+        "TITLE": "Kemudahan Pengelolaan Gaji Karyawan dengan Fleksibilitas Formula Penggajian",
+        "DESC": "Dapatkan kemudahan proses penggajian dengan software payroll terbaik yang mendukung kustomisasi formula potongan dan tunjangan secara akurat."
+      },
+      "ITEMS": {
+        "CUSTOM_FORMULA": {
+          "TITLE": "Formula Gaji Kustom",
+          "DESC": "Atur formula komponen gaji pokok, tunjangan kehadiran, lembur, dan potongan sesuai dengan kebijakan unik perusahaan Anda."
+        },
+        "AUTO_PAYSLIP": {
+          "TITLE": "Distribusi Slip Gaji Digital",
+          "DESC": "Kirim slip gaji terenkripsi langsung ke email atau aplikasi seluler karyawan secara otomatis dan tepat waktu setiap periode gajian."
+        }
+      }
+    },
+    "DATABASE": {
+      "NAME": "Manajemen Database",
+      "HERO": {
+        "TITLE": "Pusat Data Induk Karyawan Terpadu & Terstruktur",
+        "DESC": "Kelola informasi karyawan mulai dari identitas, riwayat karir, hingga dokumen penting dalam satu basis data yang aman dan terpusat."
+      },
+      "ITEMS": {
+        "EMPLOYEE_RECORDS": {
+          "TITLE": "Profil Karyawan Komprehensif",
+          "DESC": "Simpan riwayat kerja, data keluarga, pendidikan, sertifikasi, dan kontrak kerja dalam satu repositori data terpadu."
+        },
+        "DOCUMENT_VAULT": {
+          "TITLE": "Penyimpanan Dokumen Digital",
+          "DESC": "Arsip digital yang aman untuk menyimpan KTP, NPWP, BPJS, dan surat perjanjian kerja dengan enkripsi tingkat tinggi."
+        }
+      }
+    },
+    "PERSONAL_LEAVE": {
+      "NAME": "Cuti Pribadi",
+      "HERO": {
+        "TITLE": "Pengajuan Cuti Mandiri Karyawan yang Praktis dan Cepat",
+        "DESC": "Permudah karyawan mengajukan cuti tahunan, cuti sakit, atau izin secara online langsung melalui aplikasi dengan approval bertingkat."
+      },
+      "ITEMS": {
+        "LEAVE_REQUEST": {
+          "TITLE": "Pengajuan Cuti Online Mandiri",
+          "DESC": "Karyawan dapat memeriksa sisa kuota cuti secara real-time dan mengajukan cuti dalam hitungan detik melalui ponsel."
+        },
+        "MULTI_LEVEL_APPROVAL": {
+          "TITLE": "Persetujuan Bertingkat Otomatis",
+          "DESC": "Alur persetujuan cuti berjenjang yang otomatis meneruskan notifikasi ke atasan langsung dan HR untuk konfirmasi cepat."
+        }
+      }
+    },
+    "PERSONAL_OVERTIME": {
+      "NAME": "Lembur Pribadi",
+      "HERO": {
+        "TITLE": "Pencatatan & Klaim Jam Lembur Karyawan yang Akurat",
+        "DESC": "Catat jam lembur dengan kalkulasi otomatis sesuai peraturan ketenagakerjaan dan integrasi langsung ke sistem penggajian."
+      },
+      "ITEMS": {
+        "OVERTIME_SUBMISSION": {
+          "TITLE": "Pengajuan Jam Lembur Mandiri",
+          "DESC": "Ajukan tugas lembur sebelum atau sesudah jam kerja lengkap dengan rincian pekerjaan dan durasi waktu."
+        },
+        "AUTO_CALCULATION": {
+          "TITLE": "Kalkulasi Upah Lembur Otomatis",
+          "DESC": "Perhitungan tarif upah lembur secara presisi berdasarkan formula Depnaker yang langsung terhubung ke sistem payroll."
+        }
+      }
+    },
+    "EMPLOYEE_UPDATE": {
+      "NAME": "Pembaruan Data Karyawan",
+      "HERO": {
+        "TITLE": "Pembaruan Profil & Data Mandiri Karyawan Tanpa Ribet",
+        "DESC": "Berikan akses mandiri kepada karyawan untuk memperbarui alamat, nomor kontak, rekening bank, dan data keluarga dengan validasi HR."
+      },
+      "ITEMS": {
+        "PROFILE_MANAGEMENT": {
+          "TITLE": "Employee Self-Service (ESS)",
+          "DESC": "Karyawan dapat memperbarui informasi pribadi dan mengunggah dokumen terbaru secara mandiri kapan saja."
+        },
+        "VERIFICATION_WORKFLOW": {
+          "TITLE": "Verifikasi & Validasi HR",
+          "DESC": "Setiap perubahan data melewati peninjauan tim HR terlebih dahulu untuk memastikan keabsahan data perusahaan."
+        }
+      }
+    },
+    "PERSONAL_ATTENDANCE": {
+      "NAME": "Presensi Pribadi",
+      "HERO": {
+        "TITLE": "Pantau Riwayat & Statistik Kehadiran Diri Sendiri Kapan Saja",
+        "DESC": "Karyawan dapat melihat ringkasan keterlambatan, jam kerja harian, dan riwayat presensi bulanan secara transparan."
+      },
+      "ITEMS": {
+        "MOBILE_CLOCK_IN": {
+          "TITLE": "Presensi Mobile & GPS Geotagging",
+          "DESC": "Lakukan check-in dan check-out dari smartphone dengan validasi radius lokasi dan verifikasi foto wajah selfie."
+        },
+        "ATTENDANCE_HISTORY": {
+          "TITLE": "Rekapitulasi Jam Kerja Pribadi",
+          "DESC": "Akses riwayat kehadiran harian, waktu kedatangan, jam pulang, dan total akumulasi jam kerja bulanan."
+        }
+      }
+    },
+    "COLLECTIVE_LEAVE": {
+      "NAME": "Cuti Bersama",
+      "HERO": {
+        "TITLE": "Manajemen Cuti Massal & Hari Libur Perusahaan yang Efisien",
+        "DESC": "Atur jadwal cuti bersama perusahaan dan hari libur nasional secara serentak tanpa perlu input manual per karyawan."
+      },
+      "ITEMS": {
+        "HOLIDAY_CALENDAR": {
+          "TITLE": "Kalender Libur & Cuti Bersama Terpadu",
+          "DESC": "Sinkronisasi kalender hari libur nasional dan kebijakan libur bersama perusahaan ke seluruh departemen kerja."
+        },
+        "QUOTA_DEDUCTION": {
+          "TITLE": "Penyesuaian Saldo Cuti Massal Otomatis",
+          "DESC": "Sistem secara otomatis memotong saldo cuti tahunan karyawan yang berhak sesuai ketentuan cuti bersama yang berlaku."
+        }
+      }
+    },
+    "COLLECTIVE_OVERTIME": {
+      "NAME": "Lembur Bersama",
+      "HERO": {
+        "TITLE": "Pengaturan Rencana Lembur Tim & Departemen Secara Kolektif",
+        "DESC": "Permudah manajer membuat Surat Perintah Lembur (SPL) untuk sekelompok karyawan dalam satu proyek atau shift khusus."
+      },
+      "ITEMS": {
+        "GROUP_SPL": {
+          "TITLE": "Surat Perintah Lembur (SPL) Kolektif",
+          "DESC": "Terbitkan penugasan lembur grup untuk divisi atau tim kerja sekaligus tanpa harus memasukkan nama satu per satu."
+        },
+        "BUDGET_TRACKING": {
+          "TITLE": "Estimasi & Pengendalian Biaya Lembur",
+          "DESC": "Pantau estimasi total jam dan alokasi anggaran lembur departemen secara real-time sebelum diajukan ke manajemen."
+        }
+      }
+    },
+    "ATTENDANCE_MACHINE": {
+      "NAME": "Mesin Presensi",
+      "HERO": {
+        "TITLE": "Integrasi Mesin Biometrik & Perangkat Presensi Otomatis",
+        "DESC": "Hubungkan mesin sidik jari, pengenalan wajah, dan kartu RFID langsung ke cloud secara real-time tanpa software perantara yang rumit."
+      },
+      "ITEMS": {
+        "HARDWARE_SYNC": {
+          "TITLE": "Sinkronisasi Data Mesin Otomatis",
+          "DESC": "Data log absensi dari mesin fisik di berbagai cabang kantor tersinkronisasi otomatis ke cloud server secara instan."
+        },
+        "MULTI_DEVICE_SUPPORT": {
+          "TITLE": "Kompatibilitas Multi-Perangkat",
+          "DESC": "Mendukung berbagai tipe dan merek mesin absensi biometrik ternama dengan protokol komunikasi yang stabil."
+        }
+      }
+    },
+    "YEARLY_TAX": {
+      "NAME": "Pajak Tahunan",
+      "HERO": {
+        "TITLE": "Pengelolaan Pajak Penghasilan PPh 21 & SPT Tahunan Akurat",
+        "DESC": "Hitung pajak karyawan berdasarkan tarif TER terbaru dan cetak formulir 1721-A1 secara otomatis sesuai regulasi perpajakan yang berlaku."
+      },
+      "ITEMS": {
+        "TER_CALCULATION": {
+          "TITLE": "Kalkulasi Tarif Efektif Rata-Rata (TER)",
+          "DESC": "Perhitungan otomatis pemotongan PPh 21 bulanan dan masa pajak terakhir sesuai aturan PMK terbaru."
+        },
+        "FORM_1721_A1": {
+          "TITLE": "Penerbitan Bukti Potong 1721-A1 Massal",
+          "DESC": "Cetak dan distribusikan formulir bukti potong 1721-A1 resmi kepada seluruh karyawan dengan sekali klik."
+        }
       }
     }
   },

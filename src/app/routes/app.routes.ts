@@ -9,4 +9,8 @@ export const routes: Routes = [
     path: 'feature',
     loadComponent: () => import('../pages/feature/feature').then((m) => m.Feature),
   },
+  {
+    path: 'feature/:slug',
+    loadComponent: () => import('../pages/feature/feature').then((m) => m.Feature),
+  },
 ];

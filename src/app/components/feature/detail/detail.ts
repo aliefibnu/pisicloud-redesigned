@@ -5,50 +5,15 @@ import {
   signal,
   computed,
   inject,
+  input,
+  effect,
   PLATFORM_ID,
 } from '@angular/core';
 import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
+import { FeatureDetailItemConfig } from '../../../data/features/features.model';
 
-export interface FeatureDetailItem {
-  readonly id: string;
-  readonly titleKey: string;
-  readonly descKey: string;
-  readonly img: string;
-}
-
-export const RECRUITMENT_FEATURE_ITEMS: readonly FeatureDetailItem[] = [
-  {
-    id: 'application-submission',
-    titleKey: 'FEATURE.DETAIL.ITEMS.APPLICATION_SUBMISSION.TITLE',
-    descKey: 'FEATURE.DETAIL.ITEMS.APPLICATION_SUBMISSION.DESC',
-    img: '/images/features/recruitment-preview.png',
-  },
-  {
-    id: 'selection-process',
-    titleKey: 'FEATURE.DETAIL.ITEMS.SELECTION_PROCESS.TITLE',
-    descKey: 'FEATURE.DETAIL.ITEMS.SELECTION_PROCESS.DESC',
-    img: '/images/features/recruitment-preview.png',
-  },
-  {
-    id: 'selection-result',
-    titleKey: 'FEATURE.DETAIL.ITEMS.SELECTION_RESULT.TITLE',
-    descKey: 'FEATURE.DETAIL.ITEMS.SELECTION_RESULT.DESC',
-    img: '/images/features/recruitment-preview.png',
-  },
-  {
-    id: 'efficient-recruitment',
-    titleKey: 'FEATURE.DETAIL.ITEMS.EFFICIENT_RECRUITMENT.TITLE',
-    descKey: 'FEATURE.DETAIL.ITEMS.EFFICIENT_RECRUITMENT.DESC',
-    img: '/images/features/recruitment-preview.png',
-  },
-  {
-    id: 'simplified-process',
-    titleKey: 'FEATURE.DETAIL.ITEMS.SIMPLIFIED_PROCESS.TITLE',
-    descKey: 'FEATURE.DETAIL.ITEMS.SIMPLIFIED_PROCESS.DESC',
-    img: '/images/features/recruitment-preview.png',
-  },
-];
+export type FeatureDetailItem = FeatureDetailItemConfig;
 
 @Component({
   selector: 'feature-detail',
@@ -71,10 +36,11 @@ export const RECRUITMENT_FEATURE_ITEMS: readonly FeatureDetailItem[] = [
 export class Detail implements OnInit, OnDestroy {
   private readonly platformId = inject(PLATFORM_ID);
 
+  readonly items = input<readonly FeatureDetailItemConfig[]>([]);
+
   readonly duration = 6000;
   readonly tickInterval = 50;
 
-  readonly items = signal<readonly FeatureDetailItem[]>(RECRUITMENT_FEATURE_ITEMS);
   readonly activeIndex = signal<number>(0);
   readonly progress = signal<number>(0);
   readonly isPaused = signal<boolean>(false);
@@ -86,6 +52,17 @@ export class Detail implements OnInit, OnDestroy {
     if (!list || list.length === 0) return null;
     return list[this.activeIndex()] ?? list[0];
   });
+
+  constructor() {
+    effect(() => {
+      // Whenever items input changes, reset active selection & progress
+      const list = this.items();
+      if (list && list.length > 0) {
+        this.activeIndex.set(0);
+        this.progress.set(0);
+      }
+    });
+  }
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {

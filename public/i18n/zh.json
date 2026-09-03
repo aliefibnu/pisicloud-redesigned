@@ -7,8 +7,18 @@
   },
 
   "FEATURE": {
-    "HERO": {},
-    "DETAIL": {}
+    "RECRUITMENT": {},
+    "ATTENDANCE": {},
+    "PAYROLL": {},
+    "DATABASE": {},
+    "PERSONAL_LEAVE": {},
+    "PERSONAL_OVERTIME": {},
+    "EMPLOYEE_UPDATE": {},
+    "PERSONAL_ATTENDANCE": {},
+    "COLLECTIVE_LEAVE": {},
+    "COLLECTIVE_OVERTIME": {},
+    "ATTENDANCE_MACHINE": {},
+    "YEARLY_TAX": {}
   },
 
   "UNIVERSAL": {
