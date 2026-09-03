@@ -1,6 +1,15 @@
 {
   "LANDING": {
-    "HERO": {},
+    "HERO": {
+      "TITLE_LINE_1": "Efficient HR Management",
+      "TITLE_LINE_2_PREFIX": "with ",
+      "BRAND": "PISICloud",
+      "TITLE_LINE_2_SUFFIX": " HRM",
+      "DESCRIPTION": "Cloud-based Attendance, Payroll, and HR software for secure, easy, and efficient employee management.",
+      "CONTACT_US": "Contact Us",
+      "WATCH_PREVIEW": "Watch Preview Video",
+      "IMAGE_ALT": "PISICloud HR Management dashboard preview on a modern tablet displaying recruitment table with analytics and mobile icons"
+    },
     "FEATURES": {},
     "SOLUTION": {},
     "WHY_CHOSE_US": {}

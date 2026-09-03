@@ -1,6 +1,15 @@
 {
   "LANDING": {
-    "HERO": {},
+    "HERO": {
+      "TITLE_LINE_1": "Manajemen SDM Efisien",
+      "TITLE_LINE_2_PREFIX": "bersama ",
+      "BRAND": "PISICloud",
+      "TITLE_LINE_2_SUFFIX": " HRM",
+      "DESCRIPTION": "Software Absensi, Payroll, dan HR berbasis cloud untuk pengelolaan karyawan yang aman, mudah, dan efisien.",
+      "CONTACT_US": "Hubungi Kami",
+      "WATCH_PREVIEW": "Tonton Video Preview",
+      "IMAGE_ALT": "Pratinjau dashboard manajemen SDM PISICloud pada tablet modern menampilkan tabel rekrutmen dengan analitik dan ikon interaktif"
+    },
     "FEATURES": {},
     "SOLUTION": {},
     "WHY_CHOSE_US": {}

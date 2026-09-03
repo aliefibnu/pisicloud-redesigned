@@ -1,6 +1,15 @@
 {
   "LANDING": {
-    "HERO": {},
+    "HERO": {
+      "TITLE_LINE_1": "高效的人力资源管理",
+      "TITLE_LINE_2_PREFIX": "携手 ",
+      "BRAND": "PISICloud",
+      "TITLE_LINE_2_SUFFIX": " HRM",
+      "DESCRIPTION": "基于云的考勤、薪资和人力资源软件，实现安全、便捷且高效的员工管理。",
+      "CONTACT_US": "联系我们",
+      "WATCH_PREVIEW": "观看演示视频",
+      "IMAGE_ALT": "PISICloud 人力资源管理现代平板控制面板预览"
+    },
     "FEATURES": {},
     "SOLUTION": {},
     "WHY_CHOSE_US": {}
