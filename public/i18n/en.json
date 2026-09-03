@@ -1,0 +1,31 @@
+{
+  "LANDING": {
+    "HERO": {},
+    "FEATURES": {},
+    "SOLUTION": {},
+    "WHY_CHOSE_US": {}
+  },
+
+  "FEATURE": {
+    "HERO": {},
+    "DETAIL": {}
+  },
+
+  "UNIVERSAL": {
+    "NAVBAR": {
+      "FEATURES_MENU": {},
+      "LANGUAGE_MENU": {
+        "en": "English 🇬🇧",
+        "id": "Indonesia 🇮🇩",
+        "ja": "日本 🇯🇵",
+        "ko": "한국 🇰🇷",
+        "zh": "中国 🇨🇳"
+      },
+      "RESOURCES_MENU": {}
+    },
+    "FAQ": {},
+    "FOOTER": {},
+    "INTERESTED": {},
+    "DEMO_VIDEO_MODAL": {}
+  }
+}
