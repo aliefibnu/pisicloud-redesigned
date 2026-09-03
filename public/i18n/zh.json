@@ -23,15 +23,96 @@
 
   "UNIVERSAL": {
     "NAVBAR": {
-      "FEATURES_MENU": {},
+      "FEATURES_LABEL": "功能",
+      "RESOURCES_LABEL": "资源",
+      "CONTACT_US": "联系我们",
+      "LANGUAGES_LABEL": "语言",
+      "ARIA": {
+        "FEATURES_MENU": "功能导航菜单",
+        "RESOURCES_MENU": "资源导航菜单",
+        "LANGUAGE_MENU": "选择语言",
+        "MOBILE_NAV": "移动端导航菜单",
+        "TOGGLE_NAV": "切换导航菜单",
+        "CLOSE_NAV": "关闭导航菜单"
+      },
+      "FEATURES_MENU": {
+        "TITLE": "功能",
+        "ITEMS": {
+          "RECRUITMENT": {
+            "TITLE": "招聘管理",
+            "DESC": "新员工全流程在线招聘与选拔"
+          },
+          "ATTENDANCE": {
+            "TITLE": "考勤管理",
+            "DESC": "日常打卡与考勤工时记录"
+          },
+          "PAYROLL": {
+            "TITLE": "薪酬核算",
+            "DESC": "自动化薪资计算与发放"
+          },
+          "DATABASE": {
+            "TITLE": "人事档案",
+            "DESC": "集中化员工核心数据管理"
+          },
+          "PERSONAL_LEAVE": {
+            "TITLE": "个人请假",
+            "DESC": "员工自助请假申请与审批"
+          },
+          "PERSONAL_OVERTIME": {
+            "TITLE": "个人加班",
+            "DESC": "加班工时记录与申报"
+          },
+          "EMPLOYEE_UPDATE": {
+            "TITLE": "资料更新",
+            "DESC": "员工自助个人信息变更"
+          },
+          "PERSONAL_ATTENDANCE": {
+            "TITLE": "个人考勤",
+            "DESC": "个人出勤记录与统计明细"
+          },
+          "COLLECTIVE_LEAVE": {
+            "TITLE": "统筹假期",
+            "DESC": "全公司统一年假与法定节假日"
+          },
+          "COLLECTIVE_OVERTIME": {
+            "TITLE": "部门加班",
+            "DESC": "部门集中加班排期与审批"
+          },
+          "ATTENDANCE_MACHINE": {
+            "TITLE": "考勤机对接",
+            "DESC": "生物识别设备与硬件无缝同步"
+          },
+          "YEARLY_TAX": {
+            "TITLE": "年度个税",
+            "DESC": "年度个人所得税与税务申报核算"
+          }
+        }
+      },
       "LANGUAGE_MENU": {
+        "LABEL": "语言",
         "en": "English 🇬🇧",
         "id": "Indonesia 🇮🇩",
         "ja": "日本 🇯🇵",
         "ko": "한국 🇰🇷",
         "zh": "中国 🇨🇳"
       },
-      "RESOURCES_MENU": {}
+      "RESOURCES_MENU": {
+        "TITLE": "资源",
+        "ITEMS": {
+          "ABOUT": {
+            "TITLE": "关于 PISICloud",
+            "DESC": "深入了解 PISICloud 的产品与使命。"
+          },
+          "STRATEGY": {
+            "TITLE": "实施方案",
+            "DESC": "将战略规划高效落地执行。"
+          },
+          "CUSTOMERS": {
+            "TITLE": "客户案例",
+            "DESC": "PISICloud 已获得 100+ 知名企业信赖。"
+          }
+        }
+      }
     },
     "FAQ": {},
     "FOOTER": {},

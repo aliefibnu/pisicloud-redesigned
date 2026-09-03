@@ -227,15 +227,96 @@
 
   "UNIVERSAL": {
     "NAVBAR": {
-      "FEATURES_MENU": {},
+      "FEATURES_LABEL": "Features",
+      "RESOURCES_LABEL": "Resources",
+      "CONTACT_US": "Contact Us",
+      "LANGUAGES_LABEL": "Languages",
+      "ARIA": {
+        "FEATURES_MENU": "Features navigation menu",
+        "RESOURCES_MENU": "Resources navigation menu",
+        "LANGUAGE_MENU": "Select Language",
+        "MOBILE_NAV": "Mobile Navigation Menu",
+        "TOGGLE_NAV": "Toggle navigation menu",
+        "CLOSE_NAV": "Close navigation menu"
+      },
+      "FEATURES_MENU": {
+        "TITLE": "Features",
+        "ITEMS": {
+          "RECRUITMENT": {
+            "TITLE": "Recruitment",
+            "DESC": "New employee recruitment process"
+          },
+          "ATTENDANCE": {
+            "TITLE": "Attendance",
+            "DESC": "Daily check-in & time logs"
+          },
+          "PAYROLL": {
+            "TITLE": "Payroll",
+            "DESC": "Automated salary & payouts"
+          },
+          "DATABASE": {
+            "TITLE": "Database Management",
+            "DESC": "Central employee records"
+          },
+          "PERSONAL_LEAVE": {
+            "TITLE": "Personal Leave",
+            "DESC": "Individual leave requests"
+          },
+          "PERSONAL_OVERTIME": {
+            "TITLE": "Personal Overtime",
+            "DESC": "Extra hours tracking & claims"
+          },
+          "EMPLOYEE_UPDATE": {
+            "TITLE": "Employee Data Update",
+            "DESC": "Self-service profile updates"
+          },
+          "PERSONAL_ATTENDANCE": {
+            "TITLE": "Personal Attendance",
+            "DESC": "Personal history & stats"
+          },
+          "COLLECTIVE_LEAVE": {
+            "TITLE": "Collective Leave",
+            "DESC": "Company-wide & public holidays"
+          },
+          "COLLECTIVE_OVERTIME": {
+            "TITLE": "Collective Overtime",
+            "DESC": "Departmental overtime plans"
+          },
+          "ATTENDANCE_MACHINE": {
+            "TITLE": "Attendance Machine",
+            "DESC": "Biometric hardware sync"
+          },
+          "YEARLY_TAX": {
+            "TITLE": "Yearly Tax",
+            "DESC": "Annual PPh & tax calculation"
+          }
+        }
+      },
       "LANGUAGE_MENU": {
+        "LABEL": "Languages",
         "en": "English 🇬🇧",
         "id": "Indonesia 🇮🇩",
         "ja": "日本 🇯🇵",
         "ko": "한국 🇰🇷",
         "zh": "中国 🇨🇳"
       },
-      "RESOURCES_MENU": {}
+      "RESOURCES_MENU": {
+        "TITLE": "Resources",
+        "ITEMS": {
+          "ABOUT": {
+            "TITLE": "About PISICloud",
+            "DESC": "Get to know PISICloud in depth."
+          },
+          "STRATEGY": {
+            "TITLE": "Implementation Strategy",
+            "DESC": "Turning strategic plans into action."
+          },
+          "CUSTOMERS": {
+            "TITLE": "Our Customers",
+            "DESC": "PISICloud has been trusted by 100+ companies."
+          }
+        }
+      }
     },
     "FAQ": {},
     "FOOTER": {},

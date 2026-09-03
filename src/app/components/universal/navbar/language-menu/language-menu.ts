@@ -1,4 +1,5 @@
 import { Component, computed, input, output } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface LanguageOption {
   readonly code: string;
@@ -16,7 +17,7 @@ export const SUPPORTED_LANGUAGES: readonly LanguageOption[] = [
 
 @Component({
   selector: 'navbar-language-menu',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './language-menu.html',
   styles: ``,
   host: {

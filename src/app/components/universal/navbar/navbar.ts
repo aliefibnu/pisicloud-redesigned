@@ -1,5 +1,6 @@
 import {
   Component,
+  computed,
   DestroyRef,
   DOCUMENT,
   effect,
@@ -9,6 +10,7 @@ import {
 } from '@angular/core';
 import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 import { FeaturesMenu } from './features-menu/features-menu';
 import { ResourcesMenu } from './resources-menu/resources-menu';
 import {
@@ -16,6 +18,7 @@ import {
   type LanguageOption,
   SUPPORTED_LANGUAGES,
 } from './language-menu/language-menu';
+import { LanguageService, type Language } from '../../../core/language.service';
 
 export { type LanguageOption, SUPPORTED_LANGUAGES };
 
@@ -23,7 +26,14 @@ export type ActiveNavMenu = 'features' | 'resources' | 'language' | null;
 
 @Component({
   selector: 'universal-navbar',
-  imports: [RouterLink, NgOptimizedImage, FeaturesMenu, ResourcesMenu, LanguageMenu],
+  imports: [
+    RouterLink,
+    NgOptimizedImage,
+    TranslatePipe,
+    FeaturesMenu,
+    ResourcesMenu,
+    LanguageMenu,
+  ],
   templateUrl: './navbar.html',
   styles: ``,
   host: {
@@ -38,14 +48,18 @@ export class Navbar {
   private readonly document = inject(DOCUMENT);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly languageService = inject(LanguageService);
 
   readonly isMobileMenuOpen = signal(false);
   readonly activeMenu = signal<ActiveNavMenu>(null);
   readonly isScrolledPastViewport = signal(false);
 
-  readonly selectedLanguage = signal<LanguageOption>(
-    SUPPORTED_LANGUAGES.find((l) => l.code === 'en') ?? SUPPORTED_LANGUAGES[0],
-  );
+  readonly selectedLanguage = computed<LanguageOption>(() => {
+    const langCode = this.languageService.currentLanguage();
+    return (
+      SUPPORTED_LANGUAGES.find((l) => l.code === langCode) ?? SUPPORTED_LANGUAGES[0]
+    );
+  });
 
   constructor() {
     effect(() => {
@@ -100,7 +114,7 @@ export class Navbar {
   }
 
   onLanguageSelected(lang: LanguageOption): void {
-    this.selectedLanguage.set(lang);
+    this.languageService.setLanguage(lang.code as Language);
     this.closeMenus();
   }
 

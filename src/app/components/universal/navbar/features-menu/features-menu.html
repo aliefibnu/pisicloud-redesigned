@@ -8,7 +8,7 @@
       [class.text-[#00382f]]="isOpen()"
       [attr.aria-expanded]="isOpen()"
       aria-haspopup="true"
-      aria-label="Features navigation menu"
+      [attr.aria-label]="'UNIVERSAL.NAVBAR.ARIA.FEATURES_MENU' | translate"
     >
       <svg
         class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
@@ -24,7 +24,7 @@
       >
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg>
-      <span class="tracking-wide">Features</span>
+      <span class="tracking-wide">{{ 'UNIVERSAL.NAVBAR.FEATURES_LABEL' | translate }}</span>
     </button>
 
     @if (isOpen()) {
@@ -34,12 +34,12 @@
         aria-orientation="vertical"
       >
         <div class="mb-4">
-          <h3 class="text-base font-bold text-slate-900 tracking-tight">Features</h3>
+          <h3 class="text-base font-bold text-slate-900 tracking-tight">{{ 'UNIVERSAL.NAVBAR.FEATURES_MENU.TITLE' | translate }}</h3>
           <div class="h-px bg-slate-200/80 mt-3"></div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3.5" role="none">
-          @for (feature of features; track feature.title) {
+          @for (feature of features; track feature.id) {
             <a
               [routerLink]="feature.route"
               (click)="onItemClick()"
@@ -143,11 +143,11 @@
 
               <div class="min-w-0">
                 <span class="text-sm font-semibold text-slate-800 group-hover:text-[#066b60] transition-colors block truncate">
-                  {{ feature.title }}
+                  {{ feature.titleKey | translate }}
                 </span>
-                @if (feature.description) {
+                @if (feature.descKey) {
                   <p class="text-xs text-slate-500 leading-tight mt-0.5 truncate">
-                    {{ feature.description }}
+                    {{ feature.descKey | translate }}
                   </p>
                 }
               </div>
@@ -169,7 +169,7 @@
         <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
           <polygon points="0,0 6,4 0,8" />
         </svg>
-        <span>Features</span>
+        <span>{{ 'UNIVERSAL.NAVBAR.FEATURES_LABEL' | translate }}</span>
       </div>
       <svg
         class="w-4 h-4 text-slate-600 transition-transform duration-200"
@@ -186,7 +186,7 @@
 
     @if (isMobileExpanded()) {
       <div class="pl-3 pr-1 py-1 space-y-1 mt-1 animate-in fade-in duration-150">
-        @for (feature of features; track feature.title) {
+        @for (feature of features; track feature.id) {
           <a
             [routerLink]="feature.route"
             (click)="onItemClick()"
@@ -289,11 +289,11 @@
 
             <div class="flex flex-col min-w-0">
               <span class="text-sm font-medium text-slate-800 group-hover:text-[#00382f] transition-colors truncate">
-                {{ feature.title }}
+                {{ feature.titleKey | translate }}
               </span>
-              @if (feature.description) {
+              @if (feature.descKey) {
                 <span class="text-xs text-slate-500 group-hover:text-slate-600 transition-colors line-clamp-1 sm:line-clamp-2">
-                  {{ feature.description }}
+                  {{ feature.descKey | translate }}
                 </span>
               }
             </div>

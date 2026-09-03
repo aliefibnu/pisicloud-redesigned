@@ -1,0 +1,138 @@
+import {
+  NavbarCategoryConfig,
+  NavbarFeatureItemConfig,
+  NavbarResourceItemConfig,
+} from './navbar.model';
+
+export const NAVBAR_CATEGORIES: readonly NavbarCategoryConfig[] = [
+  { id: 'hr', labelKey: 'UNIVERSAL.NAVBAR.CATEGORIES.HR' },
+  { id: 'attendance', labelKey: 'UNIVERSAL.NAVBAR.CATEGORIES.ATTENDANCE' },
+  { id: 'leave-overtime', labelKey: 'UNIVERSAL.NAVBAR.CATEGORIES.LEAVE_OVERTIME' },
+  { id: 'payroll-tax', labelKey: 'UNIVERSAL.NAVBAR.CATEGORIES.PAYROLL_TAX' },
+];
+
+export const NAVBAR_FEATURES: readonly NavbarFeatureItemConfig[] = [
+  {
+    id: 'recruitment',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.RECRUITMENT.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.RECRUITMENT.DESC',
+    route: '/feature',
+    domain: 'hr',
+    icon: 'recruitment',
+  },
+  {
+    id: 'attendance',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.ATTENDANCE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.ATTENDANCE.DESC',
+    route: '/feature',
+    domain: 'attendance',
+    icon: 'attendance',
+  },
+  {
+    id: 'payroll',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PAYROLL.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PAYROLL.DESC',
+    route: '/feature',
+    domain: 'payroll-tax',
+    icon: 'payroll',
+  },
+  {
+    id: 'database',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.DATABASE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.DATABASE.DESC',
+    route: '/feature',
+    domain: 'hr',
+    icon: 'database',
+  },
+  {
+    id: 'personal-leave',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PERSONAL_LEAVE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PERSONAL_LEAVE.DESC',
+    route: '/feature',
+    domain: 'leave-overtime',
+    icon: 'personal-leave',
+  },
+  {
+    id: 'personal-overtime',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PERSONAL_OVERTIME.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PERSONAL_OVERTIME.DESC',
+    route: '/feature',
+    domain: 'leave-overtime',
+    icon: 'personal-overtime',
+  },
+  {
+    id: 'employee-update',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.EMPLOYEE_UPDATE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.EMPLOYEE_UPDATE.DESC',
+    route: '/feature',
+    domain: 'hr',
+    icon: 'employee-update',
+  },
+  {
+    id: 'personal-attendance',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PERSONAL_ATTENDANCE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.PERSONAL_ATTENDANCE.DESC',
+    route: '/feature',
+    domain: 'attendance',
+    icon: 'personal-attendance',
+  },
+  {
+    id: 'collective-leave',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.COLLECTIVE_LEAVE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.COLLECTIVE_LEAVE.DESC',
+    route: '/feature',
+    domain: 'leave-overtime',
+    icon: 'collective-leave',
+  },
+  {
+    id: 'collective-overtime',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.COLLECTIVE_OVERTIME.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.COLLECTIVE_OVERTIME.DESC',
+    route: '/feature',
+    domain: 'leave-overtime',
+    icon: 'collective-overtime',
+  },
+  {
+    id: 'attendance-machine',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.ATTENDANCE_MACHINE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.ATTENDANCE_MACHINE.DESC',
+    route: '/feature',
+    domain: 'attendance',
+    icon: 'attendance-machine',
+  },
+  {
+    id: 'yearly-tax',
+    titleKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.YEARLY_TAX.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.FEATURES_MENU.ITEMS.YEARLY_TAX.DESC',
+    route: '/feature',
+    domain: 'payroll-tax',
+    icon: 'yearly-tax',
+  },
+];
+
+export const NAVBAR_RESOURCES: readonly NavbarResourceItemConfig[] = [
+  {
+    id: 'about',
+    titleKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.ABOUT.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.ABOUT.DESC',
+    route: '/',
+    fragment: 'about-us',
+    iconType: 'about',
+  },
+  {
+    id: 'strategy',
+    titleKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.STRATEGY.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.STRATEGY.DESC',
+    route: '/',
+    fragment: 'solution',
+    iconType: 'strategy',
+  },
+  {
+    id: 'customers',
+    titleKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.CUSTOMERS.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.CUSTOMERS.DESC',
+    route: '/',
+    fragment: 'why-choose-us',
+    iconType: 'customers',
+  },
+];

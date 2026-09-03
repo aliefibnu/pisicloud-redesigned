@@ -18,32 +18,25 @@ export type NavbarFeatureIconType =
 
 export type NavbarResourceIconType = 'about' | 'strategy' | 'customers';
 
-export interface NavbarFeatureItem {
-  readonly title: string;
-  readonly description: string;
+export interface NavbarFeatureItemConfig {
+  readonly id: string;
+  readonly titleKey: string;
+  readonly descKey: string;
   readonly route: string;
   readonly domain: FeatureDomain;
   readonly icon: NavbarFeatureIconType;
 }
 
-export interface NavbarResourceItem {
-  readonly title: string;
-  readonly description: string;
+export interface NavbarResourceItemConfig {
+  readonly id: string;
+  readonly titleKey: string;
+  readonly descKey: string;
   readonly route: string;
   readonly fragment?: string;
   readonly iconType: NavbarResourceIconType;
 }
 
-export interface NavbarAriaLabels {
-  readonly featuresMenu: string;
-  readonly resourcesMenu: string;
-}
-
-export interface NavbarContent {
-  readonly featuresLabel: string;
-  readonly resourcesLabel: string;
-  readonly contactUs: string;
-  readonly aria: NavbarAriaLabels;
-  readonly features: readonly NavbarFeatureItem[];
-  readonly resources: readonly NavbarResourceItem[];
+export interface NavbarCategoryConfig {
+  readonly id: FeatureDomain;
+  readonly labelKey: string;
 }
