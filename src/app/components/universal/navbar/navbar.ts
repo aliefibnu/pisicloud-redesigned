@@ -30,6 +30,8 @@ export type ActiveNavMenu = 'features' | 'resources' | 'language' | null;
     class: 'block w-full sticky top-0 z-50',
     '(keydown.escape)': 'onEscape()',
     '(document:click)': 'onDocumentClick($event)',
+    '(window:scroll)': 'onWindowScroll()',
+    '(window:resize)': 'onWindowScroll()',
   },
 })
 export class Navbar {
@@ -39,6 +41,7 @@ export class Navbar {
 
   readonly isMobileMenuOpen = signal(false);
   readonly activeMenu = signal<ActiveNavMenu>(null);
+  readonly isScrolledPastViewport = signal(false);
 
   readonly selectedLanguage = signal<LanguageOption>(
     SUPPORTED_LANGUAGES.find((l) => l.code === 'en') ?? SUPPORTED_LANGUAGES[0],
@@ -64,6 +67,20 @@ export class Navbar {
         this.document.documentElement.style.overflow = '';
       }
     });
+
+    if (isPlatformBrowser(this.platformId)) {
+      this.onWindowScroll();
+    }
+  }
+
+  onWindowScroll(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    const scrollY = window.scrollY || this.document.documentElement.scrollTop || 0;
+    const viewportHeight = window.innerHeight || this.document.documentElement.clientHeight || 0;
+    const isPast = scrollY >= viewportHeight;
+    if (this.isScrolledPastViewport() !== isPast) {
+      this.isScrolledPastViewport.set(isPast);
+    }
   }
 
   toggleMobileMenu(): void {

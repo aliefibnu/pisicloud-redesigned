@@ -1,4 +1,11 @@
-<header class="w-full bg-[#eef4f8] border-b border-slate-200/60 shadow-xs transition-colors">
+<header
+  class="w-full border-b border-slate-200/60 transition-all duration-300"
+  [class.bg-[#eef4f8]]="!isScrolledPastViewport()"
+  [class.shadow-xs]="!isScrolledPastViewport()"
+  [class.bg-[#eef4f8]/80]="isScrolledPastViewport()"
+  [class.backdrop-blur-md]="isScrolledPastViewport()"
+  [class.shadow-sm]="isScrolledPastViewport()"
+>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-18 flex items-center justify-between">
     <a
       routerLink="/"
