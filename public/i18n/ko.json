@@ -10,6 +10,12 @@
       "WATCH_PREVIEW": "미리보기 영상 시청",
       "IMAGE_ALT": "최신 태블릿에서 실행되는 PISICloud HR 관리 대시보드 미리보기"
     },
+    "TRUSTED": {
+      "BRAND": "PISICloud",
+      "TITLE_LINE_1_SUFFIX": "는",
+      "TITLE_LINE_2_PREFIX": "100개 이상의 선도 ",
+      "TITLE_LINE_2_HIGHLIGHT": "기업이 신뢰합니다"
+    },
     "FEATURES": {
       "HEADING_PREFIX": "PISICloud,",
       "HEADING_BODY": "신뢰성 높은 인사 관리 소프트웨어",

@@ -2,10 +2,11 @@ import { Component, inject } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { DemoVideoModalService } from '../../universal/demo-video-modal/demo-video-modal.service';
+import { CompaniesMarquee } from '../companies-marquee/companies-marquee';
 
 @Component({
   selector: 'landing-hero',
-  imports: [NgOptimizedImage, TranslatePipe],
+  imports: [NgOptimizedImage, TranslatePipe, CompaniesMarquee],
   templateUrl: './hero.html',
   styles: `
     :host {

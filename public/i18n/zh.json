@@ -10,6 +10,12 @@
       "WATCH_PREVIEW": "观看演示视频",
       "IMAGE_ALT": "PISICloud 人力资源管理现代平板控制面板预览"
     },
+    "TRUSTED": {
+      "BRAND": "PISICloud",
+      "TITLE_LINE_1_SUFFIX": "已获得",
+      "TITLE_LINE_2_PREFIX": "100多家领先",
+      "TITLE_LINE_2_HIGHLIGHT": "企业的信赖"
+    },
     "FEATURES": {
       "HEADING_PREFIX": "PISICloud，",
       "HEADING_BODY": "可靠的人力资源软件",

@@ -30,7 +30,7 @@
 
     @if (isOpen()) {
       <div
-        class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-76.25 rounded-2xl bg-[#F2F8FC] border border-slate-200/90 shadow-xl shadow-slate-900/10 px-6 pt-5 pb-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+        class="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-76.25 rounded-2xl bg-white border border-slate-200/90 shadow-xl shadow-slate-900/10 px-6 pt-5 pb-5 z-50 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
         role="menu"
         aria-orientation="vertical"
       >
@@ -43,7 +43,7 @@
             <button
               type="button"
               (click)="selectLanguage(lang)"
-              class="w-full text-left py-2 px-2.5 rounded-xl hover:bg-slate-200/50 active:bg-slate-200/80 flex items-center gap-2.5 text-slate-700 text-sm font-medium cursor-pointer transition-colors"
+              class="w-full text-left py-2 px-2.5 rounded-xl hover:bg-[#cde8e0] active:bg-[#b1ccc4] flex items-center gap-2.5 text-slate-700 hover:text-[#00382f] text-sm font-medium cursor-pointer transition-colors"
               role="menuitem"
             >
               <span>{{ lang.name }}</span>
@@ -66,6 +66,8 @@
           [class.text-white]="selectedLanguage().code === lang.code"
           [class.bg-slate-200/70]="selectedLanguage().code !== lang.code"
           [class.text-slate-800]="selectedLanguage().code !== lang.code"
+          [class.hover:bg-[#cde8e0]]="selectedLanguage().code !== lang.code"
+          [class.hover:text-[#00382f]]="selectedLanguage().code !== lang.code"
           class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium cursor-pointer transition-all active:scale-[0.98]"
         >
           <span>{{ lang.name }}</span>
