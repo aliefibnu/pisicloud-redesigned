@@ -10,6 +10,12 @@
       "WATCH_PREVIEW": "Tonton Video Preview",
       "IMAGE_ALT": "Pratinjau dashboard manajemen SDM PISICloud pada tablet modern menampilkan tabel rekrutmen dengan analitik dan ikon interaktif"
     },
+    "TRUSTED": {
+      "BRAND": "PISICloud",
+      "TITLE_LINE_1_SUFFIX": "Telah",
+      "TITLE_LINE_2_PREFIX": "Dipercaya Oleh 100+ ",
+      "TITLE_LINE_2_HIGHLIGHT": "Perusahaan Terkemuka"
+    },
     "FEATURES": {
       "HEADING_PREFIX": "PISICloud,",
       "HEADING_BODY": "Software HR Andal",

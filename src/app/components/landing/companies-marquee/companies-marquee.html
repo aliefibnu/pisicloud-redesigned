@@ -1,0 +1,56 @@
+<div class="w-full pt-6 sm:pt-10 lg:pt-12 pb-12 sm:pb-16 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 mb-8 sm:mb-10">
+    <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-bold tracking-tight leading-tight">
+      <span class="block">
+        <span class="text-[#076657]">{{ 'LANDING.TRUSTED.BRAND' | translate }}</span>
+        <span class="text-[#2a302e]"> {{ 'LANDING.TRUSTED.TITLE_LINE_1_SUFFIX' | translate }}</span>
+      </span>
+      <span class="block">
+        <span class="text-[#2a302e]">{{ 'LANDING.TRUSTED.TITLE_LINE_2_PREFIX' | translate }} </span>
+        <span class="text-[#076657]">{{ 'LANDING.TRUSTED.TITLE_LINE_2_HIGHLIGHT' | translate }}</span>
+      </span>
+    </h2>
+  </div>
+
+  <div
+    class="marquee-container relative w-full flex overflow-hidden select-none"
+    aria-label="Trusted client companies"
+    role="region"
+  >
+    <div
+      class="animate-marquee gap-8 sm:gap-12 pr-8 sm:pr-12"
+      role="list"
+      aria-label="Client company logos"
+    >
+      @for (logo of logos; track logo.id) {
+        <div
+          class="w-36 sm:w-44 h-14 sm:h-16 flex items-center justify-center shrink-0"
+          role="listitem"
+        >
+          <img
+            [src]="logo.src"
+            [alt]="logo.alt"
+            loading="lazy"
+            class="max-w-full max-h-full object-contain transition-transform duration-200 hover:scale-105"
+          />
+        </div>
+      }
+    </div>
+
+    <div
+      class="animate-marquee gap-8 sm:gap-12 pr-8 sm:pr-12"
+      aria-hidden="true"
+    >
+      @for (logo of logos; track 'dup-' + logo.id) {
+        <div class="w-36 sm:w-44 h-14 sm:h-16 flex items-center justify-center shrink-0">
+          <img
+            [src]="logo.src"
+            alt=""
+            loading="lazy"
+            class="max-w-full max-h-full object-contain transition-transform duration-200 hover:scale-105"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</div>

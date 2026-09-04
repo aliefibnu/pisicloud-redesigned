@@ -10,6 +10,12 @@
       "WATCH_PREVIEW": "Watch Preview Video",
       "IMAGE_ALT": "PISICloud HR Management dashboard preview on a modern tablet displaying recruitment table with analytics and mobile icons"
     },
+    "TRUSTED": {
+      "BRAND": "PISICloud",
+      "TITLE_LINE_1_SUFFIX": "Has",
+      "TITLE_LINE_2_PREFIX": "Been Trusted By 100+ Leading",
+      "TITLE_LINE_2_HIGHLIGHT": "Companies"
+    },
     "FEATURES": {
       "HEADING_PREFIX": "PISICloud,",
       "HEADING_BODY": "Reliable HR Software",

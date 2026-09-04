@@ -10,6 +10,12 @@
       "WATCH_PREVIEW": "プレビュー動画を見る",
       "IMAGE_ALT": "最新タブレットに表示された PISICloud 人事管理ダッシュボードのプレビュー"
     },
+    "TRUSTED": {
+      "BRAND": "PISICloud",
+      "TITLE_LINE_1_SUFFIX": "は",
+      "TITLE_LINE_2_PREFIX": "100社以上の",
+      "TITLE_LINE_2_HIGHLIGHT": "大手企業に導入されています"
+    },
     "FEATURES": {
       "HEADING_PREFIX": "PISICloud、",
       "HEADING_BODY": "信頼性の高い人事労務ソフトウェア",

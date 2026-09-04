@@ -36,6 +36,12 @@ describe('Hero', () => {
           IMAGE_ALT:
             'PISICloud HR Management dashboard preview on a modern tablet displaying recruitment table with analytics and mobile icons',
         },
+        TRUSTED: {
+          BRAND: 'PISICloud',
+          TITLE_LINE_1_SUFFIX: 'Has',
+          TITLE_LINE_2_PREFIX: 'Been Trusted By 100+ Leading',
+          TITLE_LINE_2_HIGHLIGHT: 'Companies',
+        },
       },
     });
     translateService.use('en');
@@ -135,5 +141,11 @@ describe('Hero', () => {
     expect(img?.getAttribute('width')).toBe('1398');
     expect(img?.getAttribute('height')).toBe('1125');
     expect(img?.hasAttribute('priority')).toBe(true);
+  });
+
+  it('should render the landing-companies-marquee component', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const marquee = compiled.querySelector('landing-companies-marquee');
+    expect(marquee).toBeTruthy();
   });
 });
