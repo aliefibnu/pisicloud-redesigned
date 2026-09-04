@@ -64,7 +64,7 @@ describe('CompaniesMarquee', () => {
 
   it('should render a duplicate track with aria-hidden="true" for continuous loop', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const duplicateTrack = compiled.querySelector('[aria-hidden="true"]');
+    const duplicateTrack = compiled.querySelector('.marquee-container [aria-hidden="true"]');
     expect(duplicateTrack).toBeTruthy();
 
     const duplicateImgs = duplicateTrack?.querySelectorAll('img');
