@@ -12,119 +12,118 @@
     },
     "FEATURES": {
       "HEADING_PREFIX": "PISICloud,",
-      "HEADING_BODY": "Software HR Andal",
-      "HEADING_SUFFIX": "Dengan Berbagai Fitur Unggulan",
-      "LEARN_MORE": "Pelajari Lebih Lanjut",
+      "HEADING_BODY": "Software HR Handal",
+      "HEADING_SUFFIX": "Dengan Beragam Fitur Unggulan",
+      "LEARN_MORE": "Pelajari Selengkapnya",
       "ITEMS": {
         "RECRUITMENT": {
           "TITLE": "Rekrutmen",
           "SHORT_DESCRIPTION": "Perekrutan cepat dan mudah.",
-          "DESCRIPTION": "Rasakan masa depan rekrutmen - efisien, praktis, dan dapat diakses dengan mudah di ujung jari Anda.",
+          "DESCRIPTION": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah dijangkau hanya dengan ujung jari Anda.",
           "ALT": "Proses rekrutmen menampilkan mitra bisnis berjabat tangan"
         },
         "PERSONAL_LEAVE": {
           "TITLE": "Cuti Pribadi",
           "SHORT_DESCRIPTION": "Istirahat, ajukan, rileks.",
-          "DESCRIPTION": "Istirahat sejenak dan kembali lebih bersemangat - fitur cuti pribadi kami membantu Anda memulihkan energi dan meraih hasil terbaik.",
+          "DESCRIPTION": "Istirahatlah sejenak dan kembali dengan semangat baru - fitur cuti pribadi kami membantumu mengisi ulang energi dan mencapai performa terbaikmu",
           "ALT": "Karyawan tersenyum di luar kantor saat cuti pribadi"
         },
         "COLLECTIVE_LEAVE": {
           "TITLE": "Cuti Bersama",
           "SHORT_DESCRIPTION": "Cuti tim, lebih sederhana.",
-          "DESCRIPTION": "Manajemen cuti bersama tanpa hambatan - pengajuan cuti bersama dengan persetujuan mempermudah koordinasi tim Anda!",
+          "DESCRIPTION": "Manajemen cuti kolektif tanpa hambatan - fitur pengajuan cuti kolektif dengan approval kami akan memudahkan koordinasi timmu!",
           "ALT": "Karyawan memegang jam weker di depan laptop mengelola cuti bersama"
         },
         "ATTENDANCE": {
           "TITLE": "Presensi",
           "SHORT_DESCRIPTION": "Pelacakan akurat, jadi mudah.",
-          "DESCRIPTION": "Pantau kehadiran karyawan dengan mudah dan akurat menggunakan software kami dengan integrasi mesin atau aplikasi.",
+          "DESCRIPTION": "Pantau kehadiran karyawan dengan mudah dan akurat dengan mesin absensi atau Mobile Apps",
           "ALT": "Karyawan memantau ketepatan waktu presensi dengan jam dan laptop"
         },
         "PERSONAL_OVERTIME": {
           "TITLE": "Lembur Pribadi",
           "SHORT_DESCRIPTION": "Ajukan lembur kapan saja.",
-          "DESCRIPTION": "Ajukan lembur pribadi dengan mudah dan efisien kapan pun, di mana pun - fitur pengajuan lembur online kami siap membantu Anda!",
+          "DESCRIPTION": "Lebih mudah dan efisien ajukan lembur kapan saja, di mana saja - fitur pengajuan lembur pribadi online kami siap membantumu!",
           "ALT": "Karyawan memeriksa waktu dan mengajukan lembur pribadi di laptop"
         },
         "COLLECTIVE_OVERTIME": {
           "TITLE": "Lembur Bersama",
           "SHORT_DESCRIPTION": "Lembur tim, terkoordinasi.",
-          "DESCRIPTION": "Manajemen lembur bersama yang efisien - pengajuan lembur bersama dengan persetujuan mempercepat alur kerja tim Anda!",
+          "DESCRIPTION": "Manajemen lembur kolektif yang efisien - fitur pengajuan lembur kolektif dengan approval kami siap mempercepat proses kerja timmu!",
           "ALT": "Tim berkoordinasi bersama pada layar manajemen lembur bersama"
         },
         "PAYROLL": {
           "TITLE": "Penggajian",
           "SHORT_DESCRIPTION": "Gaji Anda, aturan Anda.",
-          "DESCRIPTION": "Gaji Anda, Aturan Anda - Dapatkan kemudahan proses penggajian dengan software payroll terbaik berformula potongan dan tunjangan yang dapat disesuaikan!",
+          "DESCRIPTION": "Gaji Anda, Aturan Anda - Dapatkan Kemudahan Penggajian dengan Software Payroll Terbaik dengan Formula Potongan dan Tunjangan yang Bisa Disesuaikan!",
           "ALT": "Kalkulator gaji dengan uang kertas dan lembar kerja penggajian"
         },
         "EMPLOYEE_DATA_UPDATE": {
           "TITLE": "Pembaruan Data Karyawan",
           "SHORT_DESCRIPTION": "Data HR selalu mutakhir.",
-          "DESCRIPTION": "Perbarui data HR Anda dengan mudah tanpa repot - fitur pembaruan data karyawan online kami mempermudah prosesnya untuk Anda!",
+          "DESCRIPTION": "Perbarui data HR karyawan dengan mudah dan efisien - fitur pengkinian data karyawan secara online kami akan mempermudahmu!",
           "ALT": "Antarmuka dashboard pembaruan direktori karyawan HRMS"
         },
         "ATTENDANCE_MACHINE": {
           "TITLE": "Mesin Presensi",
           "SHORT_DESCRIPTION": "Konektivitas mesin langsung.",
-          "DESCRIPTION": "Konektivitas langsung ke mesin presensi - integrasi ke mesin absensi menyederhanakan pengelolaan kehadiran karyawan Anda!",
+          "DESCRIPTION": "Konektivitas langsung ke mesin absensi - fitur konkesi ke mesin absensi kami memudahkanmu dalam manajemen kehadiran karyawan!",
           "ALT": "Dashboard analitik mesin presensi dengan statistik kehadiran real-time"
         },
         "DATABASE_MANAGEMENT": {
           "TITLE": "Manajemen Database",
           "SHORT_DESCRIPTION": "Satu tempat untuk data HR.",
-          "DESCRIPTION": "Sederhanakan proses HR dan optimalkan potensi tim Anda - fitur manajemen database online kami siap mendukung Anda!",
+          "DESCRIPTION": "Optimalkan proses HR dan perlihatkan potensi timmu - fitur manajemen database HR online kami akan memudahkanmu!",
           "ALT": "Arsitektur kluster basis data aman yang terhubung"
         },
         "PERSONAL_ATTENDANCE": {
           "TITLE": "Presensi Mandiri",
           "SHORT_DESCRIPTION": "Presensi mudah di mana saja.",
-          "DESCRIPTION": "Catat kehadiran Anda saat bepergian - fitur presensi online melalui aplikasi membuat segalanya mudah dan nyaman untuk Anda!",
+          "DESCRIPTION": "Pantau kehadiranmu di mana saja - fitur absensi online via aplikasi kami memudahkanmu untuk melakukan itu!",
           "ALT": "Karyawan menekan tombol presensi mandiri pada ponsel"
         },
         "YEARLY_TAX": {
           "TITLE": "Pajak Tahunan",
           "SHORT_DESCRIPTION": "Pajak tahunan, beres.",
-          "DESCRIPTION": "Kelola pajak tahunan tanpa kendala - fitur manajemen pajak tahunan kami hadir untuk membantu Anda!",
+          "DESCRIPTION": "Kelola pajak tahunan dengan mudah dan cepat - fitur manajemen pajak tahunan kami siap membantumu!",
           "ALT": "Dashboard laporan perhitungan pajak tahunan di laptop"
         }
       }
     },
     "SOLUTION": {
       "HEADING_HIGHLIGHT": "PISICloud",
-      "HEADING_PART1": "Bisa menjadi solusi untuk",
-      "HEADING_PART2": "berbagai sektor bisnis",
-      "HEADING_PART3": "di antaranya",
+      "HEADING_PART1": "Dapat Menjadi Solusi",
+      "HEADING_PART2": "untuk berbagai sektor bisnis",
+      "HEADING_PART3": "diantaranya :",
       "PREV_BUTTON_LABEL": "Sektor bisnis sebelumnya",
       "NEXT_BUTTON_LABEL": "Sektor bisnis berikutnya",
-      "PAGINATION_LABEL": "Navigasi slide sektor bisnis",
-      "SLIDE_PAGINATION_PREFIX": "Menuju slide",
+      "PAGINATION_LABEL": "Navigasi halaman sektor bisnis",
+      "SLIDE_PAGINATION_PREFIX": "Buka slide",
       "SLIDES": {
         "LOGISTICS": {
-          "LABEL": "Logistik & Transportasi",
-          "SUPPORTING_TEXT": "Mengoptimalkan armada pengiriman, penjadwalan shift pengemudi, dan formula lembur otomatis.",
+          "LABEL": "Trading & Distributor",
+          "SUPPORTING_TEXT": "Mulai dari proteksi kredit limit, segmentasi pelanggan, hingga delivery planning untuk efektivitas pengiriman barang.",
           "ALT": "Armada truk pengiriman barang logistik komersial"
         },
         "MANUFACTURING": {
-          "LABEL": "Manufaktur & Industri",
-          "SUPPORTING_TEXT": "Konektivitas mesin presensi langsung, rotasi shift kerja 24/7, dan formula payroll otomatis.",
+          "LABEL": "Manufaktur",
+          "SUPPORTING_TEXT": "Definisi BOM dan routing produk, penentuan standard costing, hingga laporan harga pokok produksi.",
           "ALT": "Pabrik manufaktur otomatis cerdas dengan jalur perakitan robotik"
         },
         "CORPORATE": {
           "LABEL": "Korporat & Teknologi",
-          "SUPPORTING_TEXT": "Jam kerja fleksibel, absensi mobile berbasis aplikasi, dan alur persetujuan cuti bertingkat yang lancar.",
+          "SUPPORTING_TEXT": "Jam kerja fleksibel, presensi mandiri berbasis aplikasi mobile, dan alur persetujuan cuti bertingkat yang lancar.",
           "ALT": "Profesional bekerja di laptop modern dengan headset dan kopi"
         },
         "CONSTRUCTION": {
-          "LABEL": "Konstruksi & Infrastruktur",
-          "SUPPORTING_TEXT": "Pemantauan presensi harian di lokasi, alokasi tenaga kerja berbasis proyek, dan perhitungan pajak yang patuh.",
+          "LABEL": "Konstruksi",
+          "SUPPORTING_TEXT": "Perhitungan project costing dan budgeting akurat, work in process, serta project dashboard real-time.",
           "ALT": "Tower crane lokasi konstruksi gedung tinggi saat senja"
         }
       }
     },
     "WHY_CHOSE_US": {}
   },
-
   "FEATURE": {
     "RECRUITMENT": {
       "NAME": "Perekrutan",
@@ -343,7 +342,6 @@
       }
     }
   },
-
   "UNIVERSAL": {
     "NAVBAR": {
       "FEATURES_LABEL": "Fitur",
