@@ -94,20 +94,20 @@
       "HEADING_HIGHLIGHT": "PISICloud",
       "HEADING_PART1": "Can be a solution for",
       "HEADING_PART2": "various business sectors",
-      "HEADING_PART3": "among them",
+      "HEADING_PART3": "among them :",
       "PREV_BUTTON_LABEL": "Previous business sector",
       "NEXT_BUTTON_LABEL": "Next business sector",
       "PAGINATION_LABEL": "Sector slides pagination",
       "SLIDE_PAGINATION_PREFIX": "Go to slide",
       "SLIDES": {
         "LOGISTICS": {
-          "LABEL": "Logistics & Transportation",
-          "SUPPORTING_TEXT": "Optimizing fleet management, driver route shift scheduling, and automated overtime formulas.",
+          "LABEL": "Trading & Distributor",
+          "SUPPORTING_TEXT": "From credit limit protection and customer segmentation to delivery planning for effective distribution.",
           "ALT": "Commercial freight trucks logistics and distribution fleet"
         },
         "MANUFACTURING": {
-          "LABEL": "Manufacturing & Industrial",
-          "SUPPORTING_TEXT": "Direct machine attendance connectivity, 24/7 complex shift rotations, and automated payroll formulas.",
+          "LABEL": "Manufacturing",
+          "SUPPORTING_TEXT": "Bill of Materials (BOM) & product routing, standard costing, and comprehensive cost of production reports.",
           "ALT": "Smart factory manufacturing automation and robotics plant"
         },
         "CORPORATE": {
@@ -116,15 +116,14 @@
           "ALT": "Corporate professional working on laptop with headset and coffee"
         },
         "CONSTRUCTION": {
-          "LABEL": "Construction & Infrastructure",
-          "SUPPORTING_TEXT": "On-site daily attendance monitoring, project-based labor allocation, and compliant tax calculations.",
+          "LABEL": "Construction",
+          "SUPPORTING_TEXT": "Accurate project costing and budgeting, work in process tracking, and real-time project dashboard.",
           "ALT": "City skyscraper construction crane illuminated at twilight"
         }
       }
     },
     "WHY_CHOSE_US": {}
   },
-
   "FEATURE": {
     "RECRUITMENT": {
       "NAME": "Recruitment",
@@ -343,7 +342,6 @@
       }
     }
   },
-
   "UNIVERSAL": {
     "NAVBAR": {
       "FEATURES_LABEL": "Features",
