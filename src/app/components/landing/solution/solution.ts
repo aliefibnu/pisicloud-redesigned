@@ -31,7 +31,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
     label: 'Logistics & Transportation',
     supportingText:
       'Optimizing fleet management, driver route shift scheduling, and automated overtime formulas.',
-    image: '/images/solution/4_3.png',
+    image: '/images/solution/4_3.webp',
     alt: 'Commercial freight trucks logistics and distribution fleet',
   },
   {
@@ -40,7 +40,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
     label: 'Manufacturing & Industrial',
     supportingText:
       'Direct machine attendance connectivity, 24/7 complex shift rotations, and automated payroll formulas.',
-    image: '/images/solution/4_3-1.png',
+    image: '/images/solution/4_3-1.webp',
     alt: 'Smart factory manufacturing automation and robotics plant',
   },
   {
@@ -49,7 +49,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
     label: 'Corporate & Technology',
     supportingText:
       'Flexible working hours, app-based mobile attendance, and seamless multi-level leave approvals.',
-    image: '/images/solution/4_3-2.png',
+    image: '/images/solution/4_3-2.webp',
     alt: 'Corporate professional working on laptop with headset and coffee',
   },
   {
@@ -58,7 +58,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
     label: 'Construction & Infrastructure',
     supportingText:
       'On-site daily attendance monitoring, project-based labor allocation, and compliant tax calculations.',
-    image: '/images/solution/4_3-3.png',
+    image: '/images/solution/4_3-3.webp',
     alt: 'City skyscraper construction crane illuminated at twilight',
   },
 ];
