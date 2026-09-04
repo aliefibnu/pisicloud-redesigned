@@ -13,7 +13,7 @@
         role="tablist"
         aria-label="Feature Details Navigation"
       >
-        @for (fitur of items(); track fitur.id; let i = $index) {
+        @for (fitur of effectiveItems(); track fitur.id; let i = $index) {
           @let isActive = activeIndex() === i;
           <div
             role="tab"
@@ -104,7 +104,7 @@
         (focusout)="resumeAutoPlay()"
         aria-live="polite"
       >
-        @for (fitur of items(); track fitur.id; let i = $index) {
+        @for (fitur of effectiveItems(); track fitur.id; let i = $index) {
           <div
             [id]="'feature-preview-' + i"
             class="transition-all duration-500 ease-out flex items-center justify-center w-full"
