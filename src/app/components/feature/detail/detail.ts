@@ -12,6 +12,7 @@ import {
 import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FeatureDetailItemConfig } from '../../../data/features/features.model';
+import { getFeatureBySlug, getDefaultFeature } from '../../../data/features';
 
 export type FeatureDetailItem = FeatureDetailItemConfig;
 
@@ -36,7 +37,23 @@ export type FeatureDetailItem = FeatureDetailItemConfig;
 export class Detail implements OnInit, OnDestroy {
   private readonly platformId = inject(PLATFORM_ID);
 
+  readonly slug = input<string | undefined>(undefined);
   readonly items = input<readonly FeatureDetailItemConfig[]>([]);
+
+  readonly effectiveItems = computed<readonly FeatureDetailItemConfig[]>(() => {
+    const directItems = this.items();
+    if (directItems && directItems.length > 0) {
+      return directItems;
+    }
+    const currentSlug = this.slug();
+    if (currentSlug) {
+      const feature = getFeatureBySlug(currentSlug);
+      if (feature?.items && feature.items.length > 0) {
+        return feature.items;
+      }
+    }
+    return getDefaultFeature().items;
+  });
 
   readonly duration = 6000;
   readonly tickInterval = 50;
@@ -48,15 +65,15 @@ export class Detail implements OnInit, OnDestroy {
   private timerId: ReturnType<typeof setInterval> | null = null;
 
   readonly activeItem = computed(() => {
-    const list = this.items();
+    const list = this.effectiveItems();
     if (!list || list.length === 0) return null;
     return list[this.activeIndex()] ?? list[0];
   });
 
   constructor() {
     effect(() => {
-      // Whenever items input changes, reset active selection & progress
-      const list = this.items();
+      // Whenever effective items change (e.g. dynamic slug switch), reset active selection & progress
+      const list = this.effectiveItems();
       if (list && list.length > 0) {
         this.activeIndex.set(0);
         this.progress.set(0);
@@ -106,7 +123,7 @@ export class Detail implements OnInit, OnDestroy {
   }
 
   nextFeature() {
-    const total = this.items().length || 1;
+    const total = this.effectiveItems().length || 1;
     this.activeIndex.update((current) => (current + 1) % total);
     this.progress.set(0);
   }
@@ -125,11 +142,11 @@ export class Detail implements OnInit, OnDestroy {
       this.selectFeature(index);
     } else if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
       event.preventDefault();
-      const total = this.items().length || 1;
+      const total = this.effectiveItems().length || 1;
       this.selectFeature((index + 1) % total);
     } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
       event.preventDefault();
-      const total = this.items().length || 1;
+      const total = this.effectiveItems().length || 1;
       this.selectFeature((index - 1 + total) % total);
     }
   }

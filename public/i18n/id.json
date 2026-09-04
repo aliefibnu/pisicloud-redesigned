@@ -126,218 +126,390 @@
   },
   "FEATURE": {
     "RECRUITMENT": {
-      "NAME": "Perekrutan",
+      "NAME": "Perekruitan",
       "HERO": {
-        "TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah diakses di ujung jari Anda.",
-        "DESC": "Dalam proses rekrutmen online kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Pada proses ini, pelamar dapat dengan mudah mengirimkan lamaran pekerjaan melalui aplikasi dengan memindai CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi."
+        "TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah dijangkau hanya dengan ujung jari Anda.",
+        "DESC": "Dalam proses rekrutmen online, kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Dalam proses ini, pelamar dapat dengan mudah mengirimkan lamaran kerja mereka melalui aplikasi dengan melakukan scanning CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi."
       },
       "ITEMS": {
-        "APPLICATION_SUBMISSION": {
-          "TITLE": "Pengajuan Lamaran",
-          "DESC": "Untuk memulai proses rekrutmen, pelamar akan mengakses aplikasi dan memindai CV beserta dokumen pendukung lainnya. Setelah pemindaian selesai, aplikasi akan mengirimkan lamaran kerja ke sistem rekrutmen perusahaan."
+        "P1": {
+          "TITLE": "Pengenalan Rekrutmen Online & Scan Dokumen",
+          "DESC": "Dalam proses rekrutmen online, kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Dalam proses ini, pelamar dapat dengan mudah mengirimkan lamaran kerja mereka melalui aplikasi dengan melakukan scanning CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi."
         },
-        "SELECTION_PROCESS": {
-          "TITLE": "Proses Seleksi",
-          "DESC": "Setelah lamaran diterima oleh sistem rekrutmen, pelamar akan menjalani tahapan seleksi selanjutnya seperti tes psikologi dan wawancara. Tahapan seleksi ini dapat dijadwalkan melalui aplikasi, dan pelamar akan menerima pemberitahuan melalui aplikasi untuk setiap tahapan seleksi yang harus diikuti."
+        "P2": {
+          "TITLE": "Pemindaian CV & Dokumen Pendukung",
+          "DESC": "Untuk memulai proses rekrutmen, pelamar akan mengakses aplikasi dan melakukan scanning CV dan dokumen pendukung lainnya. Setelah scanning selesai, aplikasi akan mengirimkan lamaran kerja tersebut ke sistem rekrutmen perusahaan."
         },
-        "SELECTION_RESULT": {
-          "TITLE": "Hasil Seleksi & Onboarding",
-          "DESC": "Pelamar yang lolos tahapan seleksi akan menerima instruksi onboarding otomatis, daftar periksa dokumen, dan jadwal orientasi langsung melalui sistem."
+        "P3": {
+          "TITLE": "Penjadwalan & Tahapan Seleksi",
+          "DESC": "Setelah lamaran diterima oleh sistem rekrutmen, pelamar akan menjalani tahapan seleksi berikutnya seperti tes psikologi dan wawancara. Tahapan seleksi tersebut dapat dijadwalkan melalui aplikasi, dan pelamar akan menerima notifikasi melalui aplikasi untuk setiap tahapan seleksi yang harus diikuti."
         },
-        "EFFICIENT_RECRUITMENT": {
-          "TITLE": "Rekrutmen yang Efisien",
-          "DESC": "Pelacakan pelamar secara real-time dan pembaruan status otomatis mempermudah penyaringan kandidat dan menyederhanakan koordinasi tim."
+        "P4": {
+          "TITLE": "Pemberitahuan Hasil & Administrasi",
+          "DESC": "Setelah tahapan seleksi selesai, pelamar akan mendapatkan notifikasi melalui aplikasi mengenai hasil seleksi mereka. Jika diterima, pelamar dapat langsung melanjutkan proses administrasi seperti penandatanganan kontrak kerja melalui aplikasi. Jika tidak diterima, pelamar akan menerima notifikasi dan dapat mencoba kembali untuk rekrutmen berikutnya."
         },
-        "SIMPLIFIED_PROCESS": {
-          "TITLE": "Proses Rekrutmen yang Disederhanakan",
-          "DESC": "Data rekrutmen terpusat, lamaran pekerjaan dengan kode QR, dan notifikasi otomatis meminimalkan tugas manual serta mempercepat perekrutan."
+        "P5": {
+          "TITLE": "Efisiensi & Transparansi Proses",
+          "DESC": "Dengan fitur scan lamaran melalui aplikasi, proses rekrutmen menjadi lebih efisien dan transparan. Pelamar dapat dengan mudah mengirimkan lamaran mereka dan menjalani tahapan seleksi selanjutnya melalui aplikasi, serta mendapatkan notifikasi untuk setiap tahapan seleksi yang harus diikuti. Hal ini juga memudahkan perusahaan dalam mengelola proses rekrutmen dan membuat proses administrasi lebih cepat dan mudah."
+        },
+        "P6": {
+          "TITLE": "Ringkasan Manfaat Rekrutmen Online",
+          "DESC": "Dalam kesimpulannya, fitur scan lamaran melalui aplikasi memudahkan pelamar dalam mengirimkan lamaran kerja dan menjalani tahapan seleksi rekrutmen secara online, serta membuat proses rekrutmen lebih efisien dan transparan."
         }
       }
     },
     "ATTENDANCE": {
-      "NAME": "Presensi",
+      "NAME": "Kehadiran",
       "HERO": {
-        "TITLE": "Lacak kehadiran karyawan dengan mudah dan akurat menggunakan software kami dengan integrasi mesin atau aplikasi",
-        "DESC": "Memperkenalkan software absensi komprehensif dengan fitur luar biasa yang akan mempermudah absensi karyawan dan manajemen penggajian. Dengan pengaturan mesin slotting, badge, atau melalui Aplikasi, karyawan dapat dengan mudah dan akurat mencatat kehadiran mereka."
+        "TITLE": "Pantau kehadiran karyawan dengan mudah dan akurat dengan mesin absensi atau Mobile Apps",
+        "DESC": "Memperkenalkan software absensi yang lengkap dengan fitur-fitur unggulan yang akan memudahkan pengelolaan absensi dan penggajian karyawan. Dengan fitur setting slotting mesin, badge, atau via Apps, karyawan dapat melakukan absensi dengan mudah dan akurat."
       },
       "ITEMS": {
-        "SHIFT_ROTATION": {
-          "TITLE": "Fitur Rotasi Shift Otomatis",
-          "DESC": "Fitur rotasi shift otomatis dalam software absensi ini akan secara otomatis merotasi jadwal shift kerja karyawan. Sistem akan menentukan daftar shift kehadiran karyawan yang tidak beraturan, mempermudah pengelolaan jadwal karyawan."
+        "P1": {
+          "TITLE": "Sistem Absensi Terintegrasi",
+          "DESC": "Memperkenalkan software absensi yang lengkap dengan fitur-fitur unggulan yang akan memudahkan pengelolaan absensi dan penggajian karyawan. Dengan fitur setting slotting mesin, badge, atau via Apps, karyawan dapat melakukan absensi dengan mudah dan akurat."
         },
-        "REALTIME_TRACKING": {
-          "TITLE": "Pemantauan Kehadiran Real-Time",
-          "DESC": "Pantau kehadiran, keterlambatan, dan jam kerja seluruh karyawan secara langsung dalam satu dasbor analitik terpusat."
+        "P2": {
+          "TITLE": "Fitur Rotasi Shift Otomatis",
+          "DESC": "Fitur auto-rotate shift pada software absensi ini akan merotasi secara otomatis shift kerja karyawan. Sistem ini akan menentukan daftar shift kehadiran karyawan yang tidak tetap sehingga memudahkan pengelolaan jadwal karyawan."
+        },
+        "P3": {
+          "TITLE": "Pengelolaan Keterangan Ketidakhadiran",
+          "DESC": "Untuk memudahkan pengelolaan ketidakhadiran karyawan, fitur remark telah disediakan. Fitur ini memungkinkan karyawan untuk memasukkan alasan ketidakhadiran seperti cuti, sakit, bahkan tanpa alasan sekalipun."
+        },
+        "P4": {
+          "TITLE": "Perubahan Jadwal yang Fleksibel",
+          "DESC": "Perubahan jadwal kehadiran karyawan juga dapat dilakukan dengan mudah melalui software absensi ini. Seluruh perubahan jadwal dapat diakses dan diatur melalui platform yang user-friendly."
+        },
+        "P5": {
+          "TITLE": "Perhitungan Lembur & Tunjangan",
+          "DESC": "Untuk menghitung jam lembur karyawan, software absensi ini dilengkapi dengan fitur kalkulasi lembur yang akurat. Selain itu, sistem ini juga memiliki fitur perhitungan potongan dan tunjangan karyawan yang dapat disesuaikan dengan kebutuhan perusahaan."
+        },
+        "P6": {
+          "TITLE": "Persetujuan Lembur Otomatis & Rekapitulasi",
+          "DESC": "Dengan fitur sitem automatis approval untuk lembur, pengelolaan jadwal lembur karyawan menjadi lebih efektif dan efisien. Seluruh data absensi dan perhitungan penggajian karyawan akan di-summary pada akhir periode sehingga memudahkan pengelolaan penggajian karyawan."
+        },
+        "P7": {
+          "TITLE": "Kemudahan Manajemen Presensi",
+          "DESC": "Dapatkan kemudahan pengelolaan absensi dan penggajian karyawan dengan menggunakan software absensi terbaik ini."
         }
       }
     },
     "PAYROLL": {
       "NAME": "Penggajian",
       "HERO": {
-        "TITLE": "Kemudahan Pengelolaan Gaji Karyawan dengan Fleksibilitas Formula Penggajian",
-        "DESC": "Dapatkan kemudahan proses penggajian dengan software payroll terbaik yang mendukung kustomisasi formula potongan dan tunjangan secara akurat."
+        "TITLE": "Gaji Anda, Aturan Anda - Dapatkan Kemudahan Penggajian dengan Software Payroll Terbaik dengan Formula Potongan dan Tunjangan yang Bisa Disesuaikan!",
+        "DESC": "Kami mempersembahkan software penggajian yang dapat di-custom untuk semua formula potongan dan tunjangan, seperti potongan pajak, BPJS Kesehatan, BPJS Ketenagakerjaan, serta tunjangan kesehatan, tunjangan makan, tunjangan transportasi, dan lain-lain. Software kami memiliki kemampuan untuk menghitung penggajian berdasarkan sistem shift, lembur, dan penggajian bulanan, sehingga memudahkan perusahaan dalam mengelola gaji karyawan."
       },
       "ITEMS": {
-        "CUSTOM_FORMULA": {
-          "TITLE": "Formula Gaji Kustom",
-          "DESC": "Atur formula komponen gaji pokok, tunjangan kehadiran, lembur, dan potongan sesuai dengan kebijakan unik perusahaan Anda."
+        "P1": {
+          "TITLE": "Kustomisasi Rumus Gaji & Potongan",
+          "DESC": "Kami mempersembahkan software penggajian yang dapat di-custom untuk semua formula potongan dan tunjangan, seperti potongan pajak, BPJS Kesehatan, BPJS Ketenagakerjaan, serta tunjangan kesehatan, tunjangan makan, tunjangan transportasi, dan lain-lain. Software kami memiliki kemampuan untuk menghitung penggajian berdasarkan sistem shift, lembur, dan penggajian bulanan, sehingga memudahkan perusahaan dalam mengelola gaji karyawan."
         },
-        "AUTO_PAYSLIP": {
-          "TITLE": "Distribusi Slip Gaji Digital",
-          "DESC": "Kirim slip gaji terenkripsi langsung ke email atau aplikasi seluler karyawan secara otomatis dan tepat waktu setiap periode gajian."
+        "P2": {
+          "TITLE": "Pembaruan Perhitungan Pajak Otomatis",
+          "DESC": "Selain itu, software kami juga dilengkapi dengan fitur untuk meng-update perhitungan pajak secara otomatis sesuai dengan aturan pemerintah yang berlaku. Hal ini akan memastikan bahwa perusahaan selalu mematuhi peraturan perpajakan terbaru dan menghindari risiko sanksi dari pihak berwenang."
+        },
+        "P3": {
+          "TITLE": "Perhitungan Gaji Prorata yang Akurat",
+          "DESC": "Dalam hal perhitungan gaji prorate, software kami dapat membandingkan gaji lama dan baru karyawan dengan akurat. Hal ini berguna ketika terdapat perubahan gaji tengah bulan atau ketika seorang karyawan bergabung atau meninggalkan perusahaan di tengah bulan."
+        },
+        "P4": {
+          "TITLE": "Laporan Pajak & Unggah Bank Mudah",
+          "DESC": "Seluruh laporan pajak, BPJS, dan daftar gaji dapat di-upload ke bank dengan mudah. Software kami mendukung berbagai jenis format file seperti PDF, Excel, atau CSV untuk mempermudah proses upload."
+        },
+        "P5": {
+          "TITLE": "Slip Gaji Digital & Cetak Rahasia",
+          "DESC": "Selain itu, slip gaji karyawan dapat dicetak menggunakan kertas konfidensial untuk menjaga kerahasiaan informasi pribadi karyawan. Slip gaji juga dapat dikirim melalui email atau di-download melalui aplikasi karyawan, sehingga memudahkan akses dan pengiriman slip gaji karyawan."
         }
       }
     },
     "DATABASE": {
-      "NAME": "Manajemen Database",
+      "NAME": "Database Management",
       "HERO": {
-        "TITLE": "Pusat Data Induk Karyawan Terpadu & Terstruktur",
-        "DESC": "Kelola informasi karyawan mulai dari identitas, riwayat karir, hingga dokumen penting dalam satu basis data yang aman dan terpusat."
+        "TITLE": "Optimalkan proses HR dan perlihatkan potensi timmu - fitur manajemen database HR online kami akan memudahkanmu!",
+        "DESC": "Database karyawan merupakan sebuah alat yang sangat penting bagi organisasi untuk mengelola informasi karyawan, melacak performa karyawan, dan menjaga kepatuhan terhadap peraturan. Dengan adanya database karyawan secara online, pengelolaan data karyawan menjadi lebih efisien dan nyaman dibandingkan sebelumnya."
       },
       "ITEMS": {
-        "EMPLOYEE_RECORDS": {
-          "TITLE": "Profil Karyawan Komprehensif",
-          "DESC": "Simpan riwayat kerja, data keluarga, pendidikan, sertifikasi, dan kontrak kerja dalam satu repositori data terpadu."
+        "P1": {
+          "TITLE": "Database Karyawan Terpusat",
+          "DESC": "Database karyawan merupakan sebuah alat yang sangat penting bagi organisasi untuk mengelola informasi karyawan, melacak performa karyawan, dan menjaga kepatuhan terhadap peraturan. Dengan adanya database karyawan secara online, pengelolaan data karyawan menjadi lebih efisien dan nyaman dibandingkan sebelumnya."
         },
-        "DOCUMENT_VAULT": {
-          "TITLE": "Penyimpanan Dokumen Digital",
-          "DESC": "Arsip digital yang aman untuk menyimpan KTP, NPWP, BPJS, dan surat perjanjian kerja dengan enkripsi tingkat tinggi."
+        "P2": {
+          "TITLE": "Pengumpulan & Penyimpanan Data Lengkap",
+          "DESC": "Database karyawan secara online menawarkan berbagai fitur yang membuat pengelolaan tenaga kerja lebih mudah bagi departemen HR. Misalnya, database ini memungkinkan pengumpulan dan penyimpanan data karyawan seperti informasi kontak, riwayat pekerjaan, penilaian performa, dan lain-lain dengan mudah."
+        },
+        "P3": {
+          "TITLE": "Otomatisasi Tugas Administrasi HR",
+          "DESC": "Keuntungan lain dari database karyawan secara online adalah dapat membantu mengotomatisasi tugas-tugas HR, seperti melacak cuti karyawan dan absensi, memperbarui catatan karyawan, dan menghasilkan laporan. Hal ini membebaskan tenaga kerja HR untuk fokus pada tugas-tugas strategis seperti pengembangan dan retensi karyawan."
+        },
+        "P4": {
+          "TITLE": "Portal Layanan Mandiri Karyawan",
+          "DESC": "Lebih lanjut, database karyawan secara online dapat meningkatkan komunikasi antara HR dan karyawan. Ini memberikan platform bagi karyawan untuk memperbarui informasi pribadi mereka sendiri, seperti kontak darurat dan informasi deposit langsung. Hal ini tidak hanya mengurangi beban administratif pada HR tetapi juga memastikan bahwa informasi karyawan selalu terbaru dan akurat."
+        },
+        "P5": {
+          "TITLE": "Keamanan Data & Enkripsi Tingkat Tinggi",
+          "DESC": "Selain manfaat-manfaat ini, database karyawan secara online juga menawarkan tingkat keamanan yang tinggi. Akses ke data karyawan dapat dibatasi hanya untuk personil yang diizinkan, dan informasi sensitif dapat dienkripsi untuk mencegah akses yang tidak sah."
+        },
+        "P6": {
+          "TITLE": "Keputusan Strategis Berbasis Data",
+          "DESC": "Secara keseluruhan, database karyawan secara online adalah alat yang sangat penting bagi setiap organisasi yang ingin mengoptimalkan operasi HR, meningkatkan komunikasi, dan memastikan kepatuhan terhadap peraturan. Dengan menyediakan platform terpusat untuk mengelola data karyawan, database karyawan secara online dapat membantu tenaga kerja HR membuat keputusan yang tepat tentang tenaga kerja mereka, dan pada akhirnya, berkontribusi pada keberhasilan organisasi."
         }
       }
     },
     "PERSONAL_LEAVE": {
       "NAME": "Cuti Pribadi",
       "HERO": {
-        "TITLE": "Pengajuan Cuti Mandiri Karyawan yang Praktis dan Cepat",
-        "DESC": "Permudah karyawan mengajukan cuti tahunan, cuti sakit, atau izin secara online langsung melalui aplikasi dengan approval bertingkat."
+        "TITLE": "Istirahatlah sejenak dan kembali dengan semangat baru - fitur cuti pribadi kami membantumu mengisi ulang energi dan mencapai performa terbaikmu",
+        "DESC": "Pengajuan cuti menjadi salah satu proses administrasi yang harus dilakukan oleh karyawan dalam perusahaan. Namun, dengan adanya kemajuan teknologi, kini proses pengajuan cuti menjadi semakin mudah dengan penggunaan aplikasi cuti online yang dilengkapi dengan fitur approval."
       },
       "ITEMS": {
-        "LEAVE_REQUEST": {
-          "TITLE": "Pengajuan Cuti Online Mandiri",
-          "DESC": "Karyawan dapat memeriksa sisa kuota cuti secara real-time dan mengajukan cuti dalam hitungan detik melalui ponsel."
+        "P1": {
+          "TITLE": "Pengajuan Cuti Online & Sistem Persetujuan",
+          "DESC": "Pengajuan cuti menjadi salah satu proses administrasi yang harus dilakukan oleh karyawan dalam perusahaan. Namun, dengan adanya kemajuan teknologi, kini proses pengajuan cuti menjadi semakin mudah dengan penggunaan aplikasi cuti online yang dilengkapi dengan fitur approval."
         },
-        "MULTI_LEVEL_APPROVAL": {
-          "TITLE": "Persetujuan Bertingkat Otomatis",
-          "DESC": "Alur persetujuan cuti berjenjang yang otomatis meneruskan notifikasi ke atasan langsung dan HR untuk konfirmasi cepat."
+        "P2": {
+          "TITLE": "Alur Pengajuan Cuti Karyawan",
+          "DESC": "Proses pengajuan cuti online dengan fitur approval dimulai dengan karyawan yang memasukkan permohonan cuti melalui aplikasi. Karyawan dapat memilih tanggal cuti, jenis cuti, dan mengisi alasan cuti. Setelah mengirimkan permohonan cuti, aplikasi akan secara otomatis mengirimkan notifikasi ke atasan karyawan yang bersangkutan untuk menyetujui atau menolak permohonan cuti tersebut."
+        },
+        "P3": {
+          "TITLE": "Evaluasi Cuti & Tanda Tangan Digital Atasan",
+          "DESC": "Atasan dapat dengan mudah mengevaluasi permohonan cuti melalui aplikasi dengan melihat riwayat cuti karyawan dan mempertimbangkan ketersediaan sumber daya manusia. Jika permohonan cuti disetujui, atasan dapat menyetujui permohonan cuti melalui aplikasi dengan memberikan komentar dan menandatangani digital. Namun, jika permohonan cuti ditolak, atasan harus memberikan alasan yang jelas dan memberikan solusi alternatif."
+        },
+        "P4": {
+          "TITLE": "Notifikasi Status & Unduh Surat Izin Cuti",
+          "DESC": "Setelah permohonan cuti disetujui, karyawan akan menerima notifikasi melalui aplikasi. Karyawan dapat melihat status permohonan cuti, termasuk tanggal cuti dan jenis cuti yang disetujui. Karyawan juga dapat mengunduh surat izin cuti melalui aplikasi untuk keperluan administrasi."
+        },
+        "P5": {
+          "TITLE": "Pemantauan Jadwal & Ketersediaan Tim",
+          "DESC": "Fitur approval pada aplikasi cuti online sangat memudahkan proses pengajuan cuti di perusahaan. Atasan dapat dengan mudah memantau jadwal cuti karyawan dan memastikan bahwa sumber daya manusia tersedia dengan optimal. Selain itu, karyawan juga dapat melihat status permohonan cuti mereka secara real-time dan tidak perlu menunggu konfirmasi dari atasan secara manual."
+        },
+        "P6": {
+          "TITLE": "Efisiensi & Transparansi Manajemen Cuti",
+          "DESC": "Dengan adanya fitur approval pada aplikasi cuti online, proses pengajuan cuti menjadi lebih efisien dan transparan. Karyawan dan atasan dapat berkomunikasi dengan mudah melalui aplikasi dan mengoptimalkan penggunaan sumber daya manusia. Hal ini juga mempercepat proses administrasi dan memudahkan pengelolaan sumber daya manusia di perusahaan."
         }
       }
     },
     "PERSONAL_OVERTIME": {
       "NAME": "Lembur Pribadi",
       "HERO": {
-        "TITLE": "Pencatatan & Klaim Jam Lembur Karyawan yang Akurat",
-        "DESC": "Catat jam lembur dengan kalkulasi otomatis sesuai peraturan ketenagakerjaan dan integrasi langsung ke sistem penggajian."
+        "TITLE": "Lebih mudah dan efisien ajukan lembur kapan saja, di mana saja - fitur pengajuan lembur pribadi online kami siap membantumu!",
+        "DESC": "Mengajukan permintaan lembur adalah salah satu proses administratif yang harus dilalui oleh karyawan dalam sebuah perusahaan. Namun, proses ini dapat menjadi lebih mudah dan efisien dengan penggunaan aplikasi pengajuan lembur online yang dilengkapi dengan fitur persetujuan."
       },
       "ITEMS": {
-        "OVERTIME_SUBMISSION": {
-          "TITLE": "Pengajuan Jam Lembur Mandiri",
-          "DESC": "Ajukan tugas lembur sebelum atau sesudah jam kerja lengkap dengan rincian pekerjaan dan durasi waktu."
+        "P1": {
+          "TITLE": "Pengajuan Lembur Online & Persetujuan Cepat",
+          "DESC": "Mengajukan permintaan lembur adalah salah satu proses administratif yang harus dilalui oleh karyawan dalam sebuah perusahaan. Namun, proses ini dapat menjadi lebih mudah dan efisien dengan penggunaan aplikasi pengajuan lembur online yang dilengkapi dengan fitur persetujuan."
         },
-        "AUTO_CALCULATION": {
-          "TITLE": "Kalkulasi Upah Lembur Otomatis",
-          "DESC": "Perhitungan tarif upah lembur secara presisi berdasarkan formula Depnaker yang langsung terhubung ke sistem payroll."
+        "P2": {
+          "TITLE": "Pengisian Rincian & Jadwal Kerja Lembur",
+          "DESC": "Proses pengajuan lembur online dengan fitur persetujuan dimulai dengan karyawan mengajukan permintaan lembur melalui aplikasi. Karyawan dapat menentukan tanggal dan waktu lembur, memberikan alasan permintaan lembur, dan menunjukkan jenis pekerjaan yang akan dilakukan selama lembur. Setelah mengajukan permintaan, aplikasi secara otomatis akan mengirimkan notifikasi kepada atasan karyawan untuk menyetujui atau menolak permintaan lembur tersebut."
+        },
+        "P3": {
+          "TITLE": "Evaluasi Beban Kerja & Persetujuan Atasan",
+          "DESC": "Atasan dapat dengan mudah mengevaluasi permintaan lembur melalui aplikasi dengan meninjau riwayat kerja karyawan dan mempertimbangkan ketersediaan sumber daya manusia. Jika permintaan lembur disetujui, atasan dapat menyetujui permintaan lembur melalui aplikasi dengan memberikan komentar dan menandatangani secara digital. Namun, jika permintaan lembur ditolak, atasan harus memberikan alasan yang jelas dan memberikan solusi alternatif."
+        },
+        "P4": {
+          "TITLE": "Notifikasi Status & Unduh Surat Perintah Lembur",
+          "DESC": "Setelah permintaan lembur disetujui, karyawan akan menerima notifikasi melalui aplikasi. Karyawan dapat melihat status permintaan lembur mereka, termasuk tanggal dan waktu lembur yang disetujui serta jenis pekerjaan yang akan dilakukan. Karyawan juga dapat mengunduh surat izin lembur melalui aplikasi untuk tujuan administratif."
+        },
+        "P5": {
+          "TITLE": "Monitoring Jadwal & Ketersediaan Personel",
+          "DESC": "Fitur persetujuan pada aplikasi pengajuan lembur online sangat memudahkan proses pengajuan lembur di perusahaan. Atasan dapat dengan mudah memantau jadwal kerja karyawan dan memastikan sumber daya manusia tersedia secara optimal. Selain itu, karyawan dapat melihat status permintaan lembur mereka secara real-time dan tidak perlu menunggu konfirmasi manual dari atasan."
+        },
+        "P6": {
+          "TITLE": "Efisiensi Alur Kerja Lembur Karyawan",
+          "DESC": "Dengan fitur persetujuan pada aplikasi pengajuan lembur online, proses pengajuan lembur menjadi lebih efisien dan transparan. Karyawan dan atasan dapat dengan mudah berkomunikasi melalui aplikasi dan mengoptimalkan penggunaan sumber daya manusia. Ini juga mempercepat proses administratif dan memudahkan pengelolaan sumber daya manusia di perusahaan."
         }
       }
     },
     "EMPLOYEE_UPDATE": {
-      "NAME": "Pembaruan Data Karyawan",
+      "NAME": "Pengkinian Data",
       "HERO": {
-        "TITLE": "Pembaruan Profil & Data Mandiri Karyawan Tanpa Ribet",
-        "DESC": "Berikan akses mandiri kepada karyawan untuk memperbarui alamat, nomor kontak, rekening bank, dan data keluarga dengan validasi HR."
+        "TITLE": "Perbarui data HR karyawan dengan mudah dan efisien - fitur pengkinian data karyawan secara online kami akan mempermudahmu!",
+        "DESC": "Dalam era digital seperti sekarang ini, keamanan data pribadi menjadi hal yang semakin penting. Oleh karena itu, proses pengkinian data pribadi secara online dengan approval menjadi pilihan yang tepat bagi mereka yang ingin memperbarui data pribadi mereka tanpa harus mengunjungi kantor atau lokasi tertentu."
       },
       "ITEMS": {
-        "PROFILE_MANAGEMENT": {
-          "TITLE": "Employee Self-Service (ESS)",
-          "DESC": "Karyawan dapat memperbarui informasi pribadi dan mengunggah dokumen terbaru secara mandiri kapan saja."
+        "P1": {
+          "TITLE": "Pengkinian Data Pribadi Mandiri & Aman",
+          "DESC": "Dalam era digital seperti sekarang ini, keamanan data pribadi menjadi hal yang semakin penting. Oleh karena itu, proses pengkinian data pribadi secara online dengan approval menjadi pilihan yang tepat bagi mereka yang ingin memperbarui data pribadi mereka tanpa harus mengunjungi kantor atau lokasi tertentu."
         },
-        "VERIFICATION_WORKFLOW": {
-          "TITLE": "Verifikasi & Validasi HR",
-          "DESC": "Setiap perubahan data melewati peninjauan tim HR terlebih dahulu untuk memastikan keabsahan data perusahaan."
+        "P2": {
+          "TITLE": "Pengisian Formulir Perubahan Data Online",
+          "DESC": "Proses pengajuan pengkinian data pribadi secara online dengan approval sangat mudah dilakukan. Pertama, pengguna hanya perlu mengakses situs atau aplikasi yang telah disediakan oleh lembaga terkait. Setelah itu, pengguna dapat mengisi formulir yang disediakan dengan data pribadi yang ingin diperbarui."
+        },
+        "P3": {
+          "TITLE": "Pengajuan Permohonan ke Petugas HR",
+          "DESC": "Setelah formulir terisi dengan benar, pengguna dapat mengajukan permohonan pengkinian data pribadi secara online dengan mengklik tombol 'submit'. Permohonan tersebut akan langsung diterima oleh petugas terkait untuk dilakukan proses verifikasi dan approval."
+        },
+        "P4": {
+          "TITLE": "Verifikasi & Validasi Dokumen oleh Petugas",
+          "DESC": "Pada proses verifikasi, petugas akan melakukan pengecekan dan validasi data yang telah diisi oleh pengguna. Setelah itu, petugas akan memberikan persetujuan atau penolakan terhadap permohonan pengkinian data pribadi secara online yang telah diajukan oleh pengguna."
+        },
+        "P5": {
+          "TITLE": "Pemberitahuan Persetujuan & Penyimpanan Bukti",
+          "DESC": "Jika pengajuan permohonan diterima dan mendapatkan approval, pengguna akan menerima notifikasi melalui email atau aplikasi terkait. Selanjutnya, pengguna dapat mencetak atau menyimpan data pribadi yang telah diperbarui sebagai bukti dan referensi di masa yang akan datang."
+        },
+        "P6": {
+          "TITLE": "Kemudahan & Perlindungan Privasi Data",
+          "DESC": "Dengan proses pengajuan pengkinian data pribadi secara online dengan approval, pengguna tidak perlu repot mengunjungi lokasi tertentu atau menghabiskan waktu berjam-jam untuk melakukan perbaruan data pribadi. Selain itu, proses ini juga sangat aman karena data pribadi akan terjaga dengan baik dan hanya dapat diakses oleh pihak yang berwenang saja."
         }
       }
     },
     "PERSONAL_ATTENDANCE": {
-      "NAME": "Presensi Pribadi",
+      "NAME": "Absensi Pribadi",
       "HERO": {
-        "TITLE": "Pantau Riwayat & Statistik Kehadiran Diri Sendiri Kapan Saja",
-        "DESC": "Karyawan dapat melihat ringkasan keterlambatan, jam kerja harian, dan riwayat presensi bulanan secara transparan."
+        "TITLE": "Pantau kehadiranmu di mana saja - fitur absensi online via aplikasi kami memudahkanmu untuk melakukan itu!",
+        "DESC": "Dalam era digital seperti sekarang, banyak perusahaan yang beralih menggunakan sistem absensi online untuk memudahkan pengelolaan absensi karyawan. Salah satu fitur yang banyak digunakan adalah proses absensi online dengan menggunakan GPS."
       },
       "ITEMS": {
-        "MOBILE_CLOCK_IN": {
-          "TITLE": "Presensi Mobile & GPS Geotagging",
-          "DESC": "Lakukan check-in dan check-out dari smartphone dengan validasi radius lokasi dan verifikasi foto wajah selfie."
+        "P1": {
+          "TITLE": "Presensi Mobile Berbasis GPS",
+          "DESC": "Dalam era digital seperti sekarang, banyak perusahaan yang beralih menggunakan sistem absensi online untuk memudahkan pengelolaan absensi karyawan. Salah satu fitur yang banyak digunakan adalah proses absensi online dengan menggunakan GPS."
         },
-        "ATTENDANCE_HISTORY": {
-          "TITLE": "Rekapitulasi Jam Kerja Pribadi",
-          "DESC": "Akses riwayat kehadiran harian, waktu kedatangan, jam pulang, dan total akumulasi jam kerja bulanan."
+        "P2": {
+          "TITLE": "Check-In & Check-Out Sesuai Titik Lokasi",
+          "DESC": "Proses absensi online dengan GPS memungkinkan karyawan untuk melakukan check in dan check out dari lokasi kerja yang telah ditetapkan oleh perusahaan. Hal ini dapat memastikan kehadiran karyawan dan mengurangi risiko kecurangan dalam absensi."
+        },
+        "P3": {
+          "TITLE": "Penetapan Radius & Batas Area Kerja (Geofencing)",
+          "DESC": "Dengan menggunakan GPS, sistem absensi online dapat mengetahui lokasi karyawan saat melakukan check in dan check out. Titik check in dan check out dapat ditetapkan oleh perusahaan, sehingga karyawan hanya dapat melakukan absensi dari lokasi kerja yang telah ditentukan."
+        },
+        "P4": {
+          "TITLE": "Laporan Kehadiran Real-Time",
+          "DESC": "Selain itu, sistem absensi online dengan GPS juga dapat memberikan laporan kehadiran karyawan secara real-time. Dengan begitu, perusahaan dapat mengambil tindakan yang cepat jika ada karyawan yang tidak masuk kerja atau melakukan absensi di luar waktu kerja yang telah ditentukan."
+        },
+        "P5": {
+          "TITLE": "Peningkatan Efisiensi & Produktivitas Kerja",
+          "DESC": "Tidak hanya memudahkan pengelolaan absensi, sistem absensi online dengan GPS juga dapat meningkatkan efisiensi dan produktivitas karyawan. Karyawan tidak perlu lagi membuang waktu untuk mengisi buku absensi atau memperbarui data absensi secara manual. Sehingga, waktu yang dihemat dapat digunakan untuk melakukan tugas-tugas yang lebih penting dan meningkatkan kinerja karyawan secara keseluruhan."
+        },
+        "P6": {
+          "TITLE": "Solusi Manajemen Presensi Modern",
+          "DESC": "Dengan demikian, menggunakan sistem absensi online dengan GPS dapat menjadi solusi yang tepat bagi perusahaan dalam mengelola absensi karyawan secara efektif dan efisien."
         }
       }
     },
     "COLLECTIVE_LEAVE": {
-      "NAME": "Cuti Bersama",
+      "NAME": "Cuti Kolektif",
       "HERO": {
-        "TITLE": "Manajemen Cuti Massal & Hari Libur Perusahaan yang Efisien",
-        "DESC": "Atur jadwal cuti bersama perusahaan dan hari libur nasional secara serentak tanpa perlu input manual per karyawan."
+        "TITLE": "Manajemen cuti kolektif tanpa hambatan - fitur pengajuan cuti kolektif dengan approval kami akan memudahkan koordinasi timmu!",
+        "DESC": "Dalam proses pengajuan cuti secara kolektif, kini semakin mudah dengan fitur pengajuan cuti kolektif online. Dalam proses ini, clerk dapat dengan mudah menginput permintaan cuti kolektif yang melibatkan beberapa karyawan sekaligus dan mendapatkan persetujuan dari atasan melalui aplikasi."
       },
       "ITEMS": {
-        "HOLIDAY_CALENDAR": {
-          "TITLE": "Kalender Libur & Cuti Bersama Terpadu",
-          "DESC": "Sinkronisasi kalender hari libur nasional dan kebijakan libur bersama perusahaan ke seluruh departemen kerja."
+        "P1": {
+          "TITLE": "Pengajuan Cuti Massal & Kolektif",
+          "DESC": "Dalam proses pengajuan cuti secara kolektif, kini semakin mudah dengan fitur pengajuan cuti kolektif online. Dalam proses ini, clerk dapat dengan mudah menginput permintaan cuti kolektif yang melibatkan beberapa karyawan sekaligus dan mendapatkan persetujuan dari atasan melalui aplikasi."
         },
-        "QUOTA_DEDUCTION": {
-          "TITLE": "Penyesuaian Saldo Cuti Massal Otomatis",
-          "DESC": "Sistem secara otomatis memotong saldo cuti tahunan karyawan yang berhak sesuai ketentuan cuti bersama yang berlaku."
+        "P2": {
+          "TITLE": "Input Rombongan Karyawan & Detail Periode",
+          "DESC": "Untuk mengajukan permintaan cuti kolektif, clerk akan mengisi detail permintaan cuti seperti tanggal dan waktu, durasi, alasan, dan daftar karyawan yang terlibat dalam cuti kolektif. Setelah detail permintaan lengkap, clerk dapat mengirimkan permintaan cuti kolektif melalui aplikasi."
+        },
+        "P3": {
+          "TITLE": "Evaluasi Beban Tim & Persetujuan Atasan",
+          "DESC": "Setelah permintaan cuti kolektif diterima oleh aplikasi, notifikasi akan dikirimkan ke atasan untuk melakukan persetujuan. Atasan dapat dengan mudah melihat permintaan cuti kolektif yang masuk melalui aplikasi dan mempertimbangkan ketersediaan sumber daya manusia serta beban kerja karyawan yang terlibat dalam permintaan tersebut. Jika persetujuan diberikan, atasan dapat menyetujui permintaan melalui aplikasi dengan memberikan komentar dan menandatangani secara digital."
+        },
+        "P4": {
+          "TITLE": "Notifikasi Persetujuan & Surat Izin Kolektif",
+          "DESC": "Setelah permintaan cuti kolektif disetujui, clerk akan menerima notifikasi melalui aplikasi dan dapat melihat status permintaan cuti kolektif mereka, termasuk tanggal dan durasi cuti yang disetujui, serta daftar karyawan yang terlibat. Clerk juga dapat mengunduh surat izin cuti kolektif melalui aplikasi untuk keperluan administrasi."
+        },
+        "P5": {
+          "TITLE": "Koordinasi Jadwal Tim yang Efisien & Terbuka",
+          "DESC": "Dengan fitur pengajuan cuti kolektif online, clerk dapat dengan mudah menginput permintaan cuti kolektif yang melibatkan beberapa karyawan sekaligus dan mendapatkan persetujuan dari atasan melalui aplikasi. Hal ini membuat proses pengajuan cuti menjadi lebih efisien dan transparan, serta memudahkan clerk dalam mengelola jadwal kerja karyawan."
         }
       }
     },
     "COLLECTIVE_OVERTIME": {
-      "NAME": "Lembur Bersama",
+      "NAME": "Lembur Kolektif",
       "HERO": {
-        "TITLE": "Pengaturan Rencana Lembur Tim & Departemen Secara Kolektif",
-        "DESC": "Permudah manajer membuat Surat Perintah Lembur (SPL) untuk sekelompok karyawan dalam satu proyek atau shift khusus."
+        "TITLE": "Manajemen lembur kolektif yang efisien - fitur pengajuan lembur kolektif dengan approval kami siap mempercepat proses kerja timmu!",
+        "DESC": "Proses pengajuan lembur secara kolektif merupakan bagian penting dalam mengatur jadwal kerja di perusahaan. Dengan menggunakan aplikasi pengajuan lembur kolektif online, proses pengajuan dan persetujuan permintaan lembur menjadi lebih efisien dan transparan."
       },
       "ITEMS": {
-        "GROUP_SPL": {
-          "TITLE": "Surat Perintah Lembur (SPL) Kolektif",
-          "DESC": "Terbitkan penugasan lembur grup untuk divisi atau tim kerja sekaligus tanpa harus memasukkan nama satu per satu."
+        "P1": {
+          "TITLE": "Manajemen Pengajuan Lembur Kolektif",
+          "DESC": "Proses pengajuan lembur secara kolektif merupakan bagian penting dalam mengatur jadwal kerja di perusahaan. Dengan menggunakan aplikasi pengajuan lembur kolektif online, proses pengajuan dan persetujuan permintaan lembur menjadi lebih efisien dan transparan."
         },
-        "BUDGET_TRACKING": {
-          "TITLE": "Estimasi & Pengendalian Biaya Lembur",
-          "DESC": "Pantau estimasi total jam dan alokasi anggaran lembur departemen secara real-time sebelum diajukan ke manajemen."
+        "P2": {
+          "TITLE": "Penginputan Permintaan Lembur Anggota Tim",
+          "DESC": "Proses pengajuan permintaan lembur kolektif melalui aplikasi dimulai dengan pegawai input detail permintaan lembur, termasuk tanggal dan waktu, durasi, dan alasan lembur. Pegawai juga dapat memilih beberapa karyawan yang akan ikut serta dalam lembur kolektif. Setelah detail permintaan selesai, aplikasi akan mengirimkan notifikasi ke atasan untuk persetujuan."
+        },
+        "P3": {
+          "TITLE": "Persetujuan Atasan Berdasarkan Kapasitas Tim",
+          "DESC": "Atasan dapat dengan mudah menyetujui permintaan lembur kolektif melalui aplikasi dengan mempertimbangkan ketersediaan sumber daya manusia dan mengevaluasi beban kerja setiap karyawan yang terlibat dalam lembur kolektif. Jika permintaan lembur kolektif disetujui, atasan dapat menyetujui permintaan melalui aplikasi dengan memberikan komentar dan menandatangani secara digital. Namun, jika permintaan lembur kolektif ditolak, atasan harus memberikan alasan yang jelas dan memberikan solusi alternatif."
+        },
+        "P4": {
+          "TITLE": "Notifikasi Status & Penerbitan Surat Lembur",
+          "DESC": "Setelah permintaan lembur kolektif disetujui, pegawai akan menerima notifikasi melalui aplikasi. Pegawai dapat melihat status permintaan lembur kolektif mereka, termasuk tanggal dan waktu lembur yang disetujui, durasi, dan daftar karyawan yang terlibat. Pegawai juga dapat mengunduh surat izin lembur kolektif melalui aplikasi untuk tujuan administratif."
+        },
+        "P5": {
+          "TITLE": "Pemerataan Beban Kerja & Administrasi Cepat",
+          "DESC": "Fitur pengajuan lembur kolektif pada aplikasi online sangat memudahkan proses pengaturan jadwal kerja di perusahaan. Pegawai dapat dengan mudah menginput detail permintaan lembur untuk beberapa karyawan, dan atasan dapat dengan efisien menyetujui atau menolak permintaan berdasarkan beban kerja dan ketersediaan sumber daya manusia. Fitur ini juga mempercepat proses administratif dan memastikan distribusi beban kerja yang adil di antara karyawan."
+        },
+        "P6": {
+          "TITLE": "Alur Kerja Lembur yang Terkoordinasi Penuh",
+          "DESC": "Secara keseluruhan, fitur pengajuan lembur kolektif pada aplikasi online membuat proses pengaturan jadwal kerja menjadi lebih efisien dan transparan. Input detail permintaan lembur oleh pegawai dan persetujuan oleh atasan melalui aplikasi memberikan proses yang lancar yang bermanfaat bagi perusahaan dan karyawannya."
         }
       }
     },
     "ATTENDANCE_MACHINE": {
-      "NAME": "Mesin Presensi",
+      "NAME": "Mesin Absensi",
       "HERO": {
-        "TITLE": "Integrasi Mesin Biometrik & Perangkat Presensi Otomatis",
-        "DESC": "Hubungkan mesin sidik jari, pengenalan wajah, dan kartu RFID langsung ke cloud secara real-time tanpa software perantara yang rumit."
+        "TITLE": "Konektivitas langsung ke mesin absensi - fitur konkesi ke mesin absensi kami memudahkanmu dalam manajemen kehadiran karyawan!",
+        "DESC": "Fitur konek ke mesin absensi memungkinkan pengguna untuk menghubungkan sistem manajemen absensi mereka langsung ke mesin absensi fisik yang digunakan di lokasi kerja mereka. Hal ini dapat memudahkan dan mempercepat proses pengumpulan data absensi dan mengurangi risiko kesalahan manusia."
       },
       "ITEMS": {
-        "HARDWARE_SYNC": {
-          "TITLE": "Sinkronisasi Data Mesin Otomatis",
-          "DESC": "Data log absensi dari mesin fisik di berbagai cabang kantor tersinkronisasi otomatis ke cloud server secara instan."
+        "P1": {
+          "TITLE": "Integrasi Langsung ke Mesin Absensi Fisik",
+          "DESC": "Fitur konek ke mesin absensi memungkinkan pengguna untuk menghubungkan sistem manajemen absensi mereka langsung ke mesin absensi fisik yang digunakan di lokasi kerja mereka. Hal ini dapat memudahkan dan mempercepat proses pengumpulan data absensi dan mengurangi risiko kesalahan manusia."
         },
-        "MULTI_DEVICE_SUPPORT": {
-          "TITLE": "Kompatibilitas Multi-Perangkat",
-          "DESC": "Mendukung berbagai tipe dan merek mesin absensi biometrik ternama dengan protokol komunikasi yang stabil."
+        "P2": {
+          "TITLE": "Pemantauan Real-Time & Sinkronisasi Otomatis",
+          "DESC": "Dalam sistem yang terkoneksi dengan mesin absensi, pengguna dapat dengan mudah memantau data absensi karyawan mereka dalam waktu nyata dan memperbaharui data absensi yang telah dikumpulkan ke sistem manajemen absensi. Hal ini dapat memungkinkan pengguna untuk mengidentifikasi karyawan yang terlambat atau tidak hadir, dan mengambil tindakan yang tepat sesuai dengan kebijakan perusahaan mereka."
+        },
+        "P3": {
+          "TITLE": "Pencegahan Kecurangan & Validasi Data",
+          "DESC": "Selain itu, fitur konek ke mesin absensi juga dapat membantu mengurangi risiko kecurangan dalam pengumpulan data absensi karyawan. Dengan sistem yang terkoneksi, pengguna dapat memastikan bahwa data absensi yang tercatat adalah akurat dan valid, serta mengurangi risiko adanya kecurangan seperti absen teman atau merekayasa data absensi."
+        },
+        "P4": {
+          "TITLE": "Hemat Waktu & Eliminasi Rekap Manual",
+          "DESC": "Fitur konek ke mesin absensi juga dapat membantu menghemat waktu dan upaya dalam pengumpulan data absensi karyawan. Pengguna tidak perlu lagi melakukan pengumpulan data secara manual, yang dapat memakan waktu dan meningkatkan risiko kesalahan manusia. Dengan menghubungkan sistem manajemen absensi mereka langsung ke mesin absensi, pengguna dapat secara otomatis mengumpulkan data absensi dan menghemat waktu yang diperlukan untuk melakukan tugas ini."
+        },
+        "P5": {
+          "TITLE": "Akurasi & Efisiensi Pengelolaan Presensi",
+          "DESC": "Dalam keseluruhan, fitur konek ke mesin absensi adalah fitur yang sangat bermanfaat bagi perusahaan dalam mengelola data absensi karyawan mereka dengan lebih efisien dan akurat. Dengan fitur ini, pengguna dapat memastikan bahwa data absensi karyawan mereka tercatat dengan akurat dan valid, serta menghemat waktu dan upaya dalam pengumpulan dan manajemen data absensi."
         }
       }
     },
     "YEARLY_TAX": {
       "NAME": "Pajak Tahunan",
       "HERO": {
-        "TITLE": "Pengelolaan Pajak Penghasilan PPh 21 & SPT Tahunan Akurat",
-        "DESC": "Hitung pajak karyawan berdasarkan tarif TER terbaru dan cetak formulir 1721-A1 secara otomatis sesuai regulasi perpajakan yang berlaku."
+        "TITLE": "Kelola pajak tahunan dengan mudah dan cepat - fitur manajemen pajak tahunan kami siap membantumu!",
+        "DESC": "Pajak tahunan karyawan adalah salah satu kewajiban yang harus dipenuhi oleh setiap karyawan yang menerima penghasilan. Pajak tahunan karyawan mengacu pada penghitungan dan pembayaran pajak penghasilan karyawan selama satu tahun fiskal."
       },
       "ITEMS": {
-        "TER_CALCULATION": {
-          "TITLE": "Kalkulasi Tarif Efektif Rata-Rata (TER)",
-          "DESC": "Perhitungan otomatis pemotongan PPh 21 bulanan dan masa pajak terakhir sesuai aturan PMK terbaru."
+        "P1": {
+          "TITLE": "Kewajiban Pelaporan Pajak Tahunan Karyawan",
+          "DESC": "Pajak tahunan karyawan adalah salah satu kewajiban yang harus dipenuhi oleh setiap karyawan yang menerima penghasilan. Pajak tahunan karyawan mengacu pada penghitungan dan pembayaran pajak penghasilan karyawan selama satu tahun fiskal."
         },
-        "FORM_1721_A1": {
-          "TITLE": "Penerbitan Bukti Potong 1721-A1 Massal",
-          "DESC": "Cetak dan distribusikan formulir bukti potong 1721-A1 resmi kepada seluruh karyawan dengan sekali klik."
+        "P2": {
+          "TITLE": "Sistem Pengelolaan Pajak Tahunan Online",
+          "DESC": "Pajak tahunan karyawan dapat disederhanakan dan lebih mudah dilakukan melalui sistem online. Dalam sistem online ini, karyawan dapat mengakses platform yang memungkinkan mereka mengisi formulir pajak tahunan dan melihat informasi lainnya yang berhubungan dengan pajak."
+        },
+        "P3": {
+          "TITLE": "Kemudahan Perhitungan Otomatis & Pembayaran",
+          "DESC": "Salah satu fitur utama dari sistem pajak tahunan karyawan online adalah kemudahan dalam menghitung dan membayar pajak. Karyawan dapat mengisi formulir pajak secara online, dan sistem akan secara otomatis menghitung jumlah pajak yang harus dibayar berdasarkan penghasilan mereka selama satu tahun fiskal. Setelah itu, karyawan dapat langsung membayar pajak melalui platform tersebut."
+        },
+        "P4": {
+          "TITLE": "Akses Riwayat Pajak & Informasi Komprehensif",
+          "DESC": "Selain kemudahan dalam menghitung dan membayar pajak, sistem pajak tahunan karyawan online juga menyediakan informasi yang berguna bagi karyawan. Karyawan dapat melihat catatan pajak mereka dari tahun sebelumnya, serta informasi tentang pajak penghasilan lainnya seperti pajak tambahan dan pajak bunga."
+        },
+        "P5": {
+          "TITLE": "Verifikasi Otomatis & Minimalisasi Kesalahan",
+          "DESC": "Lebih lanjut, sistem pajak tahunan karyawan online juga dapat membantu mengurangi kesalahan dalam penghitungan dan pembayaran pajak. Sistem ini dapat melakukan verifikasi otomatis terhadap informasi yang dimasukkan oleh karyawan, dan memberikan pemberitahuan jika terdapat kesalahan atau informasi yang tidak lengkap."
+        },
+        "P6": {
+          "TITLE": "Kepatuhan Regulasi & Efisiensi Waktu",
+          "DESC": "Dengan adanya sistem pajak tahunan karyawan online, karyawan dapat menghemat waktu dan upaya yang diperlukan dalam menghitung dan membayar pajak mereka. Selain itu, sistem ini juga membantu memastikan bahwa pajak yang dibayar oleh karyawan sudah sesuai dengan peraturan yang berlaku, sehingga mereka tidak perlu khawatir tentang konsekuensi yang mungkin terjadi akibat kesalahan atau ketidaktelitian dalam membayar pajak."
         }
       }
     }
@@ -437,7 +609,17 @@
     },
     "FAQ": {},
     "FOOTER": {},
-    "INTERESTED": {},
+    "INTERESTED": {
+      "TITLE": "Tertarik Dengan PISICloud?",
+      "DESCRIPTION": "Mengubah Tempat Kerja Anda dengan Proses SDM yang Efisien dari PISICloud. Hubungi kontak dibawah untuk info lebih lanjut.",
+      "CONTACT_US": "Kontak Kami",
+      "VIEW_DEMO_VIDEO": "Tonton Video",
+      "ARIA": {
+        "CONTACT_CHANNELS": "Saluran Kontak",
+        "IMAGE_ALT": "Perwakilan PISICloud mempresentasikan solusi software HR di laptop",
+        "LOGO_ALT": "Logo PISICloud"
+      }
+    },
     "DEMO_VIDEO_MODAL": {}
   }
 }

@@ -1,18 +1,44 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { provideImageKitLoader } from '@angular/common';
+import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Interested } from './interested';
 
 describe('Interested', () => {
   let component: Interested;
   let fixture: ComponentFixture<Interested>;
+  let translateService: TranslateService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Interested],
+      providers: [
+        provideTranslateService({
+          fallbackLang: 'en',
+        }),
+      ],
     }).compileComponents();
+
+    translateService = TestBed.inject(TranslateService);
+    translateService.setTranslation('en', {
+      UNIVERSAL: {
+        INTERESTED: {
+          TITLE: 'Interested in PISICloud?',
+          DESCRIPTION:
+            "Transforming Your Workplace with PISICloud's Streamlined HR Processes. Contact the contact below for more info.",
+          CONTACT_US: 'Contact Us',
+          VIEW_DEMO_VIDEO: 'View Demo Video',
+          ARIA: {
+            CONTACT_CHANNELS: 'Contact Channels',
+            IMAGE_ALT: 'PISICloud representative presenting the HR software solution on a laptop',
+            LOGO_ALT: 'PISICloud Logo',
+          },
+        },
+      },
+    });
+    translateService.use('en');
 
     fixture = TestBed.createComponent(Interested);
     component = fixture.componentInstance;
+    fixture.detectChanges();
     await fixture.whenStable();
   });
 

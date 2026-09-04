@@ -40,8 +40,8 @@ describe('Detail', () => {
   it('should load feature items from input', () => {
     const items = component.items();
     expect(items).toBeTruthy();
-    expect(items.length).toBe(5);
-    expect(items[0].id).toBe('application-submission');
+    expect(items.length).toBe(6);
+    expect(items[0].id).toBe('p1');
   });
 
   it('should start with activeIndex 0 and progress 0', () => {
@@ -56,7 +56,7 @@ describe('Detail', () => {
   });
 
   it('should advance to next feature and wrap around', () => {
-    component.activeIndex.set(4);
+    component.activeIndex.set(5);
     component.nextFeature();
     expect(component.activeIndex()).toBe(0);
     expect(component.progress()).toBe(0);
@@ -102,7 +102,7 @@ describe('Detail', () => {
     expect(progressBar).toBeTruthy();
 
     const tabs = compiled.querySelectorAll('[role="tab"]');
-    expect(tabs.length).toBe(5);
+    expect(tabs.length).toBe(6);
   });
 
   it('should increment progress when timer ticks and advance to next feature at 100%', () => {
@@ -129,5 +129,30 @@ describe('Detail', () => {
     expect(component.activeIndex()).toBe(0);
 
     component.stopTimer();
+  });
+
+  it('should resolve items dynamically when slug input is provided without items', () => {
+    fixture.componentRef.setInput('items', []);
+    fixture.componentRef.setInput('slug', 'attendance');
+    fixture.detectChanges();
+
+    const items = component.effectiveItems();
+    expect(items).toBeTruthy();
+    expect(items.length).toBe(7);
+    expect(items[0].id).toBe('p1');
+  });
+
+  it('should reset activeIndex and progress when slug changes', () => {
+    component.selectFeature(3);
+    component.progress.set(50);
+
+    fixture.componentRef.setInput('items', []);
+    fixture.componentRef.setInput('slug', 'payroll');
+    fixture.detectChanges();
+
+    expect(component.activeIndex()).toBe(0);
+    expect(component.progress()).toBe(0);
+    expect(component.effectiveItems().length).toBe(5);
+    expect(component.effectiveItems()[0].id).toBe('p1');
   });
 });

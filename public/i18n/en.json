@@ -129,28 +129,32 @@
       "NAME": "Recruitment",
       "HERO": {
         "TITLE": "Experience the future of recruitment - efficient, convenient, and accessible at your fingertips.",
-        "DESC": "In the online recruitment process, it is now easier with the application scan feature through the application. In this process, applicants can easily send their job applications through the application by scanning their CV and other supporting documents, as well as undergo the next stages of recruitment through the application."
+        "DESC": "In the online recruitment process, it is now easier with the application scan feature through the application. In this process, applicants can easily send their job applications through the application by scanning their CV and other supporting documents, as well as undergo the next stages of recruitment through the application ."
       },
       "ITEMS": {
-        "APPLICATION_SUBMISSION": {
-          "TITLE": "Application Submission",
+        "P1": {
+          "TITLE": "Online Recruitment & Document Scanning",
+          "DESC": "In the online recruitment process, it is now easier with the application scan feature through the application. In this process, applicants can easily send their job applications through the application by scanning their CV and other supporting documents, as well as undergo the next stages of recruitment through the application ."
+        },
+        "P2": {
+          "TITLE": "CV & Supporting Document Upload",
           "DESC": "To start the recruitment process, applicants will access the application and scan their CV and other supporting documents. After scanning is complete, the application will send the job application to the company's recruitment system."
         },
-        "SELECTION_PROCESS": {
-          "TITLE": "Selection Process",
+        "P3": {
+          "TITLE": "Selection Stages & Scheduling",
           "DESC": "After the application is received by the recruitment system, applicants will undergo the next selection stages such as psychological tests and interviews. These selection stages can be scheduled via the application, and applicants will receive notifications via the application for each selection stage that must be followed."
         },
-        "SELECTION_RESULT": {
-          "TITLE": "Selection Result & Onboarding",
-          "DESC": "Applicants who pass the selection stages will receive automated onboarding instructions, document checklists, and orientation schedules directly through the system."
+        "P4": {
+          "TITLE": "Selection Results & Administration",
+          "DESC": "After the selection stage is complete, applicants will receive notifications via the application regarding the results of their selection. If accepted, applicants can immediately continue the administrative process such as signing a work contract through the application. If not accepted, applicants will receive notifications and can try again to next recruitment."
         },
-        "EFFICIENT_RECRUITMENT": {
-          "TITLE": "Efficient Recruitment",
-          "DESC": "Real-time applicant tracking and automated status updates streamline candidate screening and simplify team coordination."
+        "P5": {
+          "TITLE": "Efficient & Transparent Process",
+          "DESC": "With the application scanning feature through the application, the recruitment process becomes more efficient and transparent. Applicants can easily submit their applications and undergo the next selection stages through the application, as well as get notifications for each selection stage that must be followed. This also makes it easier company in managing the recruitment process and making the administration process faster and easier."
         },
-        "SIMPLIFIED_PROCESS": {
-          "TITLE": "Simplified Recruitment Process",
-          "DESC": "Centralized recruitment data, QR code job applications, and automated notifications minimize manual tasks and speed up hiring."
+        "P6": {
+          "TITLE": "Summary & Recruitment Benefits",
+          "DESC": "In conclusion, the application scanning feature through the application makes it easier for applicants to submit job applications and undergo online recruitment selection stages, as well as making the recruitment process more efficient and transparent."
         }
       }
     },
@@ -161,183 +165,351 @@
         "DESC": "Introducing a comprehensive attendance software with outstanding features that will facilitate employee attendance and payroll management. With the setting of slotting machines, badges, or via Apps, employees can easily and accurately record their attendance."
       },
       "ITEMS": {
-        "SHIFT_ROTATION": {
+        "P1": {
+          "TITLE": "Integrated Attendance System",
+          "DESC": "Introducing a comprehensive attendance software with outstanding features that will facilitate employee attendance and payroll management. With the setting of slotting machines, badges, or via Apps, employees can easily and accurately record their attendance."
+        },
+        "P2": {
           "TITLE": "Auto-Rotate Shift Feature",
           "DESC": "The auto-rotate shift feature in this attendance software will automatically rotate employee work shifts. The system will determine the list of irregular employee attendance shifts, making it easier to manage employee schedules."
         },
-        "REALTIME_TRACKING": {
-          "TITLE": "Real-Time Attendance Monitoring",
-          "DESC": "Monitor attendance, punctuality, and working hours across all teams in real time on a centralized analytics dashboard."
+        "P3": {
+          "TITLE": "Absence Remarks & Tracking",
+          "DESC": "To facilitate the management of employee absences, the remark feature has been provided. This feature allows employees to enter reasons for their absence, such as leave, sickness, or even without reason."
+        },
+        "P4": {
+          "TITLE": "Flexible Schedule Adjustments",
+          "DESC": "Changes to employee attendance schedules can also be easily made through this attendance software. All schedule changes can be accessed and managed through a user-friendly platform."
+        },
+        "P5": {
+          "TITLE": "Overtime & Allowance Calculation",
+          "DESC": "To calculate employee overtime, this attendance software is equipped with accurate overtime calculation features. In addition, this system also has a feature for calculating employee deductions and allowances that can be tailored to the company's needs."
+        },
+        "P6": {
+          "TITLE": "Automatic Overtime Approval & Summary",
+          "DESC": "With the automatic approval system for overtime, the management of employee overtime schedules becomes more effective and efficient. All attendance data and employee payroll calculations will be summarized at the end of the period, making it easier to manage employee payroll."
+        },
+        "P7": {
+          "TITLE": "Seamless Attendance Management",
+          "DESC": "Get the convenience of managing employee attendance and payroll with the best attendance software."
         }
       }
     },
     "PAYROLL": {
       "NAME": "Payroll",
       "HERO": {
-        "TITLE": "Your Payroll, Your Rules - Ease of Payroll Processing with Customizable Formulas",
-        "DESC": "Get ease of payroll processing with the best payroll software with customizable deduction and allowance formulas."
+        "TITLE": "Your Payroll, Your Rules - Get Ease of Payroll Processing with the Best Payroll Software with Customizable Deduction and Allowance Formulas!",
+        "DESC": "We present a payroll software that can be customized for all deduction and allowance formulas, such as tax deductions, health BPJS, employment BPJS, as well as health benefits, meal allowances, transportation allowances, and others. Our software has the ability to calculate payroll based on shift systems, overtime, and monthly payroll, making it easier for companies to manage employee salaries."
       },
       "ITEMS": {
-        "CUSTOM_FORMULA": {
-          "TITLE": "Custom Salary Formulas",
-          "DESC": "Configure base salaries, allowances, overtime multipliers, and tax deductions according to your specific organizational policies."
+        "P1": {
+          "TITLE": "Custom Salary & Allowance Formulas",
+          "DESC": "We present a payroll software that can be customized for all deduction and allowance formulas, such as tax deductions, health BPJS, employment BPJS, as well as health benefits, meal allowances, transportation allowances, and others. Our software has the ability to calculate payroll based on shift systems, overtime, and monthly payroll, making it easier for companies to manage employee salaries."
         },
-        "AUTO_PAYSLIP": {
-          "TITLE": "Digital Payslip Distribution",
-          "DESC": "Automatically distribute encrypted digital payslips to employee inboxes and mobile devices on every pay cycle."
+        "P2": {
+          "TITLE": "Automatic Tax Calculation Updates",
+          "DESC": "In addition, our software is equipped with features to automatically update tax calculations according to applicable government regulations. This ensures that companies always comply with the latest tax regulations and avoid the risk of sanctions from the authorities."
+        },
+        "P3": {
+          "TITLE": "Accurate Prorated Salary Calculation",
+          "DESC": "Regarding prorated salary calculations, our software can accurately compare a employee's old and new salaries. This is useful when there are mid-month salary changes or when an employee joins or leaves the company in the middle of the month."
+        },
+        "P4": {
+          "TITLE": "Tax Reports & Bank Transfer Integration",
+          "DESC": "All tax reports, BPJS, and payroll lists can be easily uploaded to the bank. Our software supports various file formats such as PDF, Excel, or CSV to facilitate the upload process."
+        },
+        "P5": {
+          "TITLE": "Digital & Confidential Payslips",
+          "DESC": "Additionally, employee payslips can be printed using confidential paper to maintain the confidentiality of employee's personal information. Payslips can also be sent via email or downloaded through the employee app, making it easier to access and send employee payslips."
         }
       }
     },
     "DATABASE": {
       "NAME": "Database Management",
       "HERO": {
-        "TITLE": "Streamline your HR processes and unlock your team's potential",
-        "DESC": "Centralize and manage employee profiles, employment histories, and compliance documents in a unified secure database."
+        "TITLE": "Streamline your HR processes and unlock your team's potential - our online database management feature has got you covered!",
+        "DESC": "An employee database is a crucial tool for any organization, as it helps manage employee information, track performance, and maintain compliance with regulations. With an online employee database, managing employee data has become more efficient and convenient than ever before."
       },
       "ITEMS": {
-        "EMPLOYEE_RECORDS": {
-          "TITLE": "Comprehensive Employee Profiles",
-          "DESC": "Store career progressions, personal details, education, certifications, and contracts in a single unified record."
+        "P1": {
+          "TITLE": "Centralized Employee Database",
+          "DESC": "An employee database is a crucial tool for any organization, as it helps manage employee information, track performance, and maintain compliance with regulations. With an online employee database, managing employee data has become more efficient and convenient than ever before."
         },
-        "DOCUMENT_VAULT": {
-          "TITLE": "Digital Document Storage",
-          "DESC": "Secure digital repository for contracts, identification, tax IDs, and certificates with enterprise-grade encryption."
+        "P2": {
+          "TITLE": "Comprehensive Data Collection & Storage",
+          "DESC": "Online employee databases offer a range of features that make it easier for HR departments to manage their workforce. For example, they allow for the easy collection and storage of employee data, such as contact information, employment history, performance reviews, and more."
+        },
+        "P3": {
+          "TITLE": "HR Administrative Task Automation",
+          "DESC": "Another benefit of an online employee database is that it can help automate HR tasks, such as tracking employee leave and attendance, updating employee records, and generating reports. This saves HR professionals time and effort, allowing them to focus on more strategic tasks, such as employee development and retention."
+        },
+        "P4": {
+          "TITLE": "Employee Self-Service Portal",
+          "DESC": "Moreover, an online employee database can improve communication between HR and employees. It provides a platform for employees to update their own personal information, such as emergency contacts and direct deposit information. This not only reduces the administrative burden on HR but also ensures that employee information is up-to-date and accurate."
+        },
+        "P5": {
+          "TITLE": "High-Level Security & Data Encryption",
+          "DESC": "In addition to these benefits, online employee databases also offer a high level of security. Access to employee data can be restricted to authorized personnel, and sensitive information can be encrypted to prevent unauthorized access."
+        },
+        "P6": {
+          "TITLE": "Data-Driven Strategic HR Decisions",
+          "DESC": "Overall, an online employee database is an essential tool for any organization that wants to streamline HR operations, improve communication, and ensure compliance with regulations. By providing a centralized platform for managing employee data, an online employee database can help HR professionals make informed decisions about their workforce, and ultimately contribute to the success of the organization."
         }
       }
     },
     "PERSONAL_LEAVE": {
       "NAME": "Personal Leave",
       "HERO": {
-        "TITLE": "Take a break and come back stronger with seamless personal leave management",
-        "DESC": "Enable employees to submit annual leave, sick leave, or permissions online with instant multi-level approval workflows."
+        "TITLE": "Take a break and come back stronger - our personal leave feature helps you recharge and achieve your best.",
+        "DESC": "Requesting leave is one of the administrative processes that employees must undergo in a company. However, with the advancement of technology, the leave application process has become easier with the use of online leave applications that come equipped with approval features."
       },
       "ITEMS": {
-        "LEAVE_REQUEST": {
-          "TITLE": "Online Leave Requests",
-          "DESC": "Employees can check remaining leave balance in real time and submit requests in seconds right from their smartphones."
+        "P1": {
+          "TITLE": "Online Leave Request & Approval System",
+          "DESC": "Requesting leave is one of the administrative processes that employees must undergo in a company. However, with the advancement of technology, the leave application process has become easier with the use of online leave applications that come equipped with approval features."
         },
-        "MULTI_LEVEL_APPROVAL": {
-          "TITLE": "Automated Multi-Level Approval",
-          "DESC": "Streamlined approval workflows that automatically notify direct supervisors and HR for swift review and confirmation."
+        "P2": {
+          "TITLE": "Employee Leave Submission Workflow",
+          "DESC": "The online leave application process with approval features begins with the employee submitting a leave application through the application. Employees can choose the leave dates, type of leave, and fill in the reason for the leave. After submitting the leave application, the application will automatically send a notification to the employee's supervisor to approve or reject the leave application."
+        },
+        "P3": {
+          "TITLE": "Supervisor Review & Digital Signature",
+          "DESC": "Supervisors can easily evaluate the leave application through the application by reviewing the employee's leave history and considering the availability of human resources. If the leave application is approved, the supervisor can approve the leave application through the application by providing comments and signing digitally. However, if the leave application is rejected, the supervisor must provide a clear reason and give an alternative solution."
+        },
+        "P4": {
+          "TITLE": "Status Notification & Leave Letter Download",
+          "DESC": "After the leave application is approved, the employee will receive a notification through the application. Employees can see the status of their leave application, including the approved leave dates and leave type. Employees can also download the leave permission letter through the application for administrative purposes."
+        },
+        "P5": {
+          "TITLE": "Schedule Monitoring & Resource Availability",
+          "DESC": "The approval feature on the online leave application greatly facilitates the leave application process in the company. Supervisors can easily monitor employee leave schedules and ensure that human resources are optimally available. In addition, employees can see the status of their leave application in real-time and do not need to wait for manual confirmation from their supervisor."
+        },
+        "P6": {
+          "TITLE": "Efficient & Transparent Leave Management",
+          "DESC": "With the approval feature on the online leave application, the leave application process becomes more efficient and transparent. Employees and supervisors can easily communicate through the application and optimize the use of human resources. This also speeds up administrative processes and facilitates human resource management in the company."
         }
       }
     },
     "PERSONAL_OVERTIME": {
       "NAME": "Personal Overtime",
       "HERO": {
-        "TITLE": "Easily and efficiently request personal overtime anytime, anywhere",
-        "DESC": "Record overtime hours with automated calculation conforming to labor regulations and direct payroll integration."
+        "TITLE": "Easily and efficiently request personal overtime anytime, anywhere - our online personal overtime request feature is ready to assist you!",
+        "DESC": "Submitting overtime requests is a necessary administrative process that employees must undergo in a company. However, this process can be made much easier and more efficient with the use of online overtime request applications that come equipped with approval features."
       },
       "ITEMS": {
-        "OVERTIME_SUBMISSION": {
-          "TITLE": "Self-Service Overtime Filing",
-          "DESC": "Submit overtime requests before or after shifts with clear justification, tasks, and planned duration."
+        "P1": {
+          "TITLE": "Online Overtime Request & Fast Approval",
+          "DESC": "Submitting overtime requests is a necessary administrative process that employees must undergo in a company. However, this process can be made much easier and more efficient with the use of online overtime request applications that come equipped with approval features."
         },
-        "AUTO_CALCULATION": {
-          "TITLE": "Automated Overtime Rate Calculation",
-          "DESC": "Accurate overtime wage computations based on statutory labor standards directly linked to monthly payroll."
+        "P2": {
+          "TITLE": "Overtime Details & Schedule Submission",
+          "DESC": "The online overtime request process with approval features begins with the employee submitting an overtime request through the application. Employees can specify the date and time of the overtime, provide a reason for the request, and indicate the type of work that will be done during overtime. After submitting the request, the application will automatically send a notification to the employee's supervisor to approve or reject the overtime request."
+        },
+        "P3": {
+          "TITLE": "Workload Evaluation & Supervisor Approval",
+          "DESC": "Supervisors can easily evaluate the overtime request through the application by reviewing the employee's work history and considering the availability of human resources. If the overtime request is approved, the supervisor can approve the request through the application by providing comments and signing digitally. However, if the overtime request is rejected, the supervisor must provide a clear reason and give an alternative solution."
+        },
+        "P4": {
+          "TITLE": "Status Notification & Overtime Letter",
+          "DESC": "After the overtime request is approved, the employee will receive a notification through the application. Employees can see the status of their overtime request, including the approved date and time of overtime and the type of work that will be done. Employees can also download the overtime permission letter through the application for administrative purposes."
+        },
+        "P5": {
+          "TITLE": "Schedule Monitoring & Personnel Availability",
+          "DESC": "The approval feature on the online overtime request greatly facilitates the process of requesting overtime in the company. Supervisors can easily monitor employee work schedules and ensure that human resources are optimally available. In addition, employees can see the status of their overtime request in real-time and do not need to wait for manual confirmation from their supervisor."
+        },
+        "P6": {
+          "TITLE": "Efficient Overtime Workflow & Administration",
+          "DESC": "With the approval feature on the online overtime request application, the process of requesting overtime becomes more efficient and transparent. Employees and supervisors can easily communicate through the application and optimize the use of human resources. This also speeds up administrative processes and facilitates human resource management in the company."
         }
       }
     },
     "EMPLOYEE_UPDATE": {
       "NAME": "Employee Data Update",
       "HERO": {
-        "TITLE": "Keep your HR data up-to-date effortlessly with employee self-service",
-        "DESC": "Allow employees to update their contact details, bank accounts, and family information with HR validation."
+        "TITLE": "Keep your HR data up-to-date effortlessly - our online employee data update feature simplifies the process for you!",
+        "DESC": "In this digital era, the security of personal data has become increasingly important. Therefore, the process of updating personal data online with approval is a great option for those who want to update their personal data without having to visit an office or a specific location."
       },
       "ITEMS": {
-        "PROFILE_MANAGEMENT": {
-          "TITLE": "Employee Self-Service (ESS)",
-          "DESC": "Employees can update personal information and upload supporting verification documents directly anytime."
+        "P1": {
+          "TITLE": "Secure Employee Self-Service Data Update",
+          "DESC": "In this digital era, the security of personal data has become increasingly important. Therefore, the process of updating personal data online with approval is a great option for those who want to update their personal data without having to visit an office or a specific location."
         },
-        "VERIFICATION_WORKFLOW": {
-          "TITLE": "HR Verification & Approval",
-          "DESC": "Every profile adjustment goes through HR review to ensure accuracy and authenticity before data is updated."
+        "P2": {
+          "TITLE": "Online Data Change Form Submission",
+          "DESC": "The process of submitting a request for updating personal data online with approval is very easy. Firstly, the user needs to access the website or application provided by the relevant institution. After that, the user can fill in the form provided with the personal data they want to update."
+        },
+        "P3": {
+          "TITLE": "Submission to HR for Verification",
+          "DESC": "Once the form is completed correctly, the user can submit the request for updating personal data online by clicking the 'submit' button. The request will then be received by the relevant officer for verification and approval."
+        },
+        "P4": {
+          "TITLE": "Staff Verification & Document Validation",
+          "DESC": "During the verification process, the officer will check and validate the data provided by the user. After that, the officer will approve or reject the request for updating personal data online that has been submitted by the user."
+        },
+        "P5": {
+          "TITLE": "Approval Notification & Record Archiving",
+          "DESC": "If the request is approved and receives approval, the user will receive a notification via email or the relevant application. Next, the user can print or save the updated personal data as proof and reference for future use."
+        },
+        "P6": {
+          "TITLE": "Convenience & Strong Data Protection",
+          "DESC": "With the process of submitting a request for updating personal data online with approval, the user does not need to bother visiting a specific location or spending hours updating their personal data. Furthermore, this process is also very secure because personal data will be well-preserved and only accessible to authorized parties."
         }
       }
     },
     "PERSONAL_ATTENDANCE": {
       "NAME": "Personal Attendance",
       "HERO": {
-        "TITLE": "Track your attendance on the go with convenient mobile check-ins",
-        "DESC": "Employees can inspect their daily check-in logs, punctuality records, and attendance history on mobile devices."
+        "TITLE": "Track your attendance on the go - our online attendance feature via app makes it easy and convenient for you!",
+        "DESC": "In today's digital era, many companies have switched to using online attendance systems to facilitate the management of employee attendance. One of the features commonly used is the online attendance process using GPS."
       },
       "ITEMS": {
-        "MOBILE_CLOCK_IN": {
-          "TITLE": "Mobile & GPS Geotagged Clock-In",
-          "DESC": "Clock in and out from mobile devices with GPS radius verification and selfie facial capture."
+        "P1": {
+          "TITLE": "Mobile Attendance with GPS Verification",
+          "DESC": "In today's digital era, many companies have switched to using online attendance systems to facilitate the management of employee attendance. One of the features commonly used is the online attendance process using GPS."
         },
-        "ATTENDANCE_HISTORY": {
-          "TITLE": "Personal Work Hours Recap",
-          "DESC": "Transparent access to daily logs, punch times, and monthly accumulated working hours."
+        "P2": {
+          "TITLE": "Location-Verified Check-In & Check-Out",
+          "DESC": "The online attendance process using GPS allows employees to check in and check out from the predetermined location set by the company. This ensures the presence of employees and reduces the risk of fraudulent attendance."
+        },
+        "P3": {
+          "TITLE": "Geofencing & Designated Work Zones",
+          "DESC": "By using GPS, the online attendance system can track the location of employees when they check in and check out. The check-in and check-out points can be set by the company, so employees can only check in from the designated workplace."
+        },
+        "P4": {
+          "TITLE": "Real-Time Attendance Reporting",
+          "DESC": "In addition, the online attendance system using GPS can also provide real-time attendance reports. This allows companies to take quick action if employees do not show up for work or check in outside the designated working hours."
+        },
+        "P5": {
+          "TITLE": "Increased Efficiency & Employee Productivity",
+          "DESC": "Not only does the online attendance system using GPS make attendance management easier, but it also improves employee efficiency and productivity. Employees no longer need to waste time filling out attendance books or updating attendance data manually. Therefore, the time saved can be used to perform more important tasks and improve employee performance overall."
+        },
+        "P6": {
+          "TITLE": "Modern Attendance Management Solution",
+          "DESC": "Therefore, using the online attendance system with GPS can be a suitable solution for companies to effectively and efficiently manage employee attendance."
         }
       }
     },
     "COLLECTIVE_LEAVE": {
       "NAME": "Collective Leave",
       "HERO": {
-        "TITLE": "Seamless collective leave management and holiday scheduling",
-        "DESC": "Schedule company-wide holidays and collective leave simultaneously without manual per-employee entry."
+        "TITLE": "Seamless collective leave management - our collective leave request feature with approval simplifies team coordination!",
+        "DESC": "In the process of applying for collective leave, it is now easier with the feature of online collective leave application. In this process, clerks can easily input collective leave requests involving several employees at once and obtain approval from their supervisors through the application."
       },
       "ITEMS": {
-        "HOLIDAY_CALENDAR": {
-          "TITLE": "Unified Holiday Calendar",
-          "DESC": "Synchronize public holidays and company collective breaks across all department schedules automatically."
+        "P1": {
+          "TITLE": "Collective Leave Application Platform",
+          "DESC": "In the process of applying for collective leave, it is now easier with the feature of online collective leave application. In this process, clerks can easily input collective leave requests involving several employees at once and obtain approval from their supervisors through the application."
         },
-        "QUOTA_DEDUCTION": {
-          "TITLE": "Automatic Quota Deduction",
-          "DESC": "Automatically adjust and deduct leave balances for affected employees based on approved collective leave schedules."
+        "P2": {
+          "TITLE": "Group Employee Input & Leave Duration",
+          "DESC": "To submit a collective leave request, the clerk will fill in the details of the request such as the date and time, duration, reason, and list of employees involved in the collective leave. Once the request details are complete, the clerk can submit the collective leave request through the application."
+        },
+        "P3": {
+          "TITLE": "Workload Evaluation & Supervisor Approval",
+          "DESC": "After the collective leave request is received by the application, a notification will be sent to the supervisor for approval. Supervisors can easily view the collective leave requests received through the application and consider the availability of human resources and the workload of employees involved in the request. If approval is granted, the supervisor can approve the request through the application by providing comments and digitally signing."
+        },
+        "P4": {
+          "TITLE": "Approval Notification & Collective Leave Letter",
+          "DESC": "After the collective leave request is approved, the clerk will receive a notification through the application and can view the status of their collective leave request, including the approved date and duration of the leave, as well as the list of employees involved. The clerk can also download the collective leave permit letter through the application for administrative purposes."
+        },
+        "P5": {
+          "TITLE": "Efficient & Transparent Team Scheduling",
+          "DESC": "With the online collective leave application feature, clerks can easily input collective leave requests involving several employees at once and obtain approval from their supervisors through the application. This makes the leave application process more efficient and transparent, and makes it easier for clerks to manage the work schedules of employees."
         }
       }
     },
     "COLLECTIVE_OVERTIME": {
       "NAME": "Collective Overtime",
       "HERO": {
-        "TITLE": "Efficient collective overtime management for teams and departments",
-        "DESC": "Enable managers to issue group overtime orders for departments and shift teams effortlessly."
+        "TITLE": "Efficient collective overtime management - our collective overtime request feature with approval speeds up your team's workflow!",
+        "DESC": "The collective overtime request process is an essential part of managing work schedules in companies. With the use of online collective overtime request applications, the process of submitting and approving requests becomes more efficient and transparent."
       },
       "ITEMS": {
-        "GROUP_SPL": {
-          "TITLE": "Group Overtime Orders",
-          "DESC": "Create and dispatch overtime assignments for whole project teams with a single action."
+        "P1": {
+          "TITLE": "Collective Overtime Management",
+          "DESC": "The collective overtime request process is an essential part of managing work schedules in companies. With the use of online collective overtime request applications, the process of submitting and approving requests becomes more efficient and transparent."
         },
-        "BUDGET_TRACKING": {
-          "TITLE": "Overtime Budget Monitoring",
-          "DESC": "Track estimated overtime costs and team hour totals in real time before submitting for approval."
+        "P2": {
+          "TITLE": "Team Overtime Request Submission",
+          "DESC": "The process of submitting a collective overtime request through the application begins with the clerk inputting the details of the overtime request, including the date and time, duration, and reason for the overtime. The clerk can also select multiple employees who will participate in the collective overtime. Once the details are complete, the application will send a notification to the supervisor for approval."
+        },
+        "P3": {
+          "TITLE": "Capacity-Based Supervisor Approval",
+          "DESC": "Supervisors can easily approve the collective overtime request through the application by considering the availability of human resources and evaluating the workload of each employee involved in the collective overtime. If the collective overtime request is approved, the supervisor can approve the request through the application by providing comments and signing digitally. However, if the collective overtime request is rejected, the supervisor must provide a clear reason and give an alternative solution."
+        },
+        "P4": {
+          "TITLE": "Status Notification & Collective Overtime Letter",
+          "DESC": "After the collective overtime request is approved, the clerk will receive a notification through the application. The clerk can see the status of the collective overtime request, including the approved date and time of overtime, the duration, and the list of participating employees. The clerk can also download the collective overtime permission letter through the application for administrative purposes."
+        },
+        "P5": {
+          "TITLE": "Fair Workload Distribution & Faster Processing",
+          "DESC": "The collective overtime request feature on the online application greatly facilitates the process of managing work schedules in the company. Clerks can easily input the details of the overtime request for multiple employees, and supervisors can efficiently approve or reject the request based on the workload and availability of human resources. This feature also speeds up administrative processes and ensures fair distribution of workloads among employees."
+        },
+        "P6": {
+          "TITLE": "Coordinated & Transparent Overtime Workflow",
+          "DESC": "In summary, the collective overtime request feature on the online application makes the process of managing work schedules more efficient and transparent. The inputting of collective overtime request by the clerk and the approval by the supervisor through the application provides a seamless process that benefits both the company and its employees."
         }
       }
     },
     "ATTENDANCE_MACHINE": {
       "NAME": "Attendance Machine",
       "HERO": {
-        "TITLE": "Direct connectivity to biometric hardware and attendance machines",
-        "DESC": "Connect fingerprint, facial recognition, and RFID biometric machines directly to the cloud without complex middleware."
+        "TITLE": "Direct connectivity to attendance machines - our connectivity feature to attendance machines simplifies employee attendance management for you!",
+        "DESC": "The feature of connecting to an attendance machine allows users to connect their attendance management system directly to the physical attendance machine used at their workplace. This can facilitate and speed up the attendance data collection process and reduce the risk of human errors."
       },
       "ITEMS": {
-        "HARDWARE_SYNC": {
-          "TITLE": "Real-Time Hardware Sync",
-          "DESC": "Punch logs from on-premise hardware terminals across all branch offices synchronize instantly to the cloud."
+        "P1": {
+          "TITLE": "Direct Physical Machine Integration",
+          "DESC": "The feature of connecting to an attendance machine allows users to connect their attendance management system directly to the physical attendance machine used at their workplace. This can facilitate and speed up the attendance data collection process and reduce the risk of human errors."
         },
-        "MULTI_DEVICE_SUPPORT": {
-          "TITLE": "Multi-Brand Device Support",
-          "DESC": "Universal compatibility with industry-standard biometric terminals and secure network communication protocols."
+        "P2": {
+          "TITLE": "Real-Time Monitoring & Data Sync",
+          "DESC": "In a system that is connected to an attendance machine, users can easily monitor their employees' attendance data in real-time and update the attendance data that has been collected into the attendance management system. This can allow users to identify employees who are late or absent and take appropriate action according to their company policy."
+        },
+        "P3": {
+          "TITLE": "Fraud Prevention & Validated Attendance",
+          "DESC": "Additionally, the feature of connecting to an attendance machine can also help reduce the risk of fraud in the collection of employee attendance data. With a connected system, users can ensure that the recorded attendance data is accurate and valid, and reduce the risk of fraud such as buddy punching or falsifying attendance data."
+        },
+        "P4": {
+          "TITLE": "Time-Saving & Automated Data Collection",
+          "DESC": "The feature of connecting to an attendance machine can also help save time and effort in collecting employee attendance data. Users no longer need to manually collect data, which can be time-consuming and increase the risk of human error. By connecting their attendance management system directly to the attendance machine, users can automatically collect attendance data and save the time required to perform this task."
+        },
+        "P5": {
+          "TITLE": "Accurate & Efficient Attendance Records",
+          "DESC": "Overall, the feature of connecting to an attendance machine is a very beneficial feature for companies to manage their employee attendance data more efficiently and accurately. With this feature, users can ensure that their employees' attendance data is recorded accurately and validly, as well as saving time and effort in collecting and managing attendance data."
         }
       }
     },
     "YEARLY_TAX": {
       "NAME": "Yearly Tax",
       "HERO": {
-        "TITLE": "Effortlessly manage annual taxes and PPh 21 calculations",
-        "DESC": "Calculate employee tax liabilities with the latest TER tax brackets and generate 1721-A1 tax returns automatically."
+        "TITLE": "Effortlessly manage annual taxes - our annual tax management feature is here to assist you!",
+        "DESC": "Annual tax filing is one of the obligations that must be fulfilled by every employee who receives income. Annual tax filing refers to the calculation and payment of income tax by employees for one fiscal year."
       },
       "ITEMS": {
-        "TER_CALCULATION": {
-          "TITLE": "Effective Average Rate (TER) Calculation",
-          "DESC": "Automated monthly withholding and year-end tax adjustments conforming to current tax regulation."
+        "P1": {
+          "TITLE": "Annual Employee Tax Compliance",
+          "DESC": "Annual tax filing is one of the obligations that must be fulfilled by every employee who receives income. Annual tax filing refers to the calculation and payment of income tax by employees for one fiscal year."
         },
-        "FORM_1721_A1": {
-          "TITLE": "Batch 1721-A1 Tax Return Generation",
-          "DESC": "Generate and distribute official 1721-A1 tax withholding forms to all employees in one click."
+        "P2": {
+          "TITLE": "Online Annual Tax Platform",
+          "DESC": "Annual tax filing can be simplified and made easier through an online system. In this online system, employees can access a platform that allows them to fill out annual tax forms and view other tax-related information."
+        },
+        "P3": {
+          "TITLE": "Effortless Tax Calculation & Direct Payment",
+          "DESC": "One of the key features of an online employee annual tax filing system is the ease of calculating and paying taxes. Employees can fill out tax forms online, and the system will automatically calculate the amount of tax owed based on their income for the fiscal year. After that, employees can directly pay their taxes through the platform."
+        },
+        "P4": {
+          "TITLE": "Comprehensive Tax Records & Historical Data",
+          "DESC": "In addition to the ease of calculating and paying taxes, an online employee annual tax filing system also provides useful information for employees. Employees can view their tax records from the previous year, as well as information about other income taxes such as additional taxes and interest taxes."
+        },
+        "P5": {
+          "TITLE": "Automated Verification & Error Reduction",
+          "DESC": "Furthermore, an online employee annual tax filing system can also help reduce errors in tax calculation and payment. The system can automatically verify the information entered by employees and provide notifications if there are errors or incomplete information."
+        },
+        "P6": {
+          "TITLE": "Regulatory Compliance & Time Efficiency",
+          "DESC": "With an online employee annual tax filing system, employees can save time and effort required in calculating and paying their taxes. Moreover, the system also helps ensure that taxes paid by employees are in accordance with the applicable regulations, so that they do not need to worry about potential consequences of errors or inaccuracies in paying taxes."
         }
       }
     }
@@ -437,7 +609,17 @@
     },
     "FAQ": {},
     "FOOTER": {},
-    "INTERESTED": {},
+    "INTERESTED": {
+      "TITLE": "Interested In PISICloud?",
+      "DESCRIPTION": "Transforming Your Workplace with PISICloud's Streamlined HR Processes. Contact the contact below for more info.",
+      "CONTACT_US": "Contact Us",
+      "VIEW_DEMO_VIDEO": "Watch Video",
+      "ARIA": {
+        "CONTACT_CHANNELS": "Contact Channels",
+        "IMAGE_ALT": "PISICloud representative presenting HR software solution on laptop",
+        "LOGO_ALT": "PISICloud Logo"
+      }
+    },
     "DEMO_VIDEO_MODAL": {}
   }
 }
