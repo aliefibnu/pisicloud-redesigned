@@ -10,8 +10,8 @@
         id="solution-heading"
         class="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#333333] tracking-tight leading-tight"
       >
-        <span class="text-[#0F7A6B]">PISICloud</span> Can be a solution for<br class="hidden sm:inline" />
-        various business sectors<span class="hidden sm:inline"> among them</span>
+        <span class="text-[#0F7A6B]">{{ 'LANDING.SOLUTION.HEADING_HIGHLIGHT' | translate }}</span> {{ 'LANDING.SOLUTION.HEADING_PART1' | translate }}<br class="hidden sm:inline" />
+        {{ 'LANDING.SOLUTION.HEADING_PART2' | translate }}<span class="hidden sm:inline"> {{ 'LANDING.SOLUTION.HEADING_PART3' | translate }}</span>
       </h2>
     </div>
 
@@ -22,7 +22,7 @@
         type="button"
         (click)="prev(); pauseAutoScroll(); resumeAutoScroll()"
         class="hidden sm:flex absolute left-3 sm:left-6 lg:left-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
-        aria-label="Previous business sector"
+        [attr.aria-label]="'LANDING.SOLUTION.PREV_BUTTON_LABEL' | translate"
       >
         <svg
           class="w-5 h-5 sm:w-6 sm:h-6"
@@ -43,7 +43,7 @@
         type="button"
         (click)="next(); pauseAutoScroll(); resumeAutoScroll()"
         class="hidden sm:flex absolute right-3 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#0F7A6B] text-white items-center justify-center shadow-lg hover:bg-[#0c6558] hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F7A6B] focus-visible:ring-offset-2 cursor-pointer"
-        aria-label="Next business sector"
+        [attr.aria-label]="'LANDING.SOLUTION.NEXT_BUTTON_LABEL' | translate"
       >
         <svg
           class="w-5 h-5 sm:w-6 sm:h-6"
@@ -89,12 +89,12 @@
             (click)="goToVirtual(item.virtualIdx)"
             role="group"
             [attr.aria-roledescription]="'slide'"
-            [attr.aria-label]="(item.slideIndex + 1) + ' of ' + baseSlides.length + ': ' + item.slide.label"
+            [attr.aria-label]="(item.slideIndex + 1) + ' of ' + baseSlides.length + ': ' + ((item.slide.translationKey + '.LABEL') | translate)"
           >
             <!-- Card Image -->
             <img
               [ngSrc]="item.slide.image"
-              [alt]="item.slide.alt"
+              [alt]="(item.slide.translationKey + '.ALT') | translate"
               width="637"
               height="480"
               class="w-full h-full object-cover select-none pointer-events-none"
@@ -113,7 +113,7 @@
               <h3
                 class="text-2xl sm:text-[28px] font-bold text-white tracking-tight leading-tight drop-shadow-md"
               >
-                {{ item.slide.label }}
+                {{ (item.slide.translationKey + '.LABEL') | translate }}
               </h3>
 
               <!-- Supporting Text Description: Shown clearly on center active card -->
@@ -122,7 +122,7 @@
                 [class.opacity-100]="virtualIndex() === item.virtualIdx"
                 [class.opacity-0]="virtualIndex() !== item.virtualIdx"
               >
-                {{ item.slide.supportingText }}
+                {{ (item.slide.translationKey + '.SUPPORTING_TEXT') | translate }}
               </p>
             </div>
           </article>
@@ -134,7 +134,7 @@
     <div
       class="mt-8 sm:mt-10 flex items-center justify-center"
       role="tablist"
-      aria-label="Sector slides pagination"
+      [attr.aria-label]="'LANDING.SOLUTION.PAGINATION_LABEL' | translate"
     >
       <div class="flex items-center justify-center gap-2">
         @for (slide of baseSlides; track slide.id; let idx = $index) {
@@ -147,7 +147,7 @@
             [class.w-2]="activeSlideIndex() !== idx"
             [class.bg-slate-300]="activeSlideIndex() !== idx"
             [class.hover:bg-slate-400]="activeSlideIndex() !== idx"
-            [attr.aria-label]="'Go to slide ' + (idx + 1) + ': ' + slide.label"
+            [attr.aria-label]="('LANDING.SOLUTION.SLIDE_PAGINATION_PREFIX' | translate) + ' ' + (idx + 1) + ': ' + ((slide.translationKey + '.LABEL') | translate)"
             [attr.aria-selected]="activeSlideIndex() === idx"
             role="tab"
           ></button>
@@ -156,6 +156,7 @@
     </div>
   </div>
 </section>
+
 
 
 
