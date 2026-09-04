@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { COMPANY_LOGOS } from '../../../data/companies';
 
 @Component({
   selector: 'landing-companies-marquee',
-  imports: [TranslatePipe],
+  imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './companies-marquee.html',
   styles: `
     :host {
@@ -14,10 +15,10 @@ import { COMPANY_LOGOS } from '../../../data/companies';
 
     @keyframes marquee-scroll {
       0% {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
       }
       100% {
-        transform: translateX(-100%);
+        transform: translate3d(-100%, 0, 0);
       }
     }
 
@@ -27,6 +28,7 @@ import { COMPANY_LOGOS } from '../../../data/companies';
       align-items: center;
       animation: marquee-scroll 70s linear infinite;
       will-change: transform;
+      contain: layout paint;
     }
 
     .marquee-container:hover .animate-marquee,

@@ -31,9 +31,10 @@
             role="listitem"
           >
             <img
-              [src]="logo.src"
+              [ngSrc]="logo.src"
               [alt]="logo.alt"
-              loading="lazy"
+              [width]="logo.width"
+              [height]="logo.height"
               class="max-w-full max-h-full object-contain transition-transform duration-200 hover:scale-105"
             />
           </div>
@@ -47,9 +48,10 @@
         @for (logo of logos; track 'dup-' + logo.id) {
           <div class="w-36 sm:w-44 h-14 sm:h-16 flex items-center justify-center shrink-0">
             <img
-              [src]="logo.src"
+              [ngSrc]="logo.src"
               alt=""
-              loading="lazy"
+              [width]="logo.width"
+              [height]="logo.height"
               class="max-w-full max-h-full object-contain transition-transform duration-200 hover:scale-105"
             />
           </div>

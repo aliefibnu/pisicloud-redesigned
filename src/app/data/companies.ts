@@ -2,14 +2,55 @@ export interface CompanyLogo {
   readonly id: number;
   readonly src: string;
   readonly alt: string;
+  readonly width: number;
+  readonly height: number;
 }
 
-export const COMPANY_LOGOS: readonly CompanyLogo[] = Array.from({ length: 46 }, (_, i) => {
-  const id = i + 1;
-  const ext = id === 12 || id === 22 ? 'jpg' : 'png';
-  return {
-    id,
-    src: `/images/companies/${id}.${ext}`,
-    alt: `Client company ${id} logo`,
-  };
-});
+export const COMPANY_LOGOS: readonly CompanyLogo[] = [
+  { id: 1, src: '/images/companies/1.png', alt: 'Client company 1 logo', width: 179, height: 128 },
+  { id: 2, src: '/images/companies/2.png', alt: 'Client company 2 logo', width: 303, height: 128 },
+  { id: 3, src: '/images/companies/3.png', alt: 'Client company 3 logo', width: 196, height: 65 },
+  { id: 4, src: '/images/companies/4.png', alt: 'Client company 4 logo', width: 151, height: 86 },
+  { id: 5, src: '/images/companies/5.png', alt: 'Client company 5 logo', width: 128, height: 128 },
+  { id: 6, src: '/images/companies/6.png', alt: 'Client company 6 logo', width: 128, height: 128 },
+  { id: 7, src: '/images/companies/7.png', alt: 'Client company 7 logo', width: 350, height: 117 },
+  { id: 8, src: '/images/companies/8.png', alt: 'Client company 8 logo', width: 171, height: 128 },
+  { id: 9, src: '/images/companies/9.png', alt: 'Client company 9 logo', width: 123, height: 123 },
+  { id: 10, src: '/images/companies/10.png', alt: 'Client company 10 logo', width: 147, height: 113 },
+  { id: 11, src: '/images/companies/11.png', alt: 'Client company 11 logo', width: 128, height: 128 },
+  { id: 12, src: '/images/companies/12.jpg', alt: 'Client company 12 logo', width: 255, height: 93 },
+  { id: 13, src: '/images/companies/13.png', alt: 'Client company 13 logo', width: 128, height: 128 },
+  { id: 14, src: '/images/companies/14.png', alt: 'Client company 14 logo', width: 128, height: 128 },
+  { id: 15, src: '/images/companies/15.png', alt: 'Client company 15 logo', width: 150, height: 128 },
+  { id: 16, src: '/images/companies/16.png', alt: 'Client company 16 logo', width: 162, height: 128 },
+  { id: 17, src: '/images/companies/17.png', alt: 'Client company 17 logo', width: 142, height: 128 },
+  { id: 18, src: '/images/companies/18.png', alt: 'Client company 18 logo', width: 233, height: 128 },
+  { id: 19, src: '/images/companies/19.png', alt: 'Client company 19 logo', width: 128, height: 128 },
+  { id: 20, src: '/images/companies/20.png', alt: 'Client company 20 logo', width: 350, height: 94 },
+  { id: 21, src: '/images/companies/21.png', alt: 'Client company 21 logo', width: 350, height: 88 },
+  { id: 22, src: '/images/companies/22.jpg', alt: 'Client company 22 logo', width: 154, height: 98 },
+  { id: 23, src: '/images/companies/23.png', alt: 'Client company 23 logo', width: 129, height: 128 },
+  { id: 24, src: '/images/companies/24.png', alt: 'Client company 24 logo', width: 173, height: 128 },
+  { id: 25, src: '/images/companies/25.png', alt: 'Client company 25 logo', width: 233, height: 128 },
+  { id: 26, src: '/images/companies/26.png', alt: 'Client company 26 logo', width: 128, height: 128 },
+  { id: 27, src: '/images/companies/27.png', alt: 'Client company 27 logo', width: 199, height: 128 },
+  { id: 28, src: '/images/companies/28.png', alt: 'Client company 28 logo', width: 128, height: 128 },
+  { id: 29, src: '/images/companies/29.png', alt: 'Client company 29 logo', width: 128, height: 128 },
+  { id: 30, src: '/images/companies/30.png', alt: 'Client company 30 logo', width: 123, height: 111 },
+  { id: 31, src: '/images/companies/31.png', alt: 'Client company 31 logo', width: 311, height: 98 },
+  { id: 32, src: '/images/companies/32.png', alt: 'Client company 32 logo', width: 146, height: 128 },
+  { id: 33, src: '/images/companies/33.png', alt: 'Client company 33 logo', width: 128, height: 128 },
+  { id: 34, src: '/images/companies/34.png', alt: 'Client company 34 logo', width: 128, height: 128 },
+  { id: 35, src: '/images/companies/35.png', alt: 'Client company 35 logo', width: 128, height: 128 },
+  { id: 36, src: '/images/companies/36.png', alt: 'Client company 36 logo', width: 128, height: 128 },
+  { id: 37, src: '/images/companies/37.png', alt: 'Client company 37 logo', width: 245, height: 128 },
+  { id: 38, src: '/images/companies/38.png', alt: 'Client company 38 logo', width: 128, height: 128 },
+  { id: 39, src: '/images/companies/39.png', alt: 'Client company 39 logo', width: 200, height: 104 },
+  { id: 40, src: '/images/companies/40.png', alt: 'Client company 40 logo', width: 94, height: 98 },
+  { id: 41, src: '/images/companies/41.png', alt: 'Client company 41 logo', width: 129, height: 128 },
+  { id: 42, src: '/images/companies/42.png', alt: 'Client company 42 logo', width: 350, height: 75 },
+  { id: 43, src: '/images/companies/43.png', alt: 'Client company 43 logo', width: 128, height: 128 },
+  { id: 44, src: '/images/companies/44.png', alt: 'Client company 44 logo', width: 199, height: 107 },
+  { id: 45, src: '/images/companies/45.png', alt: 'Client company 45 logo', width: 128, height: 128 },
+  { id: 46, src: '/images/companies/46.png', alt: 'Client company 46 logo', width: 350, height: 93 },
+];

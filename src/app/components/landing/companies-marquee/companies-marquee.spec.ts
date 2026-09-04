@@ -59,6 +59,8 @@ describe('CompaniesMarquee', () => {
 
     const firstImg = items?.[0]?.querySelector('img');
     expect(firstImg?.getAttribute('src')).toBe('/images/companies/1.png');
+    expect(firstImg?.getAttribute('width')).toBe('179');
+    expect(firstImg?.getAttribute('height')).toBe('128');
     expect(firstImg?.getAttribute('alt')).toBe('Client company 1 logo');
   });
 
