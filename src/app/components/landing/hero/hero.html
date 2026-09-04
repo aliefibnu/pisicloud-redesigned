@@ -27,10 +27,19 @@
         <div class="flex flex-wrap items-center gap-3.5 sm:gap-4.5">
           <a
             href="#contact"
-            class="inline-flex items-center justify-center px-7 sm:px-8 py-3.5 rounded-full bg-[#076657] hover:bg-[#055145] text-white font-medium text-sm sm:text-base tracking-wide shadow-xs hover:shadow-md active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#076657] focus-visible:ring-offset-2"
+            class="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 rounded-full bg-[#076657] hover:bg-[#055145] text-white font-medium text-sm sm:text-base tracking-wide shadow-xs hover:shadow-md active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#076657] focus-visible:ring-offset-2"
             [attr.aria-label]="'LANDING.HERO.CONTACT_US' | translate"
           >
-            {{ 'LANDING.HERO.CONTACT_US' | translate }}
+            <svg
+              class="w-4 h-4 fill-current shrink-0"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            <span>{{ 'LANDING.HERO.CONTACT_US' | translate }}</span>
           </a>
 
           <button

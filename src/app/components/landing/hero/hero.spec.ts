@@ -72,6 +72,7 @@ describe('Hero', () => {
     expect(contactBtn).toBeTruthy();
     expect(contactBtn?.textContent?.trim()).toBe('Contact Us');
     expect(contactBtn?.getAttribute('aria-label')).toBe('Contact Us');
+    expect(contactBtn?.querySelector('svg')).toBeTruthy();
   });
 
   it('should trigger modalService.showModal when Watch Preview Video button is clicked', () => {
