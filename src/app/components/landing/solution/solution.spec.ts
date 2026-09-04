@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Solution } from './solution';
 
 describe('Solution', () => {
@@ -8,7 +9,47 @@ describe('Solution', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Solution],
+      providers: [provideTranslateService()],
     }).compileComponents();
+
+    const translate = TestBed.inject(TranslateService);
+    translate.setTranslation('en', {
+      LANDING: {
+        SOLUTION: {
+          HEADING_HIGHLIGHT: 'PISICloud',
+          HEADING_PART1: 'Can be a solution for',
+          HEADING_PART2: 'various business sectors',
+          HEADING_PART3: 'among them',
+          PREV_BUTTON_LABEL: 'Previous business sector',
+          NEXT_BUTTON_LABEL: 'Next business sector',
+          PAGINATION_LABEL: 'Sector slides pagination',
+          SLIDE_PAGINATION_PREFIX: 'Go to slide',
+          SLIDES: {
+            LOGISTICS: {
+              LABEL: 'Logistics & Transportation',
+              SUPPORTING_TEXT: 'Optimizing fleet management, driver route shift scheduling, and automated overtime formulas.',
+              ALT: 'Commercial freight trucks logistics and distribution fleet',
+            },
+            MANUFACTURING: {
+              LABEL: 'Manufacturing & Industrial',
+              SUPPORTING_TEXT: 'Direct machine attendance connectivity, 24/7 complex shift rotations, and automated payroll formulas.',
+              ALT: 'Smart factory manufacturing automation and robotics plant',
+            },
+            CORPORATE: {
+              LABEL: 'Corporate & Technology',
+              SUPPORTING_TEXT: 'Flexible working hours, app-based mobile attendance, and seamless multi-level leave approvals.',
+              ALT: 'Corporate professional working on laptop with headset and coffee',
+            },
+            CONSTRUCTION: {
+              LABEL: 'Construction & Infrastructure',
+              SUPPORTING_TEXT: 'On-site daily attendance monitoring, project-based labor allocation, and compliant tax calculations.',
+              ALT: 'City skyscraper construction crane illuminated at twilight',
+            },
+          },
+        },
+      },
+    });
+    translate.use('en');
 
     fixture = TestBed.createComponent(Solution);
     component = fixture.componentInstance;

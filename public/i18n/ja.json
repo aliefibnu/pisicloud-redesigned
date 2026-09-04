@@ -10,8 +10,118 @@
       "WATCH_PREVIEW": "プレビュー動画を見る",
       "IMAGE_ALT": "最新タブレットに表示された PISICloud 人事管理ダッシュボードのプレビュー"
     },
-    "FEATURES": {},
-    "SOLUTION": {},
+    "FEATURES": {
+      "HEADING_PREFIX": "PISICloud、",
+      "HEADING_BODY": "信頼性の高い人事労務ソフトウェア",
+      "HEADING_SUFFIX": "多彩な優れた機能を搭載",
+      "LEARN_MORE": "詳しく見る",
+      "ITEMS": {
+        "RECRUITMENT": {
+          "TITLE": "採用管理",
+          "SHORT_DESCRIPTION": "迅速で簡単な採用。",
+          "DESCRIPTION": "次世代の採用管理を体験 — 効率的で便利、いつでも手元で簡単に操作できます。",
+          "ALT": "ビジネスパートナーが握手する採用プロセス"
+        },
+        "PERSONAL_LEAVE": {
+          "TITLE": "個人休暇申請",
+          "SHORT_DESCRIPTION": "リフレッシュ、申請、安心。",
+          "DESCRIPTION": "しっかりリフレッシュして力を発揮 — 個人休暇機能でスムーズな休暇取得をサポートします。",
+          "ALT": "オフィス外で笑顔を見せる社員の個人休暇"
+        },
+        "COLLECTIVE_LEAVE": {
+          "TITLE": "一括休暇管理",
+          "SHORT_DESCRIPTION": "チームの休暇を簡素化。",
+          "DESCRIPTION": "シームレスな一括休暇管理 — 承認フロー付きの一括休暇申請でチームの調整が簡単になります。",
+          "ALT": "ノートパソコンの前で一括休暇を管理する様子"
+        },
+        "ATTENDANCE": {
+          "TITLE": "勤怠管理",
+          "SHORT_DESCRIPTION": "正確な勤怠記録を手軽に。",
+          "DESCRIPTION": "機器連携やアプリ統合により、従業員の勤怠を正確かつ簡単に記録・管理します。",
+          "ALT": "時計とノートパソコンで正確な出退勤を確認する社員"
+        },
+        "PERSONAL_OVERTIME": {
+          "TITLE": "個人残業申請",
+          "SHORT_DESCRIPTION": "いつでも残業申請が可能。",
+          "DESCRIPTION": "いつでもどこでも手軽に残業申請 — オンライン残業申請機能が迅速な業務をサポートします。",
+          "ALT": "時間を確認しながらノートPCで残業申請を行う社員"
+        },
+        "COLLECTIVE_OVERTIME": {
+          "TITLE": "一括残業管理",
+          "SHORT_DESCRIPTION": "チームの残業を一元化。",
+          "DESCRIPTION": "効率的な一括残業管理 — 承認付き一括残業申請でチーム全体の業務フローを加速させます。",
+          "ALT": "一括残業管理画面で調整を行うチーム"
+        },
+        "PAYROLL": {
+          "TITLE": "給与計算",
+          "SHORT_DESCRIPTION": "自由自在な給与設定。",
+          "DESCRIPTION": "控除・手当の計算式を柔軟にカスタマイズ可能な最高峰の給与計算ソフトウェア。",
+          "ALT": "電卓と紙幣、給与計算シート"
+        },
+        "EMPLOYEE_DATA_UPDATE": {
+          "TITLE": "従業員情報更新",
+          "SHORT_DESCRIPTION": "最新の人事データを維持。",
+          "DESCRIPTION": "人事データを常に最新の状態へ — オンライン従業員情報更新機能が手続きを簡略化します。",
+          "ALT": "人事情報ダッシュボードの更新画面"
+        },
+        "ATTENDANCE_MACHINE": {
+          "TITLE": "タイムレコーダー連携",
+          "SHORT_DESCRIPTION": "機器への直接接続。",
+          "DESCRIPTION": "勤怠打刻機とのダイレクト連携 — タイムレコーダーとの接続で勤怠管理を大幅に効率化します。",
+          "ALT": "リアルタイム打刻統計を表示する勤怠管理ダッシュボード"
+        },
+        "DATABASE_MANAGEMENT": {
+          "TITLE": "データベース管理",
+          "SHORT_DESCRIPTION": "人事情報を一元集約。",
+          "DESCRIPTION": "人事プロセスを効率化しチームの可能性を引き出す — オンラインDB管理が強力に支援します。",
+          "ALT": "安全に接続されたデータベースクラスタ構成"
+        },
+        "PERSONAL_ATTENDANCE": {
+          "TITLE": "モバイル勤怠打刻",
+          "SHORT_DESCRIPTION": "外出先でも手軽に打刻。",
+          "DESCRIPTION": "移動中やリモートワークでもスマートに打刻 — アプリ経由のオンライン打刻で快適な勤怠管理を実現。",
+          "ALT": "スマートフォンで勤怠打刻を行う従業員"
+        },
+        "YEARLY_TAX": {
+          "TITLE": "年間年末調整・税務",
+          "SHORT_DESCRIPTION": "年次税務業務も安心。",
+          "DESCRIPTION": "年次税務処理をスムーズに — 年間税務管理機能が複雑な計算を強力にサポートします。",
+          "ALT": "年間税金計算レポートを表示するノートPC"
+        }
+      }
+    },
+    "SOLUTION": {
+      "HEADING_HIGHLIGHT": "PISICloud",
+      "HEADING_PART1": "はさまざまな",
+      "HEADING_PART2": "ビジネス分野のソリューションに",
+      "HEADING_PART3": "なります",
+      "PREV_BUTTON_LABEL": "前の業種",
+      "NEXT_BUTTON_LABEL": "次の業種",
+      "PAGINATION_LABEL": "業種スライドページネーション",
+      "SLIDE_PAGINATION_PREFIX": "スライドへ移動",
+      "SLIDES": {
+        "LOGISTICS": {
+          "LABEL": "物流・運送業",
+          "SUPPORTING_TEXT": "配送車両の管理、ドライバーのシフト調整、自動残業計算を最適化。",
+          "ALT": "物流ターミナルに並ぶ商用トラックフリート"
+        },
+        "MANUFACTURING": {
+          "LABEL": "製造・産業分野",
+          "SUPPORTING_TEXT": "打刻機とのダイレクト連携、24時間365日のシフト交代制、自動給与計算を実現。",
+          "ALT": "ロボット組立ラインを備えたスマート工場"
+        },
+        "CORPORATE": {
+          "LABEL": "企業・ITテクノロジー",
+          "SUPPORTING_TEXT": "フレックスタイム制、アプリ打刻、シームレスな多段階休暇承認フロー。",
+          "ALT": "ノートPCで作業するビジネスパーソン"
+        },
+        "CONSTRUCTION": {
+          "LABEL": "建設・インフラ業",
+          "SUPPORTING_TEXT": "現場の日次出勤管理、プロジェクト別労務配分、コンプライアンスに準拠した税務処理。",
+          "ALT": "夕暮れ時にライトアップされた建設現場のクレーン"
+        }
+      }
+    },
     "WHY_CHOSE_US": {}
   },
 

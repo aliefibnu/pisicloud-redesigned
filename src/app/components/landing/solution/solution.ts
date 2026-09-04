@@ -7,9 +7,11 @@ import {
   signal,
 } from '@angular/core';
 import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface SolutionSlide {
   readonly id: number;
+  readonly translationKey: string;
   readonly label: string;
   readonly supportingText: string;
   readonly image: string;
@@ -25,6 +27,7 @@ export interface VirtualSlideItem {
 export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
   {
     id: 1,
+    translationKey: 'LANDING.SOLUTION.SLIDES.LOGISTICS',
     label: 'Logistics & Transportation',
     supportingText:
       'Optimizing fleet management, driver route shift scheduling, and automated overtime formulas.',
@@ -33,6 +36,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
   },
   {
     id: 2,
+    translationKey: 'LANDING.SOLUTION.SLIDES.MANUFACTURING',
     label: 'Manufacturing & Industrial',
     supportingText:
       'Direct machine attendance connectivity, 24/7 complex shift rotations, and automated payroll formulas.',
@@ -41,6 +45,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
   },
   {
     id: 3,
+    translationKey: 'LANDING.SOLUTION.SLIDES.CORPORATE',
     label: 'Corporate & Technology',
     supportingText:
       'Flexible working hours, app-based mobile attendance, and seamless multi-level leave approvals.',
@@ -49,6 +54,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
   },
   {
     id: 4,
+    translationKey: 'LANDING.SOLUTION.SLIDES.CONSTRUCTION',
     label: 'Construction & Infrastructure',
     supportingText:
       'On-site daily attendance monitoring, project-based labor allocation, and compliant tax calculations.',
@@ -59,7 +65,7 @@ export const BASE_SOLUTION_SLIDES: readonly SolutionSlide[] = [
 
 @Component({
   selector: 'landing-solution',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './solution.html',
   styles: `
     :host {

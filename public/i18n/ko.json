@@ -10,8 +10,118 @@
       "WATCH_PREVIEW": "미리보기 영상 시청",
       "IMAGE_ALT": "최신 태블릿에서 실행되는 PISICloud HR 관리 대시보드 미리보기"
     },
-    "FEATURES": {},
-    "SOLUTION": {},
+    "FEATURES": {
+      "HEADING_PREFIX": "PISICloud,",
+      "HEADING_BODY": "신뢰할 수 있는 HR 소프트웨어",
+      "HEADING_SUFFIX": "다양한 우수 기능 제공",
+      "LEARN_MORE": "자세히 보기",
+      "ITEMS": {
+        "RECRUITMENT": {
+          "TITLE": "채용 관리",
+          "SHORT_DESCRIPTION": "빠르고 간편한 채용.",
+          "DESCRIPTION": "채용의 미래를 경험하세요 — 효율적이고 편리하며 손끝에서 손쉽게 접근할 수 있습니다.",
+          "ALT": "비즈니스 파트너가 악수하는 채용 프로세스"
+        },
+        "PERSONAL_LEAVE": {
+          "TITLE": "개인 휴가 신청",
+          "SHORT_DESCRIPTION": "충전, 신청, 휴식.",
+          "DESCRIPTION": "충전 후 최상의 성과를 달성하세요 — 개인 휴가 관리 기능이 최고의 재충전을 돕습니다.",
+          "ALT": "개인 휴가 중 사무실 밖에서 미소 짓는 직장인"
+        },
+        "COLLECTIVE_LEAVE": {
+          "TITLE": "단체 휴가 관리",
+          "SHORT_DESCRIPTION": "팀 휴가 관리의 단순화.",
+          "DESCRIPTION": "원활한 단체 휴가 관리 — 승인 시스템이 포함된 단체 휴가 신청으로 팀 조율이 간편해집니다!",
+          "ALT": "노트북 앞에서 단체 휴가를 관리하는 모습"
+        },
+        "ATTENDANCE": {
+          "TITLE": "근태 관리",
+          "SHORT_DESCRIPTION": "정확한 근태 기록, 간편하게.",
+          "DESCRIPTION": "기기 및 앱 연동 소프트웨어를 통해 직원의 출퇴근을 정확하고 손쉽게 추적하세요.",
+          "ALT": "시계와 노트북으로 출퇴근을 확인하는 직원"
+        },
+        "PERSONAL_OVERTIME": {
+          "TITLE": "개인 초과근무",
+          "SHORT_DESCRIPTION": "언제든지 초과근무 신청.",
+          "DESCRIPTION": "언제 어디서나 쉽고 효율적으로 초과근무 신청 — 온라인 개인 연장근무 신청 기능이 지원합니다!",
+          "ALT": "시간을 확인하며 개인 초과근무를 신청하는 직원"
+        },
+        "COLLECTIVE_OVERTIME": {
+          "TITLE": "단체 초과근무",
+          "SHORT_DESCRIPTION": "팀 초과근무의 효율화.",
+          "DESCRIPTION": "효율적인 단체 초과근무 관리 — 승인 기능이 포함된 단체 연장근무 신청으로 업무 흐름을 가속화하세요!",
+          "ALT": "단체 초과근무 화면을 함께 확인하는 팀"
+        },
+        "PAYROLL": {
+          "TITLE": "급여 관리",
+          "SHORT_DESCRIPTION": "원하는 방식대로 급여 계산.",
+          "DESCRIPTION": "공제 및 수당 공식을 맞춤 설정할 수 있는 최고의 급여 계산 소프트웨어로 급여 처리를 손쉽게!",
+          "ALT": "계산기와 지폐, 급여 명세서"
+        },
+        "EMPLOYEE_DATA_UPDATE": {
+          "TITLE": "직원 정보 업데이트",
+          "SHORT_DESCRIPTION": "최신 인사 데이터 유지.",
+          "DESCRIPTION": "번거로움 없이 인사 데이터를 최신 상태로 유지 — 온라인 직원 정보 업데이트 기능이 프로세스를 간소화합니다!",
+          "ALT": "HRMS 직원 디렉터리 업데이트 대시보드"
+        },
+        "ATTENDANCE_MACHINE": {
+          "TITLE": "근태 단말기 연동",
+          "SHORT_DESCRIPTION": "단말기 직접 연결.",
+          "DESCRIPTION": "출퇴근 기기와의 다이렉트 연동 — 근태 단말기 연결 기능으로 직원 근태 관리가 간소화됩니다!",
+          "ALT": "실시간 출퇴근 통계를 보여주는 근태 단말기 대시보드"
+        },
+        "DATABASE_MANAGEMENT": {
+          "TITLE": "데이터베이스 관리",
+          "SHORT_DESCRIPTION": "인사 데이터를 한곳에서.",
+          "DESCRIPTION": "인사 프로세스를 간소화하고 팀의 잠재력을 극대화하세요 — 온라인 DB 관리가 지원합니다!",
+          "ALT": "안전하게 연결된 데이터베이스 클러스터 구조"
+        },
+        "PERSONAL_ATTENDANCE": {
+          "TITLE": "모바일 개인 출퇴근",
+          "SHORT_DESCRIPTION": "이동 중에도 간편한 체크인.",
+          "DESCRIPTION": "이동 중에도 간편하게 근태 체크 — 모바일 앱 출퇴근 기록으로 편리함을 누리세요!",
+          "ALT": "스마트폰으로 모바일 출퇴근 체크인을 하는 직원"
+        },
+        "YEARLY_TAX": {
+          "TITLE": "연말정산 및 세무",
+          "SHORT_DESCRIPTION": "연간 세무 업무 완벽 처리.",
+          "DESCRIPTION": "연간 세무를 손쉽게 관리 — 연간 세금 관리 기능이 복잡한 세무 처리를 지원합니다!",
+          "ALT": "연간 세금 계산 보고서 대시보드"
+        }
+      }
+    },
+    "SOLUTION": {
+      "HEADING_HIGHLIGHT": "PISICloud",
+      "HEADING_PART1": "는 다양한",
+      "HEADING_PART2": "비즈니스 분야의 해결책이",
+      "HEADING_PART3": "될 수 있습니다",
+      "PREV_BUTTON_LABEL": "이전 비즈니스 분야",
+      "NEXT_BUTTON_LABEL": "다음 비즈니스 분야",
+      "PAGINATION_LABEL": "비즈니스 분야 슬라이드 페이지네이션",
+      "SLIDE_PAGINATION_PREFIX": "슬라이드로 이동",
+      "SLIDES": {
+        "LOGISTICS": {
+          "LABEL": "물류 및 운송",
+          "SUPPORTING_TEXT": "운송 차량 관리, 운전자 교대 일정 조정 및 자동 초과근무 수식 최적화.",
+          "ALT": "물류 터미널에 주차된 상업용 화물 트럭"
+        },
+        "MANUFACTURING": {
+          "LABEL": "제조 및 산업",
+          "SUPPORTING_TEXT": "근태 단말기 직접 연결, 24/7 교대근무 순환 및 자동 급여 계산 공식.",
+          "ALT": "로봇 생산 라인을 갖춘 스마트 자동화 제조 공장"
+        },
+        "CORPORATE": {
+          "LABEL": "기업 및 IT 테크",
+          "SUPPORTING_TEXT": "유연 근무제, 모바일 앱 출퇴근 체크인 및 원활한 다단계 휴가 승인.",
+          "ALT": "헤드셋을 착용하고 최신 노트북으로 작업하는 비즈니스 전문가"
+        },
+        "CONSTRUCTION": {
+          "LABEL": "건설 및 인프라",
+          "SUPPORTING_TEXT": "현장 일일 출근 모니터링, 프로젝트 기반 인력 배정 및 세무 규정 준수.",
+          "ALT": "황혼 무렵 조명이 켜진 고층 빌딩 건설 현장의 타워크레인"
+        }
+      }
+    },
     "WHY_CHOSE_US": {}
   },
 

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface FeatureItem {
   readonly id: string;
+  readonly translationKey: string;
   readonly title: string;
   readonly description: string;
   readonly shortDescription: string;
@@ -13,6 +15,7 @@ export interface FeatureItem {
 export const FEATURES_DATA: readonly FeatureItem[] = [
   {
     id: 'recruitment',
+    translationKey: 'LANDING.FEATURES.ITEMS.RECRUITMENT',
     title: 'Recruitment',
     description:
       'Experience the future of recruitment - efficient, convenient, and accessible at your fingertips.',
@@ -22,6 +25,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'personal-leave',
+    translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_LEAVE',
     title: 'Personal Leave',
     description:
       'Take a break and come back stronger - our personal leave feature helps you recharge and achieve your best.',
@@ -31,6 +35,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'collective-leave',
+    translationKey: 'LANDING.FEATURES.ITEMS.COLLECTIVE_LEAVE',
     title: 'Collective Leave',
     description:
       'Seamless collective leave management - our collective leave request feature with approval simplifies team coordination!',
@@ -40,6 +45,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'attendance',
+    translationKey: 'LANDING.FEATURES.ITEMS.ATTENDANCE',
     title: 'Attendance',
     description:
       'Track employee attendance with ease and accuracy using our software with machine or apps integration',
@@ -49,6 +55,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'personal-overtime',
+    translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_OVERTIME',
     title: 'Personal Overtime',
     description:
       'Easily and efficiently request personal overtime anytime, anywhere - our online personal overtime request feature is ready to assist you!',
@@ -58,6 +65,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'collective-overtime',
+    translationKey: 'LANDING.FEATURES.ITEMS.COLLECTIVE_OVERTIME',
     title: 'Collective Overtime',
     description:
       'Efficient collective overtime management - our collective overtime request feature with approval speeds up your team\'s workflow!',
@@ -67,6 +75,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'payroll',
+    translationKey: 'LANDING.FEATURES.ITEMS.PAYROLL',
     title: 'Payroll',
     description:
       'Your Payroll, Your Rules - Get Ease of Payroll Processing with the Best Payroll Software with Customizable Deduction and Allowance Formulas!',
@@ -76,6 +85,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'employee-data-update',
+    translationKey: 'LANDING.FEATURES.ITEMS.EMPLOYEE_DATA_UPDATE',
     title: 'Employee Data Update',
     description:
       'Keep your HR data up-to-date effortlessly - our online employee data update feature simplifies the process for you!',
@@ -85,6 +95,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'attendance-machine',
+    translationKey: 'LANDING.FEATURES.ITEMS.ATTENDANCE_MACHINE',
     title: 'Attendance Machine',
     description:
       'Direct connectivity to attendance machines - our connectivity feature to attendance machines simplifies employee attendance management for you!',
@@ -94,6 +105,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'database-management',
+    translationKey: 'LANDING.FEATURES.ITEMS.DATABASE_MANAGEMENT',
     title: 'Database Management',
     description:
       'Streamline your HR processes and unlock your team\'s potential - our online database management feature has got you covered!',
@@ -103,6 +115,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'personal-attendance',
+    translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_ATTENDANCE',
     title: 'Personal Attendance',
     description:
       'Track your attendance on the go - our online attendance feature via app makes it easy and convenient for you!',
@@ -112,6 +125,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'yearly-tax',
+    translationKey: 'LANDING.FEATURES.ITEMS.YEARLY_TAX',
     title: 'Yearly Tax',
     description:
       'Effortlessly manage annual taxes - our annual tax management feature is here to assist you!',
@@ -123,7 +137,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
 
 @Component({
   selector: 'landing-features',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './features.html',
   styles: `
     :host {

@@ -10,8 +10,118 @@
       "WATCH_PREVIEW": "观看演示视频",
       "IMAGE_ALT": "PISICloud 人力资源管理现代平板控制面板预览"
     },
-    "FEATURES": {},
-    "SOLUTION": {},
+    "FEATURES": {
+      "HEADING_PREFIX": "PISICloud,",
+      "HEADING_BODY": "值得信赖的人力资源软件",
+      "HEADING_SUFFIX": "具备多项卓越功能",
+      "LEARN_MORE": "了解更多",
+      "ITEMS": {
+        "RECRUITMENT": {
+          "TITLE": "招聘管理",
+          "SHORT_DESCRIPTION": "快速、轻松的招聘。",
+          "DESCRIPTION": "体验招聘的未来 — 高效、便捷，随时触手可及。",
+          "ALT": "商务合作伙伴握手的招聘流程"
+        },
+        "PERSONAL_LEAVE": {
+          "TITLE": "个人请假",
+          "SHORT_DESCRIPTION": "休假、申请、安心。",
+          "DESCRIPTION": "适时休整，蓄势待发 — 个人请假功能助您轻松调节，保持最佳状态。",
+          "ALT": "员工在休假期间在户外微笑"
+        },
+        "COLLECTIVE_LEAVE": {
+          "TITLE": "团队集体假期",
+          "SHORT_DESCRIPTION": "团队假期，更加简单。",
+          "DESCRIPTION": "无缝的集体请假管理 — 支持审批的集体假期申请让团队协调倍感轻松！",
+          "ALT": "在电脑前管理团队休假"
+        },
+        "ATTENDANCE": {
+          "TITLE": "考勤管理",
+          "SHORT_DESCRIPTION": "精准考勤，轻松搞定。",
+          "DESCRIPTION": "通过考勤机与移动端集成，轻松、准确地追踪员工出勤状况。",
+          "ALT": "员工通过时钟和笔记本电脑核对出勤准时率"
+        },
+        "PERSONAL_OVERTIME": {
+          "TITLE": "个人加班申请",
+          "SHORT_DESCRIPTION": "随时随地申请加班。",
+          "DESCRIPTION": "随时随地高效申请个人加班 — 我们的在线加班申请功能为您保驾护航！",
+          "ALT": "员工确认时间并在电脑上提交加班申请"
+        },
+        "COLLECTIVE_OVERTIME": {
+          "TITLE": "团队集体加班",
+          "SHORT_DESCRIPTION": "团队加班，高效协调。",
+          "DESCRIPTION": "高效的集体加班管理 — 带审批的集体加班申请大幅提升团队工作流！",
+          "ALT": "团队在集体加班管理界面协同操作"
+        },
+        "PAYROLL": {
+          "TITLE": "薪酬核算",
+          "SHORT_DESCRIPTION": "量身定制薪资规则。",
+          "DESCRIPTION": "支持高度自定义扣款与津贴公式，体验顶尖薪资软件带来的便捷核算！",
+          "ALT": "带有纸币与薪资报表的计算器"
+        },
+        "EMPLOYEE_DATA_UPDATE": {
+          "TITLE": "员工档案更新",
+          "SHORT_DESCRIPTION": "保持人事数据最新。",
+          "DESCRIPTION": "轻松保持HR档案更新 — 在线员工数据更新功能为您简化一切流程！",
+          "ALT": "HRMS员工通讯录更新面板界面"
+        },
+        "ATTENDANCE_MACHINE": {
+          "TITLE": "考勤机直连",
+          "SHORT_DESCRIPTION": "硬件设备直接连通。",
+          "DESCRIPTION": "直连考勤硬件设备 — 考勤机无缝互联让员工出勤管理更简单！",
+          "ALT": "展示实时打卡统计数据的考勤机分析看板"
+        },
+        "DATABASE_MANAGEMENT": {
+          "TITLE": "数据库管理",
+          "SHORT_DESCRIPTION": "HR数据集中管理。",
+          "DESCRIPTION": "简化人事流程，释放团队潜能 — 在线数据库管理为您全面护航！",
+          "ALT": "安全连接的数据库集群架构"
+        },
+        "PERSONAL_ATTENDANCE": {
+          "TITLE": "移动个人打卡",
+          "SHORT_DESCRIPTION": "移动出行随时打卡。",
+          "DESCRIPTION": "外出也能随时记录出勤 — 手机App在线打卡让办公更灵活便捷！",
+          "ALT": "员工在手机上点击个人出勤打卡"
+        },
+        "YEARLY_TAX": {
+          "TITLE": "年度个税申报",
+          "SHORT_DESCRIPTION": "年度税务，轻松处理。",
+          "DESCRIPTION": "轻松处理年度个税 — 我们的年度税务管理功能协助您高效完成核算！",
+          "ALT": "展示年度个税核算报表的笔记本电脑"
+        }
+      }
+    },
+    "SOLUTION": {
+      "HEADING_HIGHLIGHT": "PISICloud",
+      "HEADING_PART1": "能够成为",
+      "HEADING_PART2": "各行各业的解决方案",
+      "HEADING_PART3": "之一",
+      "PREV_BUTTON_LABEL": "上一个业务领域",
+      "NEXT_BUTTON_LABEL": "下一个业务领域",
+      "PAGINATION_LABEL": "业务领域轮播分页",
+      "SLIDE_PAGINATION_PREFIX": "跳转到幻灯片",
+      "SLIDES": {
+        "LOGISTICS": {
+          "LABEL": "物流与运输",
+          "SUPPORTING_TEXT": "优化车队管理、司机排班路线调度及自动化加班核算公式。",
+          "ALT": "物流园区停放的商用货运卡车车队"
+        },
+        "MANUFACTURING": {
+          "LABEL": "制造业与工业",
+          "SUPPORTING_TEXT": "考勤机直连互通、7x24小时倒班轮岗机制及自动化薪酬核算。",
+          "ALT": "配备机器人生产线的智能自动化制造工厂"
+        },
+        "CORPORATE": {
+          "LABEL": "企业与科技行业",
+          "SUPPORTING_TEXT": "弹性工作时间、手机移动打卡及多级请假审批流程。",
+          "ALT": "头戴耳麦在笔记本电脑前办公的职场人士"
+        },
+        "CONSTRUCTION": {
+          "LABEL": "建筑与基础设施",
+          "SUPPORTING_TEXT": "现场每日出勤监控、基于项目的劳务调配及合规税务管理。",
+          "ALT": "黄昏时分塔吊林立的高层建筑施工现场"
+        }
+      }
+    },
     "WHY_CHOSE_US": {}
   },
 
