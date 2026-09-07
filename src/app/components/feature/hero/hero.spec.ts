@@ -27,7 +27,7 @@ describe('Hero', () => {
     expect(component.resolvedTitleKey()).toBe('FEATURE.RECRUITMENT.NAME');
     expect(component.resolvedTaglineKey()).toBe('FEATURE.RECRUITMENT.HERO.TITLE');
     expect(component.resolvedDescKey()).toBe('FEATURE.RECRUITMENT.HERO.DESC');
-    expect(component.resolvedImage()).toBe('/images/features/recruitment-preview.png');
+    expect(component.resolvedImage()).toBe('/images/features/recruitment-1.png');
   });
 
   it('should dynamically resolve feature when slug input changes', () => {
@@ -71,7 +71,7 @@ describe('Hero', () => {
     fixture.componentRef.setInput('feature', customFeature);
     fixture.detectChanges();
 
-    expect(component.resolvedImage()).toBe('/images/features/recruitment-preview.png');
+    expect(component.resolvedImage()).toBe('/images/features/recruitment-1.png');
   });
 
   it('should render accessible section with heading and image preview', () => {
