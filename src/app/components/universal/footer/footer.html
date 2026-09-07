@@ -49,25 +49,25 @@
 
     <!-- Middle Column: About PISICloud Links (Spans 3 cols) -->
     <div class="md:col-span-3">
-      <h4 class="text-base font-semibold text-gray-900 mb-6 mt-0">About PISICloud</h4>
+      <h4 class="text-base font-semibold text-gray-900 mb-6 mt-0">{{ 'UNIVERSAL.FOOTER.ABOUT_TITLE' | translate }}</h4>
       <ul class="space-y-3 p-0 m-0 list-none">
-        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">About Inforsys</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">About</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">Feature</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">Business Solution</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">Why Choose Us?</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">FAQ</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.ABOUT_INFORSYS' | translate }}</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.ABOUT' | translate }}</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.FEATURE' | translate }}</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.BUSINESS_SOLUTION' | translate }}</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.WHY_CHOOSE_US' | translate }}</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.FAQ' | translate }}</a></li>
       </ul>
     </div>
 
     <!-- Right Column: Support & Social Icons (Spans 4 cols) -->
     <div class="md:col-span-4 flex flex-col justify-between">
       <div>
-        <h4 class="text-base font-semibold text-gray-900 mb-6 mt-0">Support</h4>
+        <h4 class="text-base font-semibold text-gray-900 mb-6 mt-0">{{ 'UNIVERSAL.FOOTER.SUPPORT_TITLE' | translate }}</h4>
         <ul class="space-y-3 p-0 m-0 list-none">
-          <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">Software Implementation</a></li>
-          <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">Training & Re-Implementation</a></li>
-          <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">Costumize Module</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.SOFTWARE_IMPLEMENTATION' | translate }}</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.TRAINING_REIMPLEMENTATION' | translate }}</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-[#0b6953] transition-colors text-sm font-medium no-underline">{{ 'UNIVERSAL.FOOTER.CUSTOMIZE_MODULE' | translate }}</a></li>
         </ul>
       </div>
 
@@ -107,13 +107,13 @@
 
   <!-- Bottom Dark Green Bar / Copyright -->
   <div class="bg-[#0b6953] text-white text-center py-4 text-sm font-medium">
-    <p class="m-0">{{ currentYear }} © PT Inforsys Indonesia</p>
+    <p class="m-0">{{ currentYear }} {{ 'UNIVERSAL.FOOTER.COPYRIGHT' | translate }}</p>
   </div>
 
   <!-- Back to top button -->
   <button 
     (click)="scrollToTop()" 
-    aria-label="Back to top"
+    [attr.aria-label]="'UNIVERSAL.FOOTER.BACK_TO_TOP' | translate"
     class="absolute right-6 bottom-14 w-11 h-11 bg-[#0b6953] text-white rounded-lg border-none flex items-center justify-center text-lg cursor-pointer shadow-md hover:-translate-y-1 transition-transform duration-200">
     ↑
   </button>

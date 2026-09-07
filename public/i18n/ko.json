@@ -656,8 +656,51 @@
         }
       }
     },
-    "FAQ": {},
-    "FOOTER": {},
+    "FAQ": {
+      "TITLE_LINE_1": "자주 묻는",
+      "TITLE_LINE_2": "핵심",
+      "TITLE_HIGHLIGHT": "질문 (FAQ)",
+      "ITEMS": {
+        "Q1": {
+          "QUESTION": "기업에서 PISICloud ERP 및 인사 관리 시스템의 기능과 역할은 무엇인가요?",
+          "ANSWER": "PISICloud는 근태 관리, 휴가 신청, 급여 계산, 인력 계획 등 전 부서의 핵심 비즈니스 프로세스를 통합합니다. 실시간 중앙 집중형 시스템을 통해 데이터 사일로를 해소하고, 운영 정확도를 높이며, 단일 플랫폼에서 비즈니스 현황을 효율적으로 모니터링할 수 있습니다."
+        },
+        "Q2": {
+          "QUESTION": "기존 온프레미스(On-Premise) 시스템과 비교하여 클라우드 ERP의 주요 장점은 무엇인가요?",
+          "ANSWER": "클라우드 ERP는 값비싼 물리적 서버 하드웨어나 자체 유지 관리 인프라 없이도 신속하게 도입할 수 있습니다. 서버 관리 및 보안 업데이트를 공급업체가 지속적으로 전담하여 초기 도입 비용을 획기적으로 절감하고, 시스템 안정성과 언제 어디서나 접속할 수 있는 유연성을 보장합니다."
+        },
+        "Q3": {
+          "QUESTION": "자동화된 워크플로는 근태 및 급여 관리에서 인적 오류를 어떻게 줄여주나요?",
+          "ANSWER": "수동 데이터 입력은 계산 오류와 승인 지연의 주요 원인입니다. PISICloud는 생체 인식 기기 연동을 통해 출퇴근 기록을 자동화하고, 초과 근무와 공제 항목을 체계적으로 계산하여 정확한 급여 명세서를 생성함으로써 행정 업무 시간을 절약하고 규정 준수를 지원합니다."
+        },
+        "Q4": {
+          "QUESTION": "PISICloud에서는 기업 및 직원의 데이터 보안을 어떻게 안전하게 유지하나요?",
+          "ANSWER": "모든 민감한 직원 정보 및 비즈니스 데이터는 전송 및 저장 시 업계 표준 암호화 기술로 철저히 보호됩니다. PISICloud는 원격 다중 위치 자동 데이터베이스 백업, 역할 기반 세분화된 접근 권한 관리 및 정기적인 보안 점검을 통해 기업 데이터를 안전하게 수호합니다."
+        },
+        "Q5": {
+          "QUESTION": "PISICloud는 어떤 구현 지원, 교육 및 정기 유지 보수 서비스를 제공하나요?",
+          "ANSWER": "도입 전 과정 지원, 직원 교육 및 재구현 지원, 연간 소프트웨어 유지 보수를 종합적으로 제공합니다. 전담 지원팀이 원격 및 현장 기술 지원, 정기 소프트웨어 업데이트, 기업의 변화하는 비즈니스 요구에 맞춘 맞춤형 모듈 커스터마이징을 지원합니다."
+        }
+      }
+    },
+    "FOOTER": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No. 18, Agung Podomoro",
+      "ADDRESS_LINE_2": "Land Batam, Kepulauan Riau 29464 Indonesia",
+      "ABOUT_TITLE": "PISICloud 소개",
+      "ABOUT_INFORSYS": "Inforsys 소개",
+      "ABOUT": "회사 소개",
+      "FEATURE": "주요 기능",
+      "BUSINESS_SOLUTION": "비즈니스 솔루션",
+      "WHY_CHOOSE_US": "왜 우리를 선택해야 할까요?",
+      "FAQ": "자주 묻는 질문",
+      "SUPPORT_TITLE": "지원 및 서비스",
+      "SOFTWARE_IMPLEMENTATION": "소프트웨어 구현",
+      "TRAINING_REIMPLEMENTATION": "교육 및 재구현",
+      "CUSTOMIZE_MODULE": "모듈 커스터마이징",
+      "COPYRIGHT": "© PT Inforsys Indonesia",
+      "BACK_TO_TOP": "맨 위로 이동"
+    },
     "INTERESTED": {
       "TITLE": "PISICloud 에 관심이 있으십니까?",
       "DESCRIPTION": "PISICloud의 간소화된 HR 프로세스로 직장을 변화시키십시오. 자세한 내용은 아래 연락처로 문의하십시오.",
