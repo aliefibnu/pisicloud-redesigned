@@ -38,7 +38,7 @@ describe('Hero', () => {
     expect(component.resolvedTitleKey()).toBe('FEATURE.ATTENDANCE.NAME');
     expect(component.resolvedTaglineKey()).toBe('FEATURE.ATTENDANCE.HERO.TITLE');
     expect(component.resolvedDescKey()).toBe('FEATURE.ATTENDANCE.HERO.DESC');
-    expect(component.resolvedImage()).toBe('/images/features/Vector-1.png');
+    expect(component.resolvedImage()).toBe('/images/features/features-ui/attendance-1.webp');
   });
 
   it('should prioritize direct feature input over slug', () => {
