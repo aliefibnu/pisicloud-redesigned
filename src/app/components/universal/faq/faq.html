@@ -1,1 +1,59 @@
-<p>faq works!</p>
+<section class="max-w-4xl mx-auto my-16 px-4 font-sans text-center">
+  <!-- Title -->
+  <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-12 leading-tight">
+    Frequently<br>Asked <span class="text-[#0b6953]">Questions</span>
+  </h2>
+
+  <!-- List Accordion -->
+  <div class="flex flex-col gap-4">
+    <div 
+      *ngFor="let item of faqList; let i = index" 
+      class="border border-gray-200 rounded-[30px] p-6 bg-white transition-all duration-300 text-left"
+      [ngClass]="{ 'border-[#0b6953] shadow-sm': openIndex === i }">
+      
+      <!-- Card Header -->
+<div class="flex justify-between items-center cursor-pointer select-none" (click)="toggleFaq(i)">
+  <p class="text-gray-700 text-base md:text-lg font-normal m-0 pr-4">
+    {{ item.question }}
+  </p>
+  
+  <!-- Toggle Button Circle -->
+  <button 
+    type="button"
+    (click)="toggleFaq(i); $event.stopPropagation()"
+    class="w-10 h-10 rounded-full bg-[#0b6953] flex items-center justify-center shrink-0 border-none cursor-pointer transition-transform duration-300"
+    aria-label="Toggle accordion">
+          
+          <!-- Cross / Plus Icon -->
+          <div class="relative w-3.5 h-3.5 flex items-center justify-center">
+            <!-- Horizontal Bar -->
+            <span 
+              class="absolute w-3.5 h-[2px] bg-white transition-transform duration-300"
+              [ngClass]="{ 'rotate-45': openIndex === i }">
+            </span>
+            <!-- Vertical Bar -->
+            <span 
+              class="absolute w-3.5 h-[2px] bg-white transition-transform duration-300 rotate-90"
+              [ngClass]="{ 'rotate-45': openIndex === i }">
+            </span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Card Body / Answer (smooth height + fade animation, no *ngIf) -->
+      <div 
+        class="grid transition-[grid-template-rows] duration-300 ease-in-out"
+        [ngClass]="openIndex === i ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'">
+        <div class="overflow-hidden">
+          <div 
+            class="mt-4 pt-4 border-t border-gray-100 transition-opacity duration-300"
+            [ngClass]="openIndex === i ? 'opacity-100 delay-100' : 'opacity-0'">
+            <p class="text-gray-500 text-sm md:text-base leading-relaxed m-0">
+              {{ item.answer }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { NgIcon, provideIcons } from '@ng-icons/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import {
   bootstrapWhatsapp,
   bootstrapTelephone,
@@ -13,7 +14,7 @@ import { DemoVideoModalService } from '../demo-video-modal/demo-video-modal.serv
 
 @Component({
   selector: 'universal-interested',
-  imports: [NgOptimizedImage, MatButtonModule, NgIcon],
+  imports: [NgOptimizedImage, MatButtonModule, NgIcon, TranslatePipe],
   viewProviders: [
     provideIcons({
       bootstrapWhatsapp,

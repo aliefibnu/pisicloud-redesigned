@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface FeatureItem {
   readonly id: string;
+  readonly translationKey: string;
   readonly title: string;
   readonly description: string;
   readonly shortDescription: string;
@@ -13,117 +15,129 @@ export interface FeatureItem {
 export const FEATURES_DATA: readonly FeatureItem[] = [
   {
     id: 'recruitment',
+    translationKey: 'LANDING.FEATURES.ITEMS.RECRUITMENT',
     title: 'Recruitment',
     description:
       'Experience the future of recruitment - efficient, convenient, and accessible at your fingertips.',
     shortDescription: 'Fast, easy hiring.',
-    image: '/images/features/Vector.png',
+    image: '/images/features/Vector.webp',
     alt: 'Recruitment process showing business partners shaking hands',
   },
   {
     id: 'personal-leave',
+    translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_LEAVE',
     title: 'Personal Leave',
     description:
       'Take a break and come back stronger - our personal leave feature helps you recharge and achieve your best.',
     shortDescription: 'Recharge, request, relax.',
-    image: '/images/features/image 3.png',
+    image: '/images/features/image 3.webp',
     alt: 'Professional smiling outside office during personal leave',
   },
   {
     id: 'collective-leave',
+    translationKey: 'LANDING.FEATURES.ITEMS.COLLECTIVE_LEAVE',
     title: 'Collective Leave',
     description:
       'Seamless collective leave management - our collective leave request feature with approval simplifies team coordination!',
     shortDescription: 'Team leave, simplified.',
-    image: '/images/features/image 3-1.png',
+    image: '/images/features/image 3-1.webp',
     alt: 'Woman holding alarm clock in front of laptop managing collective leave',
   },
   {
     id: 'attendance',
+    translationKey: 'LANDING.FEATURES.ITEMS.ATTENDANCE',
     title: 'Attendance',
     description:
       'Track employee attendance with ease and accuracy using our software with machine or apps integration',
     shortDescription: 'Accurate tracking, made easy.',
-    image: '/images/features/Vector-1.png',
+    image: '/images/features/Vector-1.webp',
     alt: 'Employee tracking attendance punctuality with clock and laptop',
   },
   {
     id: 'personal-overtime',
+    translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_OVERTIME',
     title: 'Personal Overtime',
     description:
       'Easily and efficiently request personal overtime anytime, anywhere - our online personal overtime request feature is ready to assist you!',
     shortDescription: 'Request overtime anytime.',
-    image: '/images/features/image 3-2.png',
+    image: '/images/features/image 3-2.webp',
     alt: 'Employee checking time and filing personal overtime request on laptop',
   },
   {
     id: 'collective-overtime',
+    translationKey: 'LANDING.FEATURES.ITEMS.COLLECTIVE_OVERTIME',
     title: 'Collective Overtime',
     description:
       'Efficient collective overtime management - our collective overtime request feature with approval speeds up your team\'s workflow!',
     shortDescription: 'Team overtime, streamlined.',
-    image: '/images/features/image 5.png',
+    image: '/images/features/image 5.webp',
     alt: 'Team coordinating together on collective overtime management screen',
   },
   {
     id: 'payroll',
+    translationKey: 'LANDING.FEATURES.ITEMS.PAYROLL',
     title: 'Payroll',
     description:
       'Your Payroll, Your Rules - Get Ease of Payroll Processing with the Best Payroll Software with Customizable Deduction and Allowance Formulas!',
     shortDescription: 'Your payroll, your rules.',
-    image: '/images/features/image 6.png',
+    image: '/images/features/image 6.webp',
     alt: 'Payroll calculator with banknotes and salary spreadsheets',
   },
   {
     id: 'employee-data-update',
+    translationKey: 'LANDING.FEATURES.ITEMS.EMPLOYEE_DATA_UPDATE',
     title: 'Employee Data Update',
     description:
       'Keep your HR data up-to-date effortlessly - our online employee data update feature simplifies the process for you!',
     shortDescription: 'Keep HR data current.',
-    image: '/images/features/image 7.png',
+    image: '/images/features/image 7.webp',
     alt: 'HRMS employee directory update dashboard interface',
   },
   {
     id: 'attendance-machine',
+    translationKey: 'LANDING.FEATURES.ITEMS.ATTENDANCE_MACHINE',
     title: 'Attendance Machine',
     description:
       'Direct connectivity to attendance machines - our connectivity feature to attendance machines simplifies employee attendance management for you!',
     shortDescription: 'Direct machine connectivity.',
-    image: '/images/features/image 3-3.png',
+    image: '/images/features/image 3-3.webp',
     alt: 'Attendance machine analytics dashboard with real-time check-in stats',
   },
   {
     id: 'database-management',
+    translationKey: 'LANDING.FEATURES.ITEMS.DATABASE_MANAGEMENT',
     title: 'Database Management',
     description:
       'Streamline your HR processes and unlock your team\'s potential - our online database management feature has got you covered!',
     shortDescription: 'One place for HR data.',
-    image: '/images/features/image 3-4.png',
+    image: '/images/features/image 3-4.webp',
     alt: 'Connected secure database cluster architecture',
   },
   {
     id: 'personal-attendance',
+    translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_ATTENDANCE',
     title: 'Personal Attendance',
     description:
       'Track your attendance on the go - our online attendance feature via app makes it easy and convenient for you!',
     shortDescription: 'Track attendance on the go.',
-    image: '/images/features/image 3-5.png',
+    image: '/images/features/image 3-5.webp',
     alt: 'Employee tapping personal attendance check-in on mobile phone',
   },
   {
     id: 'yearly-tax',
+    translationKey: 'LANDING.FEATURES.ITEMS.YEARLY_TAX',
     title: 'Yearly Tax',
     description:
       'Effortlessly manage annual taxes - our annual tax management feature is here to assist you!',
     shortDescription: 'Annual tax, handled.',
-    image: '/images/features/image 3-6.png',
+    image: '/images/features/image 3-6.webp',
     alt: 'Yearly tax calculation report dashboard on laptop',
   },
 ];
 
 @Component({
   selector: 'landing-features',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './features.html',
   styles: `
     :host {

@@ -1,23 +1,30 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PLATFORM_ID } from '@angular/core';
+import { provideTranslateService } from '@ngx-translate/core';
 import { vi } from 'vitest';
 import { Detail } from './detail';
+import { getDefaultFeature } from '../../../data/features';
 
 describe('Detail', () => {
   let component: Detail;
   let fixture: ComponentFixture<Detail>;
+  const mockItems = getDefaultFeature().items;
 
   beforeEach(async () => {
     vi.useFakeTimers();
 
     await TestBed.configureTestingModule({
       imports: [Detail],
-      providers: [{ provide: PLATFORM_ID, useValue: 'browser' }],
+      providers: [
+        provideTranslateService(),
+        { provide: PLATFORM_ID, useValue: 'browser' },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Detail);
     component = fixture.componentInstance;
-    await component.ngOnInit();
+    fixture.componentRef.setInput('items', mockItems);
+    component.ngOnInit();
     fixture.detectChanges();
   });
 
@@ -30,11 +37,11 @@ describe('Detail', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should load recruitment features on init', () => {
-    const feat = component.features();
-    expect(feat).toBeTruthy();
-    expect(feat?.name).toBe('Recrutment');
-    expect(feat?.detailed.length).toBe(5);
+  it('should load feature items from input', () => {
+    const items = component.items();
+    expect(items).toBeTruthy();
+    expect(items.length).toBe(6);
+    expect(items[0].id).toBe('p1');
   });
 
   it('should start with activeIndex 0 and progress 0', () => {
@@ -49,7 +56,7 @@ describe('Detail', () => {
   });
 
   it('should advance to next feature and wrap around', () => {
-    component.activeIndex.set(4);
+    component.activeIndex.set(5);
     component.nextFeature();
     expect(component.activeIndex()).toBe(0);
     expect(component.progress()).toBe(0);
@@ -90,13 +97,12 @@ describe('Detail', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const activeTab = compiled.querySelector('[role="tab"][aria-selected="true"]');
     expect(activeTab).toBeTruthy();
-    expect(activeTab?.textContent).toContain('Application Submission');
 
     const progressBar = compiled.querySelector('[role="progressbar"]');
     expect(progressBar).toBeTruthy();
 
     const tabs = compiled.querySelectorAll('[role="tab"]');
-    expect(tabs.length).toBe(5);
+    expect(tabs.length).toBe(6);
   });
 
   it('should increment progress when timer ticks and advance to next feature at 100%', () => {
@@ -123,5 +129,30 @@ describe('Detail', () => {
     expect(component.activeIndex()).toBe(0);
 
     component.stopTimer();
+  });
+
+  it('should resolve items dynamically when slug input is provided without items', () => {
+    fixture.componentRef.setInput('items', []);
+    fixture.componentRef.setInput('slug', 'attendance');
+    fixture.detectChanges();
+
+    const items = component.effectiveItems();
+    expect(items).toBeTruthy();
+    expect(items.length).toBe(7);
+    expect(items[0].id).toBe('p1');
+  });
+
+  it('should reset activeIndex and progress when slug changes', () => {
+    component.selectFeature(3);
+    component.progress.set(50);
+
+    fixture.componentRef.setInput('items', []);
+    fixture.componentRef.setInput('slug', 'payroll');
+    fixture.detectChanges();
+
+    expect(component.activeIndex()).toBe(0);
+    expect(component.progress()).toBe(0);
+    expect(component.effectiveItems().length).toBe(5);
+    expect(component.effectiveItems()[0].id).toBe('p1');
   });
 });

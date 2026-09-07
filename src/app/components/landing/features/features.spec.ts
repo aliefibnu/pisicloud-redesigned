@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Features } from './features';
 
 describe('Features', () => {
@@ -8,7 +9,21 @@ describe('Features', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Features],
+      providers: [provideTranslateService()],
     }).compileComponents();
+
+    const translate = TestBed.inject(TranslateService);
+    translate.setTranslation('en', {
+      LANDING: {
+        FEATURES: {
+          HEADING_PREFIX: 'PISICloud,',
+          HEADING_BODY: 'Reliable HR Software',
+          HEADING_SUFFIX: 'With Various Excellent Features',
+          LEARN_MORE: 'Learn More',
+        },
+      },
+    });
+    translate.use('en');
 
     fixture = TestBed.createComponent(Features);
     component = fixture.componentInstance;
@@ -43,7 +58,7 @@ describe('Features', () => {
     // 12 for mobile list view + 12 for desktop grid view
     expect(articles.length).toBe(24);
 
-    const learnMoreButtons = compiled.querySelectorAll('a[aria-label^="Learn more about"]');
+    const learnMoreButtons = compiled.querySelectorAll('a[aria-label^="Learn More"]');
     expect(learnMoreButtons.length).toBe(12);
   });
 });

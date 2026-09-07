@@ -10,7 +10,7 @@
             ngSrc="/sample/logo pisi interested.png"
             width="193"
             height="43"
-            alt="PISICloud Logo"
+            [alt]="'UNIVERSAL.INTERESTED.ARIA.LOGO_ALT' | translate"
             class="h-8 sm:h-9 md:h-10 w-auto object-contain select-none"
           />
         </div>
@@ -19,19 +19,18 @@
           id="interested-heading"
           class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-3 sm:mb-4"
         >
-          Interested in PISICloud?
+          {{ 'UNIVERSAL.INTERESTED.TITLE' | translate }}
         </h2>
 
         <div
           class="text-emerald-50/90 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-6 sm:mb-8 space-y-1 font-normal"
         >
           <p>
-            Transforming Your Workplace with PISICloud's Streamlined HR Processes. Contact the
-            contact below for more info.
+            {{ 'UNIVERSAL.INTERESTED.DESCRIPTION' | translate }}
           </p>
         </div>
 
-        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-10" aria-label="Contact Channels">
+        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-10" [attr.aria-label]="'UNIVERSAL.INTERESTED.ARIA.CONTACT_CHANNELS' | translate">
           <li>
             <a
               href="https://wa.me/627784160250"
@@ -85,7 +84,7 @@
             href="https://wa.me/627784160250"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Contact Us"
+            [attr.aria-label]="'UNIVERSAL.INTERESTED.CONTACT_US' | translate"
             class="w-auto sm:w-auto bg-white! text-[#255247]! hover:bg-emerald-50! active:bg-emerald-100! rounded-full! px-6 sm:px-7! py-3! h-auto! font-semibold! text-sm sm:text-base! shadow-md! transition-all duration-200 hover:shadow-lg! inline-flex items-center justify-center gap-2.5"
           >
             <span class="flex items-center gap-2.5 justify-center">
@@ -94,13 +93,13 @@
                 class="text-base sm:text-lg text-[#255247]"
                 aria-hidden="true"
               />
-              <span>Contact Us</span>
+              <span>{{ 'UNIVERSAL.INTERESTED.CONTACT_US' | translate }}</span>
             </span>
           </a>
 
           <button
             mat-flat-button
-            aria-label="View Demo Video"
+            [attr.aria-label]="'UNIVERSAL.INTERESTED.VIEW_DEMO_VIDEO' | translate"
             class="w-auto bg-[#1c433a]! text-white! hover:bg-[#173a32]! active:bg-[#12312a]! border! border-[#3d6e62]! hover:border-emerald-300/60! rounded-full! px-6 py-3! h-auto! font-semibold! text-sm sm:text-base! shadow-md! transition-all duration-200 hover:shadow-lg! inline-flex items-center justify-center gap-2.5"
             (click)="modalService.showModal()"
           >
@@ -110,7 +109,7 @@
                 class="text-lg sm:text-xl text-white"
                 aria-hidden="true"
               />
-              <span>View Demo Video</span>
+              <span>{{ 'UNIVERSAL.INTERESTED.VIEW_DEMO_VIDEO' | translate }}</span>
             </span>
           </button>
         </div>
@@ -125,7 +124,7 @@
             width="583"
             height="789"
             priority
-            alt="PISICloud representative presenting the HR software solution on a laptop"
+            [alt]="'UNIVERSAL.INTERESTED.ARIA.IMAGE_ALT' | translate"
             class="w-full h-auto object-contain object-bottom select-none pointer-events-none drop-shadow-2xl"
           />
         </div>

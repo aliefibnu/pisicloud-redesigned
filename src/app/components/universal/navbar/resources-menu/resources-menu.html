@@ -8,7 +8,7 @@
       [class.text-[#00382f]]="isOpen()"
       [attr.aria-expanded]="isOpen()"
       aria-haspopup="true"
-      aria-label="Resources navigation menu"
+      [attr.aria-label]="'UNIVERSAL.NAVBAR.ARIA.RESOURCES_MENU' | translate"
     >
       <svg
         class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
@@ -24,7 +24,7 @@
       >
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg>
-      <span class="tracking-wide">Resources</span>
+      <span class="tracking-wide">{{ 'UNIVERSAL.NAVBAR.RESOURCES_LABEL' | translate }}</span>
     </button>
 
     @if (isOpen()) {
@@ -33,11 +33,11 @@
         role="menu"
         aria-orientation="vertical"
       >
-        <h3 class="text-base font-bold text-slate-800 tracking-tight">Resources</h3>
+        <h3 class="text-base font-bold text-slate-800 tracking-tight">{{ 'UNIVERSAL.NAVBAR.RESOURCES_MENU.TITLE' | translate }}</h3>
         <div class="border-b border-slate-200/80 my-3"></div>
 
         <div class="space-y-1.5" role="none">
-          @for (resource of resources; track resource.title) {
+          @for (resource of resources; track resource.id) {
             <a
               [routerLink]="resource.route"
               [fragment]="resource.fragment"
@@ -70,11 +70,11 @@
 
               <div class="flex flex-col">
                 <span class="text-sm font-medium text-slate-700 group-hover:text-[#00382f] transition-colors">
-                  {{ resource.title }}
+                  {{ resource.titleKey | translate }}
                 </span>
-                @if (resource.description) {
+                @if (resource.descKey) {
                   <p class="text-xs text-slate-500 leading-snug group-hover:text-slate-600 transition-colors mt-0.5">
-                    {{ resource.description }}
+                    {{ resource.descKey | translate }}
                   </p>
                 }
               </div>
@@ -96,7 +96,7 @@
         <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
           <polygon points="0,0 6,4 0,8" />
         </svg>
-        <span>Resources</span>
+        <span>{{ 'UNIVERSAL.NAVBAR.RESOURCES_LABEL' | translate }}</span>
       </div>
       <svg
         class="w-4 h-4 text-slate-600 transition-transform duration-200"
@@ -113,7 +113,7 @@
 
     @if (isMobileExpanded()) {
       <div class="pl-4 pr-2 py-1 space-y-1 mt-1 animate-in fade-in duration-150">
-        @for (resource of resources; track resource.title) {
+        @for (resource of resources; track resource.id) {
           <a
             [routerLink]="resource.route"
             [fragment]="resource.fragment"
@@ -143,9 +143,9 @@
               }
             </div>
             <div class="flex flex-col min-w-0">
-              <span class="text-sm font-medium truncate">{{ resource.title }}</span>
-              @if (resource.description) {
-                <span class="text-xs text-slate-500 line-clamp-1">{{ resource.description }}</span>
+              <span class="text-sm font-medium truncate">{{ resource.titleKey | translate }}</span>
+              @if (resource.descKey) {
+                <span class="text-xs text-slate-500 line-clamp-1">{{ resource.descKey | translate }}</span>
               }
             </div>
           </a>

@@ -1,44 +1,18 @@
 import { Component, input, output, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
+import {
+  NavbarResourceIconType,
+  NavbarResourceItemConfig,
+  NAVBAR_RESOURCES,
+} from '../../../../data/navbar';
 
-export type ResourceIconType = 'about' | 'strategy' | 'customers';
-
-export interface ResourceMenuItem {
-  readonly title: string;
-  readonly description?: string;
-  readonly route?: string;
-  readonly fragment?: string;
-  readonly href?: string;
-  readonly iconType: ResourceIconType;
-}
-
-export const DEFAULT_RESOURCES: readonly ResourceMenuItem[] = [
-  {
-    title: 'About PISICloud',
-    description: 'Get to know PISICloud in depth.',
-    route: '/',
-    fragment: 'about-us',
-    iconType: 'about',
-  },
-  {
-    title: 'Implementation Strategy',
-    description: 'Turning strategic plans into action.',
-    route: '/',
-    fragment: 'solution',
-    iconType: 'strategy',
-  },
-  {
-    title: 'Our Customers',
-    description: 'PISICloud has been trusted by 100+ companies.',
-    route: '/',
-    fragment: 'why-choose-us',
-    iconType: 'customers',
-  },
-];
+export type ResourceIconType = NavbarResourceIconType;
+export type ResourceMenuItem = NavbarResourceItemConfig;
 
 @Component({
   selector: 'navbar-resources-menu',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './resources-menu.html',
   styles: ``,
   host: {
@@ -54,7 +28,7 @@ export class ResourcesMenu {
   readonly itemClick = output<void>();
 
   readonly isMobileExpanded = signal(false);
-  readonly resources = DEFAULT_RESOURCES;
+  readonly resources = NAVBAR_RESOURCES;
 
   toggleMenu(): void {
     this.menuToggled.emit();
