@@ -43,7 +43,7 @@
           <!-- Layer 4: Device Mockup (Laptop, Tablet, Mobile) -->
           <img
             ngSrc="/images/landing/about-us-mockup.webp"
-            alt="PISICloud responsive system interface on laptop, tablet, and mobile"
+            [alt]="'LANDING.ABOUT_US.IMAGE_ALT' | translate"
             width="635"
             height="455"
             class="relative z-10 w-full h-auto object-contain select-none"
@@ -58,14 +58,14 @@
           id="about-us-heading"
           class="text-4xl sm:text-5xl lg:text-[54px] xl:text-[58px] font-bold text-[#191c1b] tracking-tight leading-[1.14]"
         >
-          A unified <br />
-          <span class="text-[#066b5b]">architecture</span> <br />
-          for modern workforce <br />
-          <span class="text-[#066b5b]">management</span>.
+          {{ 'LANDING.ABOUT_US.TITLE_LINE_1' | translate }} <br />
+          <span class="text-[#066b5b]">{{ 'LANDING.ABOUT_US.TITLE_HIGHLIGHT_1' | translate }}</span> <br />
+          {{ 'LANDING.ABOUT_US.TITLE_LINE_2' | translate }} <br />
+          <span class="text-[#066b5b]">{{ 'LANDING.ABOUT_US.TITLE_HIGHLIGHT_2' | translate }}</span>{{ 'LANDING.ABOUT_US.TITLE_DOT' | translate }}
         </h1>
 
         <p class="mt-6 text-base sm:text-lg lg:text-[19px] text-[#333333] font-normal leading-relaxed max-w-[480px]">
-          Break down silos with a seamlessly integrated suite designed to handle the complexity of global operations.
+          {{ 'LANDING.ABOUT_US.DESCRIPTION' | translate }}
         </p>
       </div>
     </div>

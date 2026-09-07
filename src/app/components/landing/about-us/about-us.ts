@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-us',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './about-us.html',
   styles: `
     :host {
@@ -12,11 +13,4 @@ import { NgOptimizedImage } from '@angular/common';
     }
   `,
 })
-export class AboutUsComponent {
-  readonly titleFirstLine = 'A unified';
-  readonly titleArchitecture = 'architecture';
-  readonly titleThirdLine = 'for modern workforce';
-  readonly titleManagement = 'management.';
-  readonly description =
-    'Break down silos with a seamlessly integrated suite designed to handle the complexity of global operations.';
-}
+export class AboutUsComponent {}

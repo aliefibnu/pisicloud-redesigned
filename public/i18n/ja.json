@@ -10,6 +10,15 @@
       "WATCH_PREVIEW": "プレビュー動画を見る",
       "IMAGE_ALT": "最新タブレットに表示された PISICloud 人事管理ダッシュボードのプレビュー"
     },
+    "ABOUT_US": {
+      "TITLE_LINE_1": "現代の労働力を支える",
+      "TITLE_HIGHLIGHT_1": "統合アーキテクチャ",
+      "TITLE_LINE_2": "スマートで効率的な",
+      "TITLE_HIGHLIGHT_2": "人事労務管理",
+      "TITLE_DOT": "。",
+      "DESCRIPTION": "組織のサイロ化を解消し、グローバルオペレーションの複雑さに対応するよう設計されたシームレスな統合スイート。",
+      "IMAGE_ALT": "PC・タブレット・スマートフォンに対応したPISICloudのレスポンシブシステム画面"
+    },
     "TRUSTED": {
       "BRAND": "PISICloud",
       "TITLE_LINE_1_SUFFIX": "は",
@@ -128,7 +137,41 @@
         }
       }
     },
-    "WHY_CHOSE_US": {}
+    "WHY_CHOSE_US": {
+      "TITLE_PREFIX": "なぜ ",
+      "BRAND": "PISICloud",
+      "TITLE_SUFFIX": " を人事管理ソフトウェアとして選ぶのですか？",
+      "ITEMS": {
+        "STABLE_FEATURES": {
+          "TITLE": "1998年以来開発され、安定して優れた機能を備えています",
+          "ALT": "安定した優れた機能"
+        },
+        "RESPONSIVE_LOOK": {
+          "TITLE": "レスポンシブでモダンな外観",
+          "ALT": "レスポンシブな外観"
+        },
+        "TESTED_COMPANIES": {
+          "TITLE": "100以上の企業でテストされ、動作が確認されています",
+          "ALT": "100社以上での導入実績"
+        },
+        "CUSTOMIZATION": {
+          "TITLE": "顧客要件に合わせたカスタマイズ",
+          "ALT": "要件に合わせたカスタマイズ"
+        },
+        "AFTER_SALES": {
+          "TITLE": "最適なアフターサービス",
+          "ALT": "最適なアフターサービス"
+        },
+        "INTEGRATED_MODULE": {
+          "TITLE": "完全かつ統合されたモジュール",
+          "ALT": "完全統合モジュール"
+        },
+        "SIMPLE_EASY": {
+          "TITLE": "シンプルで使いやすく、ユーザーが理解しやすい",
+          "ALT": "直感的で使いやすい設計"
+        }
+      }
+    }
   },
   "FEATURE": {
     "RECRUITMENT": {
