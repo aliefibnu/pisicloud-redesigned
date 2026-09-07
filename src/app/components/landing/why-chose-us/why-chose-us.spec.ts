@@ -25,4 +25,16 @@ describe('WhyChoseUs', () => {
     expect(header?.textContent).toContain('Why Choose');
     expect(header?.textContent).toContain('PISICloud');
   });
+
+  it('should have flex-1 on the bottom card of each column for consistent alignment', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const outerGrid = compiled.querySelector('.grid.md\\:grid-cols-3');
+    const columns = outerGrid ? Array.from(outerGrid.children) : [];
+    expect(columns.length).toBe(3);
+    columns.forEach((col) => {
+      const cards = col.children;
+      const lastCard = cards[cards.length - 1];
+      expect(lastCard.classList.contains('flex-1')).toBe(true);
+    });
+  });
 });
