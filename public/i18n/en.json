@@ -10,7 +10,7 @@
       "WATCH_PREVIEW": "Watch Preview Video",
       "IMAGE_ALT": "PISICloud HR Management dashboard preview on a modern tablet displaying recruitment table with analytics and mobile icons"
     },
-    "ABOUT_US": { 
+    "ABOUT_US": {
       "TITLE_LINE_1": "A unified",
       "TITLE_HIGHLIGHT_1": "architecture",
       "TITLE_LINE_2": "for modern workforce",
@@ -656,8 +656,51 @@
         }
       }
     },
-    "FAQ": {},
-    "FOOTER": {},
+    "FAQ": {
+      "TITLE_LINE_1": "Frequently",
+      "TITLE_LINE_2": "Asked",
+      "TITLE_HIGHLIGHT": "Questions",
+      "ITEMS": {
+        "Q1": {
+          "QUESTION": "What is the function and role of PISICloud ERP & HR system in a company?",
+          "ANSWER": "PISICloud integrates key business processes such as attendance, leave, payroll, and workforce planning across all departments. By centralizing data into a real-time system, companies eliminate data silos, enhance operational accuracy, and enable management to monitor business health from a single platform."
+        },
+        "Q2": {
+          "QUESTION": "What are the advantages of Cloud ERP compared to traditional On-Premise software?",
+          "ANSWER": "Cloud ERP provides fast deployment without the need for expensive physical server hardware or on-site maintenance. Servers and security updates are managed seamlessly by the vendor, delivering lower upfront investments, continuous reliability, and the flexibility to access data anytime and anywhere from any device."
+        },
+        "Q3": {
+          "QUESTION": "How does automated workflow reduce human error in payroll and attendance management?",
+          "ANSWER": "Manual data entry often leads to calculation discrepancies and delayed approvals. PISICloud automates attendance logging with biometric integration, calculates overtime and deductions systematically, and automatically generates precise payroll reports, saving valuable administrative time and ensuring full compliance."
+        },
+        "Q4": {
+          "QUESTION": "How is company and employee data secured in PISICloud?",
+          "ANSWER": "All sensitive employee and financial records are protected with industry-standard encryption both in transit and at rest. PISICloud performs automated multi-location database backups, enforces role-based access permissions, and maintains proactive vulnerability scanning to safeguard your organizational data."
+        },
+        "Q5": {
+          "QUESTION": "What support, training, and periodic maintenance are provided with PISICloud?",
+          "ANSWER": "We provide end-to-end implementation assistance, staff training and re-implementation sessions, and annual software maintenance. Our dedicated support team offers remote and onsite assistance, regular software feature updates, and custom module adaptations tailored to your evolving business requirements."
+        }
+      }
+    },
+    "FOOTER": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No. 18, Agung Podomoro",
+      "ADDRESS_LINE_2": "Land Batam, Kepulauan Riau 29464 Indonesia",
+      "ABOUT_TITLE": "About PISICloud",
+      "ABOUT_INFORSYS": "About Inforsys",
+      "ABOUT": "About",
+      "FEATURE": "Feature",
+      "BUSINESS_SOLUTION": "Business Solution",
+      "WHY_CHOOSE_US": "Why Choose Us?",
+      "FAQ": "FAQ",
+      "SUPPORT_TITLE": "Support",
+      "SOFTWARE_IMPLEMENTATION": "Software Implementation",
+      "TRAINING_REIMPLEMENTATION": "Training & Re-Implementation",
+      "CUSTOMIZE_MODULE": "Customize Module",
+      "COPYRIGHT": "© PT Inforsys Indonesia",
+      "BACK_TO_TOP": "Back to top"
+    },
     "INTERESTED": {
       "TITLE": "Interested In PISICloud?",
       "DESCRIPTION": "Transforming Your Workplace with PISICloud's Streamlined HR Processes. Contact the contact below for more info.",

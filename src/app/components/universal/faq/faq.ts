@@ -1,41 +1,37 @@
 import { Component, signal } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface FaqItem {
-  question: string;
-  answer: string;
+  questionKey: string;
+  answerKey: string;
 }
 
 @Component({
   selector: 'universal-faq, app-faq',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './faq.html',
 })
 export class Faq {
   faqList: FaqItem[] = [
     {
-      question: 'Lorem ipsum dolor sit amet, duis voluptate .',
-      answer:
-        'Cupidatat dolore magna id exercitation dolor anim cillum. Nisi proident tempor magna pariatur magna esse esse commodo. Aute irure in nostrud in ut aliquip pariatur adipiscing ea in eu.',
+      questionKey: 'UNIVERSAL.FAQ.ITEMS.Q1.QUESTION',
+      answerKey: 'UNIVERSAL.FAQ.ITEMS.Q1.ANSWER',
     },
     {
-      question: 'Lorem ipsum dolor sit amet, duis voluptate .',
-      answer:
-        'Cupidatat dolore magna id exercitation dolor anim cillum. Nisi proident tempor magna pariatur magna esse esse commodo. Aute irure in nostrud in ut aliquip pariatur adipiscing ea in eu.',
+      questionKey: 'UNIVERSAL.FAQ.ITEMS.Q2.QUESTION',
+      answerKey: 'UNIVERSAL.FAQ.ITEMS.Q2.ANSWER',
     },
     {
-      question: 'Lorem ipsum dolor sit amet, duis voluptate .',
-      answer:
-        'Cupidatat dolore magna id exercitation dolor anim cillum. Nisi proident tempor magna pariatur magna esse esse commodo. Aute irure in nostrud in ut aliquip pariatur adipiscing ea in eu.',
+      questionKey: 'UNIVERSAL.FAQ.ITEMS.Q3.QUESTION',
+      answerKey: 'UNIVERSAL.FAQ.ITEMS.Q3.ANSWER',
     },
     {
-      question: 'Lorem ipsum dolor sit amet, duis voluptate .',
-      answer:
-        'Cupidatat dolore magna id exercitation dolor anim cillum. Nisi proident tempor magna pariatur magna esse esse commodo. Aute irure in nostrud in ut aliquip pariatur adipiscing ea in eu.',
+      questionKey: 'UNIVERSAL.FAQ.ITEMS.Q4.QUESTION',
+      answerKey: 'UNIVERSAL.FAQ.ITEMS.Q4.ANSWER',
     },
     {
-      question: 'Lorem ipsum dolor sit amet, duis voluptate .',
-      answer:
-        'Cupidatat dolore magna id exercitation dolor anim cillum. Nisi proident tempor magna pariatur magna esse esse commodo. Aute irure in nostrud in ut aliquip pariatur adipiscing ea in eu.',
+      questionKey: 'UNIVERSAL.FAQ.ITEMS.Q5.QUESTION',
+      answerKey: 'UNIVERSAL.FAQ.ITEMS.Q5.ANSWER',
     },
   ];
 
