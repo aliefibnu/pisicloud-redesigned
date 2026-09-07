@@ -60,16 +60,17 @@
         </div>
       </div>
 
-      <!-- Right Column: 3D Tablet Graphic -->
       <div class="lg:col-span-5 xl:col-span-5 flex items-center justify-center lg:justify-end relative mt-6 lg:mt-0">
         <div class="relative w-full max-w-lg lg:max-w-none flex items-center justify-center">
           <img
-            ngSrc="/images/landing/hero-image.png"
-            width="1398"
-            height="1125"
+            ngSrc="/images/landing/hero-image.webp"
+            width="1536"
+            height="1024"
             priority
+            draggable="false"
+            (dragstart)="$event.preventDefault()"
             [alt]="'LANDING.HERO.IMAGE_ALT' | translate"
-            class="w-full h-auto object-contain select-none pointer-events-none drop-shadow-xl transition-transform duration-500 hover:scale-[1.02]"
+            class="w-full h-auto object-contain select-none [user-drag:none] [-webkit-user-drag:none] drop-shadow-xl transition-transform duration-500 hover:scale-[1.02]"
           />
         </div>
       </div>
