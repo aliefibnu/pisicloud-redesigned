@@ -13,6 +13,7 @@
         >
           <img
             [ngSrc]="resolvedImage()"
+            (error)="onImageError()"
             [alt]="imageAlt() | translate"
             width="1484"
             height="1060"

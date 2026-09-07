@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, effect, input, signal } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FeatureConfig, FeatureHeroConfig } from '../../../data/features/features.model';
@@ -23,7 +23,18 @@ export class Hero {
   readonly descKey = input<string | undefined>(undefined);
   readonly image = input<string | undefined>(undefined);
 
-  readonly placeholderImage = '/images/features/recruitment-1.png';
+  readonly hasImageError = signal<boolean>(false);
+  readonly placeholderImage = '/images/features/features-ui/recruitment-1.webp';
+  readonly placeholderFallbackImage = '/images/features/features-ui/recruitment-1.jpeg';
+
+  constructor() {
+    effect(() => {
+      // Reset error state when feature or image input changes
+      this.effectiveFeature();
+      this.image();
+      this.hasImageError.set(false);
+    });
+  }
 
   readonly effectiveFeature = computed<FeatureConfig>(() => {
     const directFeature = this.feature();
@@ -55,12 +66,22 @@ export class Hero {
   });
 
   readonly resolvedImage = computed<string>(() => {
+    if (this.hasImageError()) {
+      return (
+        this.effectiveFeature().fallbackImage ||
+        this.placeholderFallbackImage
+      );
+    }
     return (
       this.image() ||
       this.effectiveFeature().defaultImage ||
       this.placeholderImage
     );
   });
+
+  onImageError(): void {
+    this.hasImageError.set(true);
+  }
 
   readonly imageAlt = computed<string>(() => {
     return `${this.resolvedTitleKey()} preview`;

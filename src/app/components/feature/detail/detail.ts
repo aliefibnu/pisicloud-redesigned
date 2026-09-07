@@ -64,6 +64,8 @@ export class Detail implements OnInit, OnDestroy {
 
   private timerId: ReturnType<typeof setInterval> | null = null;
 
+  readonly imageErrors = signal<Record<string, boolean>>({});
+
   readonly activeItem = computed(() => {
     const list = this.effectiveItems();
     if (!list || list.length === 0) return null;
@@ -77,8 +79,20 @@ export class Detail implements OnInit, OnDestroy {
       if (list && list.length > 0) {
         this.activeIndex.set(0);
         this.progress.set(0);
+        this.imageErrors.set({});
       }
     });
+  }
+
+  getImageSrc(fitur: FeatureDetailItemConfig): string {
+    if (this.imageErrors()[fitur.id] && fitur.fallbackImg) {
+      return fitur.fallbackImg;
+    }
+    return fitur.img;
+  }
+
+  onImageError(itemId: string): void {
+    this.imageErrors.update((prev) => ({ ...prev, [itemId]: true }));
   }
 
   ngOnInit() {

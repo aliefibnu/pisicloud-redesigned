@@ -155,4 +155,12 @@ describe('Detail', () => {
     expect(component.effectiveItems().length).toBe(5);
     expect(component.effectiveItems()[0].id).toBe('p1');
   });
+
+  it('should fallback to fallbackImg when onImageError is triggered', () => {
+    const item = component.effectiveItems()[0];
+    expect(component.getImageSrc(item)).toBe('/images/features/features-ui/recruitment-1.webp');
+
+    component.onImageError(item.id);
+    expect(component.getImageSrc(item)).toBe('/images/features/features-ui/recruitment-1.jpeg');
+  });
 });
