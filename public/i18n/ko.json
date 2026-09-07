@@ -10,6 +10,15 @@
       "WATCH_PREVIEW": "미리보기 영상 시청",
       "IMAGE_ALT": "최신 태블릿에서 실행되는 PISICloud HR 관리 대시보드 미리보기"
     },
+    "ABOUT_US": {
+      "TITLE_LINE_1": "현대적인 인력 관리를 위한",
+      "TITLE_HIGHLIGHT_1": "통합 아키텍처",
+      "TITLE_LINE_2": "효율적이고 스마트한",
+      "TITLE_HIGHLIGHT_2": "인사 관리 솔루션",
+      "TITLE_DOT": ".",
+      "DESCRIPTION": "단절된 업무 사일로를 허물고 글로벌 운영의 복잡성을 유연하게 해결하도록 설계된 원활한 통합 스위트.",
+      "IMAGE_ALT": "노트북, 태블릿 및 스마트폰을 지원하는 PISICloud 반응형 시스템 화면"
+    },
     "TRUSTED": {
       "BRAND": "PISICloud",
       "TITLE_LINE_1_SUFFIX": "는",
@@ -128,7 +137,41 @@
         }
       }
     },
-    "WHY_CHOSE_US": {}
+    "WHY_CHOSE_US": {
+      "TITLE_PREFIX": "왜 ",
+      "BRAND": "PISICloud",
+      "TITLE_SUFFIX": "를 인사 관리 소프트웨어로 선택해야 할까요?",
+      "ITEMS": {
+        "STABLE_FEATURES": {
+          "TITLE": "1998년 이후 개발된 안정적이고 우수한 기능을 갖추고 있습니다",
+          "ALT": "안정적이고 우수한 기능"
+        },
+        "RESPONSIVE_LOOK": {
+          "TITLE": "반응형이며 현대적인 외관",
+          "ALT": "반응형 현대적 외관"
+        },
+        "TESTED_COMPANIES": {
+          "TITLE": "100개 이상의 회사에서 테스트를 거쳐 운영이 확인되었습니다",
+          "ALT": "100개 이상 기업 검증"
+        },
+        "CUSTOMIZATION": {
+          "TITLE": "고객 요구에 따른 맞춤 설정 가능",
+          "ALT": "맞춤형 커스터마이징"
+        },
+        "AFTER_SALES": {
+          "TITLE": "최적의 애프터 서비스",
+          "ALT": "최적의 사후 지원"
+        },
+        "INTEGRATED_MODULE": {
+          "TITLE": "완전하고 통합된 모듈",
+          "ALT": "통합 모듈"
+        },
+        "SIMPLE_EASY": {
+          "TITLE": "간단하고 사용자가 쉽게 이해할 수 있습니다",
+          "ALT": "쉽고 직관적인 사용성"
+        }
+      }
+    }
   },
   "FEATURE": {
     "RECRUITMENT": {

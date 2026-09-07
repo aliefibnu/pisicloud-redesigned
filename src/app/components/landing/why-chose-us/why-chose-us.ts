@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'landing-why-chose-us',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './why-chose-us.html',
   styles: ``,
 })
