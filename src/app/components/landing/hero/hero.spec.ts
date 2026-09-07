@@ -133,14 +133,15 @@ describe('Hero', () => {
     expect(lineSpans?.[1].textContent?.trim()).toBe('bersama PISICloud HRM');
   });
 
-  it('should render the hero 3D tablet illustration with priority', () => {
+  it('should render the hero 3D tablet illustration with priority and non-draggable attribute', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const img = compiled.querySelector('img');
     expect(img).toBeTruthy();
-    expect(img?.getAttribute('ngsrc')).toBe('/images/landing/hero-image.png');
-    expect(img?.getAttribute('width')).toBe('1398');
-    expect(img?.getAttribute('height')).toBe('1125');
+    expect(img?.getAttribute('ngsrc')).toBe('/images/landing/hero-image.webp');
+    expect(img?.getAttribute('width')).toBe('1536');
+    expect(img?.getAttribute('height')).toBe('1024');
     expect(img?.hasAttribute('priority')).toBe(true);
+    expect(img?.getAttribute('draggable')).toBe('false');
   });
 
   it('should render the landing-companies-marquee component', () => {
