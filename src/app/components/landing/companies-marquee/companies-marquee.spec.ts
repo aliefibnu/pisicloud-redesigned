@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, DeferBlockState, TestBed } from '@angular/core/testing';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { CompaniesMarquee } from './companies-marquee';
 
@@ -33,6 +33,11 @@ describe('CompaniesMarquee', () => {
     fixture = TestBed.createComponent(CompaniesMarquee);
     component = fixture.componentInstance;
     fixture.detectChanges();
+
+    const deferBlocks = await fixture.getDeferBlocks();
+    if (deferBlocks.length > 0) {
+      await deferBlocks[0].render(DeferBlockState.Complete);
+    }
   });
 
   it('should create', () => {
@@ -58,7 +63,7 @@ describe('CompaniesMarquee', () => {
     expect(items?.length).toBe(46);
 
     const firstImg = items?.[0]?.querySelector('img');
-    expect(firstImg?.getAttribute('src')).toBe('/images/companies/1.png');
+    expect(firstImg?.getAttribute('src')).toBe('/images/companies/1.webp');
     expect(firstImg?.getAttribute('width')).toBe('179');
     expect(firstImg?.getAttribute('height')).toBe('128');
     expect(firstImg?.getAttribute('alt')).toBe('Client company 1 logo');
