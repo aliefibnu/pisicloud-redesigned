@@ -10,6 +10,15 @@
       "WATCH_PREVIEW": "Watch Preview Video",
       "IMAGE_ALT": "PISICloud HR Management dashboard preview on a modern tablet displaying recruitment table with analytics and mobile icons"
     },
+    "ABOUT_US": { 
+      "TITLE_LINE_1": "A unified",
+      "TITLE_HIGHLIGHT_1": "architecture",
+      "TITLE_LINE_2": "for modern workforce",
+      "TITLE_HIGHLIGHT_2": "management",
+      "TITLE_DOT": ".",
+      "DESCRIPTION": "Break down silos with a seamlessly integrated suite designed to handle the complexity of global operations.",
+      "IMAGE_ALT": "PISICloud responsive system interface on laptop, tablet, and mobile"
+    },
     "TRUSTED": {
       "BRAND": "PISICloud",
       "TITLE_LINE_1_SUFFIX": "Has",
@@ -128,7 +137,41 @@
         }
       }
     },
-    "WHY_CHOSE_US": {}
+    "WHY_CHOSE_US": {
+      "TITLE_PREFIX": "Why Choose ",
+      "BRAND": "PISICloud",
+      "TITLE_SUFFIX": " As HR Software?",
+      "ITEMS": {
+        "STABLE_FEATURES": {
+          "TITLE": "Stable and rich in excellent features, developed since 1998",
+          "ALT": "Stable Features"
+        },
+        "RESPONSIVE_LOOK": {
+          "TITLE": "Responsive and modern look",
+          "ALT": "Responsive Look"
+        },
+        "TESTED_COMPANIES": {
+          "TITLE": "Tested to run well on more than 100 companies",
+          "ALT": "Tested Companies"
+        },
+        "CUSTOMIZATION": {
+          "TITLE": "Customization according to customer requirements",
+          "ALT": "Customization"
+        },
+        "AFTER_SALES": {
+          "TITLE": "Optimal after-sales service",
+          "ALT": "After Sales"
+        },
+        "INTEGRATED_MODULE": {
+          "TITLE": "Complete and integrated module",
+          "ALT": "Integrated Module"
+        },
+        "SIMPLE_EASY": {
+          "TITLE": "Simple and easy to understand by users",
+          "ALT": "Simple and Easy"
+        }
+      }
+    }
   },
   "FEATURE": {
     "RECRUITMENT": {

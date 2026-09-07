@@ -10,6 +10,15 @@
       "WATCH_PREVIEW": "观看演示视频",
       "IMAGE_ALT": "PISICloud 人力资源管理现代平板控制面板预览"
     },
+    "ABOUT_US": {
+      "TITLE_LINE_1": "构建现代劳动力",
+      "TITLE_HIGHLIGHT_1": "一体化架构",
+      "TITLE_LINE_2": "实现高效智能的",
+      "TITLE_HIGHLIGHT_2": "人员管理",
+      "TITLE_DOT": "。",
+      "DESCRIPTION": "打破业务数据孤岛，依托无缝集成的云端套件，从容应对全球运营的复杂挑战。",
+      "IMAGE_ALT": "PISICloud 笔记本电脑、平板电脑及手机端响应式系统界面"
+    },
     "TRUSTED": {
       "BRAND": "PISICloud",
       "TITLE_LINE_1_SUFFIX": "已获得",
@@ -128,7 +137,41 @@
         }
       }
     },
-    "WHY_CHOSE_US": {}
+    "WHY_CHOSE_US": {
+      "TITLE_PREFIX": "为什么选择 ",
+      "BRAND": "PISICloud",
+      "TITLE_SUFFIX": " 作为人力资源软件？",
+      "ITEMS": {
+        "STABLE_FEATURES": {
+          "TITLE": "稳定且拥有优秀功能，自1998年起开发",
+          "ALT": "稳定且优秀的功能"
+        },
+        "RESPONSIVE_LOOK": {
+          "TITLE": "响应式和现代化外观",
+          "ALT": "响应式外观"
+        },
+        "TESTED_COMPANIES": {
+          "TITLE": "已经在100多家公司测试运行良好",
+          "ALT": "百余家企业信赖验证"
+        },
+        "CUSTOMIZATION": {
+          "TITLE": "可根据客户要求进行定制",
+          "ALT": "灵活定制服务"
+        },
+        "AFTER_SALES": {
+          "TITLE": "优质的售后服务",
+          "ALT": "优质售后服务"
+        },
+        "INTEGRATED_MODULE": {
+          "TITLE": "完整且集成化的模块",
+          "ALT": "完整集成模块"
+        },
+        "SIMPLE_EASY": {
+          "TITLE": "简单易用，用户易于理解",
+          "ALT": "简单易用"
+        }
+      }
+    }
   },
   "FEATURE": {
     "RECRUITMENT": {
