@@ -19,6 +19,7 @@ export interface FeatureDetailItemConfig {
   readonly titleKey: string;
   readonly descKey: string;
   readonly img: string;
+  readonly fallbackImg?: string;
 }
 
 export interface FeatureHeroConfig {
@@ -31,6 +32,7 @@ export interface FeatureConfig {
   readonly domain: FeatureDomain;
   readonly icon: string;
   readonly defaultImage: string;
+  readonly fallbackImage?: string;
   readonly nameKey: string;
   readonly hero: FeatureHeroConfig;
   readonly items: readonly FeatureDetailItemConfig[];

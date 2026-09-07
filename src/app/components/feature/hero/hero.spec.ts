@@ -22,12 +22,12 @@ describe('Hero', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should default to recruitment feature and placeholder image when no inputs are provided', () => {
+  it('should default to recruitment feature and default image when no inputs are provided', () => {
     expect(component.effectiveFeature().id).toBe('recruitment');
     expect(component.resolvedTitleKey()).toBe('FEATURE.RECRUITMENT.NAME');
     expect(component.resolvedTaglineKey()).toBe('FEATURE.RECRUITMENT.HERO.TITLE');
     expect(component.resolvedDescKey()).toBe('FEATURE.RECRUITMENT.HERO.DESC');
-    expect(component.resolvedImage()).toBe('/images/features/recruitment-1.png');
+    expect(component.resolvedImage()).toBe('/images/features/features-ui/recruitment-1.webp');
   });
 
   it('should dynamically resolve feature when slug input changes', () => {
@@ -71,7 +71,16 @@ describe('Hero', () => {
     fixture.componentRef.setInput('feature', customFeature);
     fixture.detectChanges();
 
-    expect(component.resolvedImage()).toBe('/images/features/recruitment-1.png');
+    expect(component.resolvedImage()).toBe('/images/features/features-ui/recruitment-1.webp');
+  });
+
+  it('should fallback to fallbackImage on image load error', () => {
+    expect(component.resolvedImage()).toBe('/images/features/features-ui/recruitment-1.webp');
+
+    component.onImageError();
+    fixture.detectChanges();
+
+    expect(component.resolvedImage()).toBe('/images/features/features-ui/recruitment-1.jpeg');
   });
 
   it('should render accessible section with heading and image preview', () => {
