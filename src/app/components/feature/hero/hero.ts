@@ -23,7 +23,7 @@ export class Hero {
   readonly descKey = input<string | undefined>(undefined);
   readonly image = input<string | undefined>(undefined);
 
-  readonly placeholderImage = '/images/features/recruitment-preview.png';
+  readonly placeholderImage = '/images/features/recruitment-1.png';
 
   readonly effectiveFeature = computed<FeatureConfig>(() => {
     const directFeature = this.feature();
