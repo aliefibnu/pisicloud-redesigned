@@ -1,9 +1,68 @@
-import { Component } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
+import { FeatureConfig, FeatureHeroConfig } from '../../../data/features/features.model';
+import { getFeatureBySlug, getDefaultFeature } from '../../../data/features';
 
 @Component({
   selector: 'feature-hero',
-  imports: [],
+  imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './hero.html',
-  styles: ``,
+  styles: `
+    :host {
+      display: block;
+      width: 100%;
+    }
+  `,
 })
-export class Hero {}
+export class Hero {
+  readonly slug = input<string | undefined>(undefined);
+  readonly feature = input<FeatureConfig | undefined>(undefined);
+  readonly heroConfig = input<FeatureHeroConfig | undefined>(undefined);
+  readonly titleKey = input<string | undefined>(undefined);
+  readonly descKey = input<string | undefined>(undefined);
+  readonly image = input<string | undefined>(undefined);
+
+  readonly placeholderImage = '/images/features/recruitment-preview.png';
+
+  readonly effectiveFeature = computed<FeatureConfig>(() => {
+    const directFeature = this.feature();
+    if (directFeature) return directFeature;
+
+    const directSlug = this.slug();
+    if (directSlug) {
+      const found = getFeatureBySlug(directSlug);
+      if (found) return found;
+    }
+
+    return getDefaultFeature();
+  });
+
+  readonly resolvedTitleKey = computed<string>(() => {
+    return this.titleKey() || this.effectiveFeature().nameKey;
+  });
+
+  readonly resolvedHeroConfig = computed<FeatureHeroConfig>(() => {
+    return this.heroConfig() || this.effectiveFeature().hero;
+  });
+
+  readonly resolvedDescKey = computed<string>(() => {
+    return this.descKey() || this.resolvedHeroConfig().descKey;
+  });
+
+  readonly resolvedTaglineKey = computed<string>(() => {
+    return this.resolvedHeroConfig().titleKey;
+  });
+
+  readonly resolvedImage = computed<string>(() => {
+    return (
+      this.image() ||
+      this.effectiveFeature().defaultImage ||
+      this.placeholderImage
+    );
+  });
+
+  readonly imageAlt = computed<string>(() => {
+    return `${this.resolvedTitleKey()} preview`;
+  });
+}
