@@ -7,10 +7,19 @@ import { WhyChoseUs } from '../../components/landing/why-chose-us/why-chose-us';
 import { Faq } from '../../components/universal/faq/faq';
 import { Interested } from '../../components/universal/interested/interested';
 import { Footer } from '../../components/universal/footer/footer';
+// Import komponen AboutUs
+import { AboutUsComponent } from '../../components/landing/about-us/about-us'; // Sesuaikan path lokasi folder kamu
 
 @Component({
   selector: 'app-landing',
-  imports: [Hero, Features, Solution, WhyChoseUs, Faq],
+  imports: [
+    Hero, 
+    Features, 
+    Solution, 
+    WhyChoseUs, 
+    Faq, 
+    AboutUsComponent // Tambahkan di sini
+  ],
   templateUrl: './landing.html',
   styles: ``,
 })
