@@ -1,16 +1,22 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-about-us',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [NgOptimizedImage],
   templateUrl: './about-us.html',
+  styles: `
+    :host {
+      display: block;
+      width: 100%;
+    }
+  `,
 })
 export class AboutUsComponent {
-  // Data dinamis jika diperlukan di masa mendatang
   readonly titleFirstLine = 'A unified';
-  readonly titleHighlighted = 'architecture';
-  readonly titleLastLine = 'for modern workforce management.';
-  readonly description = 'Break down silos with a seamlessly integrated suite designed to handle the complexity of global operations.';
+  readonly titleArchitecture = 'architecture';
+  readonly titleThirdLine = 'for modern workforce';
+  readonly titleManagement = 'management.';
+  readonly description =
+    'Break down silos with a seamlessly integrated suite designed to handle the complexity of global operations.';
 }
