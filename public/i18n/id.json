@@ -177,8 +177,8 @@
     "RECRUITMENT": {
       "NAME": "Perekruitan",
       "HERO": {
-        "TITLE": "Rasakan masa depan rekrutmen - efisien, nyaman, dan mudah dijangkau hanya dengan ujung jari Anda.",
-        "DESC": "Dalam proses rekrutmen online, kini semakin mudah dengan fitur scan lamaran melalui aplikasi. Dalam proses ini, pelamar dapat dengan mudah mengirimkan lamaran kerja mereka melalui aplikasi dengan melakukan scanning CV dan dokumen pendukung lainnya, serta menjalani tahapan rekrutmen selanjutnya melalui aplikasi."
+        "TITLE": "Sederhanakan rekrutmen - cepat, mudah, dan tepat di ujung jari Anda.",
+        "DESC": "Pindai dan kirim CV serta dokumen pendukung langsung melalui aplikasi, lalu pantau setiap tahapan proses perekrutan dengan mudah."
       },
       "ITEMS": {
         "P1": {
@@ -210,8 +210,8 @@
     "ATTENDANCE": {
       "NAME": "Kehadiran",
       "HERO": {
-        "TITLE": "Pantau kehadiran karyawan dengan mudah dan akurat dengan mesin absensi atau Mobile Apps",
-        "DESC": "Memperkenalkan software absensi yang lengkap dengan fitur-fitur unggulan yang akan memudahkan pengelolaan absensi dan penggajian karyawan. Dengan fitur setting slotting mesin, badge, atau via Apps, karyawan dapat melakukan absensi dengan mudah dan akurat."
+        "TITLE": "Pantau kehadiran karyawan dengan mudah dan akurat.",
+        "DESC": "Catat kehadiran secara instan melalui mesin, kartu identitas, atau aplikasi, sekaligus menyederhanakan pengelolaan penggajian."
       },
       "ITEMS": {
         "P1": {
@@ -247,8 +247,8 @@
     "PAYROLL": {
       "NAME": "Penggajian",
       "HERO": {
-        "TITLE": "Gaji Anda, Aturan Anda - Dapatkan Kemudahan Penggajian dengan Software Payroll Terbaik dengan Formula Potongan dan Tunjangan yang Bisa Disesuaikan!",
-        "DESC": "Kami mempersembahkan software penggajian yang dapat di-custom untuk semua formula potongan dan tunjangan, seperti potongan pajak, BPJS Kesehatan, BPJS Ketenagakerjaan, serta tunjangan kesehatan, tunjangan makan, tunjangan transportasi, dan lain-lain. Software kami memiliki kemampuan untuk menghitung penggajian berdasarkan sistem shift, lembur, dan penggajian bulanan, sehingga memudahkan perusahaan dalam mengelola gaji karyawan."
+        "TITLE": "Gaji Anda, Aturan Anda - fleksibel disesuaikan dan tanpa repot",
+        "DESC": "Tentukan formula Anda sendiri untuk pajak, BPJS, dan tunjangan, lalu hitung gaji berdasarkan sistem shift, lembur, atau siklus bulanan dengan mudah."
       },
       "ITEMS": {
         "P1": {
@@ -276,8 +276,8 @@
     "DATABASE": {
       "NAME": "Database Management",
       "HERO": {
-        "TITLE": "Optimalkan proses HR dan perlihatkan potensi timmu - fitur manajemen database HR online kami akan memudahkanmu!",
-        "DESC": "Database karyawan merupakan sebuah alat yang sangat penting bagi organisasi untuk mengelola informasi karyawan, melacak performa karyawan, dan menjaga kepatuhan terhadap peraturan. Dengan adanya database karyawan secara online, pengelolaan data karyawan menjadi lebih efisien dan nyaman dibandingkan sebelumnya."
+        "TITLE": "Optimalkan proses HR dan kembangkan potensi tim Anda.",
+        "DESC": "Kelola informasi karyawan, pantau performa, dan patuhi regulasi - semua dalam satu database online yang praktis."
       },
       "ITEMS": {
         "P1": {
@@ -309,8 +309,8 @@
     "PERSONAL_LEAVE": {
       "NAME": "Cuti Pribadi",
       "HERO": {
-        "TITLE": "Istirahatlah sejenak dan kembali dengan semangat baru - fitur cuti pribadi kami membantumu mengisi ulang energi dan mencapai performa terbaikmu",
-        "DESC": "Pengajuan cuti menjadi salah satu proses administrasi yang harus dilakukan oleh karyawan dalam perusahaan. Namun, dengan adanya kemajuan teknologi, kini proses pengajuan cuti menjadi semakin mudah dengan penggunaan aplikasi cuti online yang dilengkapi dengan fitur approval."
+        "TITLE": "Istirahat sejenak dan kembali lebih bersemangat.",
+        "DESC": "Ajukan cuti hanya dalam beberapa ketukan, dilengkapi alur persetujuan terintegrasi yang praktis dan cepat."
       },
       "ITEMS": {
         "P1": {
@@ -342,8 +342,8 @@
     "PERSONAL_OVERTIME": {
       "NAME": "Lembur Pribadi",
       "HERO": {
-        "TITLE": "Lebih mudah dan efisien ajukan lembur kapan saja, di mana saja - fitur pengajuan lembur pribadi online kami siap membantumu!",
-        "DESC": "Mengajukan permintaan lembur adalah salah satu proses administratif yang harus dilalui oleh karyawan dalam sebuah perusahaan. Namun, proses ini dapat menjadi lebih mudah dan efisien dengan penggunaan aplikasi pengajuan lembur online yang dilengkapi dengan fitur persetujuan."
+        "TITLE": "Ajukan lembur kapan saja, di mana saja.",
+        "DESC": "Kirim permohonan dan pantau persetujuan hanya dalam beberapa ketukan, cepat dan tanpa repot."
       },
       "ITEMS": {
         "P1": {
@@ -375,8 +375,8 @@
     "EMPLOYEE_UPDATE": {
       "NAME": "Pengkinian Data",
       "HERO": {
-        "TITLE": "Perbarui data HR karyawan dengan mudah dan efisien - fitur pengkinian data karyawan secara online kami akan mempermudahmu!",
-        "DESC": "Dalam era digital seperti sekarang ini, keamanan data pribadi menjadi hal yang semakin penting. Oleh karena itu, proses pengkinian data pribadi secara online dengan approval menjadi pilihan yang tepat bagi mereka yang ingin memperbarui data pribadi mereka tanpa harus mengunjungi kantor atau lokasi tertentu."
+        "TITLE": "Perbarui data Anda dengan mudah dan praktis.",
+        "DESC": "Perbarui informasi pribadi secara aman dan online dengan alur persetujuan sederhana - tanpa perlu datang ke kantor."
       },
       "ITEMS": {
         "P1": {
@@ -408,8 +408,8 @@
     "PERSONAL_ATTENDANCE": {
       "NAME": "Absensi Pribadi",
       "HERO": {
-        "TITLE": "Pantau kehadiranmu di mana saja - fitur absensi online via aplikasi kami memudahkanmu untuk melakukan itu!",
-        "DESC": "Dalam era digital seperti sekarang, banyak perusahaan yang beralih menggunakan sistem absensi online untuk memudahkan pengelolaan absensi karyawan. Salah satu fitur yang banyak digunakan adalah proses absensi online dengan menggunakan GPS."
+        "TITLE": "Pantau kehadiran Anda kapan saja dan di mana saja.",
+        "DESC": "Check-in dan check-out dengan mudah melalui aplikasi, didukung validasi berbasis GPS untuk pencatatan yang akurat dan praktis."
       },
       "ITEMS": {
         "P1": {
@@ -441,8 +441,8 @@
     "COLLECTIVE_LEAVE": {
       "NAME": "Cuti Kolektif",
       "HERO": {
-        "TITLE": "Manajemen cuti kolektif tanpa hambatan - fitur pengajuan cuti kolektif dengan approval kami akan memudahkan koordinasi timmu!",
-        "DESC": "Dalam proses pengajuan cuti secara kolektif, kini semakin mudah dengan fitur pengajuan cuti kolektif online. Dalam proses ini, clerk dapat dengan mudah menginput permintaan cuti kolektif yang melibatkan beberapa karyawan sekaligus dan mendapatkan persetujuan dari atasan melalui aplikasi."
+        "TITLE": "Manajemen cuti bersama tanpa hambatan untuk seluruh tim.",
+        "DESC": "Ajukan permohonan untuk banyak karyawan sekaligus, dengan persetujuan atasan yang cepat dan terintegrasi."
       },
       "ITEMS": {
         "P1": {
@@ -470,8 +470,8 @@
     "COLLECTIVE_OVERTIME": {
       "NAME": "Lembur Kolektif",
       "HERO": {
-        "TITLE": "Manajemen lembur kolektif yang efisien - fitur pengajuan lembur kolektif dengan approval kami siap mempercepat proses kerja timmu!",
-        "DESC": "Proses pengajuan lembur secara kolektif merupakan bagian penting dalam mengatur jadwal kerja di perusahaan. Dengan menggunakan aplikasi pengajuan lembur kolektif online, proses pengajuan dan persetujuan permintaan lembur menjadi lebih efisien dan transparan."
+        "TITLE": "Manajemen lembur kolektif yang efisien untuk seluruh tim.",
+        "DESC": "Kirim pengajuan untuk banyak karyawan sekaligus, dengan persetujuan yang cepat dan transparan."
       },
       "ITEMS": {
         "P1": {
@@ -503,8 +503,8 @@
     "ATTENDANCE_MACHINE": {
       "NAME": "Mesin Absensi",
       "HERO": {
-        "TITLE": "Konektivitas langsung ke mesin absensi - fitur konkesi ke mesin absensi kami memudahkanmu dalam manajemen kehadiran karyawan!",
-        "DESC": "Fitur konek ke mesin absensi memungkinkan pengguna untuk menghubungkan sistem manajemen absensi mereka langsung ke mesin absensi fisik yang digunakan di lokasi kerja mereka. Hal ini dapat memudahkan dan mempercepat proses pengumpulan data absensi dan mengurangi risiko kesalahan manusia."
+        "TITLE": "Konektivitas langsung ke mesin absensi Anda.",
+        "DESC": "Sinkronkan data kehadiran langsung dari perangkat fisik, mempercepat pengumpulan data dan meminimalkan kesalahan manusia."
       },
       "ITEMS": {
         "P1": {
@@ -532,8 +532,8 @@
     "YEARLY_TAX": {
       "NAME": "Pajak Tahunan",
       "HERO": {
-        "TITLE": "Kelola pajak tahunan dengan mudah dan cepat - fitur manajemen pajak tahunan kami siap membantumu!",
-        "DESC": "Pajak tahunan karyawan adalah salah satu kewajiban yang harus dipenuhi oleh setiap karyawan yang menerima penghasilan. Pajak tahunan karyawan mengacu pada penghitungan dan pembayaran pajak penghasilan karyawan selama satu tahun fiskal."
+        "TITLE": "Kelola pelaporan pajak tahunan dengan mudah.",
+        "DESC": "Tangani perhitungan dan penyetoran pajak penghasilan tahun pajak secara akurat dan mudah, langsung dari aplikasi."
       },
       "ITEMS": {
         "P1": {
