@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, signal } from '@angular/core';
 
 export interface FaqItem {
   question: string;
@@ -8,8 +7,7 @@ export interface FaqItem {
 
 @Component({
   selector: 'universal-faq, app-faq',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './faq.html',
 })
 export class Faq {
@@ -42,10 +40,10 @@ export class Faq {
   ];
 
   // tracks the single currently-open item; null = all closed
-  openIndex: number | null = null;
+  openIndex = signal<number | null>(null);
 
   toggleFaq(index: number): void {
-    this.openIndex = this.openIndex === index ? null : index;
+    this.openIndex.update((current) => (current === index ? null : index));
   }
 }
 
