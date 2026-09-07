@@ -4,7 +4,7 @@
     <!-- Header -->
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl font-bold text-[#22323D]">
-        Why Choose <span class="text-[#0D7A5F]">PISICloud</span> As HR Software?
+        {{ 'LANDING.WHY_CHOSE_US.TITLE_PREFIX' | translate }}<span class="text-[#0D7A5F]">{{ 'LANDING.WHY_CHOSE_US.BRAND' | translate }}</span>{{ 'LANDING.WHY_CHOSE_US.TITLE_SUFFIX' | translate }}
       </h2>
     </div>
 
@@ -15,11 +15,11 @@
       <div class="flex flex-col gap-6">
         <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-gray-100">
           <div class="relative rounded-2xl overflow-hidden mb-6 h-56">
-            <img ngSrc="images/landing/stable-and-rich.png" alt="Stable Features" fill priority class="object-cover">
+            <img ngSrc="images/landing/stable-and-rich.png" [alt]="'LANDING.WHY_CHOSE_US.ITEMS.STABLE_FEATURES.ALT' | translate" fill priority class="object-cover">
           </div>
           <div class="flex items-end justify-between">
             <p class="text-xl font-medium text-[#22323D] max-w-[80%]">
-              Stable and rich in excellent features, developed since 1998
+              {{ 'LANDING.WHY_CHOSE_US.ITEMS.STABLE_FEATURES.TITLE' | translate }}
             </p>
             <div class="text-gray-400">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,11 +31,11 @@
 
         <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex-1 flex flex-col justify-between border border-gray-100">
           <div class="relative rounded-2xl overflow-hidden mb-6 h-40">
-            <img ngSrc="images/landing/responsive-and-modern.png" alt="Responsive Look" fill class="object-cover">
+            <img ngSrc="images/landing/responsive-and-modern.png" [alt]="'LANDING.WHY_CHOSE_US.ITEMS.RESPONSIVE_LOOK.ALT' | translate" fill class="object-cover">
           </div>
           <div class="flex items-end justify-between">
             <p class="text-xl font-medium text-[#22323D] max-w-[80%]">
-              Responsive and modern look
+              {{ 'LANDING.WHY_CHOSE_US.ITEMS.RESPONSIVE_LOOK.TITLE' | translate }}
             </p>
             <div class="text-gray-400">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -51,11 +51,11 @@
         <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
           <div class="grid grid-cols-2 gap-4 items-center">
             <div class="relative rounded-2xl overflow-hidden h-40">
-              <img ngSrc="images/landing/tested-to-run.png" alt="Tested Companies" fill class="object-cover">
+              <img ngSrc="images/landing/tested-to-run.png" [alt]="'LANDING.WHY_CHOSE_US.ITEMS.TESTED_COMPANIES.ALT' | translate" fill class="object-cover">
             </div>
             <div class="flex flex-col justify-between h-full py-2">
               <p class="text-lg font-medium text-[#22323D]">
-                Tested to run well on more than 100 companies
+                {{ 'LANDING.WHY_CHOSE_US.ITEMS.TESTED_COMPANIES.TITLE' | translate }}
               </p>
               <div class="text-gray-400 self-end">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -68,11 +68,11 @@
 
         <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex-1 flex flex-col justify-between border border-gray-100">
           <div class="relative rounded-2xl overflow-hidden mb-6 h-64">
-            <img ngSrc="images/landing/customization-according-to.png" alt="Customization" fill class="object-cover">
+            <img ngSrc="images/landing/customization-according-to.png" [alt]="'LANDING.WHY_CHOSE_US.ITEMS.CUSTOMIZATION.ALT' | translate" fill class="object-cover">
           </div>
           <div class="flex items-end justify-between">
             <p class="text-xl font-medium text-[#22323D] max-w-[80%]">
-              Customization according to customer requirements
+              {{ 'LANDING.WHY_CHOSE_US.ITEMS.CUSTOMIZATION.TITLE' | translate }}
             </p>
             <div class="text-gray-400">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,11 +88,11 @@
         <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
           <div class="grid grid-cols-2 gap-4 items-center">
             <div class="relative rounded-2xl overflow-hidden h-36">
-              <img ngSrc="images/landing/optimal-after-sales.png" alt="After Sales" fill class="object-cover">
+              <img ngSrc="images/landing/optimal-after-sales.png" [alt]="'LANDING.WHY_CHOSE_US.ITEMS.AFTER_SALES.ALT' | translate" fill class="object-cover">
             </div>
             <div class="flex flex-col justify-between h-full py-2">
               <p class="text-lg font-medium text-[#22323D]">
-                Optimal after-sales service
+                {{ 'LANDING.WHY_CHOSE_US.ITEMS.AFTER_SALES.TITLE' | translate }}
               </p>
               <div class="text-gray-400 self-end">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -107,7 +107,7 @@
           <div class="grid grid-cols-2 gap-4 items-center">
             <div class="flex flex-col justify-between h-full py-2">
               <p class="text-lg font-medium text-[#22323D]">
-                Complete and integrated module
+                {{ 'LANDING.WHY_CHOSE_US.ITEMS.INTEGRATED_MODULE.TITLE' | translate }}
               </p>
               <div class="text-gray-400 self-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -116,18 +116,18 @@
               </div>
             </div>
             <div class="relative rounded-2xl overflow-hidden h-36">
-              <img ngSrc="images/landing/complete-and-integrated.png" alt="Integrated Module" fill class="object-cover">
+              <img ngSrc="images/landing/complete-and-integrated.png" [alt]="'LANDING.WHY_CHOSE_US.ITEMS.INTEGRATED_MODULE.ALT' | translate" fill class="object-cover">
             </div>
           </div>
         </div>
 
         <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex-1 flex flex-col justify-between border border-gray-100">
           <div class="relative rounded-2xl overflow-hidden mb-6 h-44">
-            <img ngSrc="images/landing/simple-and-easy.png" alt="Simple and Easy" fill class="object-cover">
+            <img ngSrc="images/landing/simple-and-easy.png" [alt]="'LANDING.WHY_CHOSE_US.ITEMS.SIMPLE_EASY.ALT' | translate" fill class="object-cover">
           </div>
           <div class="flex items-end justify-between">
             <p class="text-xl font-medium text-[#22323D] max-w-[80%]">
-              Simple and easy to understand by users
+              {{ 'LANDING.WHY_CHOSE_US.ITEMS.SIMPLE_EASY.TITLE' | translate }}
             </p>
             <div class="text-gray-400">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

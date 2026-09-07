@@ -10,6 +10,15 @@
       "WATCH_PREVIEW": "Tonton Video Preview",
       "IMAGE_ALT": "Pratinjau dashboard manajemen SDM PISICloud pada tablet modern menampilkan tabel rekrutmen dengan analitik dan ikon interaktif"
     },
+    "ABOUT_US": {
+      "TITLE_LINE_1": "Satu kesatuan",
+      "TITLE_HIGHLIGHT_1": "arsitektur",
+      "TITLE_LINE_2": "untuk manajemen tenaga kerja",
+      "TITLE_HIGHLIGHT_2": "modern",
+      "TITLE_DOT": ".",
+      "DESCRIPTION": "Hilangkan batasan operasional dengan rangkaian sistem terintegrasi yang dirancang untuk mengelola kompleksitas operasi global.",
+      "IMAGE_ALT": "Tampilan antarmuka sistem PISICloud yang responsif pada laptop, tablet, dan ponsel"
+    },
     "TRUSTED": {
       "BRAND": "PISICloud",
       "TITLE_LINE_1_SUFFIX": "Telah",
@@ -128,7 +137,41 @@
         }
       }
     },
-    "WHY_CHOSE_US": {}
+    "WHY_CHOSE_US": {
+      "TITLE_PREFIX": "Mengapa Memilih ",
+      "BRAND": "PISICloud",
+      "TITLE_SUFFIX": " Sebagai Software HR Anda?",
+      "ITEMS": {
+        "STABLE_FEATURES": {
+          "TITLE": "Stabil dan kaya akan fitur unggulan, dikembangkan sejak tahun 1998",
+          "ALT": "Fitur Unggulan yang Stabil"
+        },
+        "RESPONSIVE_LOOK": {
+          "TITLE": "Tampilan responsif dan modern",
+          "ALT": "Tampilan Responsif"
+        },
+        "TESTED_COMPANIES": {
+          "TITLE": "Teruji berjalan baik pada lebih dari 100 perusahaan",
+          "ALT": "Teruji di Banyak Perusahaan"
+        },
+        "CUSTOMIZATION": {
+          "TITLE": "Kustomisasi sesuai kebutuhan pelanggan",
+          "ALT": "Kustomisasi Sistem"
+        },
+        "AFTER_SALES": {
+          "TITLE": "Layanan purna jual yang optimal",
+          "ALT": "Layanan Purna Jual"
+        },
+        "INTEGRATED_MODULE": {
+          "TITLE": "Modul lengkap dan terintegrasi",
+          "ALT": "Modul Terintegrasi"
+        },
+        "SIMPLE_EASY": {
+          "TITLE": "Sederhana dan mudah dipahami pengguna",
+          "ALT": "Mudah Dipahami"
+        }
+      }
+    }
   },
   "FEATURE": {
     "RECRUITMENT": {
