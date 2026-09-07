@@ -656,8 +656,51 @@
         }
       }
     },
-    "FAQ": {},
-    "FOOTER": {},
+    "FAQ": {
+      "TITLE_LINE_1": "Pertanyaan yang",
+      "TITLE_LINE_2": "Sering",
+      "TITLE_HIGHLIGHT": "Diajukan",
+      "ITEMS": {
+        "Q1": {
+          "QUESTION": "Apa fungsi dan peran sistem ERP & HR PISICloud di dalam perusahaan?",
+          "ANSWER": "PISICloud mengintegrasikan berbagai proses bisnis utama seperti absensi, cuti, penggajian, dan perencanaan tenaga kerja antar seluruh departemen. Melalui sistem terpusat berbasis real-time, perusahaan dapat menghilangkan silo data, meningkatkan akurasi operasional, serta memudahkan pemantauan melalui satu platform terpadu."
+        },
+        "Q2": {
+          "QUESTION": "Apa keunggulan Cloud ERP dibandingkan dengan sistem On-Premise tradisional?",
+          "ANSWER": "Cloud ERP menawarkan implementasi yang cepat tanpa memerlukan investasi perangkat keras server fisik yang mahal atau perawatan di lokasi. Server dan pembaruan keamanan dikelola secara berkala oleh vendor, sehingga menurunkan biaya awal, menjaga stabilitas sistem, dan memberikan fleksibilitas akses kapan saja dan di mana saja."
+        },
+        "Q3": {
+          "QUESTION": "Bagaimana alur kerja otomatis mengurangi kesalahan manusia (human error) dalam pengelolaan absensi dan penggajian?",
+          "ANSWER": "Pencatatan manual sering kali memicu selisih perhitungan dan keterlambatan persetujuan. PISICloud mengotomatisasi pencatatan kehadiran melalui integrasi mesin biometrik, menghitung lembur dan potongan secara sistematis, serta menghasilkan laporan gaji yang akurat secara otomatis untuk menghemat waktu dan menjaga kepatuhan."
+        },
+        "Q4": {
+          "QUESTION": "Bagaimana keamanan data perusahaan dan karyawan dijaga di dalam PISICloud?",
+          "ANSWER": "Seluruh data sensitif karyawan dan transaksi keuangan dilindungi dengan enkripsi standar industri baik saat transit maupun saat disimpan. PISICloud menjalankan pencadangan data otomatis di berbagai lokasi terpisah, menerapkan hak akses berbasis peran, serta melakukan pemantauan berkala guna melindungi data perusahaan."
+        },
+        "Q5": {
+          "QUESTION": "Layanan dukungan, pelatihan, dan pemeliharaan apa saja yang disediakan oleh PISICloud?",
+          "ANSWER": "Kami menyediakan bantuan implementasi menyeluruh, pelatihan staf dan sesi re-implementasi, serta pemeliharaan software tahunan. Tim dukungan kami siap memberikan bantuan jarak jauh maupun di lokasi, pembaruan fitur berkala, serta kustomisasi modul sesuai kebutuhan unik perusahaan Anda."
+        }
+      }
+    },
+    "FOOTER": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No. 18, Agung Podomoro",
+      "ADDRESS_LINE_2": "Land Batam, Kepulauan Riau 29464 Indonesia",
+      "ABOUT_TITLE": "Tentang PISICloud",
+      "ABOUT_INFORSYS": "Tentang Inforsys",
+      "ABOUT": "Tentang Kami",
+      "FEATURE": "Fitur",
+      "BUSINESS_SOLUTION": "Solusi Bisnis",
+      "WHY_CHOOSE_US": "Mengapa Memilih Kami?",
+      "FAQ": "FAQ",
+      "SUPPORT_TITLE": "Dukungan",
+      "SOFTWARE_IMPLEMENTATION": "Implementasi Perangkat Lunak",
+      "TRAINING_REIMPLEMENTATION": "Pelatihan & Re-Implementasi",
+      "CUSTOMIZE_MODULE": "Kustomisasi Modul",
+      "COPYRIGHT": "© PT Inforsys Indonesia",
+      "BACK_TO_TOP": "Kembali ke atas"
+    },
     "INTERESTED": {
       "TITLE": "Tertarik Dengan PISICloud?",
       "DESCRIPTION": "Mengubah Tempat Kerja Anda dengan Proses SDM yang Efisien dari PISICloud. Hubungi kontak dibawah untuk info lebih lanjut.",

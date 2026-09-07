@@ -656,8 +656,51 @@
         }
       }
     },
-    "FAQ": {},
-    "FOOTER": {},
+    "FAQ": {
+      "TITLE_LINE_1": "常见",
+      "TITLE_LINE_2": "疑难",
+      "TITLE_HIGHLIGHT": "问题解答",
+      "ITEMS": {
+        "Q1": {
+          "QUESTION": "PISICloud ERP 与人力资源系统在企业中的功能与作用是什么？",
+          "ANSWER": "PISICloud 深度整合了跨部门的考勤、休假、薪酬核算和人员调度等核心业务流程。通过基于实时的统一平台，企业可以消除数据孤岛，提高运营准确性，并使管理者能够从单一控制台全面掌握企业运营状态。"
+        },
+        "Q2": {
+          "QUESTION": "相比传统本地部署（On-Premise），云端 ERP 具有哪些核心优势？",
+          "ANSWER": "云端 ERP 实施周期短，无需采购高成本的物理服务器硬件或承担繁重的本地运维。服务器及安全更新均由服务商统一管理，大幅降低初期投入成本，确保系统高度稳定，并支持随时随地通过多端设备安全访问。"
+        },
+        "Q3": {
+          "QUESTION": "自动化工作流如何减少考勤与薪酬管理中的人为失误（Human Error）？",
+          "ANSWER": "手动录入往往容易导致计算偏差和审批延迟。PISICloud 通过生物识别考勤机直连与移动考勤，自动汇总工时，按既定规则系统化计算加班与扣款，并自动生成精准的薪资明细，大幅节省行政时间并确保合规无误。"
+        },
+        "Q4": {
+          "QUESTION": "PISICloud 如何保障企业及员工的数据安全与隐私？",
+          "ANSWER": "所有敏感的员工信息与业务数据在传输与存储过程中均经过行业标准的严格加密保护。PISICloud 实施多地点自动异地容灾备份，配备基于角色的精细化权限控制体系，并进行周期性安全监测，全面防范数据泄露与丢失风险。"
+        },
+        "Q5": {
+          "QUESTION": "PISICloud 提供哪些实施支持、系统培训与定期维护服务？",
+          "ANSWER": "我们提供全流程的软件实施协助、针对员工的操作培训与二次重构实施指导，以及年度软件维护保障。专业支持团队随时提供远程与现场技术支持、定期的功能迭代更新，并可根据企业的个性化业务演进提供定制模块开发。"
+        }
+      }
+    },
+    "FOOTER": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No. 18, Agung Podomoro",
+      "ADDRESS_LINE_2": "Land Batam, Kepulauan Riau 29464 Indonesia",
+      "ABOUT_TITLE": "关于 PISICloud",
+      "ABOUT_INFORSYS": "关于 Inforsys",
+      "ABOUT": "关于我们",
+      "FEATURE": "功能特点",
+      "BUSINESS_SOLUTION": "业务解决方案",
+      "WHY_CHOOSE_US": "为什么选择我们？",
+      "FAQ": "常见问题",
+      "SUPPORT_TITLE": "服务支持",
+      "SOFTWARE_IMPLEMENTATION": "软件实施",
+      "TRAINING_REIMPLEMENTATION": "培训和重新实施",
+      "CUSTOMIZE_MODULE": "定制模块",
+      "COPYRIGHT": "© PT Inforsys Indonesia",
+      "BACK_TO_TOP": "返回顶部"
+    },
     "INTERESTED": {
       "TITLE": "对 PISICloud 感兴趣？",
       "DESCRIPTION": "通过 PISICloud 简化的人力资源流程改变您的工作场所。请联系以下联系人获取更多信息。",
