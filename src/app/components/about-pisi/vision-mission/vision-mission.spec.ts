@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideTranslateService } from '@ngx-translate/core';
-import { AboutPisi } from './about-pisi';
+import { VisionMission } from './vision-mission';
 
-describe('AboutPisi', () => {
-  let component: AboutPisi;
-  let fixture: ComponentFixture<AboutPisi>;
+describe('VisionMission', () => {
+  let component: VisionMission;
+  let fixture: ComponentFixture<VisionMission>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutPisi],
+      imports: [VisionMission],
       providers: [provideTranslateService()],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AboutPisi);
+    fixture = TestBed.createComponent(VisionMission);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
@@ -20,4 +20,9 @@ describe('AboutPisi', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render all 4 mission cards', () => {
+    expect(component.missionCards.length).toBe(4);
+  });
 });
+

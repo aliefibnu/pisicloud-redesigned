@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideTranslateService } from '@ngx-translate/core';
-import { AboutPisi } from './about-pisi';
+import { Philosophy } from './philosophy';
 
-describe('AboutPisi', () => {
-  let component: AboutPisi;
-  let fixture: ComponentFixture<AboutPisi>;
+describe('Philosophy', () => {
+  let component: Philosophy;
+  let fixture: ComponentFixture<Philosophy>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutPisi],
+      imports: [Philosophy],
       providers: [provideTranslateService()],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AboutPisi);
+    fixture = TestBed.createComponent(Philosophy);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
@@ -20,4 +20,9 @@ describe('AboutPisi', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render all 5 philosophy items', () => {
+    expect(component.items.length).toBe(5);
+  });
 });
+
