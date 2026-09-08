@@ -105,15 +105,17 @@
               <a
                 mat-flat-button
                 [routerLink]="['/feature', item.slug]"
-                class="rounded-full! bg-[#066b5b]! hover:bg-[#005144]! text-white! px-5! py-2.5! h-auto! font-medium! text-sm! tracking-wide! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! group/btn inline-flex items-center gap-2.5 w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b5b] focus-visible:ring-offset-2 cursor-pointer"
+                class="rounded-full! bg-[#066b5b]! hover:bg-[#005144]! text-white! px-5! py-2.5! h-auto! font-medium! text-sm! tracking-wide! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! group/btn inline-flex items-center justify-center w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b5b] focus-visible:ring-offset-2 cursor-pointer"
                 [attr.aria-label]="('LANDING.FEATURES.LEARN_MORE' | translate) + ' ' + ((item.translationKey + '.TITLE') | translate)"
               >
-                <span>{{ 'LANDING.FEATURES.LEARN_MORE' | translate }}</span>
-                <ng-icon
-                  name="tablerArrowRight"
-                  class="text-base shrink-0 transition-transform duration-200 group-hover/btn:translate-x-1"
-                  aria-hidden="true"
-                />
+                <span class="inline-flex items-center gap-2 justify-center">
+                  <span>{{ 'LANDING.FEATURES.LEARN_MORE' | translate }}</span>
+                  <ng-icon
+                    name="tablerArrowRight"
+                    class="text-base shrink-0 transition-transform duration-200 group-hover/btn:translate-x-1"
+                    aria-hidden="true"
+                  />
+                </span>
               </a>
             </div>
           </div>
