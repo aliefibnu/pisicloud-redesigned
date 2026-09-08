@@ -9,14 +9,6 @@
   font-family: 'Twemoji Country Flags', sans-serif !important;
 }
 
-:root {
-  --font-sans: 'Twemoji Country Flags', 'Roboto', 'Helvetica Neue', sans-serif;
-}
-
-body {
-  font-family: var(--font-sans);
-}
-
 .mat-mdc-select,
 .mat-mdc-menu-panel,
 .mat-mdc-option,
@@ -28,6 +20,7 @@ html,
 body {
   min-height: 100%;
   overflow-x: clip;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,6 +33,7 @@ app-root {
 }
 
 :root {
+  --font-sans: 'Twemoji Country Flags', 'Roboto', 'Helvetica Neue', sans-serif;
   /* Color Styles */
 
   /* Text Styles */
