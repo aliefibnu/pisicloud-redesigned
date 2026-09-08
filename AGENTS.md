@@ -1,4 +1,3 @@
-
 You are an expert in TypeScript, Angular, and scalable web application development. You write functional, maintainable, performant, and accessible code following Angular and TypeScript best practices.
 
 ## TypeScript Best Practices
@@ -55,3 +54,10 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use the `providedIn: 'root'` option for singleton services
 - Prefer the `@Service` decorator over `@Injectable({providedIn: 'root'})` for new singleton services (Angular v22+)
 - Use the `inject()` function instead of constructor injection
+
+## Important
+
+- Always check for the layout of this project in /src/app/app.html
+- Always use angular cli for every task that can be proceed with angular cli, for example ng generate component, etc...
+- All of the pages should only import each component from that page. so each pages only has a component section calling. see the page that already done in src/app/pages/landing for reference
+- All of the section muss be created as component and store it in src/app/components/[page]/[section-name]/
