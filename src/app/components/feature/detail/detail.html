@@ -99,10 +99,6 @@
 
       <div
         class="hidden lg:flex lg:col-span-7 items-center justify-center relative min-h-95 xl:min-h-110"
-        (mouseenter)="pauseAutoPlay()"
-        (mouseleave)="resumeAutoPlay()"
-        (focusin)="pauseAutoPlay()"
-        (focusout)="resumeAutoPlay()"
         aria-live="polite"
       >
         @for (fitur of effectiveItems(); track fitur.id; let i = $index) {
