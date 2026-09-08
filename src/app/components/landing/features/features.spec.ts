@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Features } from './features';
 
@@ -9,7 +10,7 @@ describe('Features', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Features],
-      providers: [provideTranslateService()],
+      providers: [provideRouter([]), provideTranslateService()],
     }).compileComponents();
 
     const translate = TestBed.inject(TranslateService);
@@ -44,6 +45,14 @@ describe('Features', () => {
     }
   });
 
+  it('should have valid canonical slugs on all features', () => {
+    expect(component.features.length).toBe(12);
+    for (const feature of component.features) {
+      expect(feature.slug).toBeDefined();
+      expect(feature.slug.length).toBeGreaterThan(0);
+    }
+  });
+
   it('should render the heading with PISICloud highlight', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const heading = compiled.querySelector('#features-heading');
@@ -60,5 +69,27 @@ describe('Features', () => {
 
     const learnMoreButtons = compiled.querySelectorAll('a[aria-label^="Learn More"]');
     expect(learnMoreButtons.length).toBe(12);
+  });
+
+  it('should link each desktop CTA button to its respective /feature/:slug page', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const desktopLearnMoreLinks = compiled.querySelectorAll(
+      '.hidden.md\\:grid article a[mat-flat-button]'
+    );
+    expect(desktopLearnMoreLinks.length).toBe(12);
+    desktopLearnMoreLinks.forEach((link, idx) => {
+      const href = link.getAttribute('href');
+      expect(href).toBe(`/feature/${component.features[idx].slug}`);
+    });
+  });
+
+  it('should link each mobile card to its respective /feature/:slug page', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const mobileLinks = compiled.querySelectorAll('.block.md\\:hidden article a');
+    expect(mobileLinks.length).toBe(12);
+    mobileLinks.forEach((link, idx) => {
+      const href = link.getAttribute('href');
+      expect(href).toBe(`/feature/${component.features[idx].slug}`);
+    });
   });
 });

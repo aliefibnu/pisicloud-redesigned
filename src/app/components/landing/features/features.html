@@ -19,50 +19,46 @@
     <div class="block md:hidden space-y-3 sm:space-y-4">
       @for (item of features; track item.id) {
         <article
-          class="group rounded-2xl bg-[#f7faf7] hover:bg-[#edf5f1] border border-[#dce6df] hover:border-[#86c8bc] flex items-stretch justify-between overflow-hidden active:scale-[0.98] transition-all duration-200"
+          class="group rounded-2xl bg-[#f7faf7] hover:bg-[#edf5f1] border border-[#dce6df] hover:border-[#86c8bc] overflow-hidden active:scale-[0.98] transition-all duration-200"
         >
-          <!-- Left Content: Outward Arrow + Title + Short Tagline -->
-          <div class="p-3.5 sm:p-4 flex items-center gap-3 sm:gap-4 grow min-w-0">
-            <!-- Diagonal Arrow ↗ -->
-            <div class="shrink-0 text-slate-500 group-hover:text-[#066b5b] transition-colors">
-              <svg
-                class="w-5 h-5 sm:w-6 sm:h-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 17L17 7"></path>
-                <path d="M7 7h10v10"></path>
-              </svg>
+          <a
+            [routerLink]="['/feature', item.slug]"
+            class="flex items-stretch justify-between w-full h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] focus-visible:ring-offset-2 cursor-pointer"
+            [attr.aria-label]="(item.translationKey + '.TITLE') | translate"
+          >
+            <!-- Left Content: Outward Arrow + Title + Short Tagline -->
+            <div class="p-3.5 sm:p-4 flex items-center gap-3 sm:gap-4 grow min-w-0">
+              <!-- Diagonal Arrow ↗ -->
+              <div class="shrink-0 text-slate-500 group-hover:text-[#066b5b] transition-colors">
+                <ng-icon name="tablerArrowUpRight" class="text-xl sm:text-2xl" aria-hidden="true" />
+              </div>
+
+              <!-- Text Details -->
+              <div class="min-w-0">
+                <h3
+                  class="text-base sm:text-lg font-bold text-[#191c1b] tracking-tight truncate group-hover:text-[#066b5b] transition-colors"
+                >
+                  {{ (item.translationKey + '.TITLE') | translate }}
+                </h3>
+                <p class="text-xs sm:text-sm text-[#49504c] font-normal truncate mt-0.5">
+                  {{ (item.translationKey + '.SHORT_DESCRIPTION') | translate }}
+                </p>
+              </div>
             </div>
 
-            <!-- Text Details -->
-            <div class="min-w-0">
-              <h3
-                class="text-base sm:text-lg font-bold text-[#191c1b] tracking-tight truncate group-hover:text-[#066b5b] transition-colors"
-              >
-                {{ (item.translationKey + '.TITLE') | translate }}
-              </h3>
-              <p class="text-xs sm:text-sm text-[#49504c] font-normal truncate mt-0.5">
-                {{ (item.translationKey + '.SHORT_DESCRIPTION') | translate }}
-              </p>
+            <!-- Right Thumbnail Image -->
+            <div class="w-20 sm:w-24 shrink-0 relative overflow-hidden bg-slate-100">
+              <img
+                [ngSrc]="item.image"
+                [alt]="(item.translationKey + '.ALT') | translate"
+                width="387"
+                height="188"
+                draggable="false"
+                (dragstart)="$event.preventDefault()"
+                class="w-full h-full object-cover select-none"
+              />
             </div>
-          </div>
-
-          <!-- Right Thumbnail Image -->
-          <div class="w-20 sm:w-24 shrink-0 relative overflow-hidden bg-slate-100">
-            <img
-              [ngSrc]="item.image"
-              [alt]="(item.translationKey + '.ALT') | translate"
-              width="387"
-              height="188"
-              class="w-full h-full object-cover select-none"
-            />
-          </div>
+          </a>
         </article>
       }
     </div>
@@ -74,12 +70,14 @@
           class="group relative flex flex-col rounded-3xl bg-[#f7faf7] hover:bg-[#edf5f1] border border-[#dbe5df]/80 hover:border-[#86c8bc] overflow-hidden transition-all duration-300 ease-out"
         >
           <!-- Card Image Container -->
-          <div class="relative w-full aspect-[387/188] overflow-hidden bg-slate-100 shrink-0">
+          <div class="relative w-full aspect-387/188 overflow-hidden bg-slate-100 shrink-0">
             <img
               [ngSrc]="item.image"
               [alt]="(item.translationKey + '.ALT') | translate"
               width="387"
               height="188"
+              draggable="false"
+              (dragstart)="$event.preventDefault()"
               class="w-full h-full object-cover select-none transition-transform duration-500 ease-out group-hover:scale-105"
             />
           </div>
@@ -88,9 +86,14 @@
           <div class="p-6 sm:p-7 flex flex-col grow justify-between gap-6">
             <div>
               <h3
-                class="text-xl font-bold text-[#191c1b] tracking-tight mb-2.5 group-hover:text-[#066b5b] transition-colors duration-200"
+                class="text-xl font-bold text-[#191c1b] tracking-tight mb-2.5 transition-colors duration-200"
               >
-                {{ (item.translationKey + '.TITLE') | translate }}
+                <a
+                  [routerLink]="['/feature', item.slug]"
+                  class="group-hover:text-[#066b5b] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] rounded-sm"
+                >
+                  {{ (item.translationKey + '.TITLE') | translate }}
+                </a>
               </h3>
               <p class="text-sm sm:text-[15px] text-[#49504c] leading-relaxed font-normal">
                 {{ (item.translationKey + '.DESCRIPTION') | translate }}
@@ -100,24 +103,19 @@
             <!-- Material 3 Pill Button -->
             <div>
               <a
-                href="#contact"
-                class="group/btn inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-[#066b5b] text-white text-sm font-medium tracking-wide shadow-sm hover:bg-[#005144] hover:shadow-md active:scale-95 transition-all duration-200 w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b5b] focus-visible:ring-offset-2"
+                mat-flat-button
+                [routerLink]="['/feature', item.slug]"
+                class="rounded-full! bg-[#066b5b]! hover:bg-[#005144]! text-white! px-5! py-2.5! h-auto! font-medium! text-sm! tracking-wide! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! group/btn inline-flex items-center justify-center w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b5b] focus-visible:ring-offset-2 cursor-pointer"
                 [attr.aria-label]="('LANDING.FEATURES.LEARN_MORE' | translate) + ' ' + ((item.translationKey + '.TITLE') | translate)"
               >
-                <span>{{ 'LANDING.FEATURES.LEARN_MORE' | translate }}</span>
-                <svg
-                  class="w-4 h-4 shrink-0 transition-transform duration-200 group-hover/btn:translate-x-1"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="m12 5 7 7-7 7"></path>
-                </svg>
+                <span class="inline-flex items-center gap-2 justify-center">
+                  <span>{{ 'LANDING.FEATURES.LEARN_MORE' | translate }}</span>
+                  <ng-icon
+                    name="tablerArrowRight"
+                    class="text-base shrink-0 transition-transform duration-200 group-hover/btn:translate-x-1"
+                    aria-hidden="true"
+                  />
+                </span>
               </a>
             </div>
           </div>
@@ -126,5 +124,3 @@
     </div>
   </div>
 </section>
-
-

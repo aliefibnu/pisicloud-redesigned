@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import { tablerArrowRight, tablerArrowUpRight } from '@ng-icons/tabler-icons';
 import { TranslatePipe } from '@ngx-translate/core';
+import { FeatureSlug } from '../../../data/features/features.model';
 
 export interface FeatureItem {
   readonly id: string;
+  readonly slug: FeatureSlug;
   readonly translationKey: string;
   readonly title: string;
   readonly description: string;
@@ -15,6 +21,7 @@ export interface FeatureItem {
 export const FEATURES_DATA: readonly FeatureItem[] = [
   {
     id: 'recruitment',
+    slug: 'recruitment',
     translationKey: 'LANDING.FEATURES.ITEMS.RECRUITMENT',
     title: 'Recruitment',
     description:
@@ -25,6 +32,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'personal-leave',
+    slug: 'personal-leave',
     translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_LEAVE',
     title: 'Personal Leave',
     description:
@@ -35,6 +43,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'collective-leave',
+    slug: 'collective-leave',
     translationKey: 'LANDING.FEATURES.ITEMS.COLLECTIVE_LEAVE',
     title: 'Collective Leave',
     description:
@@ -45,6 +54,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'attendance',
+    slug: 'attendance',
     translationKey: 'LANDING.FEATURES.ITEMS.ATTENDANCE',
     title: 'Attendance',
     description:
@@ -55,6 +65,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'personal-overtime',
+    slug: 'personal-overtime',
     translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_OVERTIME',
     title: 'Personal Overtime',
     description:
@@ -65,6 +76,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'collective-overtime',
+    slug: 'collective-overtime',
     translationKey: 'LANDING.FEATURES.ITEMS.COLLECTIVE_OVERTIME',
     title: 'Collective Overtime',
     description:
@@ -75,6 +87,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'payroll',
+    slug: 'payroll',
     translationKey: 'LANDING.FEATURES.ITEMS.PAYROLL',
     title: 'Payroll',
     description:
@@ -85,6 +98,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'employee-data-update',
+    slug: 'employee-update',
     translationKey: 'LANDING.FEATURES.ITEMS.EMPLOYEE_DATA_UPDATE',
     title: 'Employee Data Update',
     description:
@@ -95,6 +109,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'attendance-machine',
+    slug: 'attendance-machine',
     translationKey: 'LANDING.FEATURES.ITEMS.ATTENDANCE_MACHINE',
     title: 'Attendance Machine',
     description:
@@ -105,6 +120,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'database-management',
+    slug: 'database',
     translationKey: 'LANDING.FEATURES.ITEMS.DATABASE_MANAGEMENT',
     title: 'Database Management',
     description:
@@ -115,6 +131,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'personal-attendance',
+    slug: 'personal-attendance',
     translationKey: 'LANDING.FEATURES.ITEMS.PERSONAL_ATTENDANCE',
     title: 'Personal Attendance',
     description:
@@ -125,6 +142,7 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
   },
   {
     id: 'yearly-tax',
+    slug: 'yearly-tax',
     translationKey: 'LANDING.FEATURES.ITEMS.YEARLY_TAX',
     title: 'Yearly Tax',
     description:
@@ -137,7 +155,13 @@ export const FEATURES_DATA: readonly FeatureItem[] = [
 
 @Component({
   selector: 'landing-features',
-  imports: [NgOptimizedImage, TranslatePipe],
+  imports: [NgOptimizedImage, TranslatePipe, RouterLink, MatButtonModule, NgIcon],
+  viewProviders: [
+    provideIcons({
+      tablerArrowRight,
+      tablerArrowUpRight,
+    }),
+  ],
   templateUrl: './features.html',
   styles: `
     :host {
