@@ -49,7 +49,7 @@ describe('Hero', () => {
 
     expect(component.effectiveFeature().id).toBe('payroll');
     expect(component.resolvedTitleKey()).toBe('FEATURE.PAYROLL.NAME');
-    expect(component.resolvedImage()).toBe('/images/features/image 6.png');
+    expect(component.resolvedImage()).toBe('/images/features/features-ui/payroll-1.webp');
   });
 
   it('should allow direct overrides for titleKey, descKey, and image', () => {

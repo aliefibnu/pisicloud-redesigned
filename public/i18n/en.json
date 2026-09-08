@@ -247,7 +247,7 @@
     "PAYROLL": {
       "NAME": "Payroll",
       "HERO": {
-        "TITLE": "Your Payroll, Your Rules - fully customizable and effortless",
+        "TITLE": "Your Payroll, Your Rules - fully customizable and effortless.",
         "DESC": "Set your own formulas for tax, BPJS, and allowances, then calculate salaries by shift, overtime, or monthly cycle with ease."
       },
       "ITEMS": {
