@@ -80,7 +80,8 @@
                 >
                   <div class="lg:hidden w-full mb-3 mt-1 flex justify-center">
                     <img
-                      [ngSrc]="fitur.img"
+                      [ngSrc]="getImageSrc(fitur)"
+                      (error)="onImageError(fitur.id)"
                       [alt]="fitur.titleKey | translate"
                       width="360"
                       height="251"
@@ -119,7 +120,8 @@
             [attr.aria-hidden]="activeIndex() !== i"
           >
             <img
-              [ngSrc]="fitur.img"
+              [ngSrc]="getImageSrc(fitur)"
+              (error)="onImageError(fitur.id)"
               [alt]="fitur.titleKey | translate"
               width="360"
               height="251"
