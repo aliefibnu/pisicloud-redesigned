@@ -714,23 +714,99 @@
     },
     "DEMO_VIDEO_MODAL": {}
   },
-  "OUR_CUSTOMERS": {
+  "ABOUT_PISI": {
     "HERO": {
-      "TITLE_PREFIX": "超过24年以来，我们始终助力客户持续发展 ",
-      "TITLE_HIGHLIGHT": "与腾飞",
-      "DESCRIPTION": "软件是企业运营的核心基石与极其重要的长期投资。我们为企业量身定制深度契合核心业务流程的系统架构，并伴随企业的发展与变革持续迭代升级。",
-      "IMAGE_ALT": "展示企业分析、客户满意度指数和验证指标的现代3D等轴测仪表板"
+      "TITLE_PREFIX": "以",
+      "TITLE_STRONG": "实惠透明的价格",
+      "TITLE_MIDDLE": "打造",
+      "TITLE_AFFORDABLE": "强大可靠的 ERP 系统",
+      "DESCRIPTION": "PISICloud 重新定义 ERP，通过提供简洁、稳健且高性价比的解决方案，助力企业提升运营效率，告别繁琐流程与高昂成本。",
+      "ALT_DEVICES": "PISICloud 多端响应式 ERP 系统展示（笔记本电脑、平板电脑及手机）"
     },
-    "LOGO_GRID": {
-      "BADGE": "合作品牌名录",
-      "TITLE_PREFIX": "PISICloud ",
-      "TITLE_HIGHLIGHT": "客户",
-      "TITLE_SUFFIX": "合作生态",
-      "SUBTITLE": "深受制造业、酒店度假村、工程建筑、电子高精尖技术及商业贸易等各领域翘楚的深度信赖。",
-      "SEARCH_PLACEHOLDER": "搜索客户公司名称...",
-      "COUNT_BADGE": "显示 {{count}} / {{total}} 家企业合作伙伴",
-      "NO_RESULTS": "未找到匹配的客户公司",
-      "RESET_SEARCH": "清空搜索"
+    "ABOUT_CONTENT": {
+      "SECTION_TITLE_PREFIX": "关于 ",
+      "SECTION_TITLE_HIGHLIGHT": "PISICloud",
+      "ALT_OFFICE": "PT Inforsys Indonesia 总部大楼及办公环境",
+      "TABS": {
+        "TAB1": {
+          "LABEL": "自 1998 年起深耕研发",
+          "TAG": "深厚底蕴与经验",
+          "TITLE": "自 1998 年起深耕研发",
+          "DESCRIPTION": "我们自 1998 年便开启了软件系统的自主研发之路。稳步前行中，产品与客户生态持续壮大。众多企业将财务管理与整体 ERP 核心系统托付于我们。这份信赖与机遇，成为我们不断精进产品、铸就更加稳健可靠企业级方案的核心动力。"
+        },
+        "TAB2": {
+          "LABEL": "持续性的产品研发与技术创新",
+          "TAG": "持续创新",
+          "TITLE": "持续性的产品研发与技术创新",
+          "DESCRIPTION": "如今，我们的产品在深入一线业务场景的实践中不断积累和丰富功能模块。我们在技术栈上持续演进，全面拥抱云计算服务，为客户提供低成本、高效率且跨终端响应式自适应的灵活体验。"
+        },
+        "TAB3": {
+          "LABEL": "深耕中小型与制造企业市场",
+          "TAG": "精准定位",
+          "TITLE": "深耕中小型与制造企业市场",
+          "DESCRIPTION": "我们专注服务于中小规模制造业与商贸企业。此类企业往往难以承受传统大型 ERP（如 SAP、Oracle、MS Dynamics）漫长的实施周期与高昂成本。PISICloud 兼具全流程制造功能与轻量敏捷部署优势，成为企业数字化的黄金平衡之选。"
+        },
+        "TAB4": {
+          "LABEL": "竭诚满足客户 IT 需求的崇高承诺",
+          "TAG": "专注支持",
+          "TITLE": "竭诚满足客户 IT 需求的崇高承诺",
+          "DESCRIPTION": "针对中小型工业客户的痛点，我们提供开箱即用且高度可配置的完整制造与进销存模块。秉持为客户提供最优解的高标准承诺，我们愿与广大企业并肩同行，共赢数智未来。"
+        }
+      }
+    },
+    "VISION_MISSION": {
+      "VISION": {
+        "TITLE_PREFIX": "企业",
+        "TITLE_HIGHLIGHT": "愿景",
+        "STATEMENT": "成为广大客户信赖的先锋 IT 战略伙伴，以创新技术方案赋能企业持续增长与长远发展。"
+      },
+      "MISSION": {
+        "TITLE_PREFIX": "企业",
+        "TITLE_HIGHLIGHT": "使命",
+        "CARD_1": {
+          "TITLE": "良好道德与诚信",
+          "DESC": "秉持良好的职业操守、纪律与崇高的诚信原则推进各项业务运营。"
+        },
+        "CARD_2": {
+          "TITLE": "高品质前沿应用",
+          "DESC": "依托前沿科技打造高品质、易用、稳定的软件系统，为商业世界提供最佳解决方案。"
+        },
+        "CARD_3": {
+          "TITLE": "卓越服务与客户满意",
+          "DESC": "以严谨的工匠精神、精确的交付与具有竞争力的价格，全力保障客户满意度。"
+        },
+        "CARD_4": {
+          "TITLE": "持续集成与前瞻科研",
+          "DESC": "推进深度融合的一体化研发，持续打造获得行业高度认可的高价值产品。"
+        }
+      }
+    },
+    "PHILOSOPHY": {
+      "TITLE_PREFIX": "企业核心",
+      "TITLE_HIGHLIGHT": "理念",
+      "SUBTITLE": "指导我们以专注与热忱服务每一位合作伙伴的核心价值观。",
+      "VALUES": {
+        "INTEGRITY": {
+          "NAME": "诚信为本",
+          "DESC": "在一切商业交往中恪守诚实守信与高标准道德准则。"
+        },
+        "INNOVATION": {
+          "NAME": "开拓创新",
+          "DESC": "与时俱进，持续拥抱新技术以解决行业现实痛点。"
+        },
+        "TEAMWORK": {
+          "NAME": "协作共赢",
+          "DESC": "凝聚团队合力，与客户建立深度透明的共赢协作。"
+        },
+        "COMMUNICATION": {
+          "NAME": "敏捷沟通",
+          "DESC": "倾听客户声音，保持快速、清晰且高效的双向互动。"
+        },
+        "COMMITMENT": {
+          "NAME": "坚守承诺",
+          "DESC": "对产品品质与长效技术支持抱持始终如一的责任感。"
+        }
+      }
     }
   }
 }

@@ -714,23 +714,99 @@
     },
     "DEMO_VIDEO_MODAL": {}
   },
-  "OUR_CUSTOMERS": {
+  "ABOUT_PISI": {
     "HERO": {
-      "TITLE_PREFIX": "For more than 24 years we help customers grow ",
-      "TITLE_HIGHLIGHT": "and develop",
-      "DESCRIPTION": "Software is a long-term and very important investment that is at the center of enterprise activities. We partner with organizations from customized software architecture tailored to core business processes, adapting seamlessly as operations evolve and scale.",
-      "IMAGE_ALT": "Modern 3D isometric dashboard showing enterprise analytics, customer success index, and verified company metrics"
+      "TITLE_PREFIX": "Build a ",
+      "TITLE_STRONG": "Strong and Reliable",
+      "TITLE_MIDDLE": " ERP System at ",
+      "TITLE_AFFORDABLE": "Affordable Prices",
+      "DESCRIPTION": "PISICloud redefines ERP by delivering a simple, robust, and affordable solution built to drive business efficiency without the traditional complexity or high costs.",
+      "ALT_DEVICES": "PISICloud multi-device responsive ERP system on laptop, tablet, and mobile"
     },
-    "LOGO_GRID": {
-      "BADGE": "CLIENT PORTFOLIO",
-      "TITLE_PREFIX": "PISICloud ",
-      "TITLE_HIGHLIGHT": "Customer",
-      "TITLE_SUFFIX": " Ecosystem",
-      "SUBTITLE": "Trusted by industry leaders across manufacturing, hospitality, engineering, electronics, and commercial enterprises.",
-      "SEARCH_PLACEHOLDER": "Search client company name...",
-      "COUNT_BADGE": "Showing {{count}} of {{total}} Enterprise Partners",
-      "NO_RESULTS": "No client companies match your search",
-      "RESET_SEARCH": "Clear Search"
+    "ABOUT_CONTENT": {
+      "SECTION_TITLE_PREFIX": "About ",
+      "SECTION_TITLE_HIGHLIGHT": "PISICloud",
+      "ALT_OFFICE": "PT Inforsys Indonesia entrance and headquarters building",
+      "TABS": {
+        "TAB1": {
+          "LABEL": "Started Developed Since 1998",
+          "TAG": "Legacy & Experience",
+          "TITLE": "Started Developed Since 1998",
+          "DESCRIPTION": "We have started developing our software since 1998. Slowly but surely, our products and customers started to grow. Many companies began to trust us to manage their financial system and ERP system as a whole on us. This trust and opportunity are the main capital for us to continue to improve and develop products to become stronger and more reliable."
+        },
+        "TAB2": {
+          "LABEL": "Research & Development Products Continuous",
+          "TAG": "Continuous R&D",
+          "TITLE": "Continuous Research & Development",
+          "DESCRIPTION": "Now our products grow and develop with the accumulation of various product features from the various cases we face in the field. We also continue to improve products in terms of technology so that they can always adapt to the progress of the times and technology. Currently, the product has also developed with cloud computing service options that are much more efficient and inexpensive."
+        },
+        "TAB3": {
+          "LABEL": "Product Segmentation in Small and Medium Level Industries",
+          "TAG": "Target Focused",
+          "TITLE": "Tailored for Small & Medium Industries",
+          "DESCRIPTION": "The market segmentation or gap we are targeting is small and medium industries. In this segment, they will find it quite difficult to implement ERP Software that is too complex, such as MS Dynamics, Oracle ERP, Epicor or SAP. In addition to price considerations, ERP software at this level is considered for high-end industries that have high complexity. PISICloud provides the ideal balance of functionality and agility."
+        },
+        "TAB4": {
+          "LABEL": "Commitment to Be the Best Solution for Customer's IT Needs",
+          "TAG": "Dedicated Solution",
+          "TITLE": "Commitment to Customer's IT Success",
+          "DESCRIPTION": "For the needs of the small and medium level industry, we are here. Companies can use a complete manufacturing module but it is much simpler to implement. With a high commitment to continue to be the best solution for customers, we hope to continue to grow and develop to provide the best service for the industrial world."
+        }
+      }
+    },
+    "VISION_MISSION": {
+      "VISION": {
+        "TITLE_PREFIX": "Our ",
+        "TITLE_HIGHLIGHT": "Vision",
+        "STATEMENT": "To be a pioneer partner of our customers by providing innovative IT solutions to support their business growth and development in the future."
+      },
+      "MISSION": {
+        "TITLE_PREFIX": "Our ",
+        "TITLE_HIGHLIGHT": "Mision",
+        "CARD_1": {
+          "TITLE": "Ethics & Integrity",
+          "DESC": "To be a pioneer partner of our customers by providing innovative IT solutions to support their business growth and development in the future."
+        },
+        "CARD_2": {
+          "TITLE": "High Quality Applications",
+          "DESC": "To make high-quality, easy and reliable applications, with the latest technology to provide optimal solutions for the business world."
+        },
+        "CARD_3": {
+          "TITLE": "Customer Satisfaction",
+          "DESC": "Provide the best service for customer satisfaction with guaranteed quality work, accuracy, by providing competitive prices."
+        },
+        "CARD_4": {
+          "TITLE": "Continuous Research",
+          "DESC": "Developing integrated and continuous research to be able to continue to create high quality products that are well accepted in the business world."
+        }
+      }
+    },
+    "PHILOSOPHY": {
+      "TITLE_PREFIX": "Our ",
+      "TITLE_HIGHLIGHT": "Philosophy",
+      "SUBTITLE": "Core values that drive our passion and dedication in serving enterprises across industries.",
+      "VALUES": {
+        "INTEGRITY": {
+          "NAME": "INTEGRITY",
+          "DESC": "Honesty, transparency, and high moral standards in every collaboration."
+        },
+        "INNOVATION": {
+          "NAME": "INNOVATION",
+          "DESC": "Continuous technological evolution to meet future industry demands."
+        },
+        "TEAMWORK": {
+          "NAME": "TEAMWORK",
+          "DESC": "Synergy and solid collaboration to deliver the finest outcomes."
+        },
+        "COMMUNICATION": {
+          "NAME": "COMMUNICATION",
+          "DESC": "Active listening and responsive dialogue with all stakeholders."
+        },
+        "COMMITMENT": {
+          "NAME": "COMMITMENT",
+          "DESC": "Unwavering dedication to customer satisfaction and product reliability."
+        }
+      }
     }
   }
 }

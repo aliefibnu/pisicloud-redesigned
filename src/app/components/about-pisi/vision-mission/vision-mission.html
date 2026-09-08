@@ -1,0 +1,84 @@
+<section class="w-full pt-16 md:pt-24 pb-8 md:pb-12 font-sans bg-[#f7f7f7]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Part 1: Our Vision (Centered heading + text, clean layout matching Figma docs) -->
+    <div class="mb-20 md:mb-28 text-center">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1f2937] tracking-tight mb-4">
+        <span>{{ 'ABOUT_PISI.VISION_MISSION.VISION.TITLE_PREFIX' | translate }}</span>
+        <span class="text-[#076657]">{{ 'ABOUT_PISI.VISION_MISSION.VISION.TITLE_HIGHLIGHT' | translate }}</span>
+      </h2>
+
+      <p class="text-base sm:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto font-normal">
+        {{ 'ABOUT_PISI.VISION_MISSION.VISION.STATEMENT' | translate }}
+      </p>
+    </div>
+
+    <!-- Part 2: Our Mission (Asymmetrical Bento Grid: Wide+Narrow on Row 1, Narrow+Wide on Row 2) -->
+    <div class="text-center">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1f2937] tracking-tight mb-8 md:mb-10">
+        <span>{{ 'ABOUT_PISI.VISION_MISSION.MISSION.TITLE_PREFIX' | translate }}</span>
+        <span class="text-[#076657]">{{ 'ABOUT_PISI.VISION_MISSION.MISSION.TITLE_HIGHLIGHT' | translate }}</span>
+      </h2>
+
+      <div class="flex flex-col gap-3.5 sm:gap-4 max-w-[966px] mx-auto">
+        <!-- Row 1: Card 1 (Wide ~580px) + Card 2 (Narrow ~370px) -->
+        <div class="grid grid-cols-1 md:grid-cols-[1.58fr_1fr] gap-3.5 sm:gap-4">
+          @for (card of row1(); track card.id) {
+            <div
+              [class]="card.isWide ? 'px-6 sm:px-10' : 'px-6 sm:px-8'"
+              class="group border border-[#757575] rounded-[20px] pt-5 pb-6 text-center bg-white flex flex-col items-center justify-center min-h-[208px] transition-all duration-300 hover:border-[#076657] hover:shadow-md hover:-translate-y-1 cursor-default select-none"
+            >
+              <!-- Circular Gray/Mint Icon Badge with M3 hover micro-interaction -->
+              <div class="w-[54px] h-[54px] rounded-full bg-[#d9d9d9] text-[#076657] flex items-center justify-center mx-auto mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110">
+                <ng-icon
+                  [name]="card.icon"
+                  class="text-2xl text-[#076657]"
+                  style="--ng-icon__stroke-width: 2.2px;"
+                  aria-hidden="true"
+                />
+              </div>
+
+              <!-- Content Description -->
+              <p
+                class="text-[13px] sm:text-[14px] text-[#333333] leading-relaxed text-center m-0 font-normal"
+                [class.max-w-lg]="card.isWide"
+              >
+                {{ card.descKey | translate }}
+              </p>
+            </div>
+          }
+        </div>
+
+        <!-- Row 2: Card 3 (Narrow ~370px) + Card 4 (Wide ~580px) -->
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_1.58fr] gap-3.5 sm:gap-4">
+          @for (card of row2(); track card.id) {
+            <div
+              [class]="card.isWide ? 'px-6 sm:px-10' : 'px-6 sm:px-8'"
+              class="group border border-[#757575] rounded-[20px] pt-5 pb-6 text-center bg-white flex flex-col items-center justify-center min-h-[208px] transition-all duration-300 hover:border-[#076657] hover:shadow-md hover:-translate-y-1 cursor-default select-none"
+            >
+              <!-- Circular Gray/Mint Icon Badge with M3 hover micro-interaction -->
+              <div class="w-[54px] h-[54px] rounded-full bg-[#d9d9d9] text-[#076657] flex items-center justify-center mx-auto mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110">
+                <ng-icon
+                  [name]="card.icon"
+                  class="text-2xl text-[#076657]"
+                  style="--ng-icon__stroke-width: 2.2px;"
+                  aria-hidden="true"
+                />
+              </div>
+
+              <!-- Content Description -->
+              <p
+                class="text-[13px] sm:text-[14px] text-[#333333] leading-relaxed text-center m-0 font-normal"
+                [class.max-w-lg]="card.isWide"
+              >
+                {{ card.descKey | translate }}
+              </p>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
