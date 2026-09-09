@@ -9,7 +9,7 @@ import {
   signal,
 } from '@angular/core';
 import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FeaturesMenu } from './features-menu/features-menu';
 import { ResourcesMenu } from './resources-menu/resources-menu';
@@ -28,6 +28,7 @@ export type ActiveNavMenu = 'features' | 'resources' | 'language' | null;
   selector: 'universal-navbar',
   imports: [
     RouterLink,
+    RouterLinkActive,
     NgOptimizedImage,
     TranslatePipe,
     FeaturesMenu,
