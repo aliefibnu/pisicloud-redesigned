@@ -67,14 +67,39 @@ describe('CustomersLogoGrid', () => {
     expect(compiled.textContent).not.toContain('Enterprise Partners');
   });
 
-  it('should render framed logo cards for each company', () => {
+  it('should render all 46 partner logo cards in the grid', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const cards = compiled.querySelectorAll('div[role="listitem"]');
-    expect(cards.length).toBe(46);
+    const items = compiled.querySelectorAll('[role="listitem"]');
+    expect(items.length).toBe(46);
 
-    const firstImg = cards[0].querySelector('img');
+    const firstImg = items[0].querySelector('img');
     expect(firstImg).toBeTruthy();
     expect(firstImg?.getAttribute('src')).toBe('/images/companies/1.webp');
     expect(firstImg?.getAttribute('draggable')).toBe('false');
+  });
+
+  it('should render clickable <a> cards with target="_blank" for companies with a website', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const linkCards = compiled.querySelectorAll('a[role="listitem"]');
+    expect(linkCards.length).toBe(45);
+
+    const firstLink = linkCards[0] as HTMLAnchorElement;
+    expect(firstLink.getAttribute('href')).toBeTruthy();
+    expect(firstLink.getAttribute('target')).toBe('_blank');
+    expect(firstLink.getAttribute('rel')).toBe('noopener noreferrer');
+  });
+
+  it('should render non-clickable <div> cards for companies without a website (like Bintan Lagoon Resort)', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const allItems = compiled.querySelectorAll('[role="listitem"]');
+    const bintanCard = Array.from(allItems).find(
+      (item) => item.getAttribute('aria-label')?.includes('Bintan Lagoon Resort'),
+    );
+
+    expect(bintanCard).toBeTruthy();
+    expect(bintanCard?.tagName.toLowerCase()).toBe('div');
+    expect(bintanCard?.getAttribute('href')).toBeNull();
+    expect(bintanCard?.getAttribute('target')).toBeNull();
+    expect(bintanCard?.classList.contains('cursor-default')).toBe(true);
   });
 });

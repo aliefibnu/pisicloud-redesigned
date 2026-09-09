@@ -5,6 +5,7 @@ export interface CompanyLogo {
   readonly width: number;
   readonly height: number;
   readonly name?: string;
+  readonly website?: string;
 }
 
 export const COMPANY_LOGOS: readonly CompanyLogo[] = [
@@ -15,6 +16,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Katsuyama Finetech (KFI)',
     width: 179,
     height: 128,
+    website: 'https://katsuyamaindonesia.wixsite.com/katsuyamaindonesia',
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'McConnell Dowell',
     width: 303,
     height: 128,
+    website: 'https://www.mcconnelldowell.com/',
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Madeira',
     width: 196,
     height: 65,
+    website: 'https://www.madeira.com/',
   },
   {
     id: 4,
@@ -39,6 +43,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Sanipak Indonesia',
     width: 151,
     height: 86,
+    website: 'https://www.sanipak.co.jp/ptsi.html',
   },
   {
     id: 5,
@@ -47,6 +52,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Austin Engineering',
     width: 128,
     height: 128,
+    website: 'https://www.austineng.com/',
   },
   {
     id: 6,
@@ -63,6 +69,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'ENNOVI',
     width: 350,
     height: 117,
+    website: 'https://ennovi.com/',
   },
   {
     id: 8,
@@ -71,6 +78,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Bahana Galang Jaya',
     width: 171,
     height: 128,
+    website: 'https://www.bahana-marine.com/',
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'BTG',
     width: 123,
     height: 123,
+    website: 'https://ptbtg.com/',
   },
   {
     id: 10,
@@ -87,6 +96,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'VMC',
     width: 147,
     height: 113,
+    website: 'https://rapalavmc.com/',
   },
   {
     id: 11,
@@ -95,6 +105,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'YAGEO Group / KEMET',
     width: 128,
     height: 128,
+    website: 'https://yageogroup.com/',
   },
   {
     id: 12,
@@ -103,6 +114,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Yoshikawa Electronics',
     width: 255,
     height: 93,
+    website: 'https://www.yrsc.co.jp/YEB/',
   },
   {
     id: 13,
@@ -111,6 +123,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Intricon',
     width: 128,
     height: 128,
+    website: 'https://intricon.com.sg/',
   },
   {
     id: 14,
@@ -119,6 +132,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Inline Flow Specialty',
     width: 128,
     height: 128,
+    website: 'https://inlineflowspecialty.com/',
   },
   {
     id: 15,
@@ -127,6 +141,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Bintan Resorts',
     width: 150,
     height: 128,
+    website: 'https://www.bintan-resorts.com',
   },
   {
     id: 16,
@@ -135,6 +150,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Grand Lagoi Hotel',
     width: 162,
     height: 128,
+    website: 'https://www.grandlagoihotel.com/',
   },
   {
     id: 17,
@@ -143,6 +159,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Amber Karya',
     width: 142,
     height: 128,
+    website: 'https://amber-karya.com/',
   },
   {
     id: 18,
@@ -151,6 +168,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Dynacast',
     width: 233,
     height: 128,
+    website: 'https://www.dynacast.com/',
   },
   {
     id: 19,
@@ -159,6 +177,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 19',
     width: 128,
     height: 128,
+    website: 'https://www.blackmagicdesign.com/',
   },
   {
     id: 20,
@@ -175,6 +194,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 21',
     width: 350,
     height: 88,
+    website: 'https://keplersignaltek.com/',
   },
   {
     id: 22,
@@ -183,6 +203,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 22',
     width: 154,
     height: 98,
+    website: 'https://www.nittoh.co.id/',
   },
   {
     id: 23,
@@ -199,6 +220,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 24',
     width: 173,
     height: 128,
+    website: 'https://siix.co.id/',
   },
   {
     id: 25,
@@ -207,6 +229,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 25',
     width: 233,
     height: 128,
+    website: 'https://www.pciltd.com/',
   },
   {
     id: 26,
@@ -215,6 +238,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 26',
     width: 128,
     height: 128,
+    website: 'https://www.volex.com/',
   },
   {
     id: 27,
@@ -231,6 +255,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 28',
     width: 128,
     height: 128,
+    website: 'https://www.rubycon.co.jp/',
   },
   {
     id: 29,
@@ -239,6 +264,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 29',
     width: 128,
     height: 128,
+    website: 'https://teammetal.com/',
   },
   {
     id: 30,
@@ -247,6 +273,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 30',
     width: 123,
     height: 111,
+    website: 'https://yeakin.com/',
   },
   {
     id: 31,
@@ -255,6 +282,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 31',
     width: 311,
     height: 98,
+    website: 'https://www.primo.com.sg/',
   },
   {
     id: 32,
@@ -263,6 +291,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 32',
     width: 146,
     height: 128,
+    website: 'https://www.yokogawa.com/id/',
   },
   {
     id: 33,
@@ -271,6 +300,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 33',
     width: 128,
     height: 128,
+    website: 'https://vector.co.id/',
   },
   {
     id: 34,
@@ -279,6 +309,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 34',
     width: 128,
     height: 128,
+    website: 'https://tathong.com/',
   },
   {
     id: 35,
@@ -287,6 +318,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 35',
     width: 128,
     height: 128,
+    website: 'https://salamjayalestari.com/',
   },
   {
     id: 36,
@@ -295,6 +327,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 36',
     width: 128,
     height: 128,
+    website: 'https://nissinjpn.co.jp/en/',
   },
   {
     id: 37,
@@ -303,6 +336,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 37',
     width: 245,
     height: 128,
+    website: 'https://www.telaga-mm.com/',
   },
   {
     id: 38,
@@ -311,6 +345,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 38',
     width: 128,
     height: 128,
+    website: 'https://www.halcyonagri.com/en/',
   },
   {
     id: 39,
@@ -327,6 +362,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 40',
     width: 94,
     height: 98,
+    website: 'https://ozfastener.com/',
   },
   {
     id: 41,
@@ -335,6 +371,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 41',
     width: 129,
     height: 128,
+    website: 'https://www.nokgrp.com/en/',
   },
   {
     id: 42,
@@ -343,6 +380,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 42',
     width: 350,
     height: 75,
+    website: 'https://ptkubota.co.id/',
   },
   {
     id: 43,
@@ -351,6 +389,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 43',
     width: 128,
     height: 128,
+    website: 'https://www.batamfast.com/',
   },
   {
     id: 44,
@@ -359,6 +398,7 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 44',
     width: 199,
     height: 107,
+    website: 'https://www.asianfastmarine.com/',
   },
   {
     id: 45,
@@ -375,5 +415,6 @@ export const COMPANY_LOGOS: readonly CompanyLogo[] = [
     name: 'Partner 46',
     width: 350,
     height: 93,
+    website: 'https://telemecaniquesensors.com/',
   },
 ];
