@@ -713,5 +713,35 @@
       }
     },
     "DEMO_VIDEO_MODAL": {}
+  },
+  "OUR_CUSTOMERS": {
+    "HERO": {
+      "BADGE": "信頼されるエンタープライズパートナー",
+      "TITLE_PREFIX": "24年以上にわたり、私たちは企業の成長と ",
+      "TITLE_HIGHLIGHT": "発展を支援",
+      "DESCRIPTION": "ソフトウェアは企業活動の中核を担う、極めて重要かつ長期的な投資です。当社はお客様の中核業務に合わせたオーダーメイドのソフトウェア構築から、企業の成長に合わせた柔軟なカスタマイズまで一貫して支援します。",
+      "CTA_PRIMARY": "導入企業一覧を見る",
+      "CTA_SECONDARY": "専門チームに相談",
+      "STATS": {
+        "YEARS_VALUE": "24+",
+        "YEARS_LABEL": "年の確かな導入実績",
+        "CLIENTS_VALUE": "100+",
+        "CLIENTS_LABEL": "社以上のエンタープライズ顧客",
+        "RETENTION_VALUE": "99.8%",
+        "RETENTION_LABEL": "顧客継続率"
+      },
+      "IMAGE_ALT": "エンタープライズ分析、顧客成功指標、検証済みデータを表示する最新の3Dアイソメトリックダッシュボード"
+    },
+    "LOGO_GRID": {
+      "BADGE": "導入企業実績",
+      "TITLE_PREFIX": "PISICloud ",
+      "TITLE_HIGHLIGHT": "導入顧客",
+      "TITLE_SUFFIX": "エコシステム",
+      "SUBTITLE": "製造業、ホスピタリティ、エンジニアリング、エレクトロニクス、商業など各業界を牽引するリーディングカンパニーに選ばれています。",
+      "SEARCH_PLACEHOLDER": "企業名で検索...",
+      "COUNT_BADGE": "{{total}} 社中 {{count}} 社のパートナーを表示中",
+      "NO_RESULTS": "該当する企業が見つかりませんでした",
+      "RESET_SEARCH": "検索をクリア"
+    }
   }
 }
