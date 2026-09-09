@@ -716,20 +716,9 @@
   },
   "OUR_CUSTOMERS": {
     "HERO": {
-      "BADGE": "MITRA PERUSAHAAN TERPERCAYA",
       "TITLE_PREFIX": "Selama lebih dari 24 tahun kami membantu klien tumbuh ",
       "TITLE_HIGHLIGHT": "dan berkembang",
       "DESCRIPTION": "Software adalah investasi jangka panjang dan sangat penting yang merupakan pusat dari kegiatan perusahaan. Kami membantu perusahaan mulai dari mempersiapkan software yang dikustomisasi sesuai core bisnis, serta memodifikasi seiring perkembangan perusahaan.",
-      "CTA_PRIMARY": "Jelajahi Direktori Klien",
-      "CTA_SECONDARY": "Konsultasi Bersama Tim",
-      "STATS": {
-        "YEARS_VALUE": "24+",
-        "YEARS_LABEL": "Tahun Pengalaman Teruji",
-        "CLIENTS_VALUE": "100+",
-        "CLIENTS_LABEL": "Perusahaan Telah Mempercayai",
-        "RETENTION_VALUE": "99.8%",
-        "RETENTION_LABEL": "Tingkat Retensi Klien"
-      },
       "IMAGE_ALT": "Dashboard isometrik 3D modern yang menampilkan analitik perusahaan, indeks kepuasan pelanggan, dan metrik terverifikasi"
     },
     "LOGO_GRID": {

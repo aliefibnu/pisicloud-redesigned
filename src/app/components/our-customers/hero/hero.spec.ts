@@ -22,21 +22,10 @@ describe('CustomersHero', () => {
     translateService.setTranslation('en', {
       OUR_CUSTOMERS: {
         HERO: {
-          BADGE: 'ENTERPRISE TRUSTED PARTNER',
           TITLE_PREFIX: 'For more than 24 years we help customers grow ',
           TITLE_HIGHLIGHT: 'and develop',
           DESCRIPTION:
             'Software is a long-term and very important investment that is at the center of enterprise activities.',
-          CTA_PRIMARY: 'Explore Client Directory',
-          CTA_SECONDARY: 'Consult With Our Team',
-          STATS: {
-            YEARS_VALUE: '24+',
-            YEARS_LABEL: 'Years of Proven Experience',
-            CLIENTS_VALUE: '100+',
-            CLIENTS_LABEL: 'Enterprise Clients Empowered',
-            RETENTION_VALUE: '99.8%',
-            RETENTION_LABEL: 'Client Retention Rate',
-          },
           IMAGE_ALT:
             'Modern 3D isometric dashboard showing enterprise analytics, customer success index, and verified company metrics',
         },
@@ -70,28 +59,13 @@ describe('CustomersHero', () => {
     expect(desc?.textContent).toContain('Software is a long-term and very important investment');
   });
 
-  it('should render the CTA buttons with valid href links', () => {
+  it('should not render CTA buttons or trust metrics strip', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const primaryBtn = compiled.querySelector('a[href="#client-directory"]');
-    const secondaryBtn = compiled.querySelector('a[href="#contact"]');
-
-    expect(primaryBtn).toBeTruthy();
-    expect(primaryBtn?.textContent).toContain('Explore Client Directory');
-
-    expect(secondaryBtn).toBeTruthy();
-    expect(secondaryBtn?.textContent).toContain('Consult With Our Team');
-  });
-
-  it('should render all 3 trust metric items in the stats strip', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
+    const ctaButton = compiled.querySelector('a[mat-flat-button]');
     const statsContainer = compiled.querySelector('.grid-cols-3');
-    expect(statsContainer).toBeTruthy();
-    expect(statsContainer?.textContent).toContain('24+');
-    expect(statsContainer?.textContent).toContain('Years of Proven Experience');
-    expect(statsContainer?.textContent).toContain('100+');
-    expect(statsContainer?.textContent).toContain('Enterprise Clients Empowered');
-    expect(statsContainer?.textContent).toContain('99.8%');
-    expect(statsContainer?.textContent).toContain('Client Retention Rate');
+
+    expect(ctaButton).toBeNull();
+    expect(statsContainer).toBeNull();
   });
 
   it('should render the 3D isometric dashboard illustration with correct attributes', () => {

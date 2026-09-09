@@ -22,21 +22,10 @@ describe('OurCustomers', () => {
     translateService.setTranslation('en', {
       OUR_CUSTOMERS: {
         HERO: {
-          BADGE: 'ENTERPRISE TRUSTED PARTNER',
           TITLE_PREFIX: 'For more than 24 years we help customers grow ',
           TITLE_HIGHLIGHT: 'and develop',
           DESCRIPTION:
             'Software is a long-term and very important investment that is at the center of enterprise activities.',
-          CTA_PRIMARY: 'Explore Client Directory',
-          CTA_SECONDARY: 'Consult With Our Team',
-          STATS: {
-            YEARS_VALUE: '24+',
-            YEARS_LABEL: 'Years of Proven Experience',
-            CLIENTS_VALUE: '100+',
-            CLIENTS_LABEL: 'Enterprise Clients Empowered',
-            RETENTION_VALUE: '99.8%',
-            RETENTION_LABEL: 'Client Retention Rate',
-          },
           IMAGE_ALT: 'Modern 3D isometric dashboard',
         },
         LOGO_GRID: {

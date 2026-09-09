@@ -716,20 +716,9 @@
   },
   "OUR_CUSTOMERS": {
     "HERO": {
-      "BADGE": "企业信赖的长期合作伙伴",
       "TITLE_PREFIX": "超过24年以来，我们始终助力客户持续发展 ",
       "TITLE_HIGHLIGHT": "与腾飞",
       "DESCRIPTION": "软件是企业运营的核心基石与极其重要的长期投资。我们为企业量身定制深度契合核心业务流程的系统架构，并伴随企业的发展与变革持续迭代升级。",
-      "CTA_PRIMARY": "浏览客户名录",
-      "CTA_SECONDARY": "咨询专业顾问",
-      "STATS": {
-        "YEARS_VALUE": "24+",
-        "YEARS_LABEL": "年深厚行业积淀",
-        "CLIENTS_VALUE": "100+",
-        "CLIENTS_LABEL": "家知名企业深度信赖",
-        "RETENTION_VALUE": "99.8%",
-        "RETENTION_LABEL": "客户持续留存率"
-      },
       "IMAGE_ALT": "展示企业分析、客户满意度指数和验证指标的现代3D等轴测仪表板"
     },
     "LOGO_GRID": {
