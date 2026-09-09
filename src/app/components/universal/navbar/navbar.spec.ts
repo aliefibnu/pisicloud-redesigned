@@ -96,6 +96,15 @@ describe('UniversalNavbar', () => {
     expect(contactBtn?.textContent).toContain('Contact Us');
   });
 
+  it('should render Contact Us nav link in main navigation redirecting to /contact-us', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const contactNavLink = compiled.querySelector(
+      'nav[aria-label="Main navigation"] a[href="/contact-us"], nav[aria-label="Main navigation"] a[routerLink="/contact-us"]'
+    );
+    expect(contactNavLink).toBeTruthy();
+    expect(contactNavLink?.textContent).toContain('Contact Us');
+  });
+
   it('should toggle mobile menu', () => {
     expect(component.isMobileMenuOpen()).toBe(false);
     component.toggleMobileMenu();

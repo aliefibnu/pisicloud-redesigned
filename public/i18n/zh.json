@@ -822,5 +822,30 @@
       "TITLE_SUFFIX": "合作生态",
       "SUBTITLE": "深受制造业、酒店度假村、工程建筑、电子高精尖技术及商业贸易等各领域翘楚的深度信赖。"
     }
+  },
+  "CONTACT_US": {
+    "HERO": {
+      "TITLE_HIGHLIGHT": "联系",
+      "TITLE_SUFFIX": "我们",
+      "SUBTITLE": "我们非常乐意倾听您的声音！如果您有任何疑问、建议或业务咨询需求，请随时通过以下方式与我们取得联系。"
+    },
+    "INFO": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "EMAIL_LABEL": "电子邮件",
+      "EMAIL_VALUE": "hello@inforsys.co.id",
+      "WEB_LABEL": "官方网站",
+      "WEB_VALUE": "inforsys.co.id",
+      "PHONE_LABEL": "服务电话",
+      "PHONE_VALUE": "+62 778 416 0250",
+      "WHATSAPP_LABEL": "WhatsApp",
+      "WHATSAPP_VALUE": "+62 811 7774 744",
+      "HOURS_LABEL": "工作时间",
+      "HOURS_VALUE": "08:00 - 17:00",
+      "ADDRESS_LABEL": "办公地址",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No.18",
+      "ADDRESS_LINE_2": "Batam, Kepulauan Riau 29464, 印度尼西亚",
+      "MAPS_TITLE": "PT Inforsys Indonesia 地图位置",
+      "OPEN_MAPS": "在谷歌地图中打开"
+    }
   }
 }

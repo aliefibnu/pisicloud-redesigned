@@ -822,5 +822,30 @@
       "TITLE_SUFFIX": " Terkemuka",
       "SUBTITLE": "Dipercaya oleh para pemimpin industri di bidang manufaktur, perhotelan, teknik, elektronik, dan berbagai sektor usaha."
     }
+  },
+  "CONTACT_US": {
+    "HERO": {
+      "TITLE_HIGHLIGHT": "Hubungi",
+      "TITLE_SUFFIX": "Kami",
+      "SUBTITLE": "Kami senang mendengar dari Anda! Jika Anda memiliki pertanyaan, saran, maupun kebutuhan konsultasi, jangan ragu untuk menghubungi kami melalui kontak di bawah ini."
+    },
+    "INFO": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "EMAIL_LABEL": "Email",
+      "EMAIL_VALUE": "hello@inforsys.co.id",
+      "WEB_LABEL": "Situs Web",
+      "WEB_VALUE": "inforsys.co.id",
+      "PHONE_LABEL": "Telepon",
+      "PHONE_VALUE": "+62 778 416 0250",
+      "WHATSAPP_LABEL": "WhatsApp",
+      "WHATSAPP_VALUE": "+62 811 7774 744",
+      "HOURS_LABEL": "Jam Kerja",
+      "HOURS_VALUE": "08:00 - 17:00 WIB",
+      "ADDRESS_LABEL": "Alamat",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No.18",
+      "ADDRESS_LINE_2": "Batam, Kepulauan Riau 29464, Indonesia",
+      "MAPS_TITLE": "Peta Lokasi PT Inforsys Indonesia",
+      "OPEN_MAPS": "Buka di Google Maps"
+    }
   }
 }

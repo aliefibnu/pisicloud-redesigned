@@ -822,5 +822,30 @@
       "TITLE_SUFFIX": "エコシステム",
       "SUBTITLE": "製造業、ホスピタリティ、エンジニアリング、エレクトロニクス、商業など各業界を牽引するリーディングカンパニーに選ばれています。"
     }
+  },
+  "CONTACT_US": {
+    "HERO": {
+      "TITLE_HIGHLIGHT": "お問い",
+      "TITLE_SUFFIX": "合わせ",
+      "SUBTITLE": "皆様からのご連絡を心よりお待ちしております。製品に関するご質問やご導入の相談など、どうぞお気軽にお問い合わせください。"
+    },
+    "INFO": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "EMAIL_LABEL": "メール",
+      "EMAIL_VALUE": "hello@inforsys.co.id",
+      "WEB_LABEL": "ウェブサイト",
+      "WEB_VALUE": "inforsys.co.id",
+      "PHONE_LABEL": "お電話",
+      "PHONE_VALUE": "+62 778 416 0250",
+      "WHATSAPP_LABEL": "WhatsApp",
+      "WHATSAPP_VALUE": "+62 811 7774 744",
+      "HOURS_LABEL": "営業時間",
+      "HOURS_VALUE": "午前 8:00 - 午後 5:00",
+      "ADDRESS_LABEL": "所在地",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No.18",
+      "ADDRESS_LINE_2": "Batam, Kepulauan Riau 29464, インドネシア",
+      "MAPS_TITLE": "PT Inforsys Indonesia 所在地マップ",
+      "OPEN_MAPS": "Googleマップで開く"
+    }
   }
 }

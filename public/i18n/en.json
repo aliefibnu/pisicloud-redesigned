@@ -822,5 +822,30 @@
       "TITLE_SUFFIX": " Ecosystem",
       "SUBTITLE": "Trusted by industry leaders across manufacturing, hospitality, engineering, electronics, and commercial enterprises."
     }
+  },
+  "CONTACT_US": {
+    "HERO": {
+      "TITLE_HIGHLIGHT": "Contact",
+      "TITLE_SUFFIX": "Us",
+      "SUBTITLE": "We love hearing from you! If you have any questions, comments, or concerns, please don't hesitate to reach out to us using one of the methods below."
+    },
+    "INFO": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "EMAIL_LABEL": "Email",
+      "EMAIL_VALUE": "hello@inforsys.co.id",
+      "WEB_LABEL": "Website",
+      "WEB_VALUE": "inforsys.co.id",
+      "PHONE_LABEL": "Phone",
+      "PHONE_VALUE": "+62 778 416 0250",
+      "WHATSAPP_LABEL": "WhatsApp",
+      "WHATSAPP_VALUE": "+62 811 7774 744",
+      "HOURS_LABEL": "Working Hours",
+      "HOURS_VALUE": "8:00 AM - 5:00 PM",
+      "ADDRESS_LABEL": "Address",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No.18",
+      "ADDRESS_LINE_2": "Batam, Kepulauan Riau 29464, Indonesia",
+      "MAPS_TITLE": "PT Inforsys Indonesia Location Map",
+      "OPEN_MAPS": "Open in Google Maps"
+    }
   }
 }
