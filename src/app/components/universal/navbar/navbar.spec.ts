@@ -1,21 +1,34 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { provideRouter } from '@angular/router';
+import { Component } from '@angular/core';
+import { provideRouter, Router } from '@angular/router';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Navbar } from './navbar';
 import { LanguageService } from '../../../core/language.service';
 import { NAVBAR_FEATURES, NAVBAR_RESOURCES } from '../../../data/navbar';
+
+@Component({
+  template: '',
+})
+class DummyComponent {}
 
 describe('UniversalNavbar', () => {
   let component: Navbar;
   let fixture: ComponentFixture<Navbar>;
   let languageService: LanguageService;
   let translateService: TranslateService;
+  let router: Router;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Navbar],
       providers: [
-        provideRouter([]),
+        provideRouter([
+          { path: '', component: DummyComponent },
+          { path: 'contact-us', component: DummyComponent },
+          { path: 'feature', component: DummyComponent },
+          { path: 'feature/:slug', component: DummyComponent },
+          { path: 'about-pisi', component: DummyComponent },
+        ]),
         provideTranslateService({
           fallbackLang: 'en',
         }),
@@ -23,6 +36,7 @@ describe('UniversalNavbar', () => {
       ],
     }).compileComponents();
 
+    router = TestBed.inject(Router);
     languageService = TestBed.inject(LanguageService);
     translateService = TestBed.inject(TranslateService);
 
@@ -203,5 +217,27 @@ describe('UniversalNavbar', () => {
 
     expect(sidebar?.hasAttribute('inert')).toBe(true);
     expect(sidebar?.getAttribute('aria-hidden')).toBe('true');
+  });
+
+  it('should mark Features menu button active when on /feature/attendance', async () => {
+    await router.navigateByUrl('/feature/attendance');
+    fixture.detectChanges();
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    const featuresButton = compiled.querySelector('navbar-features-menu button');
+    expect(featuresButton?.classList.contains('bg-[#cde8e0]')).toBe(true);
+    expect(featuresButton?.classList.contains('text-[#00382f]')).toBe(true);
+    expect(featuresButton?.classList.contains('font-semibold')).toBe(true);
+  });
+
+  it('should mark Resources menu button active when on /about-pisi', async () => {
+    await router.navigateByUrl('/about-pisi');
+    fixture.detectChanges();
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    const resourcesButton = compiled.querySelector('navbar-resources-menu button');
+    expect(resourcesButton?.classList.contains('bg-[#cde8e0]')).toBe(true);
+    expect(resourcesButton?.classList.contains('text-[#00382f]')).toBe(true);
+    expect(resourcesButton?.classList.contains('font-semibold')).toBe(true);
   });
 });

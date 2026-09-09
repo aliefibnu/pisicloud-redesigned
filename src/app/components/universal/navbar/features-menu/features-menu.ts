@@ -1,5 +1,7 @@
-import { Component, computed, input, output, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, computed, inject, input, output, signal } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { filter, map } from 'rxjs';
 import { TranslatePipe } from '@ngx-translate/core';
 import {
   FeatureDomain,
@@ -17,7 +19,7 @@ export type FeatureCategory = NavbarCategoryConfig;
 
 @Component({
   selector: 'navbar-features-menu',
-  imports: [RouterLink, TranslatePipe],
+  imports: [RouterLink, RouterLinkActive, TranslatePipe],
   templateUrl: './features-menu.html',
   styles: ``,
   host: {
@@ -25,6 +27,8 @@ export type FeatureCategory = NavbarCategoryConfig;
   },
 })
 export class FeaturesMenu {
+  private readonly router = inject(Router);
+
   readonly isOpen = input(false);
   readonly variant = input<'desktop' | 'mobile'>('desktop');
 
@@ -35,6 +39,19 @@ export class FeaturesMenu {
   readonly isMobileExpanded = signal(false);
   readonly features = NAVBAR_FEATURES;
   readonly categories = NAVBAR_CATEGORIES;
+
+  private readonly currentUrl = toSignal(
+    this.router.events.pipe(
+      filter((e): e is NavigationEnd => e instanceof NavigationEnd),
+      map((e) => e.urlAfterRedirects)
+    ),
+    { initialValue: this.router.url }
+  );
+
+  readonly isActive = computed(() => {
+    const cleanUrl = (this.currentUrl() ?? '').split('?')[0].split('#')[0];
+    return cleanUrl === '/feature' || cleanUrl.startsWith('/feature/');
+  });
 
   readonly hrFeatures = computed(() =>
     this.features.filter((f) => f.domain === 'hr')
