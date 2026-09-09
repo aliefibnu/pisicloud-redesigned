@@ -20,6 +20,20 @@ describe('OurCustomers', () => {
     translateService = TestBed.inject(TranslateService);
 
     translateService.setTranslation('en', {
+      UNIVERSAL: {
+        FAQ: {
+          TITLE_LINE_1: 'Frequently',
+          TITLE_LINE_2: 'Asked',
+          TITLE_HIGHLIGHT: 'Questions',
+          ITEMS: {
+            Q1: { QUESTION: 'Q1', ANSWER: 'A1' },
+            Q2: { QUESTION: 'Q2', ANSWER: 'A2' },
+            Q3: { QUESTION: 'Q3', ANSWER: 'A3' },
+            Q4: { QUESTION: 'Q4', ANSWER: 'A4' },
+            Q5: { QUESTION: 'Q5', ANSWER: 'A5' },
+          },
+        },
+      },
       OUR_CUSTOMERS: {
         HERO: {
           TITLE_PREFIX: 'For more than 24 years we help customers grow ',
@@ -47,12 +61,14 @@ describe('OurCustomers', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render both the hero and logo-grid sections', () => {
+  it('should render the hero, logo-grid, and universal-faq sections in order', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const hero = compiled.querySelector('customers-hero');
     const logoGrid = compiled.querySelector('customers-logo-grid');
+    const faq = compiled.querySelector('universal-faq');
 
     expect(hero).toBeTruthy();
     expect(logoGrid).toBeTruthy();
+    expect(faq).toBeTruthy();
   });
 });

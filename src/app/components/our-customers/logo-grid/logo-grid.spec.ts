@@ -81,7 +81,7 @@ describe('CustomersLogoGrid', () => {
   it('should render clickable <a> cards with target="_blank" for companies with a website', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const linkCards = compiled.querySelectorAll('a[role="listitem"]');
-    expect(linkCards.length).toBe(45);
+    expect(linkCards.length).toBe(40);
 
     const firstLink = linkCards[0] as HTMLAnchorElement;
     expect(firstLink.getAttribute('href')).toBeTruthy();
@@ -101,5 +101,19 @@ describe('CustomersLogoGrid', () => {
     expect(bintanCard?.getAttribute('href')).toBeNull();
     expect(bintanCard?.getAttribute('target')).toBeNull();
     expect(bintanCard?.classList.contains('cursor-default')).toBe(true);
+  });
+
+  it('should render logos with full color on mobile and monochrome on desktop (md+)', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const firstImg = compiled.querySelector('[role="listitem"] img');
+    expect(firstImg).toBeTruthy();
+
+    const classes = firstImg?.getAttribute('class') || '';
+    expect(classes).toContain('grayscale-0');
+    expect(classes).toContain('opacity-100');
+    expect(classes).toContain('md:grayscale');
+    expect(classes).toContain('md:opacity-75');
+    expect(classes).toContain('group-hover:grayscale-0');
+    expect(classes).toContain('group-hover:opacity-100');
   });
 });
