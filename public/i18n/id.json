@@ -809,6 +809,20 @@
       }
     }
   },
+  "OUR_CUSTOMERS": {
+    "HERO": {
+      "TITLE_PREFIX": "Selama lebih dari 24 tahun kami membantu klien tumbuh ",
+      "TITLE_HIGHLIGHT": "dan berkembang",
+      "DESCRIPTION": "Software adalah investasi jangka panjang dan sangat penting yang merupakan pusat dari kegiatan perusahaan. Kami membantu perusahaan mulai dari mempersiapkan software yang dikustomisasi sesuai core bisnis, serta memodifikasi seiring perkembangan perusahaan.",
+      "IMAGE_ALT": "Tampilan tablet isometrik 3D modern yang menampilkan sistem manajemen kehadiran dan penggajian enterprise PISICloud"
+    },
+    "LOGO_GRID": {
+      "TITLE_PREFIX": "Ekosistem Klien ",
+      "TITLE_HIGHLIGHT": "PISICloud",
+      "TITLE_SUFFIX": " Terkemuka",
+      "SUBTITLE": "Dipercaya oleh para pemimpin industri di bidang manufaktur, perhotelan, teknik, elektronik, dan berbagai sektor usaha."
+    }
+  },
   "CONTACT_US": {
     "HERO": {
       "TITLE_HIGHLIGHT": "Hubungi",

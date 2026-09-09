@@ -809,6 +809,20 @@
       }
     }
   },
+  "OUR_CUSTOMERS": {
+    "HERO": {
+      "TITLE_PREFIX": "For more than 24 years we help customers grow ",
+      "TITLE_HIGHLIGHT": "and develop",
+      "DESCRIPTION": "Software is a long-term and very important investment that is at the center of enterprise activities. We partner with organizations from customized software architecture tailored to core business processes, adapting seamlessly as operations evolve and scale.",
+      "IMAGE_ALT": "Modern 3D isometric tablet showcasing PISICloud enterprise attendance and payroll management system"
+    },
+    "LOGO_GRID": {
+      "TITLE_PREFIX": "PISICloud ",
+      "TITLE_HIGHLIGHT": "Customer",
+      "TITLE_SUFFIX": " Ecosystem",
+      "SUBTITLE": "Trusted by industry leaders across manufacturing, hospitality, engineering, electronics, and commercial enterprises."
+    }
+  },
   "CONTACT_US": {
     "HERO": {
       "TITLE_HIGHLIGHT": "Contact",

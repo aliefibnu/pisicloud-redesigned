@@ -1,0 +1,53 @@
+<section
+  class="relative w-full overflow-hidden bg-linear-to-b from-[#f4fcf7] via-white to-white py-12 sm:py-16 md:py-20 lg:py-24"
+  aria-labelledby="customers-hero-heading"
+>
+  <!-- Background Glow Aura -->
+  <div
+    class="pointer-events-none absolute -top-24 left-1/2 h-96 w-175 -translate-x-1/2 rounded-full bg-linear-to-tr from-[#cde8e0]/50 via-[#d5f3e5]/30 to-transparent blur-3xl"
+    aria-hidden="true"
+  ></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-10 xl:gap-14">
+      <!-- Left Column: Story and Headline -->
+      <div class="flex flex-col justify-center text-left lg:col-span-7 z-10">
+        <!-- Two-Tone H1 -->
+        <h1
+          id="customers-hero-heading"
+          class="text-3xl font-bold tracking-tight text-[#191c1b] leading-[1.16] sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[52px]"
+        >
+          <span>{{ 'OUR_CUSTOMERS.HERO.TITLE_PREFIX' | translate }}</span>
+          <span class="text-[#066b5b]">{{ 'OUR_CUSTOMERS.HERO.TITLE_HIGHLIGHT' | translate }}</span>
+        </h1>
+
+        <!-- Supporting Description -->
+        <p class="mt-5 max-w-xl text-base font-normal leading-relaxed text-slate-600 sm:text-lg">
+          {{ 'OUR_CUSTOMERS.HERO.DESCRIPTION' | translate }}
+        </p>
+      </div>
+
+      <!-- Right Column: 3D Tablet Device Showcase -->
+      <div class="relative flex items-center justify-center lg:col-span-5 lg:justify-end">
+        <div class="relative w-full max-w-lg lg:max-w-none flex items-center justify-center">
+          <!-- Ambient Glow behind tablet -->
+          <div
+            class="pointer-events-none absolute inset-0 -m-6 rounded-3xl bg-linear-to-tr from-[#066b5b]/15 via-[#cde8e0]/30 to-transparent blur-3xl"
+            aria-hidden="true"
+          ></div>
+
+          <img
+            ngSrc="/images/our-customers/3D-Contact.webp"
+            width="1536"
+            height="1024"
+            priority
+            draggable="false"
+            (dragstart)="$event.preventDefault()"
+            [alt]="'OUR_CUSTOMERS.HERO.IMAGE_ALT' | translate"
+            class="relative z-10 w-full h-auto object-contain select-none [user-drag:none] [-webkit-user-drag:none] drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
