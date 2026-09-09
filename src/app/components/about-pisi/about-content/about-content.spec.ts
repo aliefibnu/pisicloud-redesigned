@@ -29,5 +29,14 @@ describe('AboutContent', () => {
     expect(component.activeTab()).toBe(2);
     expect(component.currentTab().id).toBe(2);
   });
+
+  it('should render accordion-grid elements for each milestone tab', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const accordionGrids = compiled.querySelectorAll('.accordion-grid');
+    expect(accordionGrids.length).toBe(4);
+
+    const buttons = compiled.querySelectorAll('button[role="tab"]');
+    expect(buttons.length).toBe(4);
+  });
 });
 
