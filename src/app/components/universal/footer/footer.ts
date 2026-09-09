@@ -9,12 +9,6 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Footer {
   currentYear: number = new Date().getFullYear();
-
-  scrollToTop(): void {
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }
 }
 
 export { Footer as FooterComponent };
