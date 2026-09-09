@@ -131,8 +131,7 @@ export const NAVBAR_RESOURCES: readonly NavbarResourceItemConfig[] = [
     id: 'customers',
     titleKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.CUSTOMERS.TITLE',
     descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.CUSTOMERS.DESC',
-    route: '/',
-    fragment: 'why-choose-us',
+    route: '/our-customers',
     iconType: 'customers',
   },
 ];
