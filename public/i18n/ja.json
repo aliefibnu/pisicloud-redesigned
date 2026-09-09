@@ -817,15 +817,10 @@
       "IMAGE_ALT": "PISICloud 勤怠・給与エンタープライズ管理システムを表示する最新の3Dアイソメトリックタブレット端末"
     },
     "LOGO_GRID": {
-      "BADGE": "導入企業実績",
       "TITLE_PREFIX": "PISICloud ",
       "TITLE_HIGHLIGHT": "導入顧客",
       "TITLE_SUFFIX": "エコシステム",
-      "SUBTITLE": "製造業、ホスピタリティ、エンジニアリング、エレクトロニクス、商業など各業界を牽引するリーディングカンパニーに選ばれています。",
-      "SEARCH_PLACEHOLDER": "企業名で検索...",
-      "COUNT_BADGE": "{{total}} 社中 {{count}} 社のパートナーを表示中",
-      "NO_RESULTS": "該当する企業が見つかりませんでした",
-      "RESET_SEARCH": "検索をクリア"
+      "SUBTITLE": "製造業、ホスピタリティ、エンジニアリング、エレクトロニクス、商業など各業界を牽引するリーディングカンパニーに選ばれています。"
     }
   }
 }

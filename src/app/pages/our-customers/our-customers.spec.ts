@@ -29,15 +29,10 @@ describe('OurCustomers', () => {
           IMAGE_ALT: 'Modern 3D isometric dashboard',
         },
         LOGO_GRID: {
-          BADGE: 'CLIENT PORTFOLIO',
           TITLE_PREFIX: 'PISICloud ',
           TITLE_HIGHLIGHT: 'Customer',
           TITLE_SUFFIX: ' Ecosystem',
           SUBTITLE: 'Trusted by industry leaders across manufacturing, hospitality, engineering.',
-          SEARCH_PLACEHOLDER: 'Search client company name...',
-          COUNT_BADGE: 'Showing {{count}} of {{total}} Enterprise Partners',
-          NO_RESULTS: 'No client companies match your search',
-          RESET_SEARCH: 'Clear Search',
         },
       },
     });

@@ -817,15 +817,10 @@
       "IMAGE_ALT": "展示 PISICloud 企业考勤与薪酬管理系统的 3D 等轴测平板电脑展示图"
     },
     "LOGO_GRID": {
-      "BADGE": "合作品牌名录",
       "TITLE_PREFIX": "PISICloud ",
       "TITLE_HIGHLIGHT": "客户",
       "TITLE_SUFFIX": "合作生态",
-      "SUBTITLE": "深受制造业、酒店度假村、工程建筑、电子高精尖技术及商业贸易等各领域翘楚的深度信赖。",
-      "SEARCH_PLACEHOLDER": "搜索客户公司名称...",
-      "COUNT_BADGE": "显示 {{count}} / {{total}} 家企业合作伙伴",
-      "NO_RESULTS": "未找到匹配的客户公司",
-      "RESET_SEARCH": "清空搜索"
+      "SUBTITLE": "深受制造业、酒店度假村、工程建筑、电子高精尖技术及商业贸易等各领域翘楚的深度信赖。"
     }
   }
 }

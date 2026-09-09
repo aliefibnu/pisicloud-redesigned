@@ -817,15 +817,10 @@
       "IMAGE_ALT": "Tampilan tablet isometrik 3D modern yang menampilkan sistem manajemen kehadiran dan penggajian enterprise PISICloud"
     },
     "LOGO_GRID": {
-      "BADGE": "PORTOFOLIO KLIEN",
       "TITLE_PREFIX": "Ekosistem Klien ",
       "TITLE_HIGHLIGHT": "PISICloud",
       "TITLE_SUFFIX": " Terkemuka",
-      "SUBTITLE": "Dipercaya oleh para pemimpin industri di bidang manufaktur, perhotelan, teknik, elektronik, dan berbagai sektor usaha.",
-      "SEARCH_PLACEHOLDER": "Cari nama perusahaan klien...",
-      "COUNT_BADGE": "Menampilkan {{count}} dari {{total}} Mitra Perusahaan",
-      "NO_RESULTS": "Tidak ada perusahaan klien yang sesuai dengan pencarian Anda",
-      "RESET_SEARCH": "Hapus Pencarian"
+      "SUBTITLE": "Dipercaya oleh para pemimpin industri di bidang manufaktur, perhotelan, teknik, elektronik, dan berbagai sektor usaha."
     }
   }
 }
