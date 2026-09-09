@@ -25,6 +25,10 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'contact-us',
+    loadComponent: () => import('../pages/contact-us/contact-us').then((m) => m.ContactUs),
+  },
+  {
     path: 'feature/:slug',
     loadComponent: () => import('../pages/feature/feature').then((m) => m.Feature),
   },
