@@ -9,12 +9,12 @@
     </div>
 
     <!-- Outer Container Box with rounded corners, elevated shadow, and subtle border -->
-    <div class="border border-[#dce6df] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 lg:p-10 bg-white shadow-md">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+    <div class="border border-[#dce6df] rounded-[24px] sm:rounded-[32px] p-4 sm:p-8 lg:p-10 bg-white shadow-md">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
         
-        <!-- Left Column: 4 Tab Items Equal Size with Progress Loading (Spans 5 cols) -->
+        <!-- Left Column: Milestone Cards with In-Place Accordion on Mobile (Spans 5 cols) -->
         <div
-          class="lg:col-span-5 flex flex-col gap-3.5 sm:gap-4"
+          class="lg:col-span-5 flex flex-col gap-3 sm:gap-3.5 lg:gap-4"
           role="tablist"
           aria-label="About PISICloud Milestones"
           (mouseenter)="pauseAutoPlay()"
@@ -24,17 +24,9 @@
         >
           @for (tab of tabs; track tab.id) {
             @let isActive = activeTab() === tab.id;
-            <button
-              type="button"
-              role="tab"
-              [id]="'about-tab-' + tab.id"
-              [attr.aria-selected]="isActive"
-              [attr.aria-controls]="'about-panel-' + tab.id"
-              tabindex="0"
-              (click)="selectTab(tab.id)"
-              (keydown)="onKeyDown($event, tab.id)"
-              class="relative w-full h-[80px] sm:h-[84px] text-left px-4 sm:px-5 py-3 rounded-xl transition-all duration-200 flex items-center justify-between gap-3 cursor-pointer focus:outline-hidden focus-visible:ring-2 focus-visible:ring-[#076657] focus-visible:ring-offset-2 overflow-hidden border select-none active:scale-[0.99]"
-              [class.border-[#076657]/40]="isActive"
+            <div
+              class="w-full rounded-xl transition-all duration-300 border overflow-hidden select-none"
+              [class.border-[#076657]/50]="isActive"
               [class.bg-[#f0f8f5]]="isActive"
               [class.shadow-xs]="isActive"
               [class.border-gray-200]="!isActive"
@@ -42,63 +34,107 @@
               [class.hover:bg-gray-50/80]="!isActive"
               [class.hover:border-gray-300]="!isActive"
             >
-              <!-- Progress Bar (Feature page style loading animation) -->
-              @if (isActive) {
-                <div
-                  class="absolute inset-y-0 left-0 bg-[#bce0d6] pointer-events-none transition-[width] duration-75 ease-linear rounded-xl"
-                  [style.width.%]="progress()"
-                  role="progressbar"
-                  [attr.aria-valuenow]="progress()"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              }
-
-              <!-- Tab Label Text (above progress bar) -->
-              <div class="relative z-10 flex items-center flex-1 pr-2">
-                @if (isEnglish()) {
-                  <span class="text-sm sm:text-base leading-snug">
-                    @for (part of tab.parts; track $index) {
-                      <span
-                        [class.font-bold]="part.bold"
-                        [class.font-semibold]="part.highlight && !part.bold"
-                        [class.text-[#076657]]="isActive || part.highlight"
-                        [class.text-gray-700]="!isActive && !part.highlight"
-                      >
-                        {{ part.text }}
-                      </span>
-                    }
-                  </span>
-                } @else {
-                  <span
-                    class="text-sm sm:text-base leading-snug"
-                    [class.font-semibold]="isActive"
-                    [class.text-[#076657]]="isActive"
-                    [class.text-gray-700]="!isActive"
-                  >
-                    {{ tab.labelKey | translate }}
-                  </span>
+              <!-- Clickable Header Row -->
+              <button
+                type="button"
+                role="tab"
+                [id]="'about-tab-' + tab.id"
+                [attr.aria-selected]="isActive"
+                [attr.aria-expanded]="isActive"
+                [attr.aria-controls]="'about-panel-' + tab.id"
+                tabindex="0"
+                (click)="selectTab(tab.id)"
+                (keydown)="onKeyDown($event, tab.id)"
+                class="relative w-full min-h-[58px] sm:min-h-[64px] lg:h-[80px] xl:h-[84px] text-left px-4 sm:px-5 py-3 flex items-center justify-between gap-3 cursor-pointer focus:outline-hidden focus-visible:ring-2 focus-visible:ring-[#076657] focus-visible:ring-offset-2 overflow-hidden bg-transparent"
+              >
+                <!-- Progress Bar (Feature page style loading animation) -->
+                @if (isActive) {
+                  <div
+                    class="absolute inset-y-0 left-0 bg-[#bce0d6] pointer-events-none transition-[width] duration-75 ease-linear rounded-xl"
+                    [style.width.%]="progress()"
+                    role="progressbar"
+                    [attr.aria-valuenow]="progress()"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 }
-              </div>
 
-              <!-- Directional Icon Arrow (above progress bar) -->
-              <div class="relative z-10 shrink-0 text-[#076657] transition-transform duration-200" [class.translate-x-0.5]="isActive">
-                <ng-icon
-                  [name]="isActive ? 'tablerArrowRight' : 'tablerArrowUpRight'"
-                  class="text-xl text-[#076657]"
-                  aria-hidden="true"
-                />
+                <!-- Tab Label Text (above progress bar) -->
+                <div class="relative z-10 flex items-center flex-1 pr-2">
+                  @if (isEnglish()) {
+                    <span class="text-sm sm:text-base leading-snug">
+                      @for (part of tab.parts; track $index) {
+                        <span
+                          [class.font-bold]="part.bold"
+                          [class.font-semibold]="part.highlight && !part.bold"
+                          [class.text-[#076657]]="isActive || part.highlight"
+                          [class.text-gray-700]="!isActive && !part.highlight"
+                        >
+                          {{ part.text }}
+                        </span>
+                      }
+                    </span>
+                  } @else {
+                    <span
+                      class="text-sm sm:text-base leading-snug"
+                      [class.font-semibold]="isActive"
+                      [class.text-[#076657]]="isActive"
+                      [class.text-gray-700]="!isActive"
+                    >
+                      {{ tab.labelKey | translate }}
+                    </span>
+                  }
+                </div>
+
+                <!-- Directional Arrow (above progress bar) -->
+                <div class="relative z-10 shrink-0 text-[#076657] transition-transform duration-200" [class.translate-x-0.5]="isActive">
+                  <ng-icon
+                    [name]="isActive ? 'tablerArrowRight' : 'tablerArrowUpRight'"
+                    class="text-xl text-[#076657]"
+                    aria-hidden="true"
+                  />
+                </div>
+              </button>
+
+              <!-- Mobile In-Place Accordion Content (Visible only on mobile when active) -->
+              <div
+                class="accordion-grid grid lg:hidden"
+                [class.grid-rows-[1fr]]="isActive"
+                [class.opacity-100]="isActive"
+                [class.grid-rows-[0fr]]="!isActive"
+                [class.opacity-0]="!isActive"
+              >
+                <div class="overflow-hidden">
+                  <div class="px-4 pt-1 pb-4 bg-white flex flex-col items-center">
+                    <!-- Photo Showcase inside Accordion -->
+                    <div class="w-full flex justify-center mb-3 mt-1">
+                      <img
+                        [ngSrc]="tab.image"
+                        [alt]="tab.altKey | translate"
+                        width="768"
+                        height="894"
+                        draggable="false"
+                        (dragstart)="$event.preventDefault()"
+                        class="w-full max-w-[280px] sm:max-w-[320px] h-[200px] sm:h-[240px] object-cover rounded-xl border border-slate-200/80 shadow-xs select-none"
+                      />
+                    </div>
+                    <!-- Description below image -->
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed text-center max-w-md m-0 font-normal">
+                      {{ tab.descKey | translate }}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </button>
+            </div>
           }
         </div>
 
-        <!-- Right Column: Refined Material 3 Surface with Dynamic Supporting Photo (Spans 7 cols) -->
+        <!-- Right Column: Refined Material 3 Surface with Dynamic Supporting Photo (Spans 7 cols, visible on desktop) -->
         <div
           [id]="'about-panel-' + activeTab()"
           role="tabpanel"
           [attr.aria-labelledby]="'about-tab-' + activeTab()"
-          class="lg:col-span-7 bg-[#f7faf8] border border-slate-200/80 rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 lg:p-10 flex flex-col items-center justify-center text-center min-h-[440px] transition-all duration-300"
+          class="hidden lg:flex lg:col-span-7 bg-[#f7faf8] border border-slate-200/80 rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 lg:p-10 flex-col items-center justify-center text-center min-h-[440px] transition-all duration-300"
         >
           <!-- Dynamic Photo Showcase Centered -->
           <div class="w-full flex justify-center mb-6">
