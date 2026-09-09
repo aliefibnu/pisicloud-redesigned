@@ -713,5 +713,100 @@
       }
     },
     "DEMO_VIDEO_MODAL": {}
+  },
+  "ABOUT_PISI": {
+    "HERO": {
+      "TITLE_PREFIX": "Membangun Sistem ",
+      "TITLE_STRONG": "ERP Kuat & Terpercaya",
+      "TITLE_MIDDLE": " dengan ",
+      "TITLE_AFFORDABLE": "Harga Terjangkau",
+      "DESCRIPTION": "PISICloud mendefinisikan ulang ERP dengan menghadirkan solusi yang sederhana, tangguh, dan terjangkau untuk mendorong efisiensi bisnis tanpa kompleksitas dan biaya tinggi.",
+      "ALT_DEVICES": "Sistem ERP responsif PISICloud di berbagai perangkat laptop, tablet, dan ponsel"
+    },
+    "ABOUT_CONTENT": {
+      "SECTION_TITLE_PREFIX": "Tentang ",
+      "SECTION_TITLE_HIGHLIGHT": "PISICloud",
+      "ALT_OFFICE": "Gedung kantor pusat PT Inforsys Indonesia",
+      "TABS": {
+        "TAB1": {
+          "LABEL": "Mulai Dikembangkan Sejak 1998",
+          "TAG": "Pengalaman & Warisan",
+          "TITLE": "Mulai Dikembangkan Sejak 1998",
+          "DESCRIPTION": "Kami telah memulai mengembangkan software kami sejak tahun 1998. Perlahan namun pasti, produk dan customer kami mulai tumbuh. Mulai banyak perusahaan yang memberikan kepercayaan kepada kami untuk mengelola sistem keuangannya dan sistem ERP secara keseluruhan. Kepercayaan dan kesempatan tersebut menjadi modal utama bagi kami untuk terus memperbaiki dan mengembangkan produk menjadi lebih kuat dan terpercaya."
+        },
+        "TAB2": {
+          "LABEL": "Riset & Pengembangan Produk Berkelanjutan",
+          "TAG": "Inovasi R&D",
+          "TITLE": "Riset & Pengembangan Produk Berkelanjutan",
+          "DESCRIPTION": "Kini produk kami terus bertumbuh dan berkembang dengan akumulasi berbagai fitur produk dari beragam kasus nyata di lapangan. Kami terus meningkatkan kualitas produk dari sisi teknologi agar senantiasa adaptif terhadap perkembangan zaman, termasuk layanan komputasi cloud yang jauh lebih efisien, hemat biaya, dan fleksibel."
+        },
+        "TAB3": {
+          "LABEL": "Segmentasi Produk Industri Menengah & UKM",
+          "TAG": "Fokus Pasar",
+          "TITLE": "Segmentasi Produk Industri Menengah & UKM",
+          "DESCRIPTION": "Segmentasi pasar yang kami tuju adalah industri skala kecil dan menengah. Pada segmen ini, implementasi software ERP konvensional yang terlalu rumit sering kali menjadi kendala besar karena biaya yang terlampau tinggi dan proses yang berbelit. PISICloud hadir memberikan keseimbangan ideal antara fungsionalitas lengkap dan kemudahan implementasi."
+        },
+        "TAB4": {
+          "LABEL": "Komitmen Solusi Terbaik Kebutuhan IT Klien",
+          "TAG": "Solusi Terpercaya",
+          "TITLE": "Komitmen Solusi Terbaik Kebutuhan IT Klien",
+          "DESCRIPTION": "Untuk menjawab kebutuhan industri skala menengah, kami hadir dengan modul manufaktur dan operasional yang lengkap namun jauh lebih mudah dioperasikan. Dengan komitmen tinggi untuk menjadi solusi terbaik bagi pelanggan, kami terus berkembang menghadirkan layanan prima bagi dunia industri di tanah air."
+        }
+      }
+    },
+    "VISION_MISSION": {
+      "VISION": {
+        "TITLE_PREFIX": "Visi ",
+        "TITLE_HIGHLIGHT": "Kami",
+        "STATEMENT": "Menjadi mitra pelopor bagi pelanggan kami dengan menyediakan solusi IT inovatif guna mendukung pertumbuhan dan perkembangan bisnis mereka di masa depan."
+      },
+      "MISSION": {
+        "TITLE_PREFIX": "Misi ",
+        "TITLE_HIGHLIGHT": "Kami",
+        "CARD_1": {
+          "TITLE": "Etika & Integritas",
+          "DESC": "Menjalankan kegiatan perusahaan dengan etika yang baik, disiplin, penuh kejujuran dan integritas tinggi."
+        },
+        "CARD_2": {
+          "TITLE": "Aplikasi Berkualitas",
+          "DESC": "Membuat aplikasi berkualitas tinggi, mudah digunakan, dan andal dengan teknologi terkini guna memberikan solusi optimal bagi dunia usaha."
+        },
+        "CARD_3": {
+          "TITLE": "Kepuasan Pelanggan",
+          "DESC": "Memberikan pelayanan terbaik demi kepuasan pelanggan dengan jaminan kualitas kerja, akurasi, dan harga yang kompetitif."
+        },
+        "CARD_4": {
+          "TITLE": "Riset Berkelanjutan",
+          "DESC": "Mengembangkan riset terpadu dan berkesinambungan agar senantiasa menghasilkan produk bernilai tinggi yang diterima luas di dunia industri."
+        }
+      }
+    },
+    "PHILOSOPHY": {
+      "TITLE_PREFIX": "Filosofi ",
+      "TITLE_HIGHLIGHT": "Kami",
+      "SUBTITLE": "Nilai-nilai luhur yang menjadi landasan semangat dedikasi kami dalam melayani mitra perusahaan.",
+      "VALUES": {
+        "INTEGRITY": {
+          "NAME": "INTEGRITAS",
+          "DESC": "Kejujuran, keterbukaan, dan standar moral yang teguh dalam setiap kolaborasi."
+        },
+        "INNOVATION": {
+          "NAME": "INOVASI",
+          "DESC": "Pengembangan teknologi tiada henti guna menjawab tantangan industri masa depan."
+        },
+        "TEAMWORK": {
+          "NAME": "KERJA SAMA",
+          "DESC": "Sinergi dan kebersamaan tim yang solid dalam mewujudkan hasil terbaik."
+        },
+        "COMMUNICATION": {
+          "NAME": "KOMUNIKASI",
+          "DESC": "Dialog terbuka dan responsif guna memahami setiap kebutuhan pelanggan."
+        },
+        "COMMITMENT": {
+          "NAME": "KOMITMEN",
+          "DESC": "Dedikasi penuh terhadap kepuasan pengguna dan keandalan produk jangka panjang."
+        }
+      }
+    }
   }
 }

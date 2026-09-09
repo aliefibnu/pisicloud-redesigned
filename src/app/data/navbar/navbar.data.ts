@@ -115,8 +115,7 @@ export const NAVBAR_RESOURCES: readonly NavbarResourceItemConfig[] = [
     id: 'about',
     titleKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.ABOUT.TITLE',
     descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.ABOUT.DESC',
-    route: '/',
-    fragment: 'about-us',
+    route: '/about-pisi',
     iconType: 'about',
   },
   {

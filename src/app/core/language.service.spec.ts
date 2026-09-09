@@ -6,6 +6,9 @@ describe('LanguageService', () => {
   let service: LanguageService;
 
   beforeEach(() => {
+    if (typeof localStorage !== 'undefined') {
+      localStorage.clear();
+    }
     TestBed.configureTestingModule({
       providers: [provideTranslateService(), LanguageService],
     });

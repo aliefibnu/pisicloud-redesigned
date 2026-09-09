@@ -86,6 +86,8 @@ describe('UniversalNavbar', () => {
   it('should have 12 features and 3 resources configured in navbar data', () => {
     expect(NAVBAR_FEATURES.length).toBe(12);
     expect(NAVBAR_RESOURCES.length).toBe(3);
+    const aboutResource = NAVBAR_RESOURCES.find((r) => r.id === 'about');
+    expect(aboutResource?.route).toBe('/about-pisi');
   });
 
   it('should render translated contact button text', () => {

@@ -1,0 +1,31 @@
+<section class="relative w-full overflow-hidden pt-12 pb-10 md:pt-16 md:pb-14 font-sans bg-white">
+  <!-- Text Header Container -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-8 md:mb-12">
+    <!-- Headline with full i18n support -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-[#1f2937] tracking-tight leading-[1.18] mb-5">
+      <span>{{ 'ABOUT_PISI.HERO.TITLE_PREFIX' | translate }}</span>
+      <span class="text-[#076657]">{{ 'ABOUT_PISI.HERO.TITLE_STRONG' | translate }}</span>
+      <span>{{ 'ABOUT_PISI.HERO.TITLE_MIDDLE' | translate }}</span><br class="hidden sm:inline">
+      <span class="text-[#076657]">{{ 'ABOUT_PISI.HERO.TITLE_AFFORDABLE' | translate }}</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-sm sm:text-base text-gray-600 leading-relaxed font-normal px-4">
+      {{ 'ABOUT_PISI.HERO.DESCRIPTION' | translate }}
+    </p>
+  </div>
+
+  <!-- Full-width edge-to-edge HD application banner -->
+  <div class="w-full relative overflow-hidden flex justify-center select-none">
+    <img
+      ngSrc="/images/about-pisi/hero-banner.webp"
+      [alt]="'ABOUT_PISI.HERO.ALT_DEVICES' | translate"
+      width="2880"
+      height="960"
+      priority
+      draggable="false"
+      (dragstart)="$event.preventDefault()"
+      class="w-full h-auto object-cover object-center max-w-none min-w-full select-none"
+    />
+  </div>
+</section>
