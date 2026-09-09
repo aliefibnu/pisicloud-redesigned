@@ -36,6 +36,16 @@
         (menuClosed)="closeMenus()"
       />
 
+      <a
+        routerLink="/contact-us"
+        routerLinkActive="bg-[#cde8e0] text-[#00382f] font-semibold"
+        class="group inline-flex items-center px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
+      >
+        <span class="tracking-wide">{{ 'UNIVERSAL.NAVBAR.CONTACT_US' | translate }}</span>
+      </a>
+
+      <div class="h-5 w-0.5 rounded-full bg-slate-300/90 mx-0.5 sm:mx-1 shrink-0" aria-hidden="true"></div>
+
       <navbar-language-menu
         [isOpen]="activeMenu() === 'language'"
         [selectedLanguage]="selectedLanguage()"
@@ -141,6 +151,15 @@
         variant="mobile"
         (itemClick)="closeMobileMenu()"
       />
+
+      <a
+        routerLink="/contact-us"
+        (click)="closeMobileMenu()"
+        routerLinkActive="bg-[#cde8e0] text-[#00382f] font-semibold"
+        class="w-full flex items-center justify-between px-4 py-3 rounded-2xl text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all"
+      >
+        <span class="tracking-wide">{{ 'UNIVERSAL.NAVBAR.CONTACT_US' | translate }}</span>
+      </a>
     </nav>
 
     <!-- 3. Frozen Footer -->

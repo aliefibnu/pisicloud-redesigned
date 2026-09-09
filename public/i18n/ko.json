@@ -808,5 +808,30 @@
         }
       }
     }
+  },
+  "CONTACT_US": {
+    "HERO": {
+      "TITLE_HIGHLIGHT": "문의",
+      "TITLE_SUFFIX": "하기",
+      "SUBTITLE": "언제든지 여러분의 소중한 의견을 환영합니다! 질문이나 솔루션 도입 문의가 있으시면 아래 연락처로 언제든지 문의해 주세요."
+    },
+    "INFO": {
+      "COMPANY_NAME": "PT Inforsys Indonesia",
+      "EMAIL_LABEL": "이메일",
+      "EMAIL_VALUE": "hello@inforsys.co.id",
+      "WEB_LABEL": "웹사이트",
+      "WEB_VALUE": "inforsys.co.id",
+      "PHONE_LABEL": "전화번호",
+      "PHONE_VALUE": "+62 778 416 0250",
+      "WHATSAPP_LABEL": "WhatsApp",
+      "WHATSAPP_VALUE": "+62 811 7774 744",
+      "HOURS_LABEL": "업무 시간",
+      "HOURS_VALUE": "오전 8:00 - 오후 5:00",
+      "ADDRESS_LABEL": "회사 주소",
+      "ADDRESS_LINE_1": "Orchard Park Blok C No.18",
+      "ADDRESS_LINE_2": "Batam, Kepulauan Riau 29464, 인도네시아",
+      "MAPS_TITLE": "PT Inforsys Indonesia 위치 지도",
+      "OPEN_MAPS": "Google 지도에서 열기"
+    }
   }
 }
