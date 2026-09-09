@@ -2,11 +2,12 @@ import { Component, computed, input } from '@angular/core';
 import { Hero } from '../../components/feature/hero/hero';
 import { Detail } from '../../components/feature/detail/detail';
 import { Faq } from '../../components/universal/faq/faq';
+import { CompaniesMarquee } from '../../components/landing/companies-marquee/companies-marquee';
 import { getFeatureBySlug, getDefaultFeature } from '../../data/features';
 
 @Component({
   selector: 'app-feature',
-  imports: [Hero, Detail, Faq],
+  imports: [Hero, Detail, Faq, CompaniesMarquee],
   templateUrl: './feature.html',
   styles: ``,
 })

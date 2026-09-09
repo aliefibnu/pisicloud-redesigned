@@ -42,4 +42,9 @@ describe('Feature', () => {
 
     expect(component.currentFeature().id).toBe('recruitment');
   });
+
+  it('should render the landing-companies-marquee component after faq', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('landing-companies-marquee')).toBeTruthy();
+  });
 });
