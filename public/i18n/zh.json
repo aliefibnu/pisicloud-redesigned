@@ -808,5 +808,19 @@
         }
       }
     }
+  },
+  "OUR_CUSTOMERS": {
+    "HERO": {
+      "TITLE_PREFIX": "超过24年以来，我们始终助力客户持续发展 ",
+      "TITLE_HIGHLIGHT": "与腾飞",
+      "DESCRIPTION": "软件是企业运营的核心基石与极其重要的长期投资。我们为企业量身定制深度契合核心业务流程的系统架构，并伴随企业的发展与变革持续迭代升级。",
+      "IMAGE_ALT": "展示 PISICloud 企业考勤与薪酬管理系统的 3D 等轴测平板电脑展示图"
+    },
+    "LOGO_GRID": {
+      "TITLE_PREFIX": "PISICloud ",
+      "TITLE_HIGHLIGHT": "客户",
+      "TITLE_SUFFIX": "合作生态",
+      "SUBTITLE": "深受制造业、酒店度假村、工程建筑、电子高精尖技术及商业贸易等各领域翘楚的深度信赖。"
+    }
   }
 }
