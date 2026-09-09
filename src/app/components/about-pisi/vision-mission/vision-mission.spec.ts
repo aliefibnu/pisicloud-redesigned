@@ -24,5 +24,14 @@ describe('VisionMission', () => {
   it('should render all 4 mission cards', () => {
     expect(component.missionCards.length).toBe(4);
   });
+
+  it('should render all 4 mission cards without card titles (consistent description only)', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const h3Titles = compiled.querySelectorAll('.group h3');
+    expect(h3Titles.length).toBe(0);
+
+    const icons = compiled.querySelectorAll('.group ng-icon');
+    expect(icons.length).toBe(4);
+  });
 });
 
