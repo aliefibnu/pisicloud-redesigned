@@ -3,17 +3,25 @@
     <button
       type="button"
       (click)="toggleMenu()"
-      class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full h-10 text-sm font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
-      [class.bg-[#cde8e0]]="isOpen()"
-      [class.text-[#00382f]]="isOpen()"
+      class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full h-10 text-sm active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b60] cursor-pointer"
+      [class.bg-[#cde8e0]]="isOpen() || isActive()"
+      [class.text-[#00382f]]="isOpen() || isActive()"
+      [class.text-slate-700]="!isOpen() && !isActive()"
+      [class.font-semibold]="isActive()"
+      [class.font-medium]="!isActive()"
+      [class.hover:text-[#00382f]]="!isOpen() && !isActive()"
+      [class.hover:bg-[#cde8e0]]="!isOpen() && !isActive()"
       [attr.aria-expanded]="isOpen()"
+      [attr.aria-current]="isActive() ? 'page' : null"
       aria-haspopup="true"
       [attr.aria-label]="'UNIVERSAL.NAVBAR.ARIA.RESOURCES_MENU' | translate"
     >
       <svg
-        class="w-3.5 h-3.5 text-slate-700 group-hover:text-[#00382f] transition-transform duration-200 shrink-0"
+        class="w-3.5 h-3.5 transition-transform duration-200 shrink-0"
         [class.rotate-180]="isOpen()"
-        [class.text-[#00382f]]="isOpen()"
+        [class.text-[#00382f]]="isOpen() || isActive()"
+        [class.text-slate-700]="!isOpen() && !isActive()"
+        [class.group-hover:text-[#00382f]]="!isOpen() && !isActive()"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -41,11 +49,12 @@
             <a
               [routerLink]="resource.route"
               [fragment]="resource.fragment"
+              [routerLinkActive]="resource.route !== '/' ? 'bg-[#cde8e0]/60 text-[#00382f] font-semibold router-link-active' : ''"
               (click)="onItemClick()"
               class="group w-full text-left py-2.5 px-3 rounded-xl hover:bg-[#cde8e0] active:bg-[#b1ccc4] flex items-start gap-3 text-slate-700 hover:text-[#00382f] cursor-pointer transition-colors"
               role="menuitem"
             >
-              <div class="mt-0.5 text-slate-700 group-hover:text-[#00382f] transition-colors shrink-0">
+              <div class="mt-0.5 text-slate-700 group-hover:text-[#00382f] group-[.router-link-active]:text-[#00382f] transition-colors shrink-0">
                 @switch (resource.iconType) {
                   @case ('about') {
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -89,18 +98,34 @@
     <button
       type="button"
       (click)="toggleMobileAccordion()"
-      class="flex items-center justify-between w-full px-4 py-3 rounded-full text-base font-medium text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] active:bg-[#b1ccc4] transition-colors"
+      class="flex items-center justify-between w-full px-4 py-3 rounded-2xl text-sm transition-all active:scale-[0.98] cursor-pointer"
+      [class.bg-[#cde8e0]]="isActive()"
+      [class.text-[#00382f]]="isActive()"
+      [class.font-semibold]="isActive()"
+      [class.text-slate-700]="!isActive()"
+      [class.font-medium]="!isActive()"
+      [class.hover:text-[#00382f]]="!isActive()"
+      [class.hover:bg-[#cde8e0]]="!isActive()"
       [attr.aria-expanded]="isMobileExpanded()"
+      [attr.aria-current]="isActive() ? 'page' : null"
     >
       <div class="flex items-center gap-3">
-        <svg class="w-2 h-2 fill-slate-600" viewBox="0 0 6 8" aria-hidden="true">
+        <svg
+          class="w-2 h-2 transition-colors"
+          [class.fill-[#00382f]]="isActive()"
+          [class.fill-slate-600]="!isActive()"
+          viewBox="0 0 6 8"
+          aria-hidden="true"
+        >
           <polygon points="0,0 6,4 0,8" />
         </svg>
-        <span>{{ 'UNIVERSAL.NAVBAR.RESOURCES_LABEL' | translate }}</span>
+        <span class="tracking-wide">{{ 'UNIVERSAL.NAVBAR.RESOURCES_LABEL' | translate }}</span>
       </div>
       <svg
-        class="w-4 h-4 text-slate-600 transition-transform duration-200"
+        class="w-4 h-4 transition-transform duration-200"
         [class.rotate-180]="isMobileExpanded()"
+        [class.text-[#00382f]]="isActive()"
+        [class.text-slate-600]="!isActive()"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -117,10 +142,11 @@
           <a
             [routerLink]="resource.route"
             [fragment]="resource.fragment"
+            [routerLinkActive]="resource.route !== '/' ? 'bg-[#cde8e0]/60 text-[#00382f] font-semibold router-link-active' : ''"
             (click)="onItemClick()"
-            class="flex items-start gap-2.5 px-3 py-2 rounded-lg text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] transition-colors"
+            class="flex items-start gap-2.5 px-3 py-2 rounded-lg text-slate-700 hover:text-[#00382f] hover:bg-[#cde8e0] transition-colors cursor-pointer"
           >
-            <div class="mt-0.5 text-slate-600 shrink-0">
+            <div class="mt-0.5 text-slate-600 group-hover:text-[#00382f] group-[.router-link-active]:text-[#00382f] shrink-0">
               @switch (resource.iconType) {
                 @case ('about') {
                   <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
