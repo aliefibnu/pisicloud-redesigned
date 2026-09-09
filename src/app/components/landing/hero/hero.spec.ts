@@ -138,8 +138,8 @@ describe('Hero', () => {
     const img = compiled.querySelector('img');
     expect(img).toBeTruthy();
     expect(img?.getAttribute('ngsrc')).toBe('/images/landing/hero-image.webp');
-    expect(img?.getAttribute('width')).toBe('1536');
-    expect(img?.getAttribute('height')).toBe('1024');
+    expect(img?.getAttribute('width')).toBe('900');
+    expect(img?.getAttribute('height')).toBe('600');
     expect(img?.hasAttribute('priority')).toBe(true);
     expect(img?.getAttribute('draggable')).toBe('false');
   });
