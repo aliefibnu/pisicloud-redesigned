@@ -20,4 +20,10 @@ describe('Footer', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should not render back to top arrow button', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const arrowButton = compiled.querySelector('button');
+    expect(arrowButton).toBeNull();
+  });
 });

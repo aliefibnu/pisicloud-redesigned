@@ -1,0 +1,19 @@
+<button
+  mat-button
+  type="button"
+  (click)="scrollToTop()"
+  [attr.aria-label]="'UNIVERSAL.FOOTER.BACK_TO_TOP' | translate"
+  [tabIndex]="isVisible() ? 0 : -1"
+  [attr.aria-hidden]="!isVisible()"
+  class="w-11! h-11! min-w-0! p-0! rounded-xl! overflow-hidden! bg-[#066b5b]! hover:bg-[#055145]! text-white! shadow-md! hover:shadow-lg! active:scale-95! transition-all! duration-300! flex items-center justify-center cursor-pointer focus-visible:ring-2 focus-visible:ring-[#066b60] focus-visible:ring-offset-2"
+  [class.opacity-100]="isVisible()"
+  [class.scale-100]="isVisible()"
+  [class.pointer-events-auto]="isVisible()"
+  [class.translate-y-0]="isVisible()"
+  [class.opacity-0]="!isVisible()"
+  [class.scale-75]="!isVisible()"
+  [class.pointer-events-none]="!isVisible()"
+  [class.translate-y-4]="!isVisible()"
+>
+  <ng-icon name="tablerChevronUp" class="text-2xl text-white" aria-hidden="true" />
+</button>
