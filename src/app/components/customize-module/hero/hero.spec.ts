@@ -21,4 +21,15 @@ describe('CustomizeModule Hero', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render the hero illustration with priority, non-draggable attribute, and 610x407 dimensions', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const img = compiled.querySelector('img');
+    expect(img).toBeTruthy();
+    expect(img?.getAttribute('ngsrc')).toBe('/images/customize-module/customize-hero.webp');
+    expect(img?.getAttribute('width')).toBe('610');
+    expect(img?.getAttribute('height')).toBe('407');
+    expect(img?.hasAttribute('priority')).toBe(true);
+    expect(img?.getAttribute('draggable')).toBe('false');
+  });
 });

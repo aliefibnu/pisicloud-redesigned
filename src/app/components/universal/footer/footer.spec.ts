@@ -28,6 +28,15 @@ describe('Footer', () => {
     expect(arrowButton).toBeNull();
   });
 
+  it('should render Inforsys logo with NgOptimizedImage and 179x40 dimensions', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const logo = compiled.querySelector('img[alt="Inforsys"]');
+    expect(logo).toBeTruthy();
+    expect(logo?.getAttribute('ngsrc')).toBe('/images/footer/inforsys.webp');
+    expect(logo?.getAttribute('width')).toBe('179');
+    expect(logo?.getAttribute('height')).toBe('40');
+  });
+
   it('should render official social and partner links with secure target attributes', () => {
     const compiled = fixture.nativeElement as HTMLElement;
 
