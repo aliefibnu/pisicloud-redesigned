@@ -1,0 +1,63 @@
+<section
+  class="relative w-full overflow-hidden bg-linear-to-b from-[#f4fcf7] via-white to-white pt-14 pb-16 sm:pt-20 sm:pb-24 lg:pt-24 lg:pb-28"
+  aria-labelledby="training-hero-heading"
+>
+  <!-- Background Glow Aura -->
+  <div
+    class="pointer-events-none absolute -top-24 left-1/2 h-96 w-200 -translate-x-1/2 rounded-full bg-linear-to-tr from-[#cde8e0]/50 via-[#d5f3e5]/30 to-transparent blur-3xl"
+    aria-hidden="true"
+  ></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+    <div class="mx-auto max-w-4xl text-center">
+      <!-- 1. Title First: Signature Two-Tone Heading -->
+      <h1
+        id="training-hero-heading"
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#191c1b] tracking-tight leading-[1.15] mb-6"
+      >
+        <span>{{ 'TRAINING_IMPLEMENTATION.HERO.TITLE_PREFIX' | translate }}</span>
+        <span class="text-[#066b5b]">{{ 'TRAINING_IMPLEMENTATION.HERO.TITLE_HIGHLIGHT' | translate }}</span>
+      </h1>
+
+      <!-- 2. Small Text Below It -->
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8 sm:mb-10">
+        {{ 'TRAINING_IMPLEMENTATION.HERO.DESCRIPTION' | translate }}
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center justify-center mb-12 sm:mb-16">
+        <a
+          mat-flat-button
+          routerLink="/contact-us"
+          class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! text-white! px-7! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200!"
+        >
+          <span>{{ 'TRAINING_IMPLEMENTATION.HERO.CTA_PRIMARY' | translate }}</span>
+          <ng-icon name="tablerArrowRight" class="text-base ml-2 text-white" aria-hidden="true" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual Showcase Asset -->
+    <div class="relative mx-auto max-w-5xl">
+      <!-- Ambient Glow Behind Showcase Graphic -->
+      <div
+        class="pointer-events-none absolute inset-0 -m-8 rounded-full bg-linear-to-tr from-[#066b5b]/15 via-[#cde8e0]/30 to-transparent blur-3xl"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Clean Image Frame -->
+      <div class="relative z-10 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#dce6df]/90 bg-white shadow-xl">
+        <img
+          ngSrc="/images/training-implementation/training.webp"
+          width="3000"
+          height="2000"
+          priority
+          draggable="false"
+          (dragstart)="$event.preventDefault()"
+          [alt]="'TRAINING_IMPLEMENTATION.HERO.IMAGE_ALT' | translate"
+          class="w-full h-auto object-cover select-none [user-drag:none] [-webkit-user-drag:none] transition-transform duration-500 hover:scale-[1.01]"
+        />
+      </div>
+    </div>
+  </div>
+</section>

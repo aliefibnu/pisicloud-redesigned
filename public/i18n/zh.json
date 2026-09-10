@@ -848,6 +848,77 @@
       "OPEN_MAPS": "在谷歌地图中打开"
     }
   },
+  "TRAINING_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "系统培训与",
+      "TITLE_HIGHLIGHT": "重新实施",
+      "DESCRIPTION": "通过量身定制的培训计划与专业重新实施服务，赋能团队并最大化您的软件投资回报。",
+      "CTA_PRIMARY": "预约实施咨询",
+      "IMAGE_ALT": "PisiCloud 企业软件培训与系统重新实施互动研讨会"
+    },
+    "OFFERINGS": {
+      "EYEBROW": "核心服务项目",
+      "TITLE_PREFIX": "端到端的",
+      "TITLE_HIGHLIGHT": "实施卓越保障",
+      "DESCRIPTION": "旨在赋能您的团队、优化系统配置，并保持长期的业务高效运转。",
+      "ITEMS": {
+        "TRAINING": {
+          "TITLE": "全面系统培训课程",
+          "DESCRIPTION": "根据您的工作流程量身定制实操培训，帮助团队自信掌握各项功能。"
+        },
+        "REIMPLEMENTATION": {
+          "TITLE": "重新实施全方位支持",
+          "DESCRIPTION": "重新评估并优化软件配置，消除操作瓶颈并提升运营效率。"
+        },
+        "MATERIALS": {
+          "TITLE": "定制专属学习资源",
+          "DESCRIPTION": "为您的团队量身打造专属用户指南、视频教程及参考文档。"
+        },
+        "SUPPORT": {
+          "TITLE": "持续技术支持与协助",
+          "DESCRIPTION": "专属的实施后指导与持续技术支持，确保系统长期平稳运行。"
+        }
+      }
+    },
+    "BENEFITS": {
+      "EYEBROW": "实际成效",
+      "TITLE_PREFIX": "软件培训与重新实施的",
+      "TITLE_HIGHLIGHT": "核心价值",
+      "DESCRIPTION": "提升用户接受度，消除操作阻碍，实现软件投资回报最大化。",
+      "ITEMS": {
+        "B1": {
+          "NUMBER": "01",
+          "TITLE": "显著提升效率与工作生产力",
+          "DESCRIPTION": "通过针对业务流程优化的系统配置，提升团队产出并加速日常业务流转速度。"
+        },
+        "B2": {
+          "NUMBER": "02",
+          "TITLE": "增强员工使用意愿与满意度",
+          "DESCRIPTION": "通过针对岗位的实操辅导，增强各部门员工的系统使用信心与满意度。"
+        },
+        "B3": {
+          "NUMBER": "03",
+          "TITLE": "降低操作失误与系统停滞时间",
+          "DESCRIPTION": "深入理解系统功能与规则，有效避免关键业务流程中的人为失误与意外延误。"
+        },
+        "B4": {
+          "NUMBER": "04",
+          "TITLE": "提升软件投资回报率 (ROI)",
+          "DESCRIPTION": "充分激活以往未被利用的高级功能，自动化繁琐手动流程，释放软件全部价值。"
+        },
+        "B5": {
+          "NUMBER": "05",
+          "TITLE": "简化业务流程与跨部门协同",
+          "DESCRIPTION": "消除部门间的数据壁垒与信息孤岛，全公司范围内建立标准化的最佳实践操作流程。"
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "准备好释放软件的全部潜能了吗？",
+        "DESCRIPTION": "我们的软件培训与重新实施计划将确保您的团队拥有走向成功所需的专业知识与技能。欢迎立即与我们取得联系，探索我们如何为您的企业创造更大价值。",
+        "CTA_BUTTON": "联系实施专家"
+      }
+    }
+  },
   "SEO": {
     "DEFAULT_TITLE": "PisiCloud - 现代化云端人力资源与薪资管理系统",
     "DEFAULT_DESCRIPTION": "基于云端的考勤、薪酬和人力资源软件，助力企业实现安全、便捷、高效的员工管理。",
@@ -875,6 +946,10 @@
       "FEATURE": {
         "TITLE": "功能概览 - 全方位一体化人力资源管理系统 | PisiCloud",
         "DESCRIPTION": "探索考勤管理、薪酬核算、请假审批、加班管理、招聘流程等 PisiCloud 全套核心功能。"
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "系统培训与重新实施 - PisiCloud",
+        "DESCRIPTION": "PisiCloud 软件培训与重新实施计划，为您的团队提供优化系统性能所需的专业知识与工具，确保持续成功应用。"
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "定制模块 - 企业专属软件定制开发服务 | PISICloud",

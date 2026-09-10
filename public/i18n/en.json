@@ -848,6 +848,77 @@
       "OPEN_MAPS": "Open in Google Maps"
     }
   },
+  "TRAINING_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "Training & ",
+      "TITLE_HIGHLIGHT": "Re-Implementation",
+      "DESCRIPTION": "Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.",
+      "CTA_PRIMARY": "Schedule a Consultation",
+      "IMAGE_ALT": "PisiCloud collaborative software training and system re-implementation interactive workshop"
+    },
+    "OFFERINGS": {
+      "EYEBROW": "Core Programs",
+      "TITLE_PREFIX": "End-to-End ",
+      "TITLE_HIGHLIGHT": "Implementation Excellence",
+      "DESCRIPTION": "Designed to empower your workforce, fine-tune configurations, and sustain long-term operational velocity.",
+      "ITEMS": {
+        "TRAINING": {
+          "TITLE": "Comprehensive Training Sessions",
+          "DESCRIPTION": "Hands-on, role-based training tailored to your workflows to ensure your team masters every feature with confidence."
+        },
+        "REIMPLEMENTATION": {
+          "TITLE": "Re-Implementation Support",
+          "DESCRIPTION": "Re-evaluate and fine-tune your software configuration to eliminate bottlenecks and optimize operational efficiency."
+        },
+        "MATERIALS": {
+          "TITLE": "Customized Learning Materials",
+          "DESCRIPTION": "Tailored user guides, video walkthroughs, and reference documentation built specifically for your team."
+        },
+        "SUPPORT": {
+          "TITLE": "Ongoing Support and Assistance",
+          "DESCRIPTION": "Dedicated post-implementation guidance and continuous technical assistance to keep operations running smoothly."
+        }
+      }
+    },
+    "BENEFITS": {
+      "EYEBROW": "Measurable Impact",
+      "TITLE_PREFIX": "Key Benefits of ",
+      "TITLE_HIGHLIGHT": "Training & Re-Implementation",
+      "DESCRIPTION": "Achieve higher adoption, reduced operating friction, and maximum return from your software investment.",
+      "ITEMS": {
+        "B1": {
+          "NUMBER": "01",
+          "TITLE": "Improved Efficiency & Productivity",
+          "DESCRIPTION": "Maximize team output and accelerate daily workflows through optimized software configuration tailored to your operational cadence."
+        },
+        "B2": {
+          "NUMBER": "02",
+          "TITLE": "Enhanced User Adoption & Satisfaction",
+          "DESCRIPTION": "Foster genuine confidence and widespread adoption across departments with hands-on, role-specific guidance."
+        },
+        "B3": {
+          "NUMBER": "03",
+          "TITLE": "Reduced Errors & System Downtime",
+          "DESCRIPTION": "Minimize operational bottlenecks and costly user errors through in-depth understanding of system features and rules."
+        },
+        "B4": {
+          "NUMBER": "04",
+          "TITLE": "Increased Return on Investment (ROI)",
+          "DESCRIPTION": "Unlock previously underutilized features and automate tedious manual processes to extract maximum value from your software."
+        },
+        "B5": {
+          "NUMBER": "05",
+          "TITLE": "Streamlined Processes & Cross-Collaboration",
+          "DESCRIPTION": "Eliminate departmental silos and standardize best-practice operational workflows across your entire organization."
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "Ready to Unlock Your Software's Full Potential?",
+        "DESCRIPTION": "Our Software Training & Re-Implementation Program will ensure your team is equipped with the knowledge and skills necessary to achieve success. Contact us today to learn more about how our program can benefit your organization.",
+        "CTA_BUTTON": "Talk to an Implementation Specialist"
+      }
+    }
+  },
   "SEO": {
     "DEFAULT_TITLE": "PISICloud | HRD Software",
     "DEFAULT_DESCRIPTION": "Cloud-based Attendance, Payroll, and HR software for secure, easy, and efficient employee management.",
@@ -875,6 +946,10 @@
       "FEATURE": {
         "TITLE": "Features - Comprehensive HR Software Suite | PisiCloud",
         "DESCRIPTION": "Explore all PisiCloud HR features including Attendance, Payroll, Leave Management, Recruitment, and Tax."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Training & Re-Implementation - PisiCloud",
+        "DESCRIPTION": "Software Training & Re-Implementation Program designed to provide you with the tools, resources, and knowledge needed to optimize software performance."
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "Custom Module - Tailored Software Solutions | PISICloud",

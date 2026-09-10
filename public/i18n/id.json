@@ -848,6 +848,77 @@
       "OPEN_MAPS": "Buka di Google Maps"
     }
   },
+  "TRAINING_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "Pelatihan & ",
+      "TITLE_HIGHLIGHT": "Re-Implementasi",
+      "DESCRIPTION": "Tingkatkan kinerja tim dan maksimalkan investasi software Anda melalui program pelatihan terarah serta layanan re-implementasi ahli.",
+      "CTA_PRIMARY": "Jadwalkan Konsultasi",
+      "IMAGE_ALT": "Sesi interaktif pelatihan dan re-implementasi software kolaboratif PisiCloud"
+    },
+    "OFFERINGS": {
+      "EYEBROW": "Program Unggulan",
+      "TITLE_PREFIX": "Keunggulan ",
+      "TITLE_HIGHLIGHT": "Implementasi Menyeluruh",
+      "DESCRIPTION": "Dirancang untuk memberdayakan tim Anda, menyempurnakan konfigurasi sistem, dan mempertahankan efisiensi operasional jangka panjang.",
+      "ITEMS": {
+        "TRAINING": {
+          "TITLE": "Sesi Pelatihan Komprehensif",
+          "DESCRIPTION": "Pelatihan langsung berbasis peran yang disesuaikan dengan alur kerja tim agar menguasai setiap fitur dengan percaya diri."
+        },
+        "REIMPLEMENTATION": {
+          "TITLE": "Dukungan Re-Implementasi",
+          "DESCRIPTION": "Evaluasi ulang dan sempurnakan konfigurasi sistem untuk mengeliminasi hambatan serta memaksimalkan efisiensi operasional."
+        },
+        "MATERIALS": {
+          "TITLE": "Materi Pembelajaran Khusus",
+          "DESCRIPTION": "Panduan pengguna, tutorial video, dan dokumentasi referensi khusus yang dirancang sesuai kebutuhan tim Anda."
+        },
+        "SUPPORT": {
+          "TITLE": "Dukungan & Bantuan Berkelanjutan",
+          "DESCRIPTION": "Pendampingan pasca-implementasi dan bantuan teknis berkelanjutan untuk menjaga kelancaran operasional harian."
+        }
+      }
+    },
+    "BENEFITS": {
+      "EYEBROW": "Dampak Nyata",
+      "TITLE_PREFIX": "Manfaat Utama ",
+      "TITLE_HIGHLIGHT": "Pelatihan & Re-Implementasi",
+      "DESCRIPTION": "Tingkatkan adopsi pengguna, kurangi hambatan operasional, dan raih laba investasi maksimal dari software Anda.",
+      "ITEMS": {
+        "B1": {
+          "NUMBER": "01",
+          "TITLE": "Peningkatan Efisiensi & Produktivitas",
+          "DESCRIPTION": "Maksimalkan output tim dan percepat alur kerja harian melalui konfigurasi software yang dioptimalkan sesuai ritme operasional perusahaan Anda."
+        },
+        "B2": {
+          "NUMBER": "02",
+          "TITLE": "Peningkatan Adopsi & Kepuasan Pengguna",
+          "DESCRIPTION": "Tumbuhkan kepercayaan diri karyawan dan adopsi menyeluruh di seluruh divisi berkat bimbingan langsung berbasis peran."
+        },
+        "B3": {
+          "NUMBER": "03",
+          "TITLE": "Pengurangan Kesalahan & Downtime Sistem",
+          "DESCRIPTION": "Minimalkan hambatan operasional dan kesalahan pengguna yang merugikan melalui pemahaman mendalam terhadap fitur dan alur sistem."
+        },
+        "B4": {
+          "NUMBER": "04",
+          "TITLE": "Peningkatan Return on Investment (ROI)",
+          "DESCRIPTION": "Buka potensi fitur yang sebelumnya belum termanfaatkan dan otomatisasi tugas manual untuk meraih nilai maksimal dari investasi software."
+        },
+        "B5": {
+          "NUMBER": "05",
+          "TITLE": "Proses Lebih Ramping & Kolaborasi Lebih Baik",
+          "DESCRIPTION": "Hilangkan silo antar-departemen dan standarisasi praktik terbaik alur kerja operasional di seluruh organisasi Anda."
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "Siap Mengoptimalkan Potensi Software Anda?",
+        "DESCRIPTION": "Program Pelatihan & Re-Implementasi Software kami akan memastikan tim Anda dibekali keahlian dan pengetahuan yang dibutuhkan untuk meraih sukses. Hubungi kami hari ini untuk mengetahui manfaat program kami bagi organisasi Anda.",
+        "CTA_BUTTON": "Konsultasi dengan Spesialis Implementasi"
+      }
+    }
+  },
   "SEO": {
     "DEFAULT_TITLE": "PisiCloud - Software HR & Payroll Cloud Modern",
     "DEFAULT_DESCRIPTION": "Software absensi, penggajian (payroll), dan HR berbasis cloud untuk manajemen karyawan yang aman, mudah, dan efisien.",
@@ -875,6 +946,10 @@
       "FEATURE": {
         "TITLE": "Fitur Lengkap - Sistem HR & Payroll Terintegrasi | PisiCloud",
         "DESCRIPTION": "Jelajahi seluruh modul unggulan PisiCloud mulai dari absensi, cuti, lembur, payroll, pajak tahunan, hingga rekrutmen."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Pelatihan & Re-Implementasi - PisiCloud",
+        "DESCRIPTION": "Program Pelatihan & Re-Implementasi Software untuk membekali tim Anda dengan alat, sumber daya, dan wawasan guna mengoptimalkan kinerja software."
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "Modul Kustom - Solusi Modul HR Khusus Bisnis Anda | PISICloud",

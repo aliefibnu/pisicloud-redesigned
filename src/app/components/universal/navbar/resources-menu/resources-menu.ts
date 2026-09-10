@@ -44,13 +44,9 @@ export class ResourcesMenu {
 
   readonly isActive = computed(() => {
     const cleanUrl = (this.currentUrl() ?? '').split('?')[0].split('#')[0];
-    return (
-      cleanUrl === '/about-pisi' ||
-      cleanUrl.startsWith('/about-pisi/') ||
-      cleanUrl === '/our-customers' ||
-      cleanUrl.startsWith('/our-customers/') ||
-      cleanUrl === '/strategy-implementation' ||
-      cleanUrl.startsWith('/strategy-implementation/')
+    if (!cleanUrl || cleanUrl === '/') return false;
+    return this.resources.some(
+      (r) => r.route !== '/' && (cleanUrl === r.route || cleanUrl.startsWith(r.route + '/'))
     );
   });
 
