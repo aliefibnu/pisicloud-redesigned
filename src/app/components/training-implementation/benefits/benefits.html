@@ -22,28 +22,38 @@
       </p>
     </div>
 
-    <!-- 5 Benefits Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-      @for (benefit of benefits; track benefit.key; let i = $index) {
-        <div
-          class="rounded-2xl sm:rounded-3xl border border-[#dce6df] bg-white p-6 sm:p-8 shadow-xs hover:shadow-md hover:border-[#066b5b]/40 transition-all duration-300 flex flex-col justify-between"
-          [class.lg:col-span-1]="i < 3"
-          [class.lg:translate-x-1/2]="i === 3"
-          [class.lg:-translate-x-1/2]="i === 4"
-        >
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#cde8e0]/60 text-[#066b5b]">
+    <!-- Clean Information-Dense SaaS Feature List -->
+    <div
+      class="max-w-4xl mx-auto rounded-2xl border border-[#dce6df] bg-white divide-y divide-[#dce6df] mb-16 sm:mb-20 overflow-hidden"
+    >
+      @for (benefit of benefits; track benefit.key) {
+        <div class="flex items-start gap-4 sm:gap-5 p-5 sm:p-6 transition-colors duration-150 hover:bg-[#f8faf8]">
+          <!-- 40x40 Icon in subtle rounded square tint -->
+          <div
+            class="w-10 h-10 shrink-0 rounded-xl bg-[#cde8e0]/40 text-[#066b5b] flex items-center justify-center mt-0.5"
+            aria-hidden="true"
+          >
+            <ng-icon [name]="benefit.icon" class="text-xl" aria-hidden="true" />
+          </div>
+
+          <!-- Content Column -->
+          <div class="grow min-w-0">
+            <div class="flex items-center gap-2 mb-1">
+              <!-- Single Clean Number Badge -->
+              <span
+                class="px-2 py-0.5 rounded-md text-[11px] font-mono font-bold bg-[#cde8e0]/50 text-[#066b5b] shrink-0"
+              >
                 {{ 'TRAINING_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.NUMBER' | translate }}
               </span>
-              <ng-icon name="tablerCircleCheck" class="text-xl text-[#066b5b]" aria-hidden="true" />
+
+              <!-- Title (1 line) -->
+              <h3 class="text-base sm:text-lg font-bold text-[#191c1b] tracking-tight truncate sm:whitespace-normal">
+                {{ 'TRAINING_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.TITLE' | translate }}
+              </h3>
             </div>
 
-            <h3 class="text-lg sm:text-xl font-bold text-[#191c1b] tracking-tight mb-2.5">
-              {{ 'TRAINING_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.TITLE' | translate }}
-            </h3>
-
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal m-0">
+            <!-- Description (max 2 lines) -->
+            <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed font-normal m-0 line-clamp-2">
               {{ 'TRAINING_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.DESCRIPTION' | translate }}
             </p>
           </div>

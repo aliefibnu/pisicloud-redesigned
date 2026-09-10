@@ -3,10 +3,18 @@ import { RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { TranslatePipe } from '@ngx-translate/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { tablerCircleCheck, tablerArrowRight } from '@ng-icons/tabler-icons';
+import {
+  tablerArrowRight,
+  tablerTrendingUp,
+  tablerUsers,
+  tablerShieldCheck,
+  tablerChartBar,
+  tablerGitFork,
+} from '@ng-icons/tabler-icons';
 
 interface BenefitItem {
   key: string;
+  icon: string;
 }
 
 @Component({
@@ -14,8 +22,12 @@ interface BenefitItem {
   imports: [RouterLink, MatButtonModule, TranslatePipe, NgIcon],
   viewProviders: [
     provideIcons({
-      tablerCircleCheck,
       tablerArrowRight,
+      tablerTrendingUp,
+      tablerUsers,
+      tablerShieldCheck,
+      tablerChartBar,
+      tablerGitFork,
     }),
   ],
   templateUrl: './benefits.html',
@@ -23,10 +35,10 @@ interface BenefitItem {
 })
 export class Benefits {
   readonly benefits: BenefitItem[] = [
-    { key: 'B1' },
-    { key: 'B2' },
-    { key: 'B3' },
-    { key: 'B4' },
-    { key: 'B5' },
+    { key: 'B1', icon: 'tablerTrendingUp' },
+    { key: 'B2', icon: 'tablerUsers' },
+    { key: 'B3', icon: 'tablerShieldCheck' },
+    { key: 'B4', icon: 'tablerChartBar' },
+    { key: 'B5', icon: 'tablerGitFork' },
   ];
 }
