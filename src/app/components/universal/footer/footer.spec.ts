@@ -61,4 +61,10 @@ describe('Footer', () => {
     const trainingLink = compiled.querySelector('a[href="/training-implementation"]');
     expect(trainingLink).toBeTruthy();
   });
+
+  it('should render link to customize-module for customize module', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const customizeLink = compiled.querySelector('a[href="/customize-module"]');
+    expect(customizeLink).toBeTruthy();
+  });
 });

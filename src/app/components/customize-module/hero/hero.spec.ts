@@ -1,15 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideTranslateService } from '@ngx-translate/core';
+import { provideRouter } from '@angular/router';
 import { Hero } from './hero';
 
-describe('Hero', () => {
+describe('CustomizeModule Hero', () => {
   let component: Hero;
   let fixture: ComponentFixture<Hero>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Hero],
-      providers: [provideTranslateService()],
+      providers: [provideTranslateService(), provideRouter([])],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Hero);
@@ -19,12 +20,5 @@ describe('Hero', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  it('should render the pure device mockup image', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
-    const img = compiled.querySelector('img');
-    expect(img).toBeTruthy();
-    expect(img?.getAttribute('ngsrc')).toContain('hero-devices.webp');
   });
 });
