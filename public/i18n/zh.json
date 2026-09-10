@@ -847,5 +847,35 @@
       "MAPS_TITLE": "PT Inforsys Indonesia 地图位置",
       "OPEN_MAPS": "在谷歌地图中打开"
     }
+  },
+  "SEO": {
+    "DEFAULT_TITLE": "PisiCloud - 现代化云端人力资源与薪资管理系统",
+    "DEFAULT_DESCRIPTION": "基于云端的考勤、薪酬和人力资源软件，助力企业实现安全、便捷、高效的员工管理。",
+    "PAGES": {
+      "LANDING": {
+        "TITLE": "PisiCloud - 高效的云端人力资源与薪资管理软件",
+        "DESCRIPTION": "基于云端的考勤、薪酬和人力资源软件，助力企业实现安全、便捷、高效的员工管理。"
+      },
+      "ABOUT_PISI": {
+        "TITLE": "关于 PISI - PisiCloud 云端人力资源解决方案",
+        "DESCRIPTION": "了解 PT. Pisi Mulia Informatika 及其致力于提供创新、可靠的人力资源与薪资云服务的企业愿景。"
+      },
+      "OUR_CUSTOMERS": {
+        "TITLE": "客户案例 - 众多领军企业的信赖之选 | PisiCloud",
+        "DESCRIPTION": "了解各行业知名企业如何借助 PisiCloud 优化人力资源与薪资流程。"
+      },
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "实施策略 - 平稳高效的系统上线方案 | PisiCloud",
+        "DESCRIPTION": "探索我们经过实践检验的人力资源软件部署、定制和培训方法论。"
+      },
+      "CONTACT_US": {
+        "TITLE": "联系我们 - 预约演示与业务咨询 | PisiCloud",
+        "DESCRIPTION": "随时联系 PisiCloud 销售与技术支持团队，预约产品演示或获取报价方案。"
+      },
+      "FEATURE": {
+        "TITLE": "功能概览 - 全方位一体化人力资源管理系统 | PisiCloud",
+        "DESCRIPTION": "探索考勤管理、薪酬核算、请假审批、加班管理、招聘流程等 PisiCloud 全套核心功能。"
+      }
+    }
   }
 }

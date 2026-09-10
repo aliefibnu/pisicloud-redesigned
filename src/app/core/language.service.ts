@@ -1,5 +1,5 @@
 import { inject, PLATFORM_ID, Service, signal } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 
@@ -9,6 +9,7 @@ export type Language = 'en' | 'id' | 'zh' | 'ja' | 'ko';
 export class LanguageService {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly translate = inject(TranslateService);
+  private readonly document = inject(DOCUMENT);
   private readonly storageKey = 'app-lang';
   private readonly supportedLangs: Language[] = ['en', 'id', 'zh', 'ja', 'ko'];
 
@@ -28,11 +29,17 @@ export class LanguageService {
       : 'en';
 
     this.currentLanguage.set(selected);
+    if (this.document?.documentElement) {
+      this.document.documentElement.lang = selected;
+    }
     return this.translate.use(selected);
   }
 
   setLanguage(language: Language): void {
     this.currentLanguage.set(language);
+    if (this.document?.documentElement) {
+      this.document.documentElement.lang = language;
+    }
     this.translate.use(language);
     if (isPlatformBrowser(this.platformId) && typeof localStorage !== 'undefined') {
       localStorage.setItem(this.storageKey, language);

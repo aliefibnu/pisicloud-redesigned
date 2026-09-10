@@ -847,5 +847,35 @@
       "MAPS_TITLE": "PT Inforsys Indonesia Location Map",
       "OPEN_MAPS": "Open in Google Maps"
     }
+  },
+  "SEO": {
+    "DEFAULT_TITLE": "PISICloud | HRD Software",
+    "DEFAULT_DESCRIPTION": "Cloud-based Attendance, Payroll, and HR software for secure, easy, and efficient employee management.",
+    "PAGES": {
+      "LANDING": {
+        "TITLE": "PISICloud | HRD Software",
+        "DESCRIPTION": "Cloud-based Attendance, Payroll, and HR software for secure, easy, and efficient employee management."
+      },
+      "ABOUT_PISI": {
+        "TITLE": "About PISI - PisiCloud Cloud HR Solutions",
+        "DESCRIPTION": "Learn about PT. Pisi Mulia Informatika and our mission to provide innovative, scalable cloud HR & payroll solutions."
+      },
+      "OUR_CUSTOMERS": {
+        "TITLE": "Our Customers - Trusted by Leading Companies | PisiCloud",
+        "DESCRIPTION": "See how leading enterprises across industries streamline HR and payroll operations with PisiCloud."
+      },
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "Strategy Implementation - Smooth HR Rollout | PisiCloud",
+        "DESCRIPTION": "Discover our proven methodology for seamless HR & payroll software deployment, customization, and training."
+      },
+      "CONTACT_US": {
+        "TITLE": "Contact Us - Get in Touch with PisiCloud",
+        "DESCRIPTION": "Contact PisiCloud sales and support team. Book a demo, request a quote, or ask questions about our HR system."
+      },
+      "FEATURE": {
+        "TITLE": "Features - Comprehensive HR Software Suite | PisiCloud",
+        "DESCRIPTION": "Explore all PisiCloud HR features including Attendance, Payroll, Leave Management, Recruitment, and Tax."
+      }
+    }
   }
 }
