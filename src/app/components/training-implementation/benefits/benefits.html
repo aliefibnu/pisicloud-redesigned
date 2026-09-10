@@ -85,10 +85,12 @@
           <a
             mat-flat-button
             routerLink="/contact-us"
-            class="rounded-full! bg-white! hover:bg-emerald-50! text-[#066b5b]! px-8! py-4! h-auto! font-semibold! text-sm! sm:text-base! shadow-lg! hover:shadow-xl! active:scale-95! transition-all! duration-200!"
+            class="rounded-full! bg-white! hover:bg-emerald-50! text-[#066b5b]! px-8! py-4! h-auto! font-semibold! text-sm! sm:text-base! shadow-lg! hover:shadow-xl! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center"
           >
-            <span>{{ 'TRAINING_IMPLEMENTATION.BENEFITS.CALLOUT.CTA_BUTTON' | translate }}</span>
-            <ng-icon name="tablerArrowRight" class="text-base ml-2 text-[#066b5b]" aria-hidden="true" />
+            <span class="inline-flex items-center gap-2">
+              <span>{{ 'TRAINING_IMPLEMENTATION.BENEFITS.CALLOUT.CTA_BUTTON' | translate }}</span>
+              <ng-icon name="tablerArrowRight" class="text-lg text-[#066b5b] shrink-0" aria-hidden="true" />
+            </span>
           </a>
         </div>
       </div>
