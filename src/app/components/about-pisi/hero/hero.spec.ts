@@ -21,19 +21,10 @@ describe('Hero', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render both mobile focused mockup and desktop banner', () => {
+  it('should render the pure device mockup image', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const images = compiled.querySelectorAll('img');
-    expect(images.length).toBeGreaterThanOrEqual(2);
-
-    const mobileImg = Array.from(images).find((img) =>
-      img.getAttribute('ngsrc')?.includes('hero-banner-mobile.webp')
-    );
-    const desktopImg = Array.from(images).find((img) =>
-      img.getAttribute('ngsrc')?.includes('hero-banner.webp')
-    );
-
-    expect(mobileImg).toBeTruthy();
-    expect(desktopImg).toBeTruthy();
+    const img = compiled.querySelector('img');
+    expect(img).toBeTruthy();
+    expect(img?.getAttribute('ngsrc')).toContain('hero-devices.webp');
   });
 });
