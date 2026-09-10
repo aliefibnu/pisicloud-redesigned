@@ -65,13 +65,31 @@ describe('TrainingImplementation Benefits', () => {
     expect(highlightSpan?.textContent?.trim()).toBe('Training & Re-Implementation');
   });
 
-  it('should render all 5 benefits cards', () => {
+  it('should render all 5 benefits inside a single shared container with divider lines', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain('Improved Efficiency & Productivity');
-    expect(compiled.textContent).toContain('Enhanced User Adoption & Satisfaction');
-    expect(compiled.textContent).toContain('Reduced Errors & System Downtime');
-    expect(compiled.textContent).toContain('Increased Return on Investment (ROI)');
-    expect(compiled.textContent).toContain('Streamlined Processes & Cross-Collaboration');
+    const container = compiled.querySelector('.max-w-4xl');
+    expect(container).toBeTruthy();
+    expect(container?.classList.contains('divide-y')).toBe(true);
+
+    const rows = container?.querySelectorAll(':scope > div') ?? [];
+    expect(rows.length).toBe(5);
+
+    // Verify all 5 benefits content and badges
+    const expectedBenefits = [
+      { num: '01', title: 'Improved Efficiency & Productivity' },
+      { num: '02', title: 'Enhanced User Adoption & Satisfaction' },
+      { num: '03', title: 'Reduced Errors & System Downtime' },
+      { num: '04', title: 'Increased Return on Investment (ROI)' },
+      { num: '05', title: 'Streamlined Processes & Cross-Collaboration' },
+    ];
+
+    expectedBenefits.forEach((expected, idx) => {
+      const row = rows[idx];
+      expect(row.textContent).toContain(expected.num);
+      expect(row.textContent).toContain(expected.title);
+      // Verify no alternating zigzag classes
+      expect(row.classList.contains('md:flex-row-reverse')).toBe(false);
+    });
   });
 
   it('should render the closing callout card with CTA button', () => {
