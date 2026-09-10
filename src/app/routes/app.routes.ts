@@ -35,6 +35,12 @@ export const routes: Routes = [
     loadComponent: () => import('../pages/contact-us/contact-us').then((m) => m.ContactUs),
   },
   {
+    path: 'customize-module',
+    data: { seoKey: 'CUSTOMIZE_MODULE' },
+    loadComponent: () =>
+      import('../pages/customize-module/customize-module').then((m) => m.CustomizeModule),
+  },
+  {
     path: 'feature/:slug',
     data: { seoKey: 'FEATURE_DETAIL' },
     loadComponent: () => import('../pages/feature/feature').then((m) => m.Feature),

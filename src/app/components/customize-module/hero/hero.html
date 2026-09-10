@@ -1,0 +1,61 @@
+<section class="relative w-full overflow-hidden pt-12 sm:pt-16 lg:pt-20 pb-16 lg:pb-24 bg-gradient-to-b from-[#f4fcf7] via-white to-white font-sans">
+  <!-- Subtle decorative ambient blobs -->
+  <div class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#cde8e0]/40 via-transparent to-transparent blur-3xl -z-10" aria-hidden="true"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <!-- Left Column: Content & CTA -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left">
+        <!-- Headline with Two-Tone Formula -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#191c1b] tracking-tight leading-[1.15] mb-6">
+          <span>{{ 'CUSTOMIZE_MODULE.HERO.TITLE_PREFIX' | translate }}</span>
+          <span class="text-[#066b5b]">{{ 'CUSTOMIZE_MODULE.HERO.TITLE_HIGHLIGHT' | translate }}</span>
+          <span>{{ 'CUSTOMIZE_MODULE.HERO.TITLE_SUFFIX' | translate }}</span>
+        </h1>
+
+        <!-- Subtitle Paragraph -->
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8 max-w-2xl">
+          {{ 'CUSTOMIZE_MODULE.HERO.DESCRIPTION' | translate }}
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+          <a
+            mat-flat-button
+            routerLink="/contact-us"
+            class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! text-white! px-7! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center gap-2"
+          >
+            <span>{{ 'CUSTOMIZE_MODULE.HERO.CTA_CONSULT' | translate }}</span>
+            <ng-icon name="tablerArrowRight" class="text-lg text-white" aria-hidden="true" />
+          </a>
+
+          <a
+            mat-stroked-button
+            routerLink="/"
+            fragment="features"
+            class="rounded-full! border-[#066b5b]! text-[#066b5b]! hover:bg-[#066b5b]/5! bg-white! px-6! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center gap-2"
+          >
+            <span>{{ 'CUSTOMIZE_MODULE.HERO.CTA_EXPLORE' | translate }}</span>
+            <ng-icon name="tablerArrowUpRight" class="text-lg text-[#066b5b]" aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Optimized Frameless Illustration Showcase -->
+      <div class="lg:col-span-5 flex justify-center items-center select-none">
+        <div class="relative w-full max-w-lg lg:max-w-none flex items-center justify-center">
+          <img
+            ngSrc="/images/customize-module/customize-hero.webp"
+            [alt]="'CUSTOMIZE_MODULE.HERO.IMAGE_ALT' | translate"
+            width="1200"
+            height="800"
+            priority
+            draggable="false"
+            (dragstart)="$event.preventDefault()"
+            class="w-full h-auto object-contain select-none transition-transform duration-500 hover:scale-[1.02]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

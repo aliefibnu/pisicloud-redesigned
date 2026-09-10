@@ -875,6 +875,83 @@
       "FEATURE": {
         "TITLE": "Fitur Lengkap - Sistem HR & Payroll Terintegrasi | PisiCloud",
         "DESCRIPTION": "Jelajahi seluruh modul unggulan PisiCloud mulai dari absensi, cuti, lembur, payroll, pajak tahunan, hingga rekrutmen."
+      },
+      "CUSTOMIZE_MODULE": {
+        "TITLE": "Modul Kustom - Solusi Modul HR Khusus Bisnis Anda | PISICloud",
+        "DESCRIPTION": "Layanan pengembangan modul perangkat lunak khusus PisiCloud yang disesuaikan dengan keunikan proses bisnis dan pertumbuhan perusahaan Anda."
+      }
+    }
+  },
+  "CUSTOMIZE_MODULE": {
+    "HERO": {
+      "BADGE": "Layanan Kustomisasi Khusus",
+      "TITLE_PREFIX": "Modul Perangkat Lunak ",
+      "TITLE_HIGHLIGHT": "Disesuaikan Khusus",
+      "TITLE_SUFFIX": " untuk Pertumbuhan Bisnis",
+      "DESCRIPTION": "Dalam bisnis yang terus berkembang dalam ukuran dan kompleksitas, kebutuhan untuk pengembangan modul perangkat lunak menjadi semakin penting. Produk perangkat lunak yang unggul adalah produk yang dapat beradaptasi dengan perkembangan perusahaan dan persyaratan khususnya.",
+      "CTA_CONSULT": "Konsultasikan Kebutuhan Anda",
+      "CTA_EXPLORE": "Lihat Fitur Utama",
+      "IMAGE_ALT": "Ilustrasi tim pengembang modul perangkat lunak kustom PISICloud berkolaborasi menyediakan solusi teknologi perusahaan",
+      "TAG_1": "100% Kustomisasi Spesifik",
+      "TAG_2": "Arsitektur Skalabel",
+      "TAG_3": "Dukungan Penuh & UAT"
+    },
+    "BENEFITS": {
+      "BADGE": "Nilai Tambah & Keunggulan",
+      "TITLE_PREFIX": "Solusi Tepat Sasaran untuk ",
+      "TITLE_HIGHLIGHT": "Setiap Tantangan",
+      "TITLE_SUFFIX": " Operasional Perusahaan",
+      "DESCRIPTION": "Kami menghadirkan modul fungsional, andal, dan siap berkembang seiring akselerasi bisnis Anda.",
+      "ITEMS": {
+        "ANALYSIS": {
+          "BADGE": "Analisis Menyeluruh",
+          "TITLE": "Analisis Kebutuhan Mendalam",
+          "DESCRIPTION": "Kami menyediakan layanan pengembangan perangkat lunak khusus untuk modul yang disesuaikan dengan kebutuhan perusahaan yang sedang berkembang. Tim ahli kami akan bekerja sama dengan bisnis Anda untuk menganalisis kebutuhan Anda dan menawarkan solusi untuk masalah yang sedang dihadapi."
+        },
+        "SCALABLE": {
+          "BADGE": "Teknologi Modern",
+          "TITLE": "Arsitektur Fleksibel & Skalabel",
+          "DESCRIPTION": "Kami memahami bahwa setiap bisnis memiliki keunikan dan kebutuhan khusus yang perlu dipenuhi. Layanan pengembangan modul perangkat lunak kami disesuaikan dengan kebutuhan dan persyaratan Anda, sehingga solusi yang kami berikan efektif dan efisien. Kami menggunakan teknologi dan alat terbaru untuk menghasilkan modul berkualitas tinggi yang skalabel, fleksibel, dan dirancang untuk memenuhi spesifikasi yang tepat."
+        },
+        "EXPERIENCE": {
+          "BADGE": "Pengalaman Nyata",
+          "TITLE": "Keahlian Lintas Berbagai Industri",
+          "DESCRIPTION": "Pengembang perangkat lunak kami memiliki pengalaman bertahun-tahun dalam bekerja dengan berbagai industri dan berkomitmen untuk memberikan solusi yang tidak hanya fungsional tetapi juga mudah digunakan. Kami percaya bahwa komunikasi adalah kunci keberhasilan, dan kami bekerja sama dengan klien kami selama seluruh proses pengembangan perangkat lunak untuk memastikan bahwa kebutuhan dan persyaratan mereka terpenuhi."
+        },
+        "PARTNERSHIP": {
+          "BADGE": "Kemitraan Dedikasi",
+          "TITLE": "Komitmen Berkelanjutan & Dukungan Penuh",
+          "DESCRIPTION": "Kami berdedikasi untuk menyediakan modul perangkat lunak yang secara khusus disesuaikan dengan kebutuhan bisnis Anda. Hubungi kami hari ini untuk mempelajari lebih lanjut tentang layanan pengembangan perangkat lunak khusus kami dan bagaimana kami dapat membantu bisnis Anda berkembang di pasar yang selalu berubah."
+        }
+      }
+    },
+    "PROCESS": {
+      "BADGE": "Metodologi Kerja",
+      "TITLE_PREFIX": "4 Tahap Terstruktur Menuju ",
+      "TITLE_HIGHLIGHT": "Solusi Modul",
+      "TITLE_SUFFIX": " yang Sempurna",
+      "DESCRIPTION": "Kolaborasi transparan dan terukur di setiap tahap rekayasa perangkat lunak untuk memastikan akurasi hasil.",
+      "STEPS": {
+        "STEP_1": {
+          "STEP_NUMBER": "01",
+          "TITLE": "Konsultasi & Pemetaan Kebutuhan",
+          "DESCRIPTION": "Diskusi komprehensif untuk memetakan alur bisnis unik Anda, mengidentifikasi bottleneck, dan merumuskan spesifikasi teknis modul."
+        },
+        "STEP_2": {
+          "STEP_NUMBER": "02",
+          "TITLE": "Perancangan Solusi & UI/UX",
+          "DESCRIPTION": "Penyusunan arsitektur sistem, skema basis data, dan mockup visual interaktif agar alur kerja modul intuitif dan mudah digunakan."
+        },
+        "STEP_3": {
+          "STEP_NUMBER": "03",
+          "TITLE": "Pengembangan & Uji Kualitas (QA)",
+          "DESCRIPTION": "Pengembangan modul dengan standar kode modern, diikuti serangkaian pengujian fungsional, performa, dan validasi keamanan ketat."
+        },
+        "STEP_4": {
+          "STEP_NUMBER": "04",
+          "TITLE": "UAT, Implementasi & Pendampingan",
+          "DESCRIPTION": "Uji penerimaan pengguna (UAT) bersama tim Anda, migrasi data lancar, serta pelatihan dan pemeliharaan berkesinambungan."
+        }
       }
     }
   }
