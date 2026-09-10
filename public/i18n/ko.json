@@ -847,5 +847,35 @@
       "MAPS_TITLE": "PT Inforsys Indonesia 위치 지도",
       "OPEN_MAPS": "Google 지도에서 열기"
     }
+  },
+  "SEO": {
+    "DEFAULT_TITLE": "PisiCloud - 현대적인 클라우드 HR 및 급여 관리 시스템",
+    "DEFAULT_DESCRIPTION": "안전하고 간편하며 효율적인 직원 관리를 위한 클라우드 기반 근태, 급여 및 HR 소프트웨어.",
+    "PAGES": {
+      "LANDING": {
+        "TITLE": "PisiCloud - 스마트한 클라우드 HR 및 급여 관리 솔루션",
+        "DESCRIPTION": "안전하고 간편하며 효율적인 직원 관리를 위한 클라우드 기반 근태, 급여 및 HR 소프트웨어."
+      },
+      "ABOUT_PISI": {
+        "TITLE": "회사 소개 - PisiCloud 클라우드 HR 솔루션",
+        "DESCRIPTION": "혁신적이고 확장 가능한 클라우드 인사 급여 솔루션을 제공하는 PT. Pisi Mulia Informatika를 소개합니다."
+      },
+      "OUR_CUSTOMERS": {
+        "TITLE": "고객사 소개 - 유수 기업이 신뢰하는 PisiCloud",
+        "DESCRIPTION": "다양한 업계의 주요 기업들이 PisiCloud를 통해 HR 및 급여 관리를 혁신한 사례를 확인해보세요."
+      },
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "도입 전략 - 원활한 HR 시스템 구축 지원 | PisiCloud",
+        "DESCRIPTION": "성공적인 HR 및 급여 소프트웨어 구축을 위한 검증된 도입 방법론을 알아보세요."
+      },
+      "CONTACT_US": {
+        "TITLE": "문의하기 - 데모 신청 및 도입 상담 | PisiCloud",
+        "DESCRIPTION": "PisiCloud 영업 및 지원팀에 문의하여 데모 예약 및 맞춤형 솔루션 견적을 받아보세요."
+      },
+      "FEATURE": {
+        "TITLE": "기능 소개 - 올인원 클라우드 인사 관리 시스템 | PisiCloud",
+        "DESCRIPTION": "근태 관리, 급여 계산, 휴가, 연장근무, 세무, 채용 등 PisiCloud의 강력한 기능들을 살펴보세요."
+      }
+    }
   }
 }
