@@ -25,6 +25,7 @@ describe('ResourcesMenu', () => {
           { path: 'about-pisi', component: DummyRouteComponent },
           { path: 'our-customers', component: DummyRouteComponent },
           { path: 'strategy-implementation', component: DummyRouteComponent },
+          { path: 'training-implementation', component: DummyRouteComponent },
         ]),
         provideTranslateService({
           fallbackLang: 'en',
@@ -73,6 +74,14 @@ describe('ResourcesMenu', () => {
 
   it('should not be active on /contact-us', async () => {
     await router.navigateByUrl('/contact-us');
+    fixture.detectChanges();
+    expect(component.isActive()).toBe(false);
+    const button = fixture.nativeElement.querySelector('button');
+    expect(button.classList.contains('bg-[#cde8e0]')).toBe(false);
+  });
+
+  it('should not be active on /training-implementation', async () => {
+    await router.navigateByUrl('/training-implementation');
     fixture.detectChanges();
     expect(component.isActive()).toBe(false);
     const button = fixture.nativeElement.querySelector('button');
