@@ -848,7 +848,7 @@
       "OPEN_MAPS": "在谷歌地图中打开"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "软件应用与专业服务",
       "TITLE_PREFIX": "系统培训与",
@@ -954,6 +954,10 @@
       "FEATURE": {
         "TITLE": "功能概览 - 全方位一体化人力资源管理系统 | PisiCloud",
         "DESCRIPTION": "探索考勤管理、薪酬核算、请假审批、加班管理、招聘流程等 PisiCloud 全套核心功能。"
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "系统培训与重新实施 - PisiCloud",
+        "DESCRIPTION": "PisiCloud 软件培训与重新实施计划，为您的团队提供优化系统性能所需的专业知识与工具，确保持续成功应用。"
       }
     }
   }

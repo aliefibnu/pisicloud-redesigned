@@ -13,7 +13,7 @@ import {
 } from '@ng-icons/tabler-icons';
 
 @Component({
-  selector: 'strategy-hero',
+  selector: 'training-hero',
   imports: [NgOptimizedImage, RouterLink, MatButtonModule, TranslatePipe, NgIcon],
   viewProviders: [
     provideIcons({

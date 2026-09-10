@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Benefits } from './benefits';
 
-describe('StrategyImplementation Benefits', () => {
+describe('TrainingImplementation Benefits', () => {
   let component: Benefits;
   let fixture: ComponentFixture<Benefits>;
   let translateService: TranslateService;
@@ -22,7 +22,7 @@ describe('StrategyImplementation Benefits', () => {
     translateService = TestBed.inject(TranslateService);
 
     translateService.setTranslation('en', {
-      STRATEGY_IMPLEMENTATION: {
+      TRAINING_IMPLEMENTATION: {
         BENEFITS: {
           EYEBROW: 'Measurable Impact',
           TITLE_PREFIX: 'Key Benefits of ',

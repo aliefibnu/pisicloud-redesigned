@@ -30,8 +30,16 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'training-implementation',
+    data: { seoKey: 'TRAINING_IMPLEMENTATION' },
+    loadComponent: () =>
+      import('../pages/training-implementation/training-implementation').then(
+        (m) => m.TrainingImplementation,
+      ),
+  },
+  {
     path: 'training-re-implementation',
-    redirectTo: 'strategy-implementation',
+    redirectTo: 'training-implementation',
     pathMatch: 'full',
   },
   {

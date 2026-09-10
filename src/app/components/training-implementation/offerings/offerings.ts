@@ -15,7 +15,7 @@ interface OfferingPillar {
 }
 
 @Component({
-  selector: 'strategy-offerings',
+  selector: 'training-offerings',
   imports: [TranslatePipe, NgIcon],
   viewProviders: [
     provideIcons({

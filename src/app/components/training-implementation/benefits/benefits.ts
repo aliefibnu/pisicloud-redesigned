@@ -10,7 +10,7 @@ interface BenefitItem {
 }
 
 @Component({
-  selector: 'strategy-benefits',
+  selector: 'training-benefits',
   imports: [RouterLink, MatButtonModule, TranslatePipe, NgIcon],
   viewProviders: [
     provideIcons({

@@ -848,7 +848,7 @@
       "OPEN_MAPS": "Googleマップで開く"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "ソフトウェア定着＆プロフェッショナルサービス",
       "TITLE_PREFIX": "トレーニング＆",
@@ -954,6 +954,10 @@
       "FEATURE": {
         "TITLE": "機能一覧 - 包括的なクラウド人事システム | PisiCloud",
         "DESCRIPTION": "勤怠管理、給与計算、休暇申請、残業管理、採用管理などPisiCloudの全機能をご紹介。"
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "トレーニング＆再導入支援 - PisiCloud",
+        "DESCRIPTION": "システムのパフォーマンスを最適化し、組織内で継続的な成功を収めるためのソフトウェアトレーニング＆再導入プログラム。"
       }
     }
   }

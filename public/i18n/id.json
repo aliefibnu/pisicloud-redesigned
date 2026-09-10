@@ -848,7 +848,7 @@
       "OPEN_MAPS": "Buka di Google Maps"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "Adopsi Software & Layanan Profesional",
       "TITLE_PREFIX": "Pelatihan & ",
@@ -954,6 +954,10 @@
       "FEATURE": {
         "TITLE": "Fitur Lengkap - Sistem HR & Payroll Terintegrasi | PisiCloud",
         "DESCRIPTION": "Jelajahi seluruh modul unggulan PisiCloud mulai dari absensi, cuti, lembur, payroll, pajak tahunan, hingga rekrutmen."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Pelatihan & Re-Implementasi - PisiCloud",
+        "DESCRIPTION": "Program Pelatihan & Re-Implementasi Software untuk membekali tim Anda dengan alat, sumber daya, dan wawasan guna mengoptimalkan kinerja software."
       }
     }
   }

@@ -50,7 +50,9 @@ export class ResourcesMenu {
       cleanUrl === '/our-customers' ||
       cleanUrl.startsWith('/our-customers/') ||
       cleanUrl === '/strategy-implementation' ||
-      cleanUrl.startsWith('/strategy-implementation/')
+      cleanUrl.startsWith('/strategy-implementation/') ||
+      cleanUrl === '/training-implementation' ||
+      cleanUrl.startsWith('/training-implementation/')
     );
   });
 

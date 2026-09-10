@@ -848,7 +848,7 @@
       "OPEN_MAPS": "Open in Google Maps"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "Software Adoption & Professional Services",
       "TITLE_PREFIX": "Training & ",
@@ -954,6 +954,10 @@
       "FEATURE": {
         "TITLE": "Features - Comprehensive HR Software Suite | PisiCloud",
         "DESCRIPTION": "Explore all PisiCloud HR features including Attendance, Payroll, Leave Management, Recruitment, and Tax."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Training & Re-Implementation - PisiCloud",
+        "DESCRIPTION": "Software Training & Re-Implementation Program designed to provide you with the tools, resources, and knowledge needed to optimize software performance."
       }
     }
   }

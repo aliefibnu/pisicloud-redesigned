@@ -848,7 +848,7 @@
       "OPEN_MAPS": "Google 지도에서 열기"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "소프트웨어 정착 및 전문가 서비스",
       "TITLE_PREFIX": "소프트웨어 교육 및 ",
@@ -954,6 +954,10 @@
       "FEATURE": {
         "TITLE": "기능 소개 - 올인원 클라우드 인사 관리 시스템 | PisiCloud",
         "DESCRIPTION": "근태 관리, 급여 계산, 휴가, 연장근무, 세무, 채용 등 PisiCloud의 강력한 기능들을 살펴보세요."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "소프트웨어 교육 및 재구축 지원 - PisiCloud",
+        "DESCRIPTION": "소프트웨어 성능을 최적화하고 조직 내 지속적인 성공을 보장하기 위한 PisiCloud 교육 및 재구축(Re-Implementation) 프로그램."
       }
     }
   }

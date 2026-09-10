@@ -56,9 +56,9 @@ describe('Footer', () => {
     expect(facebook.getAttribute('rel')).toBe('noopener noreferrer');
   });
 
-  it('should render link to strategy-implementation for training and re-implementation', () => {
+  it('should render link to training-implementation for training and re-implementation', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const trainingLink = compiled.querySelector('a[href="/strategy-implementation"]');
+    const trainingLink = compiled.querySelector('a[href="/training-implementation"]');
     expect(trainingLink).toBeTruthy();
   });
 });
