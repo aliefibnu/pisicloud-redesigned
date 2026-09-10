@@ -23,12 +23,10 @@ describe('TrainingImplementation', () => {
     translateService.setTranslation('en', {
       TRAINING_IMPLEMENTATION: {
         HERO: {
-          BADGE: 'Software Adoption & Professional Services',
           TITLE_PREFIX: 'Training & ',
           TITLE_HIGHLIGHT: 'Re-Implementation',
-          DESCRIPTION: 'We are committed to helping our clients get the most out of their software investments.',
+          DESCRIPTION: 'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.',
           CTA_PRIMARY: 'Schedule a Consultation',
-          CTA_SECONDARY: 'Explore Program Details',
           IMAGE_ALT: 'PisiCloud software training workshop',
           UI_BADGE_1: '100% Customized Curriculum',
           UI_BADGE_2: 'System Performance Optimized',

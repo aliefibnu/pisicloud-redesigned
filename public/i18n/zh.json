@@ -850,12 +850,10 @@
   },
   "TRAINING_IMPLEMENTATION": {
     "HERO": {
-      "BADGE": "软件应用与专业服务",
       "TITLE_PREFIX": "系统培训与",
       "TITLE_HIGHLIGHT": "重新实施",
-      "DESCRIPTION": "我们致力于帮助客户从软件投资中获得最大回报。我们的软件培训与重新实施计划旨在为您提供优化软件性能所需的工具、资源和知识，确保在您企业内部的持续成功应用。",
+      "DESCRIPTION": "通过量身定制的培训计划与专业重新实施服务，赋能团队并最大化您的软件投资回报。",
       "CTA_PRIMARY": "预约实施咨询",
-      "CTA_SECONDARY": "查看培训计划",
       "IMAGE_ALT": "PisiCloud 企业软件培训与系统重新实施互动研讨会",
       "UI_BADGE_1": "100% 量身定制课程",
       "UI_BADGE_2": "系统性能深度调优"

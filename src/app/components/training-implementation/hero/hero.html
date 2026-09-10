@@ -10,14 +10,6 @@
 
   <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
     <div class="mx-auto max-w-4xl text-center">
-      <!-- Eyebrow Pill Badge -->
-      <div
-        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#cde8e0]/60 border border-[#066b5b]/20 text-[#066b5b] text-xs sm:text-sm font-medium mb-6 backdrop-blur-xs"
-      >
-        <ng-icon name="tablerSparkles" class="text-base" aria-hidden="true" />
-        <span>{{ 'TRAINING_IMPLEMENTATION.HERO.BADGE' | translate }}</span>
-      </div>
-
       <!-- 1. Title First: Signature Two-Tone Heading -->
       <h1
         id="training-hero-heading"
@@ -28,12 +20,12 @@
       </h1>
 
       <!-- 2. Small Text Below It -->
-      <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8 sm:mb-10">
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8 sm:mb-10">
         {{ 'TRAINING_IMPLEMENTATION.HERO.DESCRIPTION' | translate }}
       </p>
 
       <!-- Action Buttons -->
-      <div class="flex flex-wrap items-center justify-center gap-3.5 sm:gap-4 mb-12 sm:mb-16">
+      <div class="flex items-center justify-center mb-12 sm:mb-16">
         <a
           mat-flat-button
           routerLink="/contact-us"
@@ -41,15 +33,6 @@
         >
           <span>{{ 'TRAINING_IMPLEMENTATION.HERO.CTA_PRIMARY' | translate }}</span>
           <ng-icon name="tablerArrowRight" class="text-base ml-2 text-white" aria-hidden="true" />
-        </a>
-
-        <a
-          mat-stroked-button
-          href="#offerings"
-          class="rounded-full! border-[#066b5b]! text-[#066b5b]! hover:bg-white/80! bg-white/40! px-6! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200!"
-        >
-          <ng-icon name="tablerCompass" class="text-base mr-2 text-[#066b5b]" aria-hidden="true" />
-          <span>{{ 'TRAINING_IMPLEMENTATION.HERO.CTA_SECONDARY' | translate }}</span>
         </a>
       </div>
     </div>
