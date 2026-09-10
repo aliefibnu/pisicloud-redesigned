@@ -1,30 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideTranslateService } from '@ngx-translate/core';
 import { provideRouter } from '@angular/router';
-import { Footer } from './footer';
+import { Hero } from './hero';
 
-describe('Footer', () => {
-  let component: Footer;
-  let fixture: ComponentFixture<Footer>;
+describe('CustomizeModule Hero', () => {
+  let component: Hero;
+  let fixture: ComponentFixture<Hero>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Footer],
+      imports: [Hero],
       providers: [provideTranslateService(), provideRouter([])],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Footer);
+    fixture = TestBed.createComponent(Hero);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  it('should not render back to top arrow button', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
-    const arrowButton = compiled.querySelector('button');
-    expect(arrowButton).toBeNull();
   });
 });

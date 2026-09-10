@@ -1,0 +1,45 @@
+<section class="relative w-full py-16 lg:py-24 bg-[#f8faf8] overflow-hidden font-sans">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-14 sm:mb-18">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#191c1b] tracking-tight leading-tight mb-4">
+        <span>{{ 'CUSTOMIZE_MODULE.PROCESS.TITLE_PREFIX' | translate }}</span>
+        <span class="text-[#066b5b]">{{ 'CUSTOMIZE_MODULE.PROCESS.TITLE_HIGHLIGHT' | translate }}</span>
+        <span>{{ 'CUSTOMIZE_MODULE.PROCESS.TITLE_SUFFIX' | translate }}</span>
+      </h2>
+
+      <p class="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed font-normal">
+        {{ 'CUSTOMIZE_MODULE.PROCESS.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <!-- 4 Step Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+      @for (step of steps; track step.number) {
+        <div class="group relative flex flex-col justify-between p-6 sm:p-7 rounded-3xl bg-white border border-[#dce6df] hover:border-[#066b5b]/40 hover:shadow-lg transition-all duration-300">
+          <div>
+            <!-- Step Number & Icon -->
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-3xl font-black text-[#cde8e0] tracking-tight group-hover:text-[#066b5b] transition-colors">
+                {{ step.number }}
+              </span>
+              <div class="w-11 h-11 rounded-xl bg-[#f4fcf7] border border-[#cde8e0] flex items-center justify-center text-[#066b5b] group-hover:bg-[#066b5b] group-hover:text-white group-hover:border-[#066b5b] transition-colors duration-300">
+                <ng-icon [name]="step.icon" class="text-xl" aria-hidden="true" />
+              </div>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-lg font-bold text-[#191c1b] mb-3 leading-snug group-hover:text-[#066b5b] transition-colors duration-200">
+              {{ step.titleKey | translate }}
+            </h3>
+
+            <!-- Description -->
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              {{ step.descKey | translate }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
