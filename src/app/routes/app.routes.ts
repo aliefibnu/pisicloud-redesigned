@@ -30,6 +30,11 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'training-re-implementation',
+    redirectTo: 'strategy-implementation',
+    pathMatch: 'full',
+  },
+  {
     path: 'contact-us',
     data: { seoKey: 'CONTACT_US' },
     loadComponent: () => import('../pages/contact-us/contact-us').then((m) => m.ContactUs),

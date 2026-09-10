@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { provideTranslateService } from '@ngx-translate/core';
 import { Footer } from './footer';
 
@@ -9,7 +10,7 @@ describe('Footer', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Footer],
-      providers: [provideTranslateService()],
+      providers: [provideRouter([]), provideTranslateService()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Footer);
@@ -53,5 +54,11 @@ describe('Footer', () => {
     expect(facebook.getAttribute('href')).toBe('https://id-id.facebook.com/inforsys.co.id/');
     expect(facebook.getAttribute('target')).toBe('_blank');
     expect(facebook.getAttribute('rel')).toBe('noopener noreferrer');
+  });
+
+  it('should render link to strategy-implementation for training and re-implementation', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const trainingLink = compiled.querySelector('a[href="/strategy-implementation"]');
+    expect(trainingLink).toBeTruthy();
   });
 });
