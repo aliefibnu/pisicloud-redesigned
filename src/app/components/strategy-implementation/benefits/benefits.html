@@ -1,0 +1,87 @@
+<section
+  class="relative w-full py-16 sm:py-20 lg:py-24 bg-linear-to-b from-[#f4fcf7] via-[#edf5f1]/40 to-white"
+  aria-labelledby="benefits-heading"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+    <!-- Section Header -->
+    <div class="mx-auto max-w-3xl text-center mb-12 sm:mb-16">
+      <span class="text-xs sm:text-sm font-semibold tracking-wider text-[#066b5b] uppercase mb-3 block">
+        {{ 'STRATEGY_IMPLEMENTATION.BENEFITS.EYEBROW' | translate }}
+      </span>
+
+      <h2
+        id="benefits-heading"
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#191c1b] tracking-tight leading-tight mb-5"
+      >
+        <span>{{ 'STRATEGY_IMPLEMENTATION.BENEFITS.TITLE_PREFIX' | translate }}</span>
+        <span class="text-[#066b5b]">{{ 'STRATEGY_IMPLEMENTATION.BENEFITS.TITLE_HIGHLIGHT' | translate }}</span>
+      </h2>
+
+      <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+        {{ 'STRATEGY_IMPLEMENTATION.BENEFITS.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <!-- 5 Benefits Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      @for (benefit of benefits; track benefit.key; let i = $index) {
+        <div
+          class="rounded-2xl sm:rounded-3xl border border-[#dce6df] bg-white p-6 sm:p-8 shadow-xs hover:shadow-md hover:border-[#066b5b]/40 transition-all duration-300 flex flex-col justify-between"
+          [class.lg:col-span-1]="i < 3"
+          [class.lg:translate-x-1/2]="i === 3"
+          [class.lg:-translate-x-1/2]="i === 4"
+        >
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#cde8e0]/60 text-[#066b5b]">
+                {{ 'STRATEGY_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.NUMBER' | translate }}
+              </span>
+              <ng-icon name="tablerCircleCheck" class="text-xl text-[#066b5b]" aria-hidden="true" />
+            </div>
+
+            <h3 class="text-lg sm:text-xl font-bold text-[#191c1b] tracking-tight mb-2.5">
+              {{ 'STRATEGY_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.TITLE' | translate }}
+            </h3>
+
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal m-0">
+              {{ 'STRATEGY_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.DESCRIPTION' | translate }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- Closing Callout Banner -->
+    <div
+      class="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#066b5b] via-[#076657] to-[#055145] p-8 sm:p-12 lg:p-14 text-white shadow-xl"
+    >
+      <!-- Atmospheric background glow -->
+      <div
+        class="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-white/10 blur-2xl"
+        aria-hidden="true"
+      ></div>
+
+      <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="text-center lg:text-left max-w-2xl">
+          <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3 leading-snug">
+            {{ 'STRATEGY_IMPLEMENTATION.BENEFITS.CALLOUT.TITLE' | translate }}
+          </h3>
+          <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed font-normal m-0">
+            {{ 'STRATEGY_IMPLEMENTATION.BENEFITS.CALLOUT.DESCRIPTION' | translate }}
+          </p>
+        </div>
+
+        <div class="shrink-0">
+          <a
+            mat-flat-button
+            routerLink="/contact-us"
+            class="rounded-full! bg-white! hover:bg-emerald-50! text-[#066b5b]! px-8! py-4! h-auto! font-semibold! text-sm! sm:text-base! shadow-lg! hover:shadow-xl! active:scale-95! transition-all! duration-200!"
+          >
+            <span>{{ 'STRATEGY_IMPLEMENTATION.BENEFITS.CALLOUT.CTA_BUTTON' | translate }}</span>
+            <ng-icon name="tablerArrowRight" class="text-base ml-2 text-[#066b5b]" aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

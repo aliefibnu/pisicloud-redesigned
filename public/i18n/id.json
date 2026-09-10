@@ -848,6 +848,85 @@
       "OPEN_MAPS": "Buka di Google Maps"
     }
   },
+  "STRATEGY_IMPLEMENTATION": {
+    "HERO": {
+      "BADGE": "Adopsi Software & Layanan Profesional",
+      "TITLE_PREFIX": "Pelatihan & ",
+      "TITLE_HIGHLIGHT": "Re-Implementasi",
+      "DESCRIPTION": "Kami berkomitmen membantu klien memaksimalkan investasi perangkat lunak mereka. Program Pelatihan & Re-Implementasi Software kami dirancang untuk membekali Anda dengan alat, sumber daya, dan wawasan yang diperlukan guna mengoptimalkan kinerja software, memastikan kesuksesan berkelanjutan di organisasi Anda.",
+      "CTA_PRIMARY": "Jadwalkan Konsultasi",
+      "CTA_SECONDARY": "Pelajari Rincian Program",
+      "IMAGE_ALT": "Sesi interaktif pelatihan dan re-implementasi software kolaboratif PisiCloud",
+      "UI_BADGE_1": "100% Kurikulum Disesuaikan",
+      "UI_BADGE_2": "Performa Sistem Dioptimalkan"
+    },
+    "OFFERINGS": {
+      "EYEBROW": "Program Unggulan",
+      "TITLE_PREFIX": "Keunggulan ",
+      "TITLE_HIGHLIGHT": "Implementasi Menyeluruh",
+      "DESCRIPTION": "Dirancang untuk memberdayakan tim Anda, menyempurnakan konfigurasi sistem, dan mempertahankan efisiensi operasional jangka panjang.",
+      "ITEMS": {
+        "TRAINING": {
+          "TAG": "Pemberdayaan Tim",
+          "TITLE": "Sesi Pelatihan Komprehensif",
+          "DESCRIPTION": "Trainer ahli kami akan memandu Anda melalui sesi pelatihan interaktif langsung yang disesuaikan dengan kebutuhan unik organisasi Anda. Kami mencakup seluruh aspek software, dari fitur dasar hingga fungsionalitas lanjutan, memastikan tim Anda siap memanfaatkan software secara maksimal."
+        },
+        "REIMPLEMENTATION": {
+          "TAG": "Penyelarasan Sistem",
+          "TITLE": "Dukungan Re-Implementasi",
+          "DESCRIPTION": "Re-implementasi software melibatkan peninjauan ulang setup sistem saat ini, menilai efektivitasnya, dan mengidentifikasi area yang perlu ditingkatkan. Tim spesialis kami akan bekerja erat dengan Anda untuk menyempurnakan konfigurasi, merampingkan proses, dan memaksimalkan efisiensi."
+        },
+        "MATERIALS": {
+          "TAG": "Pusat Pembelajaran",
+          "TITLE": "Materi Pembelajaran Khusus",
+          "DESCRIPTION": "Kami menyediakan materi pembelajaran yang dikustomisasi, termasuk panduan pengguna, tutorial video, dan modul interaktif yang dirancang khusus untuk organisasi Anda. Sumber daya ini menjadi referensi berharga bagi anggota tim dalam menguasai software."
+        },
+        "SUPPORT": {
+          "TAG": "Kemitraan Jangka Panjang",
+          "TITLE": "Dukungan & Bantuan Berkelanjutan",
+          "DESCRIPTION": "Komitmen kami terhadap kesuksesan Anda tidak berakhir setelah pelatihan dan re-implementasi selesai. Kami menyediakan bantuan berkelanjutan untuk menjawab pertanyaan, kendala, atau kebutuhan teknis saat tim Anda semakin mahir menggunakan software."
+        }
+      }
+    },
+    "BENEFITS": {
+      "EYEBROW": "Dampak Nyata",
+      "TITLE_PREFIX": "Manfaat Utama ",
+      "TITLE_HIGHLIGHT": "Pelatihan & Re-Implementasi",
+      "DESCRIPTION": "Tingkatkan adopsi pengguna, kurangi hambatan operasional, dan raih laba investasi maksimal dari software Anda.",
+      "ITEMS": {
+        "B1": {
+          "NUMBER": "01",
+          "TITLE": "Peningkatan Efisiensi & Produktivitas",
+          "DESCRIPTION": "Maksimalkan output tim dan percepat alur kerja harian melalui konfigurasi software yang dioptimalkan sesuai ritme operasional perusahaan Anda."
+        },
+        "B2": {
+          "NUMBER": "02",
+          "TITLE": "Peningkatan Adopsi & Kepuasan Pengguna",
+          "DESCRIPTION": "Tumbuhkan kepercayaan diri karyawan dan adopsi menyeluruh di seluruh divisi berkat bimbingan langsung berbasis peran."
+        },
+        "B3": {
+          "NUMBER": "03",
+          "TITLE": "Pengurangan Kesalahan & Downtime Sistem",
+          "DESCRIPTION": "Minimalkan hambatan operasional dan kesalahan pengguna yang merugikan melalui pemahaman mendalam terhadap fitur dan alur sistem."
+        },
+        "B4": {
+          "NUMBER": "04",
+          "TITLE": "Peningkatan Return on Investment (ROI)",
+          "DESCRIPTION": "Buka potensi fitur yang sebelumnya belum termanfaatkan dan otomatisasi tugas manual untuk meraih nilai maksimal dari investasi software."
+        },
+        "B5": {
+          "NUMBER": "05",
+          "TITLE": "Proses Lebih Ramping & Kolaborasi Lebih Baik",
+          "DESCRIPTION": "Hilangkan silo antar-departemen dan standarisasi praktik terbaik alur kerja operasional di seluruh organisasi Anda."
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "Siap Mengoptimalkan Potensi Software Anda?",
+        "DESCRIPTION": "Program Pelatihan & Re-Implementasi Software kami akan memastikan tim Anda dibekali keahlian dan pengetahuan yang dibutuhkan untuk meraih sukses. Hubungi kami hari ini untuk mengetahui manfaat program kami bagi organisasi Anda.",
+        "CTA_BUTTON": "Konsultasi dengan Spesialis Implementasi"
+      }
+    }
+  },
   "SEO": {
     "DEFAULT_TITLE": "PisiCloud - Software HR & Payroll Cloud Modern",
     "DEFAULT_DESCRIPTION": "Software absensi, penggajian (payroll), dan HR berbasis cloud untuk manajemen karyawan yang aman, mudah, dan efisien.",
