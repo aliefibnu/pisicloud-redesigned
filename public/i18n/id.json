@@ -847,5 +847,35 @@
       "MAPS_TITLE": "Peta Lokasi PT Inforsys Indonesia",
       "OPEN_MAPS": "Buka di Google Maps"
     }
+  },
+  "SEO": {
+    "DEFAULT_TITLE": "PisiCloud - Software HR & Payroll Cloud Modern",
+    "DEFAULT_DESCRIPTION": "Software absensi, penggajian (payroll), dan HR berbasis cloud untuk manajemen karyawan yang aman, mudah, dan efisien.",
+    "PAGES": {
+      "LANDING": {
+        "TITLE": "PISICloud | HRD Software",
+        "DESCRIPTION": "Software absensi, penggajian (payroll), dan HR berbasis cloud untuk manajemen karyawan yang aman, mudah, dan efisien."
+      },
+      "ABOUT_PISI": {
+        "TITLE": "Tentang PISI - Solusi Cloud HR PisiCloud",
+        "DESCRIPTION": "Kenali PT. Pisi Mulia Informatika dan komitmen kami dalam menghadirkan sistem HR & payroll terpercaya dan inovatif."
+      },
+      "OUR_CUSTOMERS": {
+        "TITLE": "Klien Kami - Dipercaya oleh 100+ Perusahaan | PisiCloud",
+        "DESCRIPTION": "Lihat bagaimana berbagai perusahaan terkemuka mengoptimalkan tata kelola SDM dan payroll dengan PisiCloud."
+      },
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "Strategi Implementasi - Panduan Rollout HR | PisiCloud",
+        "DESCRIPTION": "Pelajari metodologi penerapan sistem HR & payroll PisiCloud yang teruji untuk transisi operasional yang mulus."
+      },
+      "CONTACT_US": {
+        "TITLE": "Hubungi Kami - Konsultasi & Jadwalkan Demo | PisiCloud",
+        "DESCRIPTION": "Hubungi tim sales dan dukungan PisiCloud untuk informasi produk, demo aplikasi, atau penawaran harga terbaik."
+      },
+      "FEATURE": {
+        "TITLE": "Fitur Lengkap - Sistem HR & Payroll Terintegrasi | PisiCloud",
+        "DESCRIPTION": "Jelajahi seluruh modul unggulan PisiCloud mulai dari absensi, cuti, lembur, payroll, pajak tahunan, hingga rekrutmen."
+      }
+    }
   }
 }
