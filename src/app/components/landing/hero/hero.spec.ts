@@ -74,7 +74,7 @@ describe('Hero', () => {
 
   it('should render Contact Us CTA link', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const contactBtn = compiled.querySelector('a[href="#contact"]');
+    const contactBtn = compiled.querySelector('a[href*="whatsapp.com"]');
     expect(contactBtn).toBeTruthy();
     expect(contactBtn?.textContent?.trim()).toBe('Contact Us');
     expect(contactBtn?.getAttribute('aria-label')).toBe('Contact Us');
@@ -138,8 +138,8 @@ describe('Hero', () => {
     const img = compiled.querySelector('img');
     expect(img).toBeTruthy();
     expect(img?.getAttribute('ngsrc')).toBe('/images/landing/hero-image.webp');
-    expect(img?.getAttribute('width')).toBe('900');
-    expect(img?.getAttribute('height')).toBe('600');
+    expect(img?.getAttribute('width')).toBe('590');
+    expect(img?.getAttribute('height')).toBe('393');
     expect(img?.hasAttribute('priority')).toBe(true);
     expect(img?.getAttribute('draggable')).toBe('false');
   });
