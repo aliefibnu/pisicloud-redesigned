@@ -875,6 +875,83 @@
       "FEATURE": {
         "TITLE": "Features - Comprehensive HR Software Suite | PisiCloud",
         "DESCRIPTION": "Explore all PisiCloud HR features including Attendance, Payroll, Leave Management, Recruitment, and Tax."
+      },
+      "CUSTOMIZE_MODULE": {
+        "TITLE": "Custom Module - Tailored Software Solutions | PISICloud",
+        "DESCRIPTION": "Specialized software module development services tailored to your unique enterprise requirements and continuous business growth."
+      }
+    }
+  },
+  "CUSTOMIZE_MODULE": {
+    "HERO": {
+      "BADGE": "Custom Tailored Services",
+      "TITLE_PREFIX": "Custom Software Modules ",
+      "TITLE_HIGHLIGHT": "Tailored Specifically",
+      "TITLE_SUFFIX": " for Your Business Growth",
+      "DESCRIPTION": "As businesses continue to grow in size and complexity, the demand for software module development becomes increasingly crucial. An excellent software product is one that can adapt to the company's growth and its specific requirements.",
+      "CTA_CONSULT": "Consult Your Requirements",
+      "CTA_EXPLORE": "Explore Core Features",
+      "IMAGE_ALT": "Illustration of PISICloud custom software development team collaborating on enterprise digital solutions",
+      "TAG_1": "100% Tailored Modules",
+      "TAG_2": "Scalable Architecture",
+      "TAG_3": "End-to-End Support & UAT"
+    },
+    "BENEFITS": {
+      "BADGE": "Value & Benefits",
+      "TITLE_PREFIX": "Targeted Solutions for ",
+      "TITLE_HIGHLIGHT": "Every Unique",
+      "TITLE_SUFFIX": " Business Challenge",
+      "DESCRIPTION": "We build functional, reliable, and high-performance modules engineered to scale alongside your organization.",
+      "ITEMS": {
+        "ANALYSIS": {
+          "BADGE": "Deep Discovery",
+          "TITLE": "In-Depth Requirement Analysis",
+          "DESCRIPTION": "We provide specialized software development services for customized modules to meet the needs of growing companies. Our team of experts will work closely with your business to analyze your needs and offer solutions to the problems that you are facing."
+        },
+        "SCALABLE": {
+          "BADGE": "Modern Stack",
+          "TITLE": "Flexible & Scalable Architecture",
+          "DESCRIPTION": "We understand that every business is unique and has specific requirements that need to be addressed. Our software module development services are tailored to your specific needs and requirements, ensuring that the solution we provide is both effective and efficient. We use the latest technologies and tools to deliver high-quality modules that are scalable, flexible, and designed to meet your exact specifications."
+        },
+        "EXPERIENCE": {
+          "BADGE": "Proven Expertise",
+          "TITLE": "Multi-Industry Experience",
+          "DESCRIPTION": "Our software developers have years of experience working with different industries and are committed to delivering a solution that is not only functional but also user-friendly. We believe that communication is key to success, and we work closely with our clients throughout the entire software development process to ensure that their needs and requirements are met."
+        },
+        "PARTNERSHIP": {
+          "BADGE": "Dedicated Commitment",
+          "TITLE": "Ongoing Partnership & Support",
+          "DESCRIPTION": "We are dedicated to providing software modules that are specifically tailored to your business needs. Contact us today to learn more about our customized software development services and how we can help your business thrive in the ever-changing market."
+        }
+      }
+    },
+    "PROCESS": {
+      "BADGE": "Work Methodology",
+      "TITLE_PREFIX": "4 Structured Steps to ",
+      "TITLE_HIGHLIGHT": "Your Custom Module",
+      "TITLE_SUFFIX": " Success",
+      "DESCRIPTION": "A collaborative and transparent workflow at every stage of software engineering to ensure precise outcomes.",
+      "STEPS": {
+        "STEP_1": {
+          "STEP_NUMBER": "01",
+          "TITLE": "Consultation & Discovery",
+          "DESCRIPTION": "In-depth discussions to map out your specific business processes, identify operational bottlenecks, and formulate clear technical specifications."
+        },
+        "STEP_2": {
+          "STEP_NUMBER": "02",
+          "TITLE": "Architecture & UI/UX Design",
+          "DESCRIPTION": "Drafting system architecture, database schema, and interactive UI prototypes ensuring intuitive workflows and effortless user adoption."
+        },
+        "STEP_3": {
+          "STEP_NUMBER": "03",
+          "TITLE": "Agile Development & QA Testing",
+          "DESCRIPTION": "Building high-performance modules using modern software standards, coupled with comprehensive functional, performance, and security testing."
+        },
+        "STEP_4": {
+          "STEP_NUMBER": "04",
+          "TITLE": "UAT, Deployment & Continuous Support",
+          "DESCRIPTION": "User acceptance testing (UAT) with your team, seamless rollout and data migration, followed by comprehensive training and ongoing maintenance."
+        }
       }
     }
   }
