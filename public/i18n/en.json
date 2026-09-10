@@ -850,12 +850,10 @@
   },
   "TRAINING_IMPLEMENTATION": {
     "HERO": {
-      "BADGE": "Software Adoption & Professional Services",
       "TITLE_PREFIX": "Training & ",
       "TITLE_HIGHLIGHT": "Re-Implementation",
-      "DESCRIPTION": "We are committed to helping our clients get the most out of their software investments. Our Software Training & Re-Implementation Program is designed to provide you with the tools, resources, and knowledge needed to optimize your software's performance, ensuring its continued success within your organization.",
+      "DESCRIPTION": "Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.",
       "CTA_PRIMARY": "Schedule a Consultation",
-      "CTA_SECONDARY": "Explore Program Details",
       "IMAGE_ALT": "PisiCloud collaborative software training and system re-implementation interactive workshop",
       "UI_BADGE_1": "100% Customized Curriculum",
       "UI_BADGE_2": "System Performance Optimized"

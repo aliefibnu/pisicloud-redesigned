@@ -24,13 +24,11 @@ describe('TrainingImplementation Hero', () => {
     translateService.setTranslation('en', {
       TRAINING_IMPLEMENTATION: {
         HERO: {
-          BADGE: 'Software Adoption & Professional Services',
           TITLE_PREFIX: 'Training & ',
           TITLE_HIGHLIGHT: 'Re-Implementation',
           DESCRIPTION:
-            'We are committed to helping our clients get the most out of their software investments.',
+            'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.',
           CTA_PRIMARY: 'Schedule a Consultation',
-          CTA_SECONDARY: 'Explore Program Details',
           IMAGE_ALT: 'PisiCloud collaborative software training workshop',
           UI_BADGE_1: '100% Customized Curriculum',
           UI_BADGE_2: 'System Performance Optimized',
@@ -48,6 +46,12 @@ describe('TrainingImplementation Hero', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should not render eyebrow pill badge', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const badge = compiled.querySelector('.inline-flex.items-center.gap-2.rounded-full');
+    expect(badge).toBeNull();
+  });
+
   it('should render the two-tone heading formula', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const heading = compiled.querySelector('h1#training-hero-heading');
@@ -63,19 +67,18 @@ describe('TrainingImplementation Hero', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const desc = compiled.querySelector('p');
     expect(desc?.textContent).toContain(
-      'We are committed to helping our clients get the most out of their software investments.'
+      'Empower your workforce and maximize your software investment'
     );
   });
 
-  it('should render primary and secondary CTA buttons', () => {
+  it('should render primary CTA button and not render secondary CTA button', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const primaryBtn = compiled.querySelector('a[mat-flat-button]');
     const secondaryBtn = compiled.querySelector('a[mat-stroked-button]');
 
     expect(primaryBtn).toBeTruthy();
     expect(primaryBtn?.textContent).toContain('Schedule a Consultation');
-    expect(secondaryBtn).toBeTruthy();
-    expect(secondaryBtn?.textContent).toContain('Explore Program Details');
+    expect(secondaryBtn).toBeNull();
   });
 
   it('should render the 3D visual asset with NgOptimizedImage attributes', () => {
