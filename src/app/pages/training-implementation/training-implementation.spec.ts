@@ -28,8 +28,6 @@ describe('TrainingImplementation', () => {
           DESCRIPTION: 'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.',
           CTA_PRIMARY: 'Schedule a Consultation',
           IMAGE_ALT: 'PisiCloud software training workshop',
-          UI_BADGE_1: '100% Customized Curriculum',
-          UI_BADGE_2: 'System Performance Optimized',
         },
         OFFERINGS: {
           EYEBROW: 'Core Programs',

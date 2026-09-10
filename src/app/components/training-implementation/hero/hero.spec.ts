@@ -30,8 +30,6 @@ describe('TrainingImplementation Hero', () => {
             'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.',
           CTA_PRIMARY: 'Schedule a Consultation',
           IMAGE_ALT: 'PisiCloud collaborative software training workshop',
-          UI_BADGE_1: '100% Customized Curriculum',
-          UI_BADGE_2: 'System Performance Optimized',
         },
       },
     });
@@ -81,20 +79,21 @@ describe('TrainingImplementation Hero', () => {
     expect(secondaryBtn).toBeNull();
   });
 
-  it('should render the 3D visual asset with NgOptimizedImage attributes', () => {
+  it('should render the showcase visual asset with NgOptimizedImage attributes', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const img = compiled.querySelector('img');
     expect(img).toBeTruthy();
-    expect(img?.getAttribute('src')).toBe('/images/training-implementation/hero-3d.webp');
-    expect(img?.getAttribute('width')).toBe('1376');
-    expect(img?.getAttribute('height')).toBe('768');
+    expect(img?.getAttribute('src')).toBe('/images/training-implementation/training.webp');
+    expect(img?.getAttribute('width')).toBe('3000');
+    expect(img?.getAttribute('height')).toBe('2000');
     expect(img?.hasAttribute('priority')).toBe(true);
     expect(img?.getAttribute('draggable')).toBe('false');
   });
 
-  it('should render the floating UI micro-badges', () => {
+  it('should not render floating UI micro-badges', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain('100% Customized Curriculum');
-    expect(compiled.textContent).toContain('System Performance Optimized');
+    expect(compiled.textContent).not.toContain('100% Customized Curriculum');
+    expect(compiled.textContent).not.toContain('System Performance Optimized');
+    expect(compiled.querySelector('.animate-ping')).toBeNull();
   });
 });
