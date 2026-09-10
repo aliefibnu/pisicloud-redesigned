@@ -6,7 +6,6 @@ import {
   tablerAdjustmentsCog,
   tablerBook,
   tablerHeadset,
-  tablerArrowUpRight,
 } from '@ng-icons/tabler-icons';
 
 interface OfferingPillar {
@@ -23,7 +22,6 @@ interface OfferingPillar {
       tablerAdjustmentsCog,
       tablerBook,
       tablerHeadset,
-      tablerArrowUpRight,
     }),
   ],
   templateUrl: './offerings.html',

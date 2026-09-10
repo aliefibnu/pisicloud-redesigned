@@ -863,24 +863,20 @@
       "DESCRIPTION": "Dirancang untuk memberdayakan tim Anda, menyempurnakan konfigurasi sistem, dan mempertahankan efisiensi operasional jangka panjang.",
       "ITEMS": {
         "TRAINING": {
-          "TAG": "Pemberdayaan Tim",
           "TITLE": "Sesi Pelatihan Komprehensif",
-          "DESCRIPTION": "Trainer ahli kami akan memandu Anda melalui sesi pelatihan interaktif langsung yang disesuaikan dengan kebutuhan unik organisasi Anda. Kami mencakup seluruh aspek software, dari fitur dasar hingga fungsionalitas lanjutan, memastikan tim Anda siap memanfaatkan software secara maksimal."
+          "DESCRIPTION": "Pelatihan langsung berbasis peran yang disesuaikan dengan alur kerja tim agar menguasai setiap fitur dengan percaya diri."
         },
         "REIMPLEMENTATION": {
-          "TAG": "Penyelarasan Sistem",
           "TITLE": "Dukungan Re-Implementasi",
-          "DESCRIPTION": "Re-implementasi software melibatkan peninjauan ulang setup sistem saat ini, menilai efektivitasnya, dan mengidentifikasi area yang perlu ditingkatkan. Tim spesialis kami akan bekerja erat dengan Anda untuk menyempurnakan konfigurasi, merampingkan proses, dan memaksimalkan efisiensi."
+          "DESCRIPTION": "Evaluasi ulang dan sempurnakan konfigurasi sistem untuk mengeliminasi hambatan serta memaksimalkan efisiensi operasional."
         },
         "MATERIALS": {
-          "TAG": "Pusat Pembelajaran",
           "TITLE": "Materi Pembelajaran Khusus",
-          "DESCRIPTION": "Kami menyediakan materi pembelajaran yang dikustomisasi, termasuk panduan pengguna, tutorial video, dan modul interaktif yang dirancang khusus untuk organisasi Anda. Sumber daya ini menjadi referensi berharga bagi anggota tim dalam menguasai software."
+          "DESCRIPTION": "Panduan pengguna, tutorial video, dan dokumentasi referensi khusus yang dirancang sesuai kebutuhan tim Anda."
         },
         "SUPPORT": {
-          "TAG": "Kemitraan Jangka Panjang",
           "TITLE": "Dukungan & Bantuan Berkelanjutan",
-          "DESCRIPTION": "Komitmen kami terhadap kesuksesan Anda tidak berakhir setelah pelatihan dan re-implementasi selesai. Kami menyediakan bantuan berkelanjutan untuk menjawab pertanyaan, kendala, atau kebutuhan teknis saat tim Anda semakin mahir menggunakan software."
+          "DESCRIPTION": "Pendampingan pasca-implementasi dan bantuan teknis berkelanjutan untuk menjaga kelancaran operasional harian."
         }
       }
     },

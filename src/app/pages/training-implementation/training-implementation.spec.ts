@@ -35,10 +35,10 @@ describe('TrainingImplementation', () => {
           TITLE_HIGHLIGHT: 'Implementation Excellence',
           DESCRIPTION: 'Designed to empower your workforce.',
           ITEMS: {
-            TRAINING: { TAG: 'Team Enablement', TITLE: 'Comprehensive Training Sessions', DESCRIPTION: 'Training desc.' },
-            REIMPLEMENTATION: { TAG: 'System Tuning', TITLE: 'Re-Implementation Support', DESCRIPTION: 'Re-impl desc.' },
-            MATERIALS: { TAG: 'Knowledge Base', TITLE: 'Customized Learning Materials', DESCRIPTION: 'Materials desc.' },
-            SUPPORT: { TAG: 'Long-Term Partnership', TITLE: 'Ongoing Support and Assistance', DESCRIPTION: 'Support desc.' },
+            TRAINING: { TITLE: 'Comprehensive Training Sessions', DESCRIPTION: 'Hands-on training tailored to workflows.' },
+            REIMPLEMENTATION: { TITLE: 'Re-Implementation Support', DESCRIPTION: 'Re-evaluate and fine-tune configuration.' },
+            MATERIALS: { TITLE: 'Customized Learning Materials', DESCRIPTION: 'Tailored user guides and documentation.' },
+            SUPPORT: { TITLE: 'Ongoing Support and Assistance', DESCRIPTION: 'Dedicated post-implementation guidance.' },
           },
         },
         BENEFITS: {

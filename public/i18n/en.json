@@ -863,24 +863,20 @@
       "DESCRIPTION": "Designed to empower your workforce, fine-tune configurations, and sustain long-term operational velocity.",
       "ITEMS": {
         "TRAINING": {
-          "TAG": "Team Enablement",
           "TITLE": "Comprehensive Training Sessions",
-          "DESCRIPTION": "Our expert trainers will guide you through hands-on training sessions tailored to your organization's unique needs. We cover all aspects of your software, from basic features to advanced functionalities, ensuring your team is fully equipped to leverage the software effectively."
+          "DESCRIPTION": "Hands-on, role-based training tailored to your workflows to ensure your team masters every feature with confidence."
         },
         "REIMPLEMENTATION": {
-          "TAG": "System Tuning",
           "TITLE": "Re-Implementation Support",
-          "DESCRIPTION": "Software re-implementation involves revisiting your current software setup, assessing its effectiveness, and identifying areas for improvement. Our team of specialists will work closely with you to fine-tune your software configuration, streamline processes, and maximize efficiency."
+          "DESCRIPTION": "Re-evaluate and fine-tune your software configuration to eliminate bottlenecks and optimize operational efficiency."
         },
         "MATERIALS": {
-          "TAG": "Knowledge Base",
           "TITLE": "Customized Learning Materials",
-          "DESCRIPTION": "We provide customized learning materials, including user guides, video tutorials, and interactive modules, designed specifically for your organization. These resources will serve as an invaluable reference for your team members as they continue to use and master the software."
+          "DESCRIPTION": "Tailored user guides, video walkthroughs, and reference documentation built specifically for your team."
         },
         "SUPPORT": {
-          "TAG": "Long-Term Partnership",
           "TITLE": "Ongoing Support and Assistance",
-          "DESCRIPTION": "Our commitment to your success doesn't end with the training and re-implementation. We offer ongoing support and assistance to address any questions, concerns, or issues that may arise as your team becomes more adept at using the software."
+          "DESCRIPTION": "Dedicated post-implementation guidance and continuous technical assistance to keep operations running smoothly."
         }
       }
     },

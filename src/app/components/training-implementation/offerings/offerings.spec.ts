@@ -28,24 +28,20 @@ describe('TrainingImplementation Offerings', () => {
           DESCRIPTION: 'Designed to empower your workforce.',
           ITEMS: {
             TRAINING: {
-              TAG: 'Team Enablement',
               TITLE: 'Comprehensive Training Sessions',
-              DESCRIPTION: 'Hands-on training sessions tailored to your needs.',
+              DESCRIPTION: 'Hands-on, role-based training tailored to your workflows to ensure your team masters every feature with confidence.',
             },
             REIMPLEMENTATION: {
-              TAG: 'System Tuning',
               TITLE: 'Re-Implementation Support',
-              DESCRIPTION: 'Revisiting your current setup to fine-tune configuration.',
+              DESCRIPTION: 'Re-evaluate and fine-tune your software configuration to eliminate bottlenecks and optimize operational efficiency.',
             },
             MATERIALS: {
-              TAG: 'Knowledge Base',
               TITLE: 'Customized Learning Materials',
-              DESCRIPTION: 'Customized learning materials including guides and videos.',
+              DESCRIPTION: 'Tailored user guides, video walkthroughs, and reference documentation built specifically for your team.',
             },
             SUPPORT: {
-              TAG: 'Long-Term Partnership',
               TITLE: 'Ongoing Support and Assistance',
-              DESCRIPTION: 'Continuous support to address questions or issues.',
+              DESCRIPTION: 'Dedicated post-implementation guidance and continuous technical assistance to keep operations running smoothly.',
             },
           },
         },
@@ -73,7 +69,7 @@ describe('TrainingImplementation Offerings', () => {
     expect(highlightSpan?.textContent?.trim()).toBe('Implementation Excellence');
   });
 
-  it('should render all 4 offering pillar cards', () => {
+  it('should render all 4 offering pillar cards with shortened descriptions', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const cards = compiled.querySelectorAll('h3');
     expect(cards.length).toBe(4);
@@ -81,13 +77,22 @@ describe('TrainingImplementation Offerings', () => {
     expect(compiled.textContent).toContain('Re-Implementation Support');
     expect(compiled.textContent).toContain('Customized Learning Materials');
     expect(compiled.textContent).toContain('Ongoing Support and Assistance');
+
+    expect(compiled.textContent).toContain('Hands-on, role-based training tailored to your workflows');
+    expect(compiled.textContent).toContain('Re-evaluate and fine-tune your software configuration');
   });
 
-  it('should render pillar tags', () => {
+  it('should not render pillar badges or tags', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain('Team Enablement');
-    expect(compiled.textContent).toContain('System Tuning');
-    expect(compiled.textContent).toContain('Knowledge Base');
-    expect(compiled.textContent).toContain('Long-Term Partnership');
+    expect(compiled.textContent).not.toContain('Team Enablement');
+    expect(compiled.textContent).not.toContain('System Tuning');
+    expect(compiled.textContent).not.toContain('Knowledge Base');
+    expect(compiled.textContent).not.toContain('Long-Term Partnership');
+  });
+
+  it('should not render specialized consultant delivery footer or arrow', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Specialized Consultant Delivery');
+    expect(compiled.querySelector('.border-t')).toBeNull();
   });
 });
