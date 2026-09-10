@@ -848,7 +848,7 @@
       "OPEN_MAPS": "Buka di Google Maps"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "Adopsi Software & Layanan Profesional",
       "TITLE_PREFIX": "Pelatihan & ",
@@ -943,9 +943,9 @@
         "TITLE": "Klien Kami - Dipercaya oleh 100+ Perusahaan | PisiCloud",
         "DESCRIPTION": "Lihat bagaimana berbagai perusahaan terkemuka mengoptimalkan tata kelola SDM dan payroll dengan PisiCloud."
       },
-      "STRATEGY_IMPLEMENTATION": {
-        "TITLE": "Strategi Implementasi - Panduan Rollout HR | PisiCloud",
-        "DESCRIPTION": "Pelajari metodologi penerapan sistem HR & payroll PisiCloud yang teruji untuk transisi operasional yang mulus."
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Pelatihan & Re-Implementasi - PisiCloud",
+        "DESCRIPTION": "Program Pelatihan & Re-Implementasi Software untuk membekali tim Anda dengan alat, sumber daya, dan wawasan guna mengoptimalkan kinerja software."
       },
       "CONTACT_US": {
         "TITLE": "Hubungi Kami - Konsultasi & Jadwalkan Demo | PisiCloud",

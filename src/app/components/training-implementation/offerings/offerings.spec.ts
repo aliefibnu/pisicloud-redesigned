@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Offerings } from './offerings';
 
-describe('StrategyImplementation Offerings', () => {
+describe('TrainingImplementation Offerings', () => {
   let component: Offerings;
   let fixture: ComponentFixture<Offerings>;
   let translateService: TranslateService;
@@ -20,7 +20,7 @@ describe('StrategyImplementation Offerings', () => {
     translateService = TestBed.inject(TranslateService);
 
     translateService.setTranslation('en', {
-      STRATEGY_IMPLEMENTATION: {
+      TRAINING_IMPLEMENTATION: {
         OFFERINGS: {
           EYEBROW: 'Core Programs',
           TITLE_PREFIX: 'End-to-End ',

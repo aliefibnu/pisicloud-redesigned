@@ -848,7 +848,7 @@
       "OPEN_MAPS": "Open in Google Maps"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "Software Adoption & Professional Services",
       "TITLE_PREFIX": "Training & ",
@@ -943,9 +943,9 @@
         "TITLE": "Our Customers - Trusted by Leading Companies | PisiCloud",
         "DESCRIPTION": "See how leading enterprises across industries streamline HR and payroll operations with PisiCloud."
       },
-      "STRATEGY_IMPLEMENTATION": {
-        "TITLE": "Strategy Implementation - Smooth HR Rollout | PisiCloud",
-        "DESCRIPTION": "Discover our proven methodology for seamless HR & payroll software deployment, customization, and training."
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Training & Re-Implementation - PisiCloud",
+        "DESCRIPTION": "Software Training & Re-Implementation Program designed to provide you with the tools, resources, and knowledge needed to optimize software performance."
       },
       "CONTACT_US": {
         "TITLE": "Contact Us - Get in Touch with PisiCloud",

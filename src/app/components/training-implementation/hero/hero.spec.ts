@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Hero } from './hero';
 
-describe('StrategyImplementation Hero', () => {
+describe('TrainingImplementation Hero', () => {
   let component: Hero;
   let fixture: ComponentFixture<Hero>;
   let translateService: TranslateService;
@@ -22,7 +22,7 @@ describe('StrategyImplementation Hero', () => {
     translateService = TestBed.inject(TranslateService);
 
     translateService.setTranslation('en', {
-      STRATEGY_IMPLEMENTATION: {
+      TRAINING_IMPLEMENTATION: {
         HERO: {
           BADGE: 'Software Adoption & Professional Services',
           TITLE_PREFIX: 'Training & ',
@@ -50,7 +50,7 @@ describe('StrategyImplementation Hero', () => {
 
   it('should render the two-tone heading formula', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const heading = compiled.querySelector('h1#strategy-hero-heading');
+    const heading = compiled.querySelector('h1#training-hero-heading');
     expect(heading).toBeTruthy();
     expect(heading?.textContent).toContain('Training &');
     expect(heading?.textContent).toContain('Re-Implementation');
@@ -82,7 +82,7 @@ describe('StrategyImplementation Hero', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const img = compiled.querySelector('img');
     expect(img).toBeTruthy();
-    expect(img?.getAttribute('src')).toBe('/images/strategy-implementation/hero-3d.webp');
+    expect(img?.getAttribute('src')).toBe('/images/training-implementation/hero-3d.webp');
     expect(img?.getAttribute('width')).toBe('1376');
     expect(img?.getAttribute('height')).toBe('768');
     expect(img?.hasAttribute('priority')).toBe(true);

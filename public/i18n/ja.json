@@ -848,7 +848,7 @@
       "OPEN_MAPS": "Googleマップで開く"
     }
   },
-  "STRATEGY_IMPLEMENTATION": {
+  "TRAINING_IMPLEMENTATION": {
     "HERO": {
       "BADGE": "ソフトウェア定着＆プロフェッショナルサービス",
       "TITLE_PREFIX": "トレーニング＆",
@@ -943,9 +943,9 @@
         "TITLE": "導入事例 - 一流企業に選ばれる信頼のシステム | PisiCloud",
         "DESCRIPTION": "様々な業界の有力企業がPisiCloudを活用して人事・給与業務を効率化した事例をご覧ください。"
       },
-      "STRATEGY_IMPLEMENTATION": {
-        "TITLE": "導入戦略・運用支援 - スムーズなHR導入 | PisiCloud",
-        "DESCRIPTION": "実績に裏付けられたHRシステム導入プロセスと運用支援体制について解説します。"
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "トレーニング＆再導入支援 - PisiCloud",
+        "DESCRIPTION": "システムのパフォーマンスを最適化し、組織内で継続的な成功を収めるためのソフトウェアトレーニング＆再導入プログラム。"
       },
       "CONTACT_US": {
         "TITLE": "お問い合わせ - デモ予約・導入相談 | PisiCloud",
