@@ -84,8 +84,8 @@ describe('TrainingImplementation Hero', () => {
     const img = compiled.querySelector('img');
     expect(img).toBeTruthy();
     expect(img?.getAttribute('src')).toBe('/images/training-implementation/training.webp');
-    expect(img?.getAttribute('width')).toBe('3000');
-    expect(img?.getAttribute('height')).toBe('2000');
+    expect(img?.getAttribute('width')).toBe('1280');
+    expect(img?.getAttribute('height')).toBe('853');
     expect(img?.hasAttribute('priority')).toBe(true);
     expect(img?.getAttribute('draggable')).toBe('false');
   });
