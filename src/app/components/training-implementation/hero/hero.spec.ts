@@ -27,7 +27,7 @@ describe('TrainingImplementation Hero', () => {
           TITLE_PREFIX: 'Training & ',
           TITLE_HIGHLIGHT: 'Re-Implementation',
           DESCRIPTION:
-            'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.',
+            'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation. Build confident teams, eliminate operational bottlenecks, and ensure seamless system adoption across your entire organization.',
           CTA_PRIMARY: 'Schedule a Consultation',
           IMAGE_ALT: 'PisiCloud collaborative software training workshop',
         },
@@ -66,6 +66,9 @@ describe('TrainingImplementation Hero', () => {
     const desc = compiled.querySelector('p');
     expect(desc?.textContent).toContain(
       'Empower your workforce and maximize your software investment'
+    );
+    expect(desc?.textContent).toContain(
+      'Build confident teams, eliminate operational bottlenecks'
     );
   });
 

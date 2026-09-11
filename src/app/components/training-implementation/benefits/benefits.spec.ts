@@ -104,4 +104,9 @@ describe('TrainingImplementation Benefits', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.textContent).not.toContain('Measurable Impact');
   });
+
+  it('should not render section header description', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Achieve higher adoption and reduced operating friction.');
+  });
 });

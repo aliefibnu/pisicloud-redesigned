@@ -100,4 +100,9 @@ describe('TrainingImplementation Offerings', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.textContent).not.toContain('Core Programs');
   });
+
+  it('should not render section header description', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Designed to empower your workforce.');
+  });
 });
