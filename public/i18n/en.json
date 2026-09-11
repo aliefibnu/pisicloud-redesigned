@@ -652,6 +652,10 @@
           "CUSTOMERS": {
             "TITLE": "Our Customers",
             "DESC": "PISICloud has been trusted by 100+ companies."
+          },
+          "CONTACT": {
+            "TITLE": "Contact Us",
+            "DESC": "Consult your HR & enterprise system requirements."
           }
         }
       }

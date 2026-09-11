@@ -652,6 +652,10 @@
           "CUSTOMERS": {
             "TITLE": "Klien Kami",
             "DESC": "PISICloud telah dipercaya oleh 100+ perusahaan."
+          },
+          "CONTACT": {
+            "TITLE": "Hubungi Kami",
+            "DESC": "Konsultasikan kebutuhan sistem HR & bisnis Anda."
           }
         }
       }

@@ -133,4 +133,11 @@ export const NAVBAR_RESOURCES: readonly NavbarResourceItemConfig[] = [
     route: '/our-customers',
     iconType: 'customers',
   },
+  {
+    id: 'contact',
+    titleKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.CONTACT.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.CONTACT.DESC',
+    route: '/contact-us',
+    iconType: 'contact',
+  },
 ];

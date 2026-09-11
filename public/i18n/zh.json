@@ -652,6 +652,10 @@
           "CUSTOMERS": {
             "TITLE": "客户案例",
             "DESC": "PISICloud 已获得 100+ 知名企业信赖。"
+          },
+          "CONTACT": {
+            "TITLE": "联系我们",
+            "DESC": "咨询您的 HR 系统与企业业务需求。"
           }
         }
       }
