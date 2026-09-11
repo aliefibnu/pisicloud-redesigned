@@ -122,8 +122,7 @@ export const NAVBAR_RESOURCES: readonly NavbarResourceItemConfig[] = [
     id: 'strategy',
     titleKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.STRATEGY.TITLE',
     descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.STRATEGY.DESC',
-    route: '/',
-    fragment: 'solution',
+    route: '/strategy-implementation',
     iconType: 'strategy',
   },
   {
