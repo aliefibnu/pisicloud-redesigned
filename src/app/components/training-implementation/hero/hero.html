@@ -37,27 +37,18 @@
       </div>
     </div>
 
-    <!-- Visual Showcase Asset -->
-    <div class="relative mx-auto max-w-5xl">
-      <!-- Ambient Glow Behind Showcase Graphic -->
-      <div
-        class="pointer-events-none absolute inset-0 -m-8 rounded-full bg-linear-to-tr from-[#066b5b]/15 via-[#cde8e0]/30 to-transparent blur-3xl"
-        aria-hidden="true"
-      ></div>
-
-      <!-- Clean Image Frame -->
-      <div class="relative z-10 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#dce6df]/90 bg-white shadow-xl">
-        <img
-          ngSrc="/images/training-implementation/training.webp"
-          width="1280"
-          height="853"
-          priority
-          draggable="false"
-          (dragstart)="$event.preventDefault()"
-          [alt]="'TRAINING_IMPLEMENTATION.HERO.IMAGE_ALT' | translate"
-          class="w-full h-auto object-cover select-none [user-drag:none] [-webkit-user-drag:none] transition-transform duration-500 hover:scale-[1.01]"
-        />
-      </div>
+    <!-- Visual Showcase Asset: Frameless Image Display -->
+    <div class="relative mx-auto max-w-5xl flex justify-center items-center select-none">
+      <img
+        ngSrc="/images/training-implementation/training.webp"
+        width="1280"
+        height="853"
+        priority
+        draggable="false"
+        (dragstart)="$event.preventDefault()"
+        [alt]="'TRAINING_IMPLEMENTATION.HERO.IMAGE_ALT' | translate"
+        class="w-full h-auto object-contain select-none"
+      />
     </div>
   </div>
 </section>
