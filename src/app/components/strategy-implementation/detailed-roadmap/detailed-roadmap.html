@@ -1,14 +1,14 @@
 <section
   id="detailed-roadmap"
-  class="w-full bg-white py-14 sm:py-20 lg:py-24 overflow-hidden"
+  class="w-full bg-[#f8faf8] py-16 sm:py-20 lg:py-24 border-t border-slate-200/70 font-sans overflow-hidden"
   aria-labelledby="detailed-roadmap-heading"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Section Header with Two-Tone Heading Formula -->
-    <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20">
+    <!-- Section Header (Two-Tone Heading Formula) -->
+    <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
       <h2
         id="detailed-roadmap-heading"
-        class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#191c1b] tracking-tight leading-tight mb-3 sm:mb-4"
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#191c1b] tracking-tight leading-tight mb-3"
       >
         <span>{{
           'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.TITLE_PREFIX' | translate
@@ -17,342 +17,197 @@
           'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.TITLE_HIGHLIGHT' | translate
         }}</span>
       </h2>
-      <p
-        class="text-sm sm:text-base lg:text-[17px] text-slate-600 leading-relaxed font-normal"
-      >
+      <p class="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed font-normal">
         {{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.SUBTITLE' | translate }}
       </p>
     </div>
 
-    <!-- DESKTOP VIEW (>= lg): Sticky Detail on Right with Scroll-Driven Roadmap on Left -->
-    <div class="hidden lg:grid lg:grid-cols-12 gap-10 xl:gap-14 items-start relative">
-      <!-- LEFT COLUMN: Interactive Scrolling Roadmap with Progress Bar -->
-      <div class="lg:col-span-5 relative">
-        <!-- Background Track Line -->
-        <div
-          class="absolute top-8 bottom-16 left-6 w-1 bg-[#dce6df] rounded-full z-0"
-          aria-hidden="true"
-        ></div>
-
-        <!-- Dynamic Animated Fill Track Line -->
-        <div
-          class="absolute top-8 left-6 w-1 bg-[#066b5b] rounded-full z-0 transition-all duration-500 ease-out"
-          [style.height.%]="(activeIndex() / 4) * 88"
-          aria-hidden="true"
-        ></div>
-
-        <!-- Checkpoints List -->
-        <div class="space-y-10 xl:space-y-14 relative z-10">
-          @for (step of steps; track step.id; let i = $index) {
-            <article
-              [id]="'checkpoint-' + step.id"
-              class="checkpoint-trigger flex items-start gap-5 p-4 rounded-2xl cursor-pointer transition-all duration-300 group"
-              [attr.data-step-id]="step.id"
-              [class.bg-[#f4fcf7]]="activeIndex() === i"
-              [class.border]="true"
-              [class.border-[#066b5b]/30]="activeIndex() === i"
-              [class.border-transparent]="activeIndex() !== i"
-              [class.shadow-xs]="activeIndex() === i"
-              (click)="setActiveStep(i)"
-              (keydown.enter)="setActiveStep(i)"
-              (keydown.space)="setActiveStep(i); $event.preventDefault()"
-              tabindex="0"
-              [attr.aria-current]="activeIndex() === i ? 'step' : null"
-            >
-              <!-- Number Node on Track -->
-              <div
-                class="w-12 h-12 shrink-0 rounded-full flex items-center justify-center font-bold text-base transition-all duration-300 select-none shadow-xs"
-                [class.bg-[#066b5b]]="activeIndex() === i"
-                [class.text-white]="activeIndex() === i"
-                [class.ring-4]="activeIndex() === i"
-                [class.ring-[#066b5b]/20]="activeIndex() === i"
-                [class.bg-white]="activeIndex() !== i"
-                [class.text-slate-600]="activeIndex() !== i"
-                [class.border-2]="activeIndex() !== i"
-                [class.border-[#dce6df]]="activeIndex() !== i"
-                [class.group-hover:border-[#066b5b]]="activeIndex() !== i"
-                [class.group-hover:text-[#066b5b]]="activeIndex() !== i"
-              >
-                {{ step.number }}
-              </div>
-
-              <!-- Checkpoint Overview Content -->
-              <div class="grow min-w-0 pt-0.5">
-                <span
-                  class="block text-xs font-semibold uppercase tracking-wider mb-1 transition-colors duration-200"
-                  [class.text-[#066b5b]]="activeIndex() === i"
-                  [class.text-slate-500]="activeIndex() !== i"
-                >
-                  {{ (step.translationKey + '.SUBTITLE') | translate }}
-                </span>
-
-                <h3
-                  class="text-lg xl:text-xl font-bold tracking-tight mb-1.5 transition-colors duration-200"
-                  [class.text-[#191c1b]]="activeIndex() === i"
-                  [class.text-slate-700]="activeIndex() !== i"
-                  [class.group-hover:text-[#066b5b]]="activeIndex() !== i"
-                >
-                  {{ (step.translationKey + '.TITLE') | translate }}
-                </h3>
-
-                <p
-                  class="text-xs xl:text-sm text-slate-600 leading-relaxed font-normal line-clamp-2"
-                >
-                  {{ (step.translationKey + '.INTRO') | translate }}
-                </p>
-              </div>
-            </article>
-          }
-        </div>
-      </div>
-
-      <!-- RIGHT COLUMN: Sticky Detailed View (Does not move off-screen) -->
-      <div class="lg:col-span-7 sticky top-24 lg:top-28 self-start">
-        <div
-          class="relative w-full rounded-3xl bg-[#f7faf7] border border-[#dce6df] p-6 sm:p-8 xl:p-10 transition-all duration-300 shadow-xs"
-        >
-          <!-- 16:9 Landscape Media (Non-isolated) -->
-          <div
-            class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-6 sm:mb-8 bg-slate-200 shadow-xs group"
-          >
-            <img
-              [ngSrc]="currentStep().image"
-              [alt]="currentStep().alt"
-              width="1280"
-              height="720"
-              draggable="false"
-              (dragstart)="$event.preventDefault()"
-              class="w-full h-full object-cover select-none transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-          </div>
-
-          <!-- Step Subtitle & Title -->
-          <div class="mb-4 sm:mb-5">
-            <span
-              class="block text-xs font-bold uppercase tracking-widest text-[#066b5b] mb-1.5"
-            >
-              {{ (currentStep().translationKey + '.SUBTITLE') | translate }}
-            </span>
-            <h3
-              class="text-2xl sm:text-3xl font-bold text-[#191c1b] tracking-tight leading-tight"
-            >
-              {{ (currentStep().translationKey + '.TITLE') | translate }}
-            </h3>
-          </div>
-
-          <!-- Intro Paragraph -->
-          <p
-            class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mb-5 sm:mb-6"
-          >
-            {{ (currentStep().translationKey + '.INTRO') | translate }}
-          </p>
-
-          <!-- Checklist Points View (For Steps 1 & 4) -->
-          @if (currentStep().type === 'checklist') {
-            <div class="mb-6">
-              <h4
-                class="text-xs font-bold uppercase tracking-wider text-slate-800 mb-3"
-              >
-                {{
-                  (currentStep().translationKey + '.CHECKLIST_TITLE') | translate
-                }}
-              </h4>
-              <ul class="space-y-2.5">
-                @for (
-                  idx of currentStep().id === 'preparation'
-                    ? preparationIndices
-                    : finalPrepIndices;
-                  track idx
-                ) {
-                  <li class="flex items-start gap-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    <ng-icon
-                      name="bootstrapCheckCircleFill"
-                      class="text-sm text-[#066b5b] mt-0.5 shrink-0"
-                      aria-hidden="true"
-                    />
-                    <span>{{
-                      (currentStep().translationKey + '.POINTS.' + idx)
-                        | translate
-                    }}</span>
-                  </li>
-                }
-              </ul>
-            </div>
-          }
-
-          <!-- Narrative View (For Steps 2, 3 & 5) -->
-          @if (currentStep().type === 'narrative') {
-            <div class="space-y-3.5 mb-6 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-              <p>{{ (currentStep().translationKey + '.BODY_1') | translate }}</p>
-              <p>{{ (currentStep().translationKey + '.BODY_2') | translate }}</p>
-            </div>
-          }
-
-          <!-- Primary Deliverable Box -->
-          <div
-            class="p-4 sm:p-5 rounded-2xl bg-white border border-[#dce6df] flex items-start gap-3.5 shadow-xs"
-          >
-            <ng-icon
-              name="bootstrapShieldCheck"
-              class="text-2xl text-[#066b5b] shrink-0 mt-0.5"
-              aria-hidden="true"
-            />
-            <div>
-              <span
-                class="block text-xs font-bold uppercase tracking-wider text-[#066b5b]"
-              >
-                {{
-                  (currentStep().translationKey + '.OUTPUT_LABEL') | translate
-                }}
-              </span>
-              <p
-                class="text-xs sm:text-sm font-semibold text-[#191c1b] mt-0.5 leading-snug"
-              >
-                {{
-                  (currentStep().translationKey + '.OUTPUT_TEXT') | translate
-                }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MOBILE & TABLET VIEW (< lg): Responsive Interactive Stepper -->
-    <div class="block lg:hidden">
-      <!-- Horizontal Tab Switcher -->
+    <!-- Minimalist Segmented Stepper Navigation Bar -->
+    <div class="max-w-5xl mx-auto mb-8 sm:mb-10">
       <div
-        class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 no-scrollbar"
+        class="flex items-center gap-1.5 sm:gap-2 p-1.5 sm:p-2 rounded-2xl bg-white border border-[#dce6df] shadow-xs overflow-x-auto no-scrollbar"
         role="tablist"
-        aria-label="Roadmap Steps Navigation"
+        aria-label="Roadmap Phase Selection"
       >
         @for (step of steps; track step.id; let i = $index) {
           <button
             type="button"
             role="tab"
+            [id]="'roadmap-tab-' + i"
             [attr.aria-selected]="activeIndex() === i"
+            [attr.aria-controls]="'roadmap-panel-' + i"
             (click)="setActiveStep(i)"
-            class="shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200"
+            (keydown)="onKeydown($event, i)"
+            class="flex-1 min-w-[130px] sm:min-w-0 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl text-left transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b5b] focus-visible:ring-offset-2"
             [class.bg-[#066b5b]]="activeIndex() === i"
             [class.text-white]="activeIndex() === i"
             [class.shadow-xs]="activeIndex() === i"
-            [class.bg-[#f4fcf7]]="activeIndex() !== i"
-            [class.text-slate-700]="activeIndex() !== i"
-            [class.border]="activeIndex() !== i"
-            [class.border-[#dce6df]]="activeIndex() !== i"
+            [class.text-slate-600]="activeIndex() !== i"
+            [class.hover:text-[#191c1b]]="activeIndex() !== i"
+            [class.hover:bg-[#f4fcf7]]="activeIndex() !== i"
           >
             <span
-              class="w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold"
-              [class.bg-white]="activeIndex() === i"
-              [class.text-[#066b5b]]="activeIndex() === i"
-              [class.bg-[#dce6df]]="activeIndex() !== i"
-              [class.text-slate-700]="activeIndex() !== i"
+              class="block text-[11px] font-bold tracking-wider uppercase mb-0.5"
+              [class.text-white/80]="activeIndex() === i"
+              [class.text-[#066b5b]]="activeIndex() !== i"
             >
-              {{ i + 1 }}
+              {{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PHASE_LABEL' | translate }} {{ step.number }}
             </span>
-            <span>{{ (step.translationKey + '.TITLE') | translate }}</span>
+            <span
+              class="block text-xs sm:text-sm font-semibold truncate"
+              [class.text-white]="activeIndex() === i"
+              [class.text-[#191c1b]]="activeIndex() !== i"
+            >
+              {{ (step.translationKey + '.TITLE') | translate }}
+            </span>
           </button>
         }
       </div>
+    </div>
 
-      <!-- Active Step Detail Content Container -->
-      <div
-        class="rounded-3xl bg-[#f7faf7] border border-[#dce6df] p-5 sm:p-7 shadow-xs"
-      >
-        <!-- 16:9 Landscape Media -->
-        <div
-          class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-5 bg-slate-200 shadow-xs"
-        >
-          <img
-            [ngSrc]="currentStep().image"
-            [alt]="currentStep().alt"
-            width="1280"
-            height="720"
-            draggable="false"
-            (dragstart)="$event.preventDefault()"
-            class="w-full h-full object-cover select-none"
-          />
+    <!-- Active Phase Showcase Canvas (Minimalist Bento Presentation) -->
+    <div
+      [id]="'roadmap-panel-' + activeIndex()"
+      role="tabpanel"
+      [attr.aria-labelledby]="'roadmap-tab-' + activeIndex()"
+      class="max-w-6xl mx-auto rounded-3xl bg-white border border-[#dce6df] p-6 sm:p-8 lg:p-10 shadow-xs relative transition-all duration-300"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
+        <!-- Left Column: Scope, Description & Deliverables (7 cols) -->
+        <div class="lg:col-span-7 flex flex-col justify-between">
+          <div>
+            <!-- Phase Meta Indicator -->
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-widest text-[#066b5b]">
+                {{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PHASE_LABEL' | translate }} {{ currentStep().number }} / 05
+              </span>
+              <span class="w-1.5 h-1.5 rounded-full bg-[#066b5b]" aria-hidden="true"></span>
+              <span class="text-xs font-medium text-slate-500">
+                {{ (currentStep().translationKey + '.SUBTITLE') | translate }}
+              </span>
+            </div>
+
+            <!-- Phase Heading -->
+            <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#191c1b] tracking-tight leading-tight mb-3">
+              {{ (currentStep().translationKey + '.TITLE') | translate }}
+            </h3>
+
+            <!-- Phase Intro Narrative -->
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mb-6">
+              {{ (currentStep().translationKey + '.INTRO') | translate }}
+            </p>
+
+            <!-- Checklist View (Steps 1 & 4) -->
+            @if (currentStep().type === 'checklist') {
+              <div class="mb-6">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-[#191c1b] mb-3">
+                  {{ (currentStep().translationKey + '.CHECKLIST_TITLE') | translate }}
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  @for (idx of currentStep().indices; track idx) {
+                    <div class="flex items-start gap-2.5 p-3 rounded-xl bg-[#f8faf8] border border-slate-200/70 hover:border-[#066b5b]/30 transition-colors">
+                      <div class="w-5 h-5 rounded-full bg-[#e6f7f2] flex items-center justify-center shrink-0 mt-0.5 text-[#066b5b]">
+                        <ng-icon name="bootstrapCheck2" class="text-sm font-bold" aria-hidden="true" />
+                      </div>
+                      <span class="text-xs sm:text-[13px] text-slate-700 leading-snug font-medium">
+                        {{ (currentStep().translationKey + '.POINTS.' + idx) | translate }}
+                      </span>
+                    </div>
+                  }
+                </div>
+              </div>
+            }
+
+            <!-- Narrative View (Steps 2, 3 & 5) -->
+            @if (currentStep().type === 'narrative') {
+              <div class="space-y-3 mb-6">
+                <div class="p-4 rounded-xl bg-[#f8faf8] border border-slate-200/70 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                  {{ (currentStep().translationKey + '.BODY_1') | translate }}
+                </div>
+                <div class="p-4 rounded-xl bg-[#f8faf8] border border-slate-200/70 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                  {{ (currentStep().translationKey + '.BODY_2') | translate }}
+                </div>
+              </div>
+            }
+          </div>
+
+          <!-- Primary Deliverable Box (Output Utama) -->
+          <div class="flex items-start gap-3.5 p-4 sm:p-5 rounded-2xl bg-[#f4fcf7] border border-[#cde8e0]">
+            <div class="w-10 h-10 rounded-xl bg-white border border-[#cde8e0] flex items-center justify-center text-[#066b5b] shrink-0 shadow-2xs">
+              <ng-icon name="bootstrapShieldCheck" class="text-xl" aria-hidden="true" />
+            </div>
+            <div class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-[#066b5b] mb-0.5">
+                {{ (currentStep().translationKey + '.OUTPUT_LABEL') | translate }}
+              </span>
+              <p class="text-xs sm:text-sm font-semibold text-[#191c1b] leading-snug">
+                {{ (currentStep().translationKey + '.OUTPUT_TEXT') | translate }}
+              </p>
+            </div>
+          </div>
         </div>
 
-        <span
-          class="block text-xs font-bold uppercase tracking-wider text-[#066b5b] mb-1"
-        >
-          {{ (currentStep().translationKey + '.SUBTITLE') | translate }}
-        </span>
+        <!-- Right Column: Visual Showcase & Interactive Step Navigator (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <!-- Landscape Media Frame -->
+          <div
+            class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-xs mb-6 group"
+          >
+            <img
+              [ngSrc]="currentStep().image"
+              [alt]="currentStep().alt"
+              width="800"
+              height="600"
+              draggable="false"
+              (dragstart)="$event.preventDefault()"
+              class="w-full h-full object-cover select-none transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+          </div>
 
-        <h3
-          class="text-xl sm:text-2xl font-bold text-[#191c1b] tracking-tight mb-3"
-        >
-          {{ (currentStep().translationKey + '.TITLE') | translate }}
-        </h3>
-
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-5">
-          {{ (currentStep().translationKey + '.INTRO') | translate }}
-        </p>
-
-        <!-- Checklist Points View (Steps 1 & 4) -->
-        @if (currentStep().type === 'checklist') {
-          <div class="mb-5">
-            <h4
-              class="text-xs font-bold uppercase tracking-wider text-slate-800 mb-2.5"
+          <!-- Stepper Navigation Controller -->
+          <div class="w-full flex items-center justify-between gap-3 pt-2 border-t border-slate-100">
+            <!-- Prev Button -->
+            <button
+              mat-stroked-button
+              type="button"
+              (click)="prevStep()"
+              [disabled]="activeIndex() === 0"
+              class="rounded-full! border-[#066b5b]/40! text-[#066b5b]! hover:bg-[#f4fcf7]! px-4! sm:px-5! py-2.5! h-auto! font-medium! text-xs! sm:text-sm! shadow-xs! transition-all! duration-200! disabled:opacity-40! disabled:cursor-not-allowed!"
+              [attr.aria-label]="'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PREV_STEP' | translate"
             >
-              {{
-                (currentStep().translationKey + '.CHECKLIST_TITLE') | translate
-              }}
-            </h4>
-            <ul class="space-y-2">
-              @for (
-                idx of currentStep().id === 'preparation'
-                  ? preparationIndices
-                  : finalPrepIndices;
-                track idx
-              ) {
-                <li class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  <ng-icon
-                    name="bootstrapCheckCircleFill"
-                    class="text-sm text-[#066b5b] mt-0.5 shrink-0"
-                    aria-hidden="true"
-                  />
-                  <span>{{
-                    (currentStep().translationKey + '.POINTS.' + idx)
-                      | translate
-                  }}</span>
-                </li>
+              <ng-icon name="tablerArrowLeft" class="text-base mr-1.5" aria-hidden="true" />
+              <span>{{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PREV_STEP' | translate }}</span>
+            </button>
+
+            <!-- Step Dots Indicator -->
+            <div class="flex items-center gap-1.5" aria-hidden="true">
+              @for (s of steps; track s.id; let i = $index) {
+                <button
+                  type="button"
+                  (click)="setActiveStep(i)"
+                  class="h-2.5 rounded-full transition-all duration-300 cursor-pointer"
+                  [class.bg-[#066b5b]]="activeIndex() === i"
+                  [class.w-6]="activeIndex() === i"
+                  [class.w-2.5]="activeIndex() !== i"
+                  [class.bg-slate-300]="activeIndex() !== i"
+                  [class.hover:bg-slate-400]="activeIndex() !== i"
+                  [attr.aria-label]="'Go to step ' + (i + 1)"
+                ></button>
               }
-            </ul>
-          </div>
-        }
+            </div>
 
-        <!-- Narrative View (Steps 2, 3 & 5) -->
-        @if (currentStep().type === 'narrative') {
-          <div class="space-y-2.5 mb-5 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-            <p>{{ (currentStep().translationKey + '.BODY_1') | translate }}</p>
-            <p>{{ (currentStep().translationKey + '.BODY_2') | translate }}</p>
-          </div>
-        }
-
-        <!-- Deliverable Callout -->
-        <div
-          class="p-4 rounded-xl bg-white border border-[#dce6df] flex items-start gap-3"
-        >
-          <ng-icon
-            name="bootstrapShieldCheck"
-            class="text-xl text-[#066b5b] shrink-0 mt-0.5"
-            aria-hidden="true"
-          />
-          <div>
-            <span
-              class="block text-[11px] font-bold uppercase tracking-wider text-[#066b5b]"
+            <!-- Next Button -->
+            <button
+              mat-flat-button
+              type="button"
+              (click)="nextStep()"
+              [disabled]="activeIndex() === steps.length - 1"
+              class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! text-white! px-4! sm:px-5! py-2.5! h-auto! font-medium! text-xs! sm:text-sm! shadow-xs! transition-all! duration-200! disabled:opacity-40! disabled:cursor-not-allowed!"
+              [attr.aria-label]="'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.NEXT_STEP' | translate"
             >
-              {{
-                (currentStep().translationKey + '.OUTPUT_LABEL') | translate
-              }}
-            </span>
-            <p class="text-xs sm:text-sm font-semibold text-[#191c1b] mt-0.5 leading-snug">
-              {{
-                (currentStep().translationKey + '.OUTPUT_TEXT') | translate
-              }}
-            </p>
+              <span>{{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.NEXT_STEP' | translate }}</span>
+              <ng-icon name="tablerArrowRight" class="text-base ml-1.5" aria-hidden="true" />
+            </button>
           </div>
         </div>
       </div>
