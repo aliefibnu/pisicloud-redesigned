@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { provideTranslateService } from '@ngx-translate/core';
 import { provideRouter } from '@angular/router';
+import { provideTranslateService } from '@ngx-translate/core';
 import { Footer } from './footer';
 
 describe('Footer', () => {
@@ -10,7 +10,7 @@ describe('Footer', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Footer],
-      providers: [provideTranslateService(), provideRouter([])],
+      providers: [provideRouter([]), provideTranslateService()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Footer);
@@ -63,5 +63,17 @@ describe('Footer', () => {
     expect(facebook.getAttribute('href')).toBe('https://id-id.facebook.com/inforsys.co.id/');
     expect(facebook.getAttribute('target')).toBe('_blank');
     expect(facebook.getAttribute('rel')).toBe('noopener noreferrer');
+  });
+
+  it('should render link to training-implementation for training and re-implementation', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const trainingLink = compiled.querySelector('a[href="/training-implementation"]');
+    expect(trainingLink).toBeTruthy();
+  });
+
+  it('should render link to customize-module for customize module', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const customizeLink = compiled.querySelector('a[href="/customize-module"]');
+    expect(customizeLink).toBeTruthy();
   });
 });

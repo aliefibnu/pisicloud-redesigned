@@ -935,9 +935,9 @@
         "TITLE": "導入事例 - 一流企業に選ばれる信頼のシステム | PisiCloud",
         "DESCRIPTION": "様々な業界の有力企業がPisiCloudを活用して人事・給与業務を効率化した事例をご覧ください。"
       },
-      "TRAINING_IMPLEMENTATION": {
-        "TITLE": "トレーニング＆再導入支援 - PisiCloud",
-        "DESCRIPTION": "システムのパフォーマンスを最適化し、組織内で継続的な成功を収めるためのソフトウェアトレーニング＆再導入プログラム。"
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "導入戦略・運用支援 - スムーズなHR導入 | PisiCloud",
+        "DESCRIPTION": "実績に裏付けられたHRシステム導入プロセスと運用支援体制について解説します。"
       },
       "CONTACT_US": {
         "TITLE": "お問い合わせ - デモ予約・導入相談 | PisiCloud",
@@ -946,6 +946,10 @@
       "FEATURE": {
         "TITLE": "機能一覧 - 包括的なクラウド人事システム | PisiCloud",
         "DESCRIPTION": "勤怠管理、給与計算、休暇申請、残業管理、採用管理などPisiCloudの全機能をご紹介。"
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "トレーニング＆再導入支援 - PisiCloud",
+        "DESCRIPTION": "システムのパフォーマンスを最適化し、組織内で継続的な成功を収めるためのソフトウェアトレーニング＆再導入プログラム。"
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "カスタムモジュール - 企業専用ソフトウェア開発 | PISICloud",

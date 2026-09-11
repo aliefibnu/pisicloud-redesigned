@@ -68,14 +68,23 @@ describe('CustomersHero', () => {
     expect(statsContainer).toBeNull();
   });
 
-  it('should render the 3D isometric dashboard illustration with correct attributes', () => {
+  it('should render the 3D isometric tablet illustration with correct attributes', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const img = compiled.querySelector('img');
     expect(img).toBeTruthy();
-    expect(img?.getAttribute('src')).toBe('/images/our-customers/hero-illustration.webp');
-    expect(img?.getAttribute('width')).toBe('1200');
-    expect(img?.getAttribute('height')).toBe('896');
+    expect(img?.getAttribute('src')).toBe('/images/our-customers/3D-Contact.webp');
+    expect(img?.getAttribute('width')).toBe('1536');
+    expect(img?.getAttribute('height')).toBe('1024');
     expect(img?.hasAttribute('priority')).toBe(true);
     expect(img?.getAttribute('draggable')).toBe('false');
+  });
+
+  it('should not render the card box container or verification pill badge', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const cardBox = compiled.querySelector('.rounded-3xl.border-slate-200\\/80');
+    const shieldIcon = compiled.querySelector('ng-icon');
+
+    expect(cardBox).toBeNull();
+    expect(shieldIcon).toBeNull();
   });
 });

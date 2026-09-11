@@ -935,9 +935,9 @@
         "TITLE": "Our Customers - Trusted by Leading Companies | PisiCloud",
         "DESCRIPTION": "See how leading enterprises across industries streamline HR and payroll operations with PisiCloud."
       },
-      "TRAINING_IMPLEMENTATION": {
-        "TITLE": "Training & Re-Implementation - PisiCloud",
-        "DESCRIPTION": "Software Training & Re-Implementation Program designed to provide you with the tools, resources, and knowledge needed to optimize software performance."
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "Strategy Implementation - Smooth HR Rollout | PisiCloud",
+        "DESCRIPTION": "Discover our proven methodology for seamless HR & payroll software deployment, customization, and training."
       },
       "CONTACT_US": {
         "TITLE": "Contact Us - Get in Touch with PisiCloud",
@@ -946,6 +946,10 @@
       "FEATURE": {
         "TITLE": "Features - Comprehensive HR Software Suite | PisiCloud",
         "DESCRIPTION": "Explore all PisiCloud HR features including Attendance, Payroll, Leave Management, Recruitment, and Tax."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Training & Re-Implementation - PisiCloud",
+        "DESCRIPTION": "Software Training & Re-Implementation Program designed to provide you with the tools, resources, and knowledge needed to optimize software performance."
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "Custom Module - Tailored Software Solutions | PISICloud",

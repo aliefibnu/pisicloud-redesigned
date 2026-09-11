@@ -935,9 +935,9 @@
         "TITLE": "고객사 소개 - 유수 기업이 신뢰하는 PisiCloud",
         "DESCRIPTION": "다양한 업계의 주요 기업들이 PisiCloud를 통해 HR 및 급여 관리를 혁신한 사례를 확인해보세요."
       },
-      "TRAINING_IMPLEMENTATION": {
-        "TITLE": "소프트웨어 교육 및 재구축 지원 - PisiCloud",
-        "DESCRIPTION": "소프트웨어 성능을 최적화하고 조직 내 지속적인 성공을 보장하기 위한 PisiCloud 교육 및 재구축(Re-Implementation) 프로그램."
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "도입 전략 - 원활한 HR 시스템 구축 지원 | PisiCloud",
+        "DESCRIPTION": "성공적인 HR 및 급여 소프트웨어 구축을 위한 검증된 도입 방법론을 알아보세요."
       },
       "CONTACT_US": {
         "TITLE": "문의하기 - 데모 신청 및 도입 상담 | PisiCloud",
@@ -946,6 +946,10 @@
       "FEATURE": {
         "TITLE": "기능 소개 - 올인원 클라우드 인사 관리 시스템 | PisiCloud",
         "DESCRIPTION": "근태 관리, 급여 계산, 휴가, 연장근무, 세무, 채용 등 PisiCloud의 강력한 기능들을 살펴보세요."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "소프트웨어 교육 및 재구축 지원 - PisiCloud",
+        "DESCRIPTION": "소프트웨어 성능을 최적화하고 조직 내 지속적인 성공을 보장하기 위한 PisiCloud 교육 및 재구축(Re-Implementation) 프로그램."
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "맞춤형 모듈 - 기업 전용 소프트웨어 개발 | PISICloud",

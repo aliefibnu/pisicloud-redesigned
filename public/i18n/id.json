@@ -935,9 +935,9 @@
         "TITLE": "Klien Kami - Dipercaya oleh 100+ Perusahaan | PisiCloud",
         "DESCRIPTION": "Lihat bagaimana berbagai perusahaan terkemuka mengoptimalkan tata kelola SDM dan payroll dengan PisiCloud."
       },
-      "TRAINING_IMPLEMENTATION": {
-        "TITLE": "Pelatihan & Re-Implementasi - PisiCloud",
-        "DESCRIPTION": "Program Pelatihan & Re-Implementasi Software untuk membekali tim Anda dengan alat, sumber daya, dan wawasan guna mengoptimalkan kinerja software."
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "Strategi Implementasi - Panduan Rollout HR | PisiCloud",
+        "DESCRIPTION": "Pelajari metodologi penerapan sistem HR & payroll PisiCloud yang teruji untuk transisi operasional yang mulus."
       },
       "CONTACT_US": {
         "TITLE": "Hubungi Kami - Konsultasi & Jadwalkan Demo | PisiCloud",
@@ -946,6 +946,10 @@
       "FEATURE": {
         "TITLE": "Fitur Lengkap - Sistem HR & Payroll Terintegrasi | PisiCloud",
         "DESCRIPTION": "Jelajahi seluruh modul unggulan PisiCloud mulai dari absensi, cuti, lembur, payroll, pajak tahunan, hingga rekrutmen."
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "Pelatihan & Re-Implementasi - PisiCloud",
+        "DESCRIPTION": "Program Pelatihan & Re-Implementasi Software untuk membekali tim Anda dengan alat, sumber daya, dan wawasan guna mengoptimalkan kinerja software."
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "Modul Kustom - Solusi Modul HR Khusus Bisnis Anda | PISICloud",

@@ -935,9 +935,9 @@
         "TITLE": "客户案例 - 众多领军企业的信赖之选 | PisiCloud",
         "DESCRIPTION": "了解各行业知名企业如何借助 PisiCloud 优化人力资源与薪资流程。"
       },
-      "TRAINING_IMPLEMENTATION": {
-        "TITLE": "系统培训与重新实施 - PisiCloud",
-        "DESCRIPTION": "PisiCloud 软件培训与重新实施计划，为您的团队提供优化系统性能所需的专业知识与工具，确保持续成功应用。"
+      "STRATEGY_IMPLEMENTATION": {
+        "TITLE": "实施策略 - 平稳高效的系统上线方案 | PisiCloud",
+        "DESCRIPTION": "探索我们经过实践检验的人力资源软件部署、定制和培训方法论。"
       },
       "CONTACT_US": {
         "TITLE": "联系我们 - 预约演示与业务咨询 | PisiCloud",
@@ -946,6 +946,10 @@
       "FEATURE": {
         "TITLE": "功能概览 - 全方位一体化人力资源管理系统 | PisiCloud",
         "DESCRIPTION": "探索考勤管理、薪酬核算、请假审批、加班管理、招聘流程等 PisiCloud 全套核心功能。"
+      },
+      "TRAINING_IMPLEMENTATION": {
+        "TITLE": "系统培训与重新实施 - PisiCloud",
+        "DESCRIPTION": "PisiCloud 软件培训与重新实施计划，为您的团队提供优化系统性能所需的专业知识与工具，确保持续成功应用。"
       },
       "CUSTOMIZE_MODULE": {
         "TITLE": "定制模块 - 企业专属软件定制开发服务 | PISICloud",

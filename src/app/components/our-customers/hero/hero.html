@@ -27,47 +27,25 @@
         </p>
       </div>
 
-      <!-- Right Column: 3D Isometric Enterprise Dashboard Showcase -->
+      <!-- Right Column: 3D Tablet Device Showcase -->
       <div class="relative flex items-center justify-center lg:col-span-5 lg:justify-end">
-        <div class="relative w-full max-w-lg lg:max-w-none">
-          <!-- Ambient Glow under the dashboard -->
+        <div class="relative w-full max-w-lg lg:max-w-none flex items-center justify-center">
+          <!-- Ambient Glow behind tablet -->
           <div
-            class="pointer-events-none absolute inset-0 -m-6 rounded-3xl bg-linear-to-tr from-[#066b5b]/10 via-[#cde8e0]/20 to-transparent blur-2xl"
+            class="pointer-events-none absolute inset-0 -m-6 rounded-3xl bg-linear-to-tr from-[#066b5b]/15 via-[#cde8e0]/30 to-transparent blur-3xl"
             aria-hidden="true"
           ></div>
 
-          <!-- 3D Isometric Graphic Card Container -->
-          <div
-            class="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/80 p-2 sm:p-3 shadow-xl backdrop-blur-xs transition-transform duration-500 hover:scale-[1.02]"
-          >
-            <img
-              ngSrc="/images/our-customers/hero-illustration.webp"
-              width="1200"
-              height="896"
-              priority
-              draggable="false"
-              (dragstart)="$event.preventDefault()"
-              [alt]="'OUR_CUSTOMERS.HERO.IMAGE_ALT' | translate"
-              class="h-auto w-full rounded-2xl object-cover select-none [user-drag:none] [-webkit-user-drag:none]"
-            />
-
-            <!-- Floating Enterprise Verification Pill -->
-            <div
-              class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 flex items-center gap-3 rounded-2xl border border-slate-200/90 bg-white/95 px-3.5 py-2.5 shadow-lg backdrop-blur-md"
-            >
-              <div
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#cde8e0] text-[#066b5b]"
-              >
-                <ng-icon name="bootstrapShieldCheck" class="text-lg" aria-hidden="true" />
-              </div>
-              <div class="flex flex-col">
-                <span class="text-xs font-bold text-slate-800 tracking-tight"
-                  >Enterprise Verified</span
-                >
-                <span class="text-[11px] text-slate-500">24+ Years Software Quality</span>
-              </div>
-            </div>
-          </div>
+          <img
+            ngSrc="/images/our-customers/3D-Contact.webp"
+            width="1536"
+            height="1024"
+            priority
+            draggable="false"
+            (dragstart)="$event.preventDefault()"
+            [alt]="'OUR_CUSTOMERS.HERO.IMAGE_ALT' | translate"
+            class="relative z-10 w-full h-auto object-contain select-none [user-drag:none] [-webkit-user-drag:none] drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
+          />
         </div>
       </div>
     </div>
