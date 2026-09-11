@@ -25,7 +25,8 @@ describe('TrainingImplementation', () => {
         HERO: {
           TITLE_PREFIX: 'Training & ',
           TITLE_HIGHLIGHT: 'Re-Implementation',
-          DESCRIPTION: 'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation.',
+          DESCRIPTION:
+            'Empower your workforce and maximize your software investment with tailored training programs and expert system re-implementation. Build confident teams, eliminate operational bottlenecks, and ensure seamless system adoption across your entire organization.',
           CTA_PRIMARY: 'Schedule a Consultation',
           IMAGE_ALT: 'PisiCloud software training workshop',
         },
@@ -93,5 +94,11 @@ describe('TrainingImplementation', () => {
     expect(compiled.querySelector('training-benefits')).toBeTruthy();
     expect(compiled.querySelector('universal-faq')).toBeTruthy();
     expect(compiled.querySelector('landing-companies-marquee')).toBeTruthy();
+  });
+
+  it('should not render eyebrow labels for offerings or benefits', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Core Programs');
+    expect(compiled.textContent).not.toContain('Measurable Impact');
   });
 });

@@ -85,8 +85,13 @@ describe('TrainingImplementation Benefits', () => {
 
     expectedBenefits.forEach((expected, idx) => {
       const row = rows[idx];
-      expect(row.textContent).toContain(expected.num);
       expect(row.textContent).toContain(expected.title);
+      expect(row.textContent).toContain(expected.num);
+      // Verify unboxed typographic numeral prefix
+      const numSpan = row.querySelector('h3 > span.text-slate-400');
+      expect(numSpan).toBeTruthy();
+      expect(numSpan?.textContent?.trim()).toBe(expected.num);
+      expect(row.querySelector('.bg-\\[\\#cde8e0\\]\\/50')).toBeNull();
       // Verify no alternating zigzag classes
       expect(row.classList.contains('md:flex-row-reverse')).toBe(false);
     });
@@ -98,5 +103,15 @@ describe('TrainingImplementation Benefits', () => {
     expect(ctaButton).toBeTruthy();
     expect(ctaButton?.textContent).toContain('Talk to an Implementation Specialist');
     expect(compiled.textContent).toContain("Ready to Unlock Your Software's Full Potential?");
+  });
+
+  it('should not render eyebrow text', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Measurable Impact');
+  });
+
+  it('should not render section header description', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Achieve higher adoption and reduced operating friction.');
   });
 });
