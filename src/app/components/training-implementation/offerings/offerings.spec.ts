@@ -95,4 +95,9 @@ describe('TrainingImplementation Offerings', () => {
     expect(compiled.textContent).not.toContain('Specialized Consultant Delivery');
     expect(compiled.querySelector('.border-t')).toBeNull();
   });
+
+  it('should not render eyebrow text', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Core Programs');
+  });
 });

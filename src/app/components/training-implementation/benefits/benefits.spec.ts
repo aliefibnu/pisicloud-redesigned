@@ -85,8 +85,8 @@ describe('TrainingImplementation Benefits', () => {
 
     expectedBenefits.forEach((expected, idx) => {
       const row = rows[idx];
-      expect(row.textContent).toContain(expected.num);
       expect(row.textContent).toContain(expected.title);
+      expect(row.textContent).not.toContain(expected.num);
       // Verify no alternating zigzag classes
       expect(row.classList.contains('md:flex-row-reverse')).toBe(false);
     });
@@ -98,5 +98,10 @@ describe('TrainingImplementation Benefits', () => {
     expect(ctaButton).toBeTruthy();
     expect(ctaButton?.textContent).toContain('Talk to an Implementation Specialist');
     expect(compiled.textContent).toContain("Ready to Unlock Your Software's Full Potential?");
+  });
+
+  it('should not render eyebrow text', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Measurable Impact');
   });
 });

@@ -94,4 +94,10 @@ describe('TrainingImplementation', () => {
     expect(compiled.querySelector('universal-faq')).toBeTruthy();
     expect(compiled.querySelector('landing-companies-marquee')).toBeTruthy();
   });
+
+  it('should not render eyebrow labels for offerings or benefits', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).not.toContain('Core Programs');
+    expect(compiled.textContent).not.toContain('Measurable Impact');
+  });
 });
