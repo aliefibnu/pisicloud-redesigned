@@ -72,12 +72,12 @@ describe('ResourcesMenu', () => {
     expect(button.classList.contains('bg-[#cde8e0]')).toBe(false);
   });
 
-  it('should not be active on /contact-us', async () => {
+  it('should be active on /contact-us', async () => {
     await router.navigateByUrl('/contact-us');
     fixture.detectChanges();
-    expect(component.isActive()).toBe(false);
+    expect(component.isActive()).toBe(true);
     const button = fixture.nativeElement.querySelector('button');
-    expect(button.classList.contains('bg-[#cde8e0]')).toBe(false);
+    expect(button.classList.contains('bg-[#cde8e0]')).toBe(true);
   });
 
   it('should not be active on /training-implementation', async () => {

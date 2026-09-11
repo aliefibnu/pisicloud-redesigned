@@ -652,6 +652,10 @@
           "CUSTOMERS": {
             "TITLE": "고객 사례",
             "DESC": "100개 이상의 기업이 PISICloud를 신뢰합니다."
+          },
+          "CONTACT": {
+            "TITLE": "문의하기",
+            "DESC": "HR 시스템 및 비즈니스 요구사항을 상담해 보세요。"
           }
         }
       }

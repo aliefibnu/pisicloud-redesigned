@@ -16,7 +16,7 @@ export type NavbarFeatureIconType =
   | 'attendance-machine'
   | 'yearly-tax';
 
-export type NavbarResourceIconType = 'about' | 'strategy' | 'customers';
+export type NavbarResourceIconType = 'about' | 'strategy' | 'customers' | 'contact';
 
 export interface NavbarFeatureItemConfig {
   readonly id: string;

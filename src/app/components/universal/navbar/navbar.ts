@@ -28,7 +28,6 @@ export type ActiveNavMenu = 'features' | 'resources' | 'language' | null;
   selector: 'universal-navbar',
   imports: [
     RouterLink,
-    RouterLinkActive,
     NgOptimizedImage,
     TranslatePipe,
     FeaturesMenu,

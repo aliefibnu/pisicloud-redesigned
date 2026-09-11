@@ -97,11 +97,13 @@ describe('UniversalNavbar', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have 12 features and 3 resources configured in navbar data', () => {
+  it('should have 12 features and 4 resources configured in navbar data', () => {
     expect(NAVBAR_FEATURES.length).toBe(12);
-    expect(NAVBAR_RESOURCES.length).toBe(3);
+    expect(NAVBAR_RESOURCES.length).toBe(4);
     const aboutResource = NAVBAR_RESOURCES.find((r) => r.id === 'about');
     expect(aboutResource?.route).toBe('/about-pisi');
+    const contactResource = NAVBAR_RESOURCES.find((r) => r.id === 'contact');
+    expect(contactResource?.route).toBe('/contact-us');
   });
 
   it('should render translated contact button text', () => {
@@ -110,13 +112,11 @@ describe('UniversalNavbar', () => {
     expect(contactBtn?.textContent).toContain('Contact Us');
   });
 
-  it('should render Contact Us nav link in main navigation redirecting to /contact-us', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
-    const contactNavLink = compiled.querySelector(
-      'nav[aria-label="Main navigation"] a[href="/contact-us"], nav[aria-label="Main navigation"] a[routerLink="/contact-us"]'
-    );
-    expect(contactNavLink).toBeTruthy();
-    expect(contactNavLink?.textContent).toContain('Contact Us');
+  it('should include Contact Us in resources navigation redirecting to /contact-us', () => {
+    const contactResource = NAVBAR_RESOURCES.find((r) => r.id === 'contact');
+    expect(contactResource).toBeTruthy();
+    expect(contactResource?.route).toBe('/contact-us');
+    expect(contactResource?.iconType).toBe('contact');
   });
 
   it('should toggle mobile menu', () => {
