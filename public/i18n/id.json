@@ -1029,5 +1029,118 @@
         }
       }
     }
+  },
+  "STRATEGY_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "Strategi Implementasi ",
+      "TITLE_HIGHLIGHT": "PisiCloud",
+      "DESCRIPTION": "Implementasi ERP membutuhkan koordinasi lintas divisi dan kedisiplinan tinggi. PISICloud menghadirkan metodologi terstruktur yang teruji sukses memandu transisi dari sistem manual ke ekosistem terintegrasi secara mulus tanpa hambatan.",
+      "CTA_CONSULT": "Konsultasi Implementasi",
+      "CTA_ROADMAP": "Pelajari Tahapan",
+      "IMAGE_ALT": "Visualisasi strategi implementasi sistem ERP PISICloud"
+    },
+    "ROADMAP": {
+      "TITLE_PREFIX": "Roadmap ",
+      "TITLE_HIGHLIGHT": "Implementasi",
+      "SUBTITLE": "Metodologi terstruktur 5 fase yang memandu perjalanan implementasi ERP Anda dari persiapan awal hingga go-live dan pendampingan berkelanjutan.",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "1",
+          "TITLE": "PROJECT PREPARATION",
+          "DESCRIPTION": "Pembentukan tim proyek, penetapan ruang lingkup, dan kickoff tata kelola."
+        },
+        "BLUEPRINT": {
+          "NUMBER": "2",
+          "TITLE": "BUSINESS BLUEPRINT",
+          "DESCRIPTION": "Pemetaan alur proses bisnis, analisis gap, dan perancangan arsitektur sistem."
+        },
+        "REALIZATION": {
+          "NUMBER": "3",
+          "TITLE": "REALIZATION",
+          "DESCRIPTION": "Konfigurasi sistem, kustomisasi alur kerja, dan migrasi data awal."
+        },
+        "FINAL_PREP": {
+          "NUMBER": "4",
+          "TITLE": "FINAL PREPARATION",
+          "DESCRIPTION": "Pelatihan pengguna akhir, pengujian UAT, dan pengecekan kesiapan cutover."
+        },
+        "GO_LIVE": {
+          "NUMBER": "5",
+          "TITLE": "GO LIVE & SUPPORT",
+          "DESCRIPTION": "Peluncuran resmi ke produksi, stabilisasi sistem, dan pendampingan operasional."
+        }
+      }
+    },
+    "DETAILED_ROADMAP": {
+      "TITLE_PREFIX": "Tahapan Detail ",
+      "TITLE_HIGHLIGHT": "Implementasi",
+      "SUBTITLE": "Penjelasan mendalam setiap tahapan metodologi implementasi ERP PISICloud.",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "01",
+          "TITLE": "Project Preparation",
+          "SUBTITLE": "Kickoff Proyek & Penyelarasan Tata Kelola",
+          "INTRO": "Project besar dan penting tentunya membutuhkan arahan jelas dan terperinci tentang tujuan utama yang akan dicapai. Team yang terlibat harus dipastikan memahami dengan terperinci perannya masing-masing.",
+          "CHECKLIST_TITLE": "Hal yang Dipastikan pada Tahap Ini:",
+          "POINTS": [
+            "Apa tujuan utama yang ingin dicapai dari project implementasi",
+            "Apa ruang lingkup software yang akan digunakan",
+            "Siapa leader dan team yang akan mengawal jalannya project dari kedua belah pihak",
+            "Siapa divisi dan orang-orang yang akan terlibat dalam penggunaan software ini",
+            "Persiapan data apa saja yang diperlukan dan siapa penanggung jawab kelengkapannya",
+            "Bagaimana jadwal implementasi dan target data serta waktu go-live langsung",
+            "Bagaimana persiapan perangkat pendukung untuk operasional software"
+          ],
+          "OUTPUT_LABEL": "Output Utama",
+          "OUTPUT_TEXT": "Project Kick Off Presentation yang berisi arahan penting dan terperinci untuk project yang akan dijalankan."
+        },
+        "BLUEPRINT": {
+          "NUMBER": "02",
+          "TITLE": "Business Blueprint",
+          "SUBTITLE": "Pemetaan Alur Bisnis & Desain Sistem",
+          "INTRO": "Pada tahapan penting ini, dilakukan diskusi detail (focus group discussion) terkait proses bisnis yang berjalan saat ini dan juga rencana perubahan proses bisnis di masa mendatang yang lebih baik.",
+          "BODY_1": "Tahapan ini membahas detail penyesuaian dan penambahan yang harus dilakukan pada sistem terhadap proses bisnis yang akan dijalankan. Output yang dihasilkan adalah SOP detail dari masing-masing divisi perusahaan.",
+          "BODY_2": "Dokumen blueprint dipahami dengan baik, disosialisasikan ke semua pihak yang terlibat, dan ditandatangani bersama untuk memastikan kesamaan persepsi.",
+          "OUTPUT_LABEL": "Output Utama",
+          "OUTPUT_TEXT": "Dokumen Business Blueprint & SOP Baku yang telah disosialisasikan dan ditandatangani bersama."
+        },
+        "REALIZATION": {
+          "NUMBER": "03",
+          "TITLE": "Realization",
+          "SUBTITLE": "Konfigurasi Sistem & Metode Agile",
+          "INTRO": "Dari hasil Business Blueprint yang menghasilkan SOP baku, tim software development memastikan modul yang digunakan sesuai SOP dan melakukan modifikasi software sesuai jadwal kerja terencana.",
+          "BODY_1": "Hasil modifikasi software diuji secara intens oleh pengguna yang terlibat serta dimonitor oleh tim khusus project agar sesuai dengan ekspektasi.",
+          "BODY_2": "Kami menerapkan Agile Development Method yang melibatkan interaksi tim development dengan pengguna secara intens untuk implementasi yang lebih tepat waktu.",
+          "OUTPUT_LABEL": "Output Utama",
+          "OUTPUT_TEXT": "Modul ERP yang Terkonfigurasi & Teruji secara Intensif bersama Pengguna Kunci."
+        },
+        "FINAL_PREP": {
+          "NUMBER": "04",
+          "TITLE": "Final Preparation",
+          "SUBTITLE": "Simulasi Menyeluruh & Kesiapan Cutover",
+          "INTRO": "Persiapan akhir merupakan tahapan untuk melakukan uji coba sistem secara menyeluruh bersama pengguna melalui simulasi detail atas SOP yang telah disepakati.",
+          "CHECKLIST_TITLE": "Cakupan Persiapan Akhir:",
+          "POINTS": [
+            "Uji coba sistem menyeluruh (UAT) sesuai dengan SOP yang disepakati",
+            "Training komprehensif ke semua pengguna software",
+            "Persiapan semua data awal yang diperlukan (Cut Off)",
+            "Persiapan semua perangkat pendukung operasional",
+            "Verifikasi kesiapan akhir seluruh sistem sebelum go-live"
+          ],
+          "OUTPUT_LABEL": "Output Utama",
+          "OUTPUT_TEXT": "Penyelesaian UAT, Sertifikasi Training Pengguna, dan Data Awal (Cut Off) yang Terverifikasi."
+        },
+        "GO_LIVE": {
+          "NUMBER": "05",
+          "TITLE": "Go Live & Support",
+          "SUBTITLE": "Peluncuran Produksi & Pendampingan Penuh",
+          "INTRO": "Fase ini adalah tahapan akhir di mana sistem digunakan secara langsung untuk seluruh aktivitas operasional perusahaan.",
+          "BODY_1": "Tim pemantau internal dan eksternal memastikan semua elemen bekerja maksimal. Dari pemantauan langsung, dilakukan optimalisasi kinerja sistem dan problem solving cepat.",
+          "BODY_2": "Tim support terus siap melakukan training ulang jika diperlukan agar seluruh pengguna memahami penggunaan software secara maksimal dan mandiri.",
+          "OUTPUT_LABEL": "Output Utama",
+          "OUTPUT_TEXT": "Operasional Sistem Live di Produksi, Stabilisasi Sistem, dan Layanan Dukungan Berkelanjutan."
+        }
+      }
+    }
   }
 }

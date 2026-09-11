@@ -11,6 +11,7 @@ You are an expert in **TypeScript**, **Angular (v22+)**, **Angular Material 3 (@
 >
 > - **Icon Slop**: Pasting 30-50 lines of messy inline raw `<svg>` with random custom paths instead of using the installed **`@ng-icons`** package (`@ng-icons/bootstrap-icons` & `@ng-icons/tabler-icons`).
 > - **Button & Component Slop**: Re-inventing buttons with raw HTML `<button>` or `<a>` without Angular Material 3 directives (`mat-flat-button`, `mat-stroked-button`, `mat-icon-button`), losing MDC ripple effects and accessibility.
+> - **Badge & Chip Slop**: Adding random decorative badges, chips, or pill tags (e.g. `mat-chip`, `<span class="badge">`, little floating pill headers like "✨ OVERVIEW", "🚀 FEATURE", or "NEW") above headings or inside cards. **RULE: JANGAN PERNAH menggunakan badge / chip kecuali memang benar-benar penting/esensial untuk status data atau status sistem.**
 > - **Hallucination Slop**: Inventing UI patterns that do not exist in PisiCloud (e.g. Material chips/badges, generic SaaS sliders, nested floating glass cards) instead of following the actual clean bento/pill design system.
 > - **Palette Slop**: Using generic AI SaaS colors (indigo/violet/purple gradients) instead of PisiCloud's signature **Pine Green, Teal, Mint, and Charcoal palette**.
 > - **Hardcoded Slop**: Writing raw English or Indonesian strings in templates instead of using **`ngx-translate`** (`{{ 'KEY' | translate }}`).
@@ -93,6 +94,11 @@ This project uses **Angular Material 3** (`@angular/material`) integrated with *
 ### Tailwind `!` (Important) Modifier for Material Override:
 
 Always use Tailwind v4's `!` modifier (e.g., `rounded-full!`, `bg-[#066b5b]!`, `text-white!`, `px-7!`, `py-3.5!`, `h-auto!`) when styling Material buttons so the default fixed height (40px/48px) and default border radius are overridden cleanly while preserving MDC ripple animations and accessibility semantics.
+
+### 🚫 BADGE & CHIP RESTRICTION (STRICT POLICY):
+
+- **Jangan pernah menggunakan badge / chip / tag pill dekoratif** (seperti `mat-chip`, `<span class="inline-flex rounded-full bg-emerald-100 ...">✨ OVERVIEW</span>`, badge "NEW", "FEATURE", dll.) di atas heading atau di dalam card, **kecuali memang benar-benar penting dan esensial** untuk merepresentasikan status data atau status sistem yang dinamis.
+- Desain PisiCloud mengutamakan kesederhanaan, tipografi dua warna yang bersih, dan whitespace yang proporsional—bukan hiasan badge/chip kecil yang membuat UI berantakan (cluttered).
 
 ---
 

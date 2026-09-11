@@ -1029,5 +1029,118 @@
         }
       }
     }
+  },
+  "STRATEGY_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "ERP導入",
+      "TITLE_HIGHLIGHT": "戦略",
+      "DESCRIPTION": "ERPシステムの導入には全部門の綿密な連携と高い規律が不可欠です。PISICloudは実績ある体系的アプローチにより、手作業から統合型デジタル環境への確実でスムーズな移行を導きます。",
+      "CTA_CONSULT": "導入相談を予約",
+      "CTA_ROADMAP": "導入ロードマップを見る",
+      "IMAGE_ALT": "PISICloud ERP導入戦略のビジュアルプレビュー"
+    },
+    "ROADMAP": {
+      "TITLE_PREFIX": "導入",
+      "TITLE_HIGHLIGHT": "ロードマップ",
+      "SUBTITLE": "初期プロジェクト計画から本番稼働・継続運用サポートまでを確実に導く、実績ある5段階の導入方法論。",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "1",
+          "TITLE": "PROJECT PREPARATION",
+          "DESCRIPTION": "体制立ち上げ、スコープ策定、キックオフの実施。"
+        },
+        "BLUEPRINT": {
+          "NUMBER": "2",
+          "TITLE": "BUSINESS BLUEPRINT",
+          "DESCRIPTION": "業務プロセス分析、Fit&Gap分析、システム設計。"
+        },
+        "REALIZATION": {
+          "NUMBER": "3",
+          "TITLE": "REALIZATION",
+          "DESCRIPTION": "パラメータ設定、個別開発、データ移行検証。"
+        },
+        "FINAL_PREP": {
+          "NUMBER": "4",
+          "TITLE": "FINAL PREPARATION",
+          "DESCRIPTION": "エンドユーザ教育、受入テスト（UAT）、本番移行準備。"
+        },
+        "GO_LIVE": {
+          "NUMBER": "5",
+          "TITLE": "GO LIVE & SUPPORT",
+          "DESCRIPTION": "本番システム稼働、初期安定化、継続的保守サポート。"
+        }
+      }
+    },
+    "DETAILED_ROADMAP": {
+      "TITLE_PREFIX": "詳細導入",
+      "TITLE_HIGHLIGHT": "フェーズ解説",
+      "SUBTITLE": "PISICloud ERP導入メソドロジーの各フェーズにおける具体的な実施事項と成果物を詳しく解説します。",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "01",
+          "TITLE": "Project Preparation",
+          "SUBTITLE": "キックオフと体制・ゴールの確立",
+          "INTRO": "大規模かつ重要なERPプロジェクトを成功に導くには、明確なゴールと共通認識が欠かせません。初期準備フェーズでは、体制と役割分担を確実に固めます。",
+          "CHECKLIST_TITLE": "本フェーズの主要確認事項：",
+          "POINTS": [
+            "導入プロジェクトで達成すべき主目的と効果の明確化",
+            "導入対象となるソフトウェアの適用範囲（スコープ）の確定",
+            "双方のプロジェクトリーダーおよび推進チーム体制の決定",
+            "システムを利用する対象部門および主要ユーザーの特定",
+            "準備が必要なマスターデータおよび担当責任者の選定",
+            "導入マイルストーン、データ移行時期、本番稼働目標日の確定",
+            "運用に必要なサーバー、インフラ、端末機器の準備確認"
+          ],
+          "OUTPUT_LABEL": "主要成果物",
+          "OUTPUT_TEXT": "プロジェクトキックオフ資料（Project Kick Off Presentation）およびプロジェクト憲章。"
+        },
+        "BLUEPRINT": {
+          "NUMBER": "02",
+          "TITLE": "Business Blueprint",
+          "SUBTITLE": "業務プロセス分析とシステム設計",
+          "INTRO": "この重要フェーズでは、詳細な討議（FGD）を通じて現行業務（As-Is）を把握し、より最適な将来業務（To-Be）を設計します。",
+          "BODY_1": "新業務プロセスに合わせたシステムの適合・追加要件を精査し、各部門ごとの詳細な標準業務手順書（SOP）を策定します。",
+          "BODY_2": "策定されたブループリント文書は関係者全体に共有・合意され、認識齟齬のない強固な土台を構築します。",
+          "OUTPUT_LABEL": "主要成果物",
+          "OUTPUT_TEXT": "合意済みビジネスブループリント設計書および各部門標準SOP定義書。"
+        },
+        "REALIZATION": {
+          "NUMBER": "03",
+          "TITLE": "Realization",
+          "SUBTITLE": "システム設定・アジャイル開発検証",
+          "INTRO": "合意されたSOPに基づき、ソフトウェアの設定（パラメータ設定）や必要な追加開発をスケジュール通りに実施します。",
+          "BODY_1": "開発・設定された機能はキーユーザーによる集中的な動作検証と専任チームによる進捗管理を経て精度を高めます。",
+          "BODY_2": "アジャイル開発手法（Agile Development）を採用し、密なコミュニケーションと迅速なフィードバックで確実な納期を実現します。",
+          "OUTPUT_LABEL": "主要成果物",
+          "OUTPUT_TEXT": "設定・個別要件開発が完了し検証されたERPモジュール群。"
+        },
+        "FINAL_PREP": {
+          "NUMBER": "04",
+          "TITLE": "Final Preparation",
+          "SUBTITLE": "総合シミュレーションと本番移行準備",
+          "INTRO": "本番稼働に向け、完成したシステムを用いて策定SOPに沿った総合的な受入シミュレーションを実施します。",
+          "CHECKLIST_TITLE": "最終準備の主要項目：",
+          "POINTS": [
+            "策定SOPに沿った総合ユーザー受入テスト（UAT）の実施",
+            "全システム利用者を対象とした実践的ユーザートレーニング",
+            "本番初期データ（Cut Offデータ）の準備と整合性検証",
+            "全端末・周辺機器・ネットワーク環境の最終稼働テスト",
+            "コンティンジェンシープラン策定と本番稼働判定の完了"
+          ],
+          "OUTPUT_LABEL": "主要成果物",
+          "OUTPUT_TEXT": "UAT検収完了証、ユーザートレーニング完了認証、検証済み移行初期データ。"
+        },
+        "GO_LIVE": {
+          "NUMBER": "05",
+          "TITLE": "Go Live & Support",
+          "SUBTITLE": "本番稼働開始と継続的サポート体制",
+          "INTRO": "システムが実際の日常業務で本番稼働を開始します。内外の専任チームが現場と連携し安定稼働を支援します。",
+          "BODY_1": "現地およびリモートでのリアルタイム監視により、初期の疑問点や設定調整、業務処理の最適化を迅速に解決します。",
+          "BODY_2": "サポートチームによる継続的なフォローアップと再トレーニングを提供し、全社員の自立運用を定着させます。",
+          "OUTPUT_LABEL": "主要成果物",
+          "OUTPUT_TEXT": "本番運用の安定定着、初期稼働サポート完了、継続的専任サポートサービス。"
+        }
+      }
+    }
   }
 }
