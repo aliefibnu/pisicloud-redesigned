@@ -1,20 +1,24 @@
-import { Component, computed, signal } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import {
+  Component,
+  computed,
+  inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+  signal,
+} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import {
-  bootstrapCheck2,
-  bootstrapShieldCheck,
-} from '@ng-icons/bootstrap-icons';
+import { bootstrapCheck2 } from '@ng-icons/bootstrap-icons';
 import { tablerArrowLeft, tablerArrowRight } from '@ng-icons/tabler-icons';
 
 export interface DetailedStep {
   readonly id: string;
   readonly number: string;
   readonly translationKey: string;
-  readonly image: string;
-  readonly alt: string;
   readonly type: 'checklist' | 'narrative';
   readonly indices?: readonly number[];
 }
@@ -24,8 +28,6 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
     id: 'preparation',
     number: '01',
     translationKey: 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.STEPS.PREPARATION',
-    image: '/images/landing/about-us-mockup.webp',
-    alt: 'PISICloud ERP Project Preparation Kickoff and governance overview',
     type: 'checklist',
     indices: [0, 1, 2, 3, 4, 5, 6],
   },
@@ -33,24 +35,18 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
     id: 'blueprint',
     number: '02',
     translationKey: 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.STEPS.BLUEPRINT',
-    image: '/images/solution/4_3-1.webp',
-    alt: 'Business Blueprint focus group discussion and SOP matrix design',
     type: 'narrative',
   },
   {
     id: 'realization',
     number: '03',
     translationKey: 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.STEPS.REALIZATION',
-    image: '/images/landing/hero-image.webp',
-    alt: 'System configuration, custom agile modules and database validation',
     type: 'narrative',
   },
   {
     id: 'final-prep',
     number: '04',
     translationKey: 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.STEPS.FINAL_PREP',
-    image: '/images/solution/4_3-2.webp',
-    alt: 'Comprehensive user simulation, end-to-end testing and cutover readiness',
     type: 'checklist',
     indices: [0, 1, 2, 3, 4],
   },
@@ -58,8 +54,6 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
     id: 'go-live',
     number: '05',
     translationKey: 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.STEPS.GO_LIVE',
-    image: '/images/solution/4_3-3.webp',
-    alt: 'Live production system launch, stabilization and continuous operational support',
     type: 'narrative',
   },
 ];
@@ -67,11 +61,10 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
 @Component({
   selector:
     'strategy-detailed-roadmap, app-strategy-detailed-roadmap, app-detailed-roadmap',
-  imports: [NgOptimizedImage, TranslatePipe, MatButtonModule, NgIcon],
+  imports: [TranslatePipe, MatButtonModule, MatProgressBarModule, NgIcon],
   viewProviders: [
     provideIcons({
       bootstrapCheck2,
-      bootstrapShieldCheck,
       tablerArrowLeft,
       tablerArrowRight,
     }),
@@ -82,29 +75,89 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
       display: block;
       width: 100%;
     }
+
+    button[mat-icon-button] {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
   `,
 })
-export class DetailedRoadmap {
+export class DetailedRoadmap implements OnInit, OnDestroy {
+  private readonly platformId = inject(PLATFORM_ID);
+
   readonly steps = DETAILED_STEPS;
   readonly activeIndex = signal<number>(0);
   readonly currentStep = computed(() => this.steps[this.activeIndex()]);
 
+  readonly duration = 5000;
+  readonly tickInterval = 40;
+  readonly progress = signal<number>(0);
+  readonly isPaused = signal<boolean>(false);
+
+  private timerId: ReturnType<typeof setInterval> | null = null;
+
+  ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.startTimer();
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.stopTimer();
+  }
+
+  startTimer(): void {
+    this.stopTimer();
+    if (isPlatformBrowser(this.platformId)) {
+      this.timerId = setInterval(() => {
+        if (!this.isPaused()) {
+          const stepIncrement = (this.tickInterval / this.duration) * 100;
+          this.progress.update((p) => {
+            const next = p + stepIncrement;
+            if (next >= 100) {
+              this.nextStep();
+              return 0;
+            }
+            return next;
+          });
+        }
+      }, this.tickInterval);
+    }
+  }
+
+  stopTimer(): void {
+    if (this.timerId !== null) {
+      clearInterval(this.timerId);
+      this.timerId = null;
+    }
+  }
+
   setActiveStep(index: number): void {
     if (index >= 0 && index < this.steps.length) {
       this.activeIndex.set(index);
+      this.progress.set(0);
     }
   }
 
   prevStep(): void {
-    if (this.activeIndex() > 0) {
-      this.activeIndex.update((i) => i - 1);
-    }
+    this.activeIndex.update(
+      (i) => (i - 1 + this.steps.length) % this.steps.length,
+    );
+    this.progress.set(0);
   }
 
   nextStep(): void {
-    if (this.activeIndex() < this.steps.length - 1) {
-      this.activeIndex.update((i) => i + 1);
-    }
+    this.activeIndex.update((i) => (i + 1) % this.steps.length);
+    this.progress.set(0);
+  }
+
+  pauseAutoPlay(): void {
+    this.isPaused.set(true);
+  }
+
+  resumeAutoPlay(): void {
+    this.isPaused.set(false);
   }
 
   onKeydown(event: KeyboardEvent, index: number): void {

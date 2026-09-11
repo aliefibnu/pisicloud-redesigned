@@ -21,9 +21,10 @@ describe('DetailedRoadmap', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have 5 detailed roadmap stages', () => {
+  it('should have 5 detailed roadmap stages and start at progress 0', () => {
     expect(component.steps.length).toBe(5);
     expect(component.currentStep().id).toBe('preparation');
+    expect(component.progress()).toBe(0);
   });
 
   it('should update active step when setActiveStep is called', () => {
@@ -32,16 +33,34 @@ describe('DetailedRoadmap', () => {
 
     expect(component.activeIndex()).toBe(2);
     expect(component.currentStep().id).toBe('realization');
+    expect(component.progress()).toBe(0);
   });
 
-  it('should navigate with nextStep and prevStep', () => {
+  it('should navigate with nextStep and prevStep (with looping)', () => {
     component.nextStep();
     expect(component.activeIndex()).toBe(1);
     expect(component.currentStep().id).toBe('blueprint');
+    expect(component.progress()).toBe(0);
 
     component.prevStep();
     expect(component.activeIndex()).toBe(0);
     expect(component.currentStep().id).toBe('preparation');
+
+    component.prevStep();
+    expect(component.activeIndex()).toBe(4);
+    expect(component.currentStep().id).toBe('go-live');
+
+    component.nextStep();
+    expect(component.activeIndex()).toBe(0);
+    expect(component.currentStep().id).toBe('preparation');
+  });
+
+  it('should pause and resume autoplay on hover events', () => {
+    component.pauseAutoPlay();
+    expect(component.isPaused()).toBe(true);
+
+    component.resumeAutoPlay();
+    expect(component.isPaused()).toBe(false);
   });
 
   it('should handle arrow keyboard navigation', () => {

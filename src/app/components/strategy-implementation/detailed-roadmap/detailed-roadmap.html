@@ -4,33 +4,29 @@
   aria-labelledby="detailed-roadmap-heading"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Section Header (Two-Tone Heading Formula) -->
-    <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+    <!-- Section Header (Only Two-Tone Title, NO subtitle/description) -->
+    <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
       <h2
         id="detailed-roadmap-heading"
-        class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#191c1b] tracking-tight leading-tight mb-3"
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#191c1b] tracking-tight leading-tight"
       >
-        <span>{{
-          'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.TITLE_PREFIX' | translate
-        }}</span>
+        <span>{{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.TITLE_PREFIX' | translate }}</span>
         <span class="text-[#066b5b]">{{
           'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.TITLE_HIGHLIGHT' | translate
         }}</span>
       </h2>
-      <p class="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed font-normal">
-        {{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.SUBTITLE' | translate }}
-      </p>
     </div>
 
-    <!-- Minimalist Segmented Stepper Navigation Bar -->
-    <div class="max-w-5xl mx-auto mb-8 sm:mb-10">
+    <!-- Stepper Navigation Ribbon (Narrower than the main card: max-w-3xl) -->
+    <div class="max-w-4xl mx-auto mb-8 sm:mb-10">
       <div
-        class="flex items-center gap-1.5 sm:gap-2 p-1.5 sm:p-2 rounded-2xl bg-white border border-[#dce6df] shadow-xs overflow-x-auto no-scrollbar"
+        class="flex items-center gap-1.5 sm:gap-2 p-1.5 sm:p-2 rounded-2xl bg-white border border-[#dce6df] shadow-2xs overflow-x-auto no-scrollbar"
         role="tablist"
         aria-label="Roadmap Phase Selection"
       >
         @for (step of steps; track step.id; let i = $index) {
           <button
+            mat-button
             type="button"
             role="tab"
             [id]="'roadmap-tab-' + i"
@@ -38,177 +34,142 @@
             [attr.aria-controls]="'roadmap-panel-' + i"
             (click)="setActiveStep(i)"
             (keydown)="onKeydown($event, i)"
-            class="flex-1 min-w-[130px] sm:min-w-0 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl text-left transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#066b5b] focus-visible:ring-offset-2"
-            [class.bg-[#066b5b]]="activeIndex() === i"
-            [class.text-white]="activeIndex() === i"
-            [class.shadow-xs]="activeIndex() === i"
-            [class.text-slate-600]="activeIndex() !== i"
-            [class.hover:text-[#191c1b]]="activeIndex() !== i"
-            [class.hover:bg-[#f4fcf7]]="activeIndex() !== i"
+            class="flex-1 min-w-[130px] sm:min-w-0 py-2.5! px-3! sm:px-4! rounded-xl! text-center! transition-all! duration-200! cursor-pointer! h-auto! focus-visible:ring-2! focus-visible:ring-[#066b5b]! focus-visible:outline-none! flex! items-center! justify-center!"
+            [class.bg-[#066b5b]!]="activeIndex() === i"
+            [class.text-white!]="activeIndex() === i"
+            [class.shadow-xs!]="activeIndex() === i"
+            [class.text-slate-600!]="activeIndex() !== i"
+            [class.hover:text-[#191c1b]!]="activeIndex() !== i"
+            [class.hover:bg-[#f4fcf7]!]="activeIndex() !== i"
           >
-            <span
-              class="block text-[11px] font-bold tracking-wider uppercase mb-0.5"
-              [class.text-white/80]="activeIndex() === i"
-              [class.text-[#066b5b]]="activeIndex() !== i"
-            >
-              {{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PHASE_LABEL' | translate }} {{ step.number }}
-            </span>
-            <span
-              class="block text-xs sm:text-sm font-semibold truncate"
-              [class.text-white]="activeIndex() === i"
-              [class.text-[#191c1b]]="activeIndex() !== i"
-            >
-              {{ (step.translationKey + '.TITLE') | translate }}
+            <span class="text-xs sm:text-sm font-semibold block truncate">
+              {{ step.number }}. {{ step.translationKey + '.TITLE' | translate }}
             </span>
           </button>
         }
       </div>
     </div>
 
-    <!-- Active Phase Showcase Canvas (Minimalist Bento Presentation) -->
+    <!-- Active Phase Content Card (Wider: max-w-5xl, refined padding and aligned typography) -->
     <div
       [id]="'roadmap-panel-' + activeIndex()"
       role="tabpanel"
       [attr.aria-labelledby]="'roadmap-tab-' + activeIndex()"
-      class="max-w-6xl mx-auto rounded-3xl bg-white border border-[#dce6df] p-6 sm:p-8 lg:p-10 shadow-xs relative transition-all duration-300"
+      (mouseenter)="pauseAutoPlay()"
+      (mouseleave)="resumeAutoPlay()"
+      (focusin)="pauseAutoPlay()"
+      (focusout)="resumeAutoPlay()"
+      class="max-w-5xl mx-auto rounded-3xl bg-white border border-[#dce6df] p-7 sm:p-9 lg:p-12 shadow-xs relative transition-all duration-300"
     >
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
-        <!-- Left Column: Scope, Description & Deliverables (7 cols) -->
-        <div class="lg:col-span-7 flex flex-col justify-between">
-          <div>
-            <!-- Phase Meta Indicator -->
-            <div class="flex items-center gap-2 mb-2">
-              <span class="text-xs font-bold uppercase tracking-widest text-[#066b5b]">
-                {{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PHASE_LABEL' | translate }} {{ currentStep().number }} / 05
-              </span>
-              <span class="w-1.5 h-1.5 rounded-full bg-[#066b5b]" aria-hidden="true"></span>
-              <span class="text-xs font-medium text-slate-500">
-                {{ (currentStep().translationKey + '.SUBTITLE') | translate }}
-              </span>
-            </div>
+      <!-- Continuous Real-time Progress Bar (Indicates continuous autoplay progress) -->
+      <mat-progress-bar
+        mode="determinate"
+        [value]="progress()"
+        class="rounded-full! overflow-hidden! h-1.5! mb-8! bg-slate-100!"
+        [attr.aria-label]="
+          (currentStep().translationKey + '.TITLE' | translate) + ' timer progress'
+        "
+      ></mat-progress-bar>
 
-            <!-- Phase Heading -->
-            <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#191c1b] tracking-tight leading-tight mb-3">
-              {{ (currentStep().translationKey + '.TITLE') | translate }}
-            </h3>
+      <!-- Unified Content Section -->
+      <div>
+        <!-- Title directly at top (NO badge, NO subtitle) -->
+        <h3
+          class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#191c1b] tracking-tight leading-tight mb-4"
+        >
+          <span class="text-[#066b5b]">{{ currentStep().number }}. </span>
+          <span>{{ currentStep().translationKey + '.TITLE' | translate }}</span>
+        </h3>
 
-            <!-- Phase Intro Narrative -->
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mb-6">
-              {{ (currentStep().translationKey + '.INTRO') | translate }}
-            </p>
+        <!-- Intro Description -->
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mb-6">
+          {{ currentStep().translationKey + '.INTRO' | translate }}
+        </p>
 
-            <!-- Checklist View (Steps 1 & 4) -->
-            @if (currentStep().type === 'checklist') {
-              <div class="mb-6">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-[#191c1b] mb-3">
-                  {{ (currentStep().translationKey + '.CHECKLIST_TITLE') | translate }}
-                </h4>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                  @for (idx of currentStep().indices; track idx) {
-                    <div class="flex items-start gap-2.5 p-3 rounded-xl bg-[#f8faf8] border border-slate-200/70 hover:border-[#066b5b]/30 transition-colors">
-                      <div class="w-5 h-5 rounded-full bg-[#e6f7f2] flex items-center justify-center shrink-0 mt-0.5 text-[#066b5b]">
-                        <ng-icon name="bootstrapCheck2" class="text-sm font-bold" aria-hidden="true" />
-                      </div>
-                      <span class="text-xs sm:text-[13px] text-slate-700 leading-snug font-medium">
-                        {{ (currentStep().translationKey + '.POINTS.' + idx) | translate }}
-                      </span>
-                    </div>
-                  }
-                </div>
-              </div>
-            }
-
-            <!-- Narrative View (Steps 2, 3 & 5) -->
-            @if (currentStep().type === 'narrative') {
-              <div class="space-y-3 mb-6">
-                <div class="p-4 rounded-xl bg-[#f8faf8] border border-slate-200/70 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-                  {{ (currentStep().translationKey + '.BODY_1') | translate }}
-                </div>
-                <div class="p-4 rounded-xl bg-[#f8faf8] border border-slate-200/70 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-                  {{ (currentStep().translationKey + '.BODY_2') | translate }}
-                </div>
-              </div>
-            }
+        <!-- Detailed Points / Narrative in unified typographic flow -->
+        @if (currentStep().type === 'checklist') {
+          <div class="mb-6">
+            <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#191c1b] mb-3.5">
+              {{ currentStep().translationKey + '.CHECKLIST_TITLE' | translate }}
+            </h4>
+            <ul class="space-y-3">
+              @for (idx of currentStep().indices; track idx) {
+                <li
+                  class="flex items-start gap-3 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal"
+                >
+                  <ng-icon
+                    name="bootstrapCheck2"
+                    class="text-base text-[#066b5b] shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  />
+                  <span>{{ currentStep().translationKey + '.POINTS.' + idx | translate }}</span>
+                </li>
+              }
+            </ul>
           </div>
+        }
 
-          <!-- Primary Deliverable Box (Output Utama) -->
-          <div class="flex items-start gap-3.5 p-4 sm:p-5 rounded-2xl bg-[#f4fcf7] border border-[#cde8e0]">
-            <div class="w-10 h-10 rounded-xl bg-white border border-[#cde8e0] flex items-center justify-center text-[#066b5b] shrink-0 shadow-2xs">
-              <ng-icon name="bootstrapShieldCheck" class="text-xl" aria-hidden="true" />
-            </div>
-            <div class="min-w-0">
-              <span class="block text-[11px] font-bold uppercase tracking-wider text-[#066b5b] mb-0.5">
-                {{ (currentStep().translationKey + '.OUTPUT_LABEL') | translate }}
-              </span>
-              <p class="text-xs sm:text-sm font-semibold text-[#191c1b] leading-snug">
-                {{ (currentStep().translationKey + '.OUTPUT_TEXT') | translate }}
-              </p>
-            </div>
+        @if (currentStep().type === 'narrative') {
+          <div
+            class="space-y-3.5 mb-6 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal"
+          >
+            <p>{{ currentStep().translationKey + '.BODY_1' | translate }}</p>
+            <p>{{ currentStep().translationKey + '.BODY_2' | translate }}</p>
           </div>
+        }
+
+        <!-- Output Utama unified into text flow (Differentiated purely by font weight & color) -->
+        <div class="pt-5 pb-2 border-t border-slate-100 mb-8">
+          <p class="text-xs sm:text-sm leading-relaxed">
+            <span class="font-bold text-[#066b5b] uppercase tracking-wide mr-1.5"
+              >{{ currentStep().translationKey + '.OUTPUT_LABEL' | translate }}:</span
+            >
+            <span class="font-semibold text-[#191c1b]">{{
+              currentStep().translationKey + '.OUTPUT_TEXT' | translate
+            }}</span>
+          </p>
         </div>
 
-        <!-- Right Column: Visual Showcase & Interactive Step Navigator (5 cols) -->
-        <div class="lg:col-span-5 flex flex-col items-center">
-          <!-- Landscape Media Frame -->
-          <div
-            class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-xs mb-6 group"
+        <!-- Bottom Pagination (Arrow buttons + center dots indicator, Material 3) -->
+        <div class="flex items-center justify-center gap-4 pt-4 border-t border-slate-100">
+          <!-- Prev Arrow Button (Icon only, centered) -->
+          <button
+            mat-icon-button
+            type="button"
+            (click)="prevStep()"
+            class="w-10! h-10! rounded-full! border! border-slate-200/80! bg-white! text-slate-700! hover:text-[#066b5b]! hover:border-[#066b5b]/50! hover:bg-[#f4fcf7]! transition-all! duration-200! cursor-pointer! flex! items-center! justify-center!"
+            [attr.aria-label]="'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PREV_STEP' | translate"
           >
-            <img
-              [ngSrc]="currentStep().image"
-              [alt]="currentStep().alt"
-              width="800"
-              height="600"
-              draggable="false"
-              (dragstart)="$event.preventDefault()"
-              class="w-full h-full object-cover select-none transition-transform duration-500 ease-out group-hover:scale-105"
-            />
+            <ng-icon name="tablerArrowLeft" class="text-xl" aria-hidden="true" />
+          </button>
+
+          <!-- Indicator Dots -->
+          <div class="flex items-center gap-2" aria-hidden="true">
+            @for (s of steps; track s.id; let i = $index) {
+              <button
+                type="button"
+                (click)="setActiveStep(i)"
+                class="h-2.5 rounded-full transition-all duration-300 cursor-pointer"
+                [class.bg-[#066b5b]]="activeIndex() === i"
+                [class.w-7]="activeIndex() === i"
+                [class.w-2.5]="activeIndex() !== i"
+                [class.bg-slate-200]="activeIndex() !== i"
+                [class.hover:bg-slate-300]="activeIndex() !== i"
+                [attr.aria-label]="'Go to step ' + (i + 1)"
+              ></button>
+            }
           </div>
 
-          <!-- Stepper Navigation Controller -->
-          <div class="w-full flex items-center justify-between gap-3 pt-2 border-t border-slate-100">
-            <!-- Prev Button -->
-            <button
-              mat-stroked-button
-              type="button"
-              (click)="prevStep()"
-              [disabled]="activeIndex() === 0"
-              class="rounded-full! border-[#066b5b]/40! text-[#066b5b]! hover:bg-[#f4fcf7]! px-4! sm:px-5! py-2.5! h-auto! font-medium! text-xs! sm:text-sm! shadow-xs! transition-all! duration-200! disabled:opacity-40! disabled:cursor-not-allowed!"
-              [attr.aria-label]="'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PREV_STEP' | translate"
-            >
-              <ng-icon name="tablerArrowLeft" class="text-base mr-1.5" aria-hidden="true" />
-              <span>{{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PREV_STEP' | translate }}</span>
-            </button>
-
-            <!-- Step Dots Indicator -->
-            <div class="flex items-center gap-1.5" aria-hidden="true">
-              @for (s of steps; track s.id; let i = $index) {
-                <button
-                  type="button"
-                  (click)="setActiveStep(i)"
-                  class="h-2.5 rounded-full transition-all duration-300 cursor-pointer"
-                  [class.bg-[#066b5b]]="activeIndex() === i"
-                  [class.w-6]="activeIndex() === i"
-                  [class.w-2.5]="activeIndex() !== i"
-                  [class.bg-slate-300]="activeIndex() !== i"
-                  [class.hover:bg-slate-400]="activeIndex() !== i"
-                  [attr.aria-label]="'Go to step ' + (i + 1)"
-                ></button>
-              }
-            </div>
-
-            <!-- Next Button -->
-            <button
-              mat-flat-button
-              type="button"
-              (click)="nextStep()"
-              [disabled]="activeIndex() === steps.length - 1"
-              class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! text-white! px-4! sm:px-5! py-2.5! h-auto! font-medium! text-xs! sm:text-sm! shadow-xs! transition-all! duration-200! disabled:opacity-40! disabled:cursor-not-allowed!"
-              [attr.aria-label]="'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.NEXT_STEP' | translate"
-            >
-              <span>{{ 'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.NEXT_STEP' | translate }}</span>
-              <ng-icon name="tablerArrowRight" class="text-base ml-1.5" aria-hidden="true" />
-            </button>
-          </div>
+          <!-- Next Arrow Button (Icon only, centered) -->
+          <button
+            mat-icon-button
+            type="button"
+            (click)="nextStep()"
+            class="w-10! h-10! rounded-full! border! border-slate-200/80! bg-white! text-slate-700! hover:text-[#066b5b]! hover:border-[#066b5b]/50! hover:bg-[#f4fcf7]! transition-all! duration-200! cursor-pointer! flex! items-center! justify-center!"
+            [attr.aria-label]="'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.NEXT_STEP' | translate"
+          >
+            <ng-icon name="tablerArrowRight" class="text-xl" aria-hidden="true" />
+          </button>
         </div>
       </div>
     </div>
