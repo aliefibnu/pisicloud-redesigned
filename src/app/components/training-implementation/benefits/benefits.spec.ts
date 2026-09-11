@@ -86,7 +86,12 @@ describe('TrainingImplementation Benefits', () => {
     expectedBenefits.forEach((expected, idx) => {
       const row = rows[idx];
       expect(row.textContent).toContain(expected.title);
-      expect(row.textContent).not.toContain(expected.num);
+      expect(row.textContent).toContain(expected.num);
+      // Verify unboxed typographic numeral prefix
+      const numSpan = row.querySelector('h3 > span.text-slate-400');
+      expect(numSpan).toBeTruthy();
+      expect(numSpan?.textContent?.trim()).toBe(expected.num);
+      expect(row.querySelector('.bg-\\[\\#cde8e0\\]\\/50')).toBeNull();
       // Verify no alternating zigzag classes
       expect(row.classList.contains('md:flex-row-reverse')).toBe(false);
     });

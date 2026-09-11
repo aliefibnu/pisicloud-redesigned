@@ -30,9 +30,10 @@
 
           <!-- Content Column -->
           <div class="grow min-w-0">
-            <!-- Title -->
+            <!-- Title with Subtle Numeral Prefix -->
             <h3 class="text-base sm:text-lg font-bold text-[#191c1b] tracking-tight mb-1 truncate sm:whitespace-normal">
-              {{ 'TRAINING_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.TITLE' | translate }}
+              <span class="font-normal text-slate-400 mr-2 text-sm sm:text-base tabular-nums select-none">{{ 'TRAINING_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.NUMBER' | translate }}</span>
+              <span>{{ 'TRAINING_IMPLEMENTATION.BENEFITS.ITEMS.' + benefit.key + '.TITLE' | translate }}</span>
             </h3>
 
             <!-- Description (max 2 lines) -->
