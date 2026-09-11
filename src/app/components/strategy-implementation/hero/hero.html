@@ -1,0 +1,84 @@
+<section
+  class="relative w-full bg-gradient-to-b from-[#f4fcf7] via-[#fbfdfc] to-white pt-10 sm:pt-14 md:pt-18 lg:pt-22 pb-12 sm:pb-16 md:pb-20 overflow-hidden"
+  aria-labelledby="strategy-hero-heading"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center">
+      <!-- Left Column (Desktop) / Top Column (Mobile): Text Content & CTAs -->
+      <div class="lg:col-span-6 xl:col-span-6 flex flex-col justify-center text-left z-10">
+        <!-- Heading with Two-Tone Formula -->
+        <h1
+          id="strategy-hero-heading"
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[48px] font-bold text-[#191c1b] tracking-tight leading-[1.18] mb-4 sm:mb-5"
+        >
+          <span>{{ 'STRATEGY_IMPLEMENTATION.HERO.TITLE_PREFIX' | translate }}</span>
+          <span class="text-[#066b5b]">{{
+            'STRATEGY_IMPLEMENTATION.HERO.TITLE_HIGHLIGHT' | translate
+          }}</span>
+        </h1>
+
+        <!-- Concise & Impactful Description -->
+        <p
+          class="text-base sm:text-lg lg:text-[19px] text-slate-600 leading-relaxed font-normal mb-6 sm:mb-7 max-w-xl"
+        >
+          {{ 'STRATEGY_IMPLEMENTATION.HERO.DESCRIPTION' | translate }}
+        </p>
+
+        <!-- Action CTAs -->
+        <div class="flex flex-wrap items-center gap-3.5 sm:gap-4">
+          <a
+            mat-flat-button
+            href="#contact"
+            [attr.aria-label]="'STRATEGY_IMPLEMENTATION.HERO.CTA_CONSULT' | translate"
+            class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! active:bg-[#00382f]! text-white! px-7! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center gap-2"
+          >
+            <span class="flex items-center gap-2">
+              <ng-icon
+                name="bootstrapTelephoneFill"
+                class="text-base text-white shrink-0"
+                aria-hidden="true"
+              />
+              <span>{{ 'STRATEGY_IMPLEMENTATION.HERO.CTA_CONSULT' | translate }}</span>
+            </span>
+          </a>
+
+          <a
+            mat-stroked-button
+            href="#roadmap"
+            [attr.aria-label]="'STRATEGY_IMPLEMENTATION.HERO.CTA_ROADMAP' | translate"
+            class="rounded-full! border-[#066b5b]! text-[#066b5b]! hover:bg-[#066b5b]/5! bg-white/70! px-6! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center gap-2"
+          >
+            <span class="flex items-center gap-2">
+              <span>{{ 'STRATEGY_IMPLEMENTATION.HERO.CTA_ROADMAP' | translate }}</span>
+              <ng-icon
+                name="tablerArrowRight"
+                class="text-base text-[#066b5b] shrink-0"
+                aria-hidden="true"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column (Desktop) / Bottom Column (Mobile): 16:9 Landscape Media -->
+      <div
+        class="lg:col-span-6 xl:col-span-6 flex items-center justify-center lg:justify-end relative mt-4 lg:mt-0"
+      >
+        <div class="relative w-full max-w-xl lg:max-w-none group">
+          <!-- 16:9 Card Wrapper -->
+          <img
+            [ngSrc]="resolvedImage()"
+            (error)="onImageError()"
+            [alt]="'STRATEGY_IMPLEMENTATION.HERO.IMAGE_ALT' | translate"
+            width="1280"
+            height="720"
+            priority
+            draggable="false"
+            (dragstart)="$event.preventDefault()"
+            class="w-full h-full object-cover select-none transition-transform duration-700 group-hover:scale-[1.02]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

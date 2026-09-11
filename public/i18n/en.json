@@ -1025,5 +1025,118 @@
         }
       }
     }
+  },
+  "STRATEGY_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "Implementation Strategy of ",
+      "TITLE_HIGHLIGHT": "PisiCloud",
+      "DESCRIPTION": "ERP implementation requires seamless cross-divisional coordination and high discipline. PISICloud delivers a proven, structured methodology to guide your organization's transition from manual workflows to a fully integrated ecosystem.",
+      "CTA_CONSULT": "Consult Implementation",
+      "CTA_ROADMAP": "Explore Roadmap",
+      "IMAGE_ALT": "Visual preview of PISICloud ERP implementation strategy"
+    },
+    "ROADMAP": {
+      "TITLE_PREFIX": "Implementation ",
+      "TITLE_HIGHLIGHT": "Roadmap",
+      "SUBTITLE": "A structured 5-phase methodology guiding your ERP journey from initial project alignment to full production go-live and ongoing support.",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "1",
+          "TITLE": "PROJECT PREPARATION",
+          "DESCRIPTION": "Project setup, scope alignment, and governance kickoff."
+        },
+        "BLUEPRINT": {
+          "NUMBER": "2",
+          "TITLE": "BUSINESS BLUEPRINT",
+          "DESCRIPTION": "Process mapping, gap analysis, and system architecture design."
+        },
+        "REALIZATION": {
+          "NUMBER": "3",
+          "TITLE": "REALIZATION",
+          "DESCRIPTION": "System configuration, custom workflows, and data migration."
+        },
+        "FINAL_PREP": {
+          "NUMBER": "4",
+          "TITLE": "FINAL PREPARATION",
+          "DESCRIPTION": "End-user training, UAT testing, and cutover readiness check."
+        },
+        "GO_LIVE": {
+          "NUMBER": "5",
+          "TITLE": "GO LIVE & SUPPORT",
+          "DESCRIPTION": "Production launch, system stabilization, and continuous post-launch support."
+        }
+      }
+    },
+    "DETAILED_ROADMAP": {
+      "TITLE_PREFIX": "Detailed ",
+      "TITLE_HIGHLIGHT": "Implementation Phases",
+      "SUBTITLE": "A comprehensive deep dive into each stage of the ERP deployment methodology.",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "01",
+          "TITLE": "Project Preparation",
+          "SUBTITLE": "Project Kickoff & Governance Alignment",
+          "INTRO": "A large and crucial ERP project requires clear, detailed direction and shared understanding across all teams. In this foundational phase, we ensure all stakeholders understand their responsibilities and project milestones.",
+          "CHECKLIST_TITLE": "Key Focus Areas:",
+          "POINTS": [
+            "Define primary business objectives and expected project outcomes",
+            "Establish exact software scope and operational boundaries",
+            "Appoint project leaders and core steering committee from both sides",
+            "Identify key divisions and end-users participating in rollout",
+            "Audit required master data and assign data governance owners",
+            "Finalize project timeline, cutover deadlines, and target go-live date",
+            "Prepare necessary hardware, server infrastructure, and network devices"
+          ],
+          "OUTPUT_LABEL": "Primary Deliverable",
+          "OUTPUT_TEXT": "Project Kick Off Presentation & Charter defining clear guidelines, milestones, and governance to ensure shared alignment."
+        },
+        "BLUEPRINT": {
+          "NUMBER": "02",
+          "TITLE": "Business Blueprint",
+          "SUBTITLE": "Process Mapping & System Architecture",
+          "INTRO": "In this crucial phase, detailed Focus Group Discussions (FGD) are held to evaluate current business workflows and design optimized future-state processes.",
+          "BODY_1": "We map out exact adjustments and additions required in the system to support your unique business operations. The primary deliverable is a comprehensive Standard Operating Procedure (SOP) for each company division.",
+          "BODY_2": "The finalized blueprint document is thoroughly socialized and signed off by all key stakeholders, establishing a unified foundation before development begins.",
+          "OUTPUT_LABEL": "Primary Deliverable",
+          "OUTPUT_TEXT": "Signed Business Blueprint Document & Division SOP Matrix aligned across all stakeholder teams."
+        },
+        "REALIZATION": {
+          "NUMBER": "03",
+          "TITLE": "Realization",
+          "SUBTITLE": "System Configuration & Agile Development",
+          "INTRO": "Translating the Business Blueprint SOPs into software configurations, customized workflows, and module setups on a structured schedule.",
+          "BODY_1": "Customized modules undergo intensive testing by key users and continuous monitoring by dedicated project leads to ensure 100% alignment with operational requirements.",
+          "BODY_2": "We employ the Agile Development Methodology, fostering close collaboration and rapid feedback cycles with your team for on-time and accurate deployment.",
+          "OUTPUT_LABEL": "Primary Deliverable",
+          "OUTPUT_TEXT": "Fully Configured ERP System with verified custom workflows and tested database integration."
+        },
+        "FINAL_PREP": {
+          "NUMBER": "04",
+          "TITLE": "Final Preparation",
+          "SUBTITLE": "Comprehensive Simulation & Cutover Readiness",
+          "INTRO": "Comprehensive end-to-end system testing and user validation to ensure absolute readiness prior to production launch.",
+          "CHECKLIST_TITLE": "Final Preparation Checklist:",
+          "POINTS": [
+            "Complete end-to-end User Acceptance Testing (UAT) following agreed SOPs",
+            "Hands-on training sessions for all operational software users",
+            "Data cut-off verification and final initial data migration",
+            "Hardware, network, and scanner/terminal device verification",
+            "Contingency planning and go-live readiness sign-off"
+          ],
+          "OUTPUT_LABEL": "Primary Deliverable",
+          "OUTPUT_TEXT": "Successful UAT Sign-off, Trained User Certification, and Validated Cutover Master Data."
+        },
+        "GO_LIVE": {
+          "NUMBER": "05",
+          "TITLE": "Go Live & Support",
+          "SUBTITLE": "Production Launch & Continuous Optimization",
+          "INTRO": "The system goes live into active daily production. Internal and external monitoring teams ensure seamless execution across all organizational units.",
+          "BODY_1": "Real-time on-site and remote monitoring allows immediate problem solving, performance tuning, transaction recording assistance, and master data refinement.",
+          "BODY_2": "Our dedicated support team provides refresher training and optimization guidance as teams transition fully into automated, digital operations.",
+          "OUTPUT_LABEL": "Primary Deliverable",
+          "OUTPUT_TEXT": "Live Production Operations, System Stabilization, and Ongoing Dedicated Support Service."
+        }
+      }
+    }
   }
 }

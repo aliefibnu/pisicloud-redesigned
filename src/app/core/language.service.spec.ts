@@ -19,7 +19,8 @@ describe('LanguageService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should initialize with default language en and return observable', () => {
+  it('should initialize with supported language and return observable', () => {
+    localStorage.setItem('app-lang', 'en');
     const init$ = service.init();
     expect(init$).toBeTruthy();
     expect(service.getLanguage()).toBe('en');

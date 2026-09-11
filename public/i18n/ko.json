@@ -1025,5 +1025,118 @@
         }
       }
     }
+  },
+  "STRATEGY_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "ERP 구축 ",
+      "TITLE_HIGHLIGHT": "전략",
+      "DESCRIPTION": "ERP 도입은 전사 부서 간 긴밀한 협업과 높은 규율을 필요로 합니다. PISICloud는 검증된 구조화 방법론을 통해 기존 수동 업무에서 통합 디지털 생태계로의 매끄럽고 안정적인 전환을 지원합니다.",
+      "CTA_CONSULT": "구축 컨설팅 상담",
+      "CTA_ROADMAP": "구축 단계 알아보기",
+      "IMAGE_ALT": "PISICloud ERP 구축 전략 시각 미리보기"
+    },
+    "ROADMAP": {
+      "TITLE_PREFIX": "구축 ",
+      "TITLE_HIGHLIGHT": "로드맵",
+      "SUBTITLE": "초기 프로젝트 조율부터 실운영 오픈 및 지속적인 지원까지 안전하게 이끄는 5단계 구조화 방법론.",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "1",
+          "TITLE": "PROJECT PREPARATION",
+          "DESCRIPTION": "프로젝트 착수, 범위 확정 및 거버넌스 킥오프."
+        },
+        "BLUEPRINT": {
+          "NUMBER": "2",
+          "TITLE": "BUSINESS BLUEPRINT",
+          "DESCRIPTION": "업무 프로세스 분석, 갭 분석 및 시스템 설계."
+        },
+        "REALIZATION": {
+          "NUMBER": "3",
+          "TITLE": "REALIZATION",
+          "DESCRIPTION": "시스템 환경 설정, 맞춤 개발 및 데이터 이관 검증."
+        },
+        "FINAL_PREP": {
+          "NUMBER": "4",
+          "TITLE": "FINAL PREPARATION",
+          "DESCRIPTION": "사용자 교육, 인수 테스트(UAT) 및 전환 준비 점검."
+        },
+        "GO_LIVE": {
+          "NUMBER": "5",
+          "TITLE": "GO LIVE & SUPPORT",
+          "DESCRIPTION": "운영 시스템 공식 오픈, 안정화 및 지속적 유지보수."
+        }
+      }
+    },
+    "DETAILED_ROADMAP": {
+      "TITLE_PREFIX": "상세 구축 ",
+      "TITLE_HIGHLIGHT": "단계별 안내",
+      "SUBTITLE": "PISICloud ERP 구축 방법론의 각 단계별 핵심 실행 사항과 산출물을 상세히 안내합니다.",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "01",
+          "TITLE": "Project Preparation",
+          "SUBTITLE": "프로젝트 킥오프 및 거버넌스 수립",
+          "INTRO": "성공적인 대규모 ERP 프로젝트를 위해서는 명확한 목표 설정과 전사적 공감대 형성이 필수적입니다. 초기 준비 단계에서는 프로젝트 추진 체계와 세부 역할을 명확히 정립합니다.",
+          "CHECKLIST_TITLE": "본 단계 핵심 점검 항목:",
+          "POINTS": [
+            "구축 프로젝트의 주요 사업 목표 및 기대 효과 정의",
+            "도입 및 활용할 소프트웨어의 적용 범위 확정",
+            "고객사 및 개발사 양측 프로젝트 책임자 및 추진팀 구성",
+            "소프트웨어 활용에 참여할 주요 부서 및 핵심 사용자 지정",
+            "필요한 기초 데이터 목록 정의 및 데이터 관리 담당자 지정",
+            "구축 일정표, 데이터 전환 시점 및 공식 오픈 목표일 확정",
+            "시스템 운영에 필요한 서버, 인프라 및 네트워크 장비 준비 확인"
+          ],
+          "OUTPUT_LABEL": "핵심 산출물",
+          "OUTPUT_TEXT": "프로젝트 킥오프 발표 자료(Project Kick Off Presentation) 및 프로젝트 수행 헌장."
+        },
+        "BLUEPRINT": {
+          "NUMBER": "02",
+          "TITLE": "Business Blueprint",
+          "SUBTITLE": "업무 프로세스 분석 및 시스템 설계",
+          "INTRO": "이 단계에서는 심층 포커스 그룹 토의(FGD)를 통해 현재 업무 프로세스를 분석하고, 최적화된 미래 프로세스(To-Be)를 설계합니다.",
+          "BODY_1": "도입 시스템에 필요한 맞춤 조정 및 추가 개발 요구사항을 도출하여 부서별 표준운영절차(SOP)를 수립합니다.",
+          "BODY_2": "설계된 블루프린트 문서는 모든 이해관계자와 공유 및 승인되어 개발 착수 전 공통된 인식을 확립합니다.",
+          "OUTPUT_LABEL": "핵심 산출물",
+          "OUTPUT_TEXT": "승인 완료된 비즈니스 블루프린트 설계서 및 부서별 표준 SOP 정의서."
+        },
+        "REALIZATION": {
+          "NUMBER": "03",
+          "TITLE": "Realization",
+          "SUBTITLE": "시스템 환경 구성 및 애자일 개발",
+          "INTRO": "확정된 SOP를 기반으로 소프트웨어 환경 구성(파라미터 세팅) 및 맞춤형 모듈 개발을 계획된 일정에 맞춰 진행합니다.",
+          "BODY_1": "개발된 기능은 핵심 사용자의 집중적인 테스트와 전담 프로젝트 팀의 철저한 품질 모니터링을 거칩니다.",
+          "BODY_2": "애자일 개발 방법론(Agile Development)을 적용하여 신속한 피드백과 긴밀한 소통으로 적기 완성을 실현합니다.",
+          "OUTPUT_LABEL": "핵심 산출물",
+          "OUTPUT_TEXT": "세부 설정 및 맞춤 개발이 완료되어 검증된 ERP 시스템 모듈군."
+        },
+        "FINAL_PREP": {
+          "NUMBER": "04",
+          "TITLE": "Final Preparation",
+          "SUBTITLE": "종합 시뮬레이션 및 전환 준비",
+          "INTRO": "실운영 오픈을 앞두고 완성된 시스템을 활용하여 표준 SOP에 따른 종합적인 사용자 수용 테스트를 실시합니다.",
+          "CHECKLIST_TITLE": "최종 준비 핵심 과제:",
+          "POINTS": [
+            "합의된 표준 SOP 기반의 전사 사용자 수용 테스트(UAT) 완료",
+            "모든 시스템 사용자를 대상으로 한 맞춤형 실습 교육 실시",
+            "초기 이행 기초 데이터(Cut Off 데이터) 준비 및 검증",
+            "운영 단말기, 주변기기 및 네트워크 환경 최종 점검",
+            "비상 대응 계획(Contingency Plan) 수립 및 오픈 준비 완료 승인"
+          ],
+          "OUTPUT_LABEL": "핵심 산출물",
+          "OUTPUT_TEXT": "UAT 승인 완료서, 사용자 교육 이수 인증 및 검증된 초기 이행 데이터."
+        },
+        "GO_LIVE": {
+          "NUMBER": "05",
+          "TITLE": "Go Live & Support",
+          "SUBTITLE": "운영 시스템 오픈 및 지속 지원",
+          "INTRO": "시스템이 실제 기업의 일상 업무에서 본격 가동됩니다. 내부 및 외부 지원팀이 현장 밀착 모니터링을 통해 안정적 운영을 보장합니다.",
+          "BODY_1": "현장 및 원격 실시간 모니터링을 통해 시스템 설정 보완, 거래 전표 처리 지원 및 성능 최적화를 즉각 수행합니다.",
+          "BODY_2": "전담 지원팀이 필요 시 지속적인 재교육과 운영 가이드를 제공하여 임직원의 자립 운영 정착을 지원합니다.",
+          "OUTPUT_LABEL": "핵심 산출물",
+          "OUTPUT_TEXT": "실운영 성공적 오픈, 초기 시스템 안정화 완료 및 지속적인 전담 기술 지원 서비스."
+        }
+      }
+    }
   }
 }

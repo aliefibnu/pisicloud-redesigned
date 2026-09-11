@@ -1025,5 +1025,118 @@
         }
       }
     }
+  },
+  "STRATEGY_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "ERP实施",
+      "TITLE_HIGHLIGHT": "战略",
+      "DESCRIPTION": "ERP系统实施涉及跨部门的高度协同与严谨纪律。PISICloud采用经过验证的结构化方法论，助力企业从传统手动流程平稳、无缝地迈向高度集成的数字化生态。",
+      "CTA_CONSULT": "咨询实施方案",
+      "CTA_ROADMAP": "了解实施阶段",
+      "IMAGE_ALT": "PISICloud ERP实施战略可视化预览"
+    },
+    "ROADMAP": {
+      "TITLE_PREFIX": "实施",
+      "TITLE_HIGHLIGHT": "路线图",
+      "SUBTITLE": "结构化5阶段推进方法论，全程指引您的ERP系统从前期规划平稳迈向正式上线与长期运维支持。",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "1",
+          "TITLE": "PROJECT PREPARATION",
+          "DESCRIPTION": "项目启动、组织架构搭建与实施范围界定。"
+        },
+        "BLUEPRINT": {
+          "NUMBER": "2",
+          "TITLE": "BUSINESS BLUEPRINT",
+          "DESCRIPTION": "业务流程梳理、差异分析与系统架构蓝图设计。"
+        },
+        "REALIZATION": {
+          "NUMBER": "3",
+          "TITLE": "REALIZATION",
+          "DESCRIPTION": "系统参数配置、定制化开发与数据迁移验证。"
+        },
+        "FINAL_PREP": {
+          "NUMBER": "4",
+          "TITLE": "FINAL PREPARATION",
+          "DESCRIPTION": "最终用户培训、UAT验收测试与系统切换准备。"
+        },
+        "GO_LIVE": {
+          "NUMBER": "5",
+          "TITLE": "GO LIVE & SUPPORT",
+          "DESCRIPTION": "生产环境正式上线、系统稳定保障与长期技术支持。"
+        }
+      }
+    },
+    "DETAILED_ROADMAP": {
+      "TITLE_PREFIX": "详细实施",
+      "TITLE_HIGHLIGHT": "阶段解析",
+      "SUBTITLE": "深入解析PISICloud ERP实施方法论的各个关键步骤与交付标准。",
+      "STEPS": {
+        "PREPARATION": {
+          "NUMBER": "01",
+          "TITLE": "Project Preparation",
+          "SUBTITLE": "项目启动与治理机制对齐",
+          "INTRO": "大型关键ERP项目需要明确详细的方向和跨团队共识。在初期准备阶段，确保所有利益相关者明确职责与里程碑。",
+          "CHECKLIST_TITLE": "本阶段核心确认要点：",
+          "POINTS": [
+            "明确项目实施的核心业务目标与预期效益",
+            "确定系统实施的具体模块与应用范围",
+            "确立双方项目负责人及核心推进执行团队",
+            "明确参与系统使用的业务部门与关键用户",
+            "梳理所需基础数据并指定数据准备责任人",
+            "制定详细实施进度表、切换节点及上线时间目标",
+            "准备系统运行所需的服务器及网络配套设备"
+          ],
+          "OUTPUT_LABEL": "核心交付成果",
+          "OUTPUT_TEXT": "项目启动大会方案（Project Kick Off Presentation）及明确的组织分工章程。"
+        },
+        "BLUEPRINT": {
+          "NUMBER": "02",
+          "TITLE": "Business Blueprint",
+          "SUBTITLE": "业务流程梳理与系统架构设计",
+          "INTRO": "在该关键阶段，通过深度专题讨论（FGD）全面梳理现有业务流程，并规划未来更优的数字化业务模式。",
+          "BODY_1": "深入探讨系统所需的功能调整与定制化需求，输出各业务部门经过充分论证的标准作业程序（SOP）。",
+          "BODY_2": "业务蓝图文档经各方深入宣讲并共同签署确认，确保全体成员在系统开发前达成一致理解。",
+          "OUTPUT_LABEL": "核心交付成果",
+          "OUTPUT_TEXT": "各部门共同签署确认的业务蓝图设计文档（Business Blueprint）与标准SOP规范。"
+        },
+        "REALIZATION": {
+          "NUMBER": "03",
+          "TITLE": "Realization",
+          "SUBTITLE": "系统配置与敏捷开发迭代",
+          "INTRO": "根据蓝图标准SOP进行系统参数配置、工作流定制开发与数据迁移准备，严格按排期推进。",
+          "BODY_1": "定制功能由关键用户进行密集实操测试，并由专项项目组全程跟踪，确保符合预期业务要求。",
+          "BODY_2": "我们采用敏捷开发方法（Agile Development），强化开发团队与业务用户的深度协作，保障按时高质量交付。",
+          "OUTPUT_LABEL": "核心交付成果",
+          "OUTPUT_TEXT": "完成全面配置与测试验证的ERP系统模块及集成工作流。"
+        },
+        "FINAL_PREP": {
+          "NUMBER": "04",
+          "TITLE": "Final Preparation",
+          "SUBTITLE": "端到端模拟测试与切换准备",
+          "INTRO": "最终准备阶段是对系统进行全流程全面模拟验证，确保生产上线前达到最佳稳定就绪状态。",
+          "CHECKLIST_TITLE": "最终准备核心工作：",
+          "POINTS": [
+            "依据标准SOP开展全流程用户验收测试（UAT）",
+            "面向全体操作人员开展多层次实操培训",
+            "期初静态与动态业务数据（Cut Off）准备与校验",
+            "所有终端、外设及网络环境就绪确认",
+            "应急预案制定与正式上线就绪签署"
+          ],
+          "OUTPUT_LABEL": "核心交付成果",
+          "OUTPUT_TEXT": "UAT验收报告、全员培训合格认证及经验证的期初切换数据。"
+        },
+        "GO_LIVE": {
+          "NUMBER": "05",
+          "TITLE": "Go Live & Support",
+          "SUBTITLE": "正式上线运行与持续运维保障",
+          "INTRO": "系统正式投入生产日常运营。内部与外部运维团队全程驻场保障，确保各环节平稳顺畅。",
+          "BODY_1": "通过现场与远程实时监控，快速解决各类系统配置、主数据调整及业务记账问题，持续调优运行性能。",
+          "BODY_2": "专业技术支持团队提供持续再培训与优化支持，助力企业员工全面熟练掌握系统。",
+          "OUTPUT_LABEL": "核心交付成果",
+          "OUTPUT_TEXT": "生产系统平稳上线运营、初期系统稳定保障与长期专属售后支持服务。"
+        }
+      }
+    }
   }
 }
